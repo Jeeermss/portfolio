@@ -1,19 +1,15 @@
-import { Routes, Route, Link } from 'react-router-dom';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+
 import CareerStarter from './routes/CareerStarter';
 import TalentPipelines from './routes/TalentPipelines';
 import Home from './routes/Home';
+import Navigation from './components/navigation/Navigation';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <nav>
-        <ul>
-          <li><Link to='/'>Home</Link></li>
-          <li><Link to='/talent-pipelines'>Talent Pipelines</Link></li>
-          <li><Link to='/career-starter'>CareerStarter</Link></li>
-        </ul>
-      </nav>
+      <Navigation />
       <Routes>
         <Route element={<Home/>} path='/' />
         <Route element={<TalentPipelines/>} path='/talent-pipelines' />

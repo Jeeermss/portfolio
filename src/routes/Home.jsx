@@ -1,5 +1,11 @@
+import Hero from "../components/Hero/Hero";
+import CaseStudiesDirectory from "../components/CaseStudiesDirectory/CaseStudiesDirectory";
+
 const Home = () => {
-    return <h1>Home</h1>
+	return <main>
+		<Hero />
+		<CaseStudiesDirectory />
+	</main>
 }
 
 export default Home;

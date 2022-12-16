@@ -1,0 +1,34 @@
+.card {
+  width: 618px;
+  position: relative;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 24px;
+  border-top: 1px solid var(--black);
+  border-left: 1px solid var(--black);
+  border-right: 1px solid var(--black);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-media {
+  border: 1px solid var(--black);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  height: 456px;
+}
+
+.card-content {
+  border: 1px solid var(--black);
+  box-shadow: -3px 4px 2px rgba(0, 0, 0, 0.35);
+  background-color: var(--white);
+  padding: 8px 24px 28px;
+  width: 586px;
+
+  position: absolute;
+  top: 95%;
+  left: 2.5%;
+}

@@ -1,0 +1,61 @@
+:root {
+  --black: #000;
+  --white: #FFF;
+  --charcoal: #373F47;
+  --slate-blue: #25283D;
+}
+
+.jm-typography {
+  font-family: 'AvenirBlack';
+  font-style: normal;
+}
+
+.heading-level-1 {
+  font-weight: 750;
+  font-size: 108px;
+  line-height: 130px;
+  color: var(--black);
+}
+
+.heading-level-3 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: var(--slate-blue);
+}
+
+.heading-level-4 {
+  font-weight: 350;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--charcoal);
+}
+
+.heading-level-4-card {
+  font-weight: 750;
+  font-size: 30px;
+  line-height: 36px;
+  color: var(--charcoal);
+}
+
+.body-1 {
+  font-weight: 350;
+  font-size: 26px;
+  line-height: 31px;
+  color: var(--slate-blue);
+}
+
+.body-2 {
+  font-weight: 350;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--charcoal);
+}
+
+.body-3 {
+  font-weight: 350;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--charcoal);
+}

@@ -1,29 +1,46 @@
-import { Link } from "react-router-dom";
+import { Link, matchPath, useLocation } from 'react-router-dom';
 import './navigation.css';
 
 const Navigation = () => {
+  const { pathname } = useLocation();
+  const menus = [
+    {
+      path: '/',
+      menuLabel: 'Home',
+    },
+    {
+      path: '/talent-pipelines',
+      menuLabel: 'Case Studies',
+    },
+    {
+      path: '/career-starter',
+      menuLabel: 'About Me',
+    },
+  ];
+
   return (
     <nav className="navbar">
-      <img src="https://via.placeholder.com/106x70" alt="placeholder" />
+      <img src="/assets/logo.svg" alt="placeholder" />
       <ul className="navbar-list-items">
-        <li className="navbar-list-item">
-          <Link to='/'>Home</Link>
-        </li>
-        <li className="navbar-list-item">
-          <Link to='/talent-pipelines'>Talent Pipelines</Link>
-        </li>
-        <li className="navbar-list-item">
-          <Link to='/career-starter'>CareerStarter</Link>
-        </li>
+        {menus.map(({ path, menuLabel }) => {
+          const isActive = !!matchPath({ path, end: true }, pathname);
+          return (
+            <li className="navbar-list-item" key={path}>
+              <Link to={path} className={`${isActive ? 'active-link' : ''}`}>
+                {menuLabel}
+              </Link>
+            </li>
+          );
+        })}
         <li className="navbar-list-item-contact">
-          <button>
+          <a href="mailto:jeremie.montero@gmail.com">
             <div className="status-indicator"></div>
             Available for work
-          </button>
+          </a>
         </li>
       </ul>
     </nav>
-  )
+  );
 };
 
 export default Navigation;

@@ -1,51 +1,73 @@
 .navbar {
-    border-bottom: 1px solid #000;
-    margin-bottom: 88px;
-    height: 92px;
-    display: flex;
-    justify-content: space-between;
+  margin-bottom: 120px;
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbar-list-items {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .navbar-list-item {
-    list-style: none;
-    padding: 0 24px;
+  list-style: none;
+  padding: 0 24px;
 }
 
 .navbar-list-item a {
-    text-decoration: none;
-    color: #000;
-    font-family: AvenirBlack;
-    font-size: 18px;
-    font-weight: 350;
+  text-decoration: none;
+  color: #000;
+  font-family: AvenirBlack;
+  font-size: 18px;
+  font-weight: 350;
 }
 
 .status-indicator {
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: #41ffaf;
-    margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #41ffaf;
+  margin-right: 8px;
 }
 
 .navbar-list-item-contact {
-    font-size: 1rem;list-style: none;
+  font-size: 1rem;
+  list-style: none;
 }
 
-.navbar-list-item-contact button {
-    border: 1px solid #000;
-    border-radius: 20px;
-    padding: 0.75rem 1rem;
-    background-color: #fff;
-    cursor: pointer;
-    font-family: AvenirBlack;
-    font-weight: 350;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
+.navbar-list-item-contact a {
+  border: 1px solid #000;
+  border-radius: 20px;
+  padding: 0.75rem 1rem;
+  background-color: #fff;
+  cursor: pointer;
+  font-family: AvenirBlack;
+  font-weight: 350;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.active-link {
+  color: var(--rose) !important;
+  font-weight: 750;
+  font-size: 18px;
+  line-height: 22px;
+  padding-bottom: 12px;
+  position: relative;
+}
+
+.active-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #c95d63;
+  height: 8px;
+  border-radius: 8px;
 }

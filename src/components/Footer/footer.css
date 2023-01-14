@@ -1,0 +1,87 @@
+.footer * {
+  color: #fff4e9;
+}
+
+.footer {
+  background-color: var(--dark-blue);
+  padding: 56px 0;
+}
+
+.footer__first-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__second-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 39px;
+}
+
+.footer__second-row div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer__second-row div p {
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.footer__message {
+  width: 300px;
+}
+
+.footer__message h4 {
+  font-weight: 600;
+  padding-bottom: 16px;
+  font-size: 28px;
+}
+
+.footer__message p {
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 25px;
+  font-family: 'AvenirRoman';
+}
+
+.footer__social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer__social-media p {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.footer__social-media-icons {
+  border-top: 1px dashed #fff4e9;
+  padding-top: 20px;
+  margin-top: 7px;
+}
+
+.footer__social-media-icons i {
+  font-size: 30px;
+}
+
+.footer__navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer__navigation li {
+  list-style: none;
+  margin-left: 64px;
+}
+
+.footer__navigation li a {
+  text-decoration: none;
+  font-family: AvenirBlack;
+  font-size: 18px;
+  font-weight: 700;
+}

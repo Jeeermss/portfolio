@@ -1,8 +1,11 @@
 :root {
   --black: #000;
-  --white: #FFF;
-  --charcoal: #373F47;
-  --slate-blue: #25283D;
+  --white: #fff;
+  --charcoal: #474747;
+  --slate-blue: #25283d;
+  --dark-magenta: #2f2c2f;
+  --dark-blue: #25283d;
+  --rose: #c95d63;
 }
 
 .jm-typography {
@@ -10,11 +13,16 @@
   font-style: normal;
 }
 
+.jm-typography-2 {
+  font-family: 'AvenirRoman';
+  font-style: normal;
+}
+
 .heading-level-1 {
   font-weight: 750;
-  font-size: 108px;
-  line-height: 130px;
-  color: var(--black);
+  font-size: 88px;
+  line-height: 105px;
+  color: var(--charcoal);
 }
 
 .heading-level-3 {
@@ -27,15 +35,15 @@
 
 .heading-level-4 {
   font-weight: 350;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 28px;
+  line-height: 32px;
   color: var(--charcoal);
 }
 
 .heading-level-4-card {
   font-weight: 750;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 26px;
+  line-height: 31px;
   color: var(--charcoal);
 }
 
@@ -55,7 +63,23 @@
 
 .body-3 {
   font-weight: 350;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 21px;
+  line-height: 27px;
   color: var(--charcoal);
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-white {
+  color: var(--white);
 }

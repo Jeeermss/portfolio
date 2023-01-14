@@ -1,3 +1,11 @@
 .case-studies-card-wrapper {
   margin-bottom: 14.8125rem;
 }
+
+.section-headers {
+  border-top: 3px solid #373f47;
+  border-bottom: 3px solid #373f47;
+  width: 100%;
+  margin: 118px auto 80px;
+  padding: 24px 0;
+}

@@ -24,6 +24,10 @@
   font-weight: 350;
 }
 
+.navbar-list-item a:hover {
+  color: var(--rose);
+}
+
 .status-indicator {
   width: 16px;
   height: 16px;

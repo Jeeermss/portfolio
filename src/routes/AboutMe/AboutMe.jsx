@@ -46,8 +46,8 @@ const AboutMe = () => {
             <p className="about-me__more-info-label">Her Career Journey</p>
           </Grid>
           <Grid item xs={7}>
-            {aboutMeCareerJourney.map((aboutMe) => (
-              <Grid item xs={12} sx={{ paddingBottom: '24px' }}>
+            {aboutMeCareerJourney.map((aboutMe, idx) => (
+              <Grid key={idx} item xs={12} sx={{ paddingBottom: '24px' }}>
                 <AboutMeItem
                   name={aboutMe.name}
                   position={aboutMe.position}
@@ -64,8 +64,8 @@ const AboutMe = () => {
             <p className="about-me__more-info-label">Her Toolbox</p>
           </Grid>
           <Grid item xs={7}>
-            {aboutMeToolbox.map((aboutMe) => (
-              <Grid item xs={12} sx={{ paddingBottom: '24px' }}>
+            {aboutMeToolbox.map((aboutMe, idx) => (
+              <Grid key={idx} item xs={12} sx={{ paddingBottom: '24px' }}>
                 <AboutMeItem
                   imgUrl={aboutMe.imgUrl}
                   customContent={aboutMe.customContent}
@@ -80,8 +80,8 @@ const AboutMe = () => {
             <p className="about-me__more-info-label">Her Hobbies</p>
           </Grid>
           <Grid item xs={7}>
-            {aboutMeHobbies.map((aboutMe) => (
-              <Grid item xs={12} sx={{ paddingBottom: '24px' }}>
+            {aboutMeHobbies.map((aboutMe, idx) => (
+              <Grid key={idx} item xs={12} sx={{ paddingBottom: '24px' }}>
                 <AboutMeItem
                   name={aboutMe.name}
                   position={aboutMe.position}

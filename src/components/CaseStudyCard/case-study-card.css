@@ -4,7 +4,7 @@
   box-shadow: 0 0 0 0 var(--charcoal);
   transition: box-shadow 0.3s ease-in-out;
   border: 1px solid var(--black);
-  border-radius: 8px;
+  /* border-radius: 8px; */
 }
 
 .card:hover {

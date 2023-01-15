@@ -15,7 +15,7 @@ const CaseStudyCard = ({
         <p className="card-header__flag body-2">{flag}</p>
       </div>
       <div className="card-media">
-        <img src={cardImageUrl} alt={cardImageAlt} />
+        {cardImageUrl ? <img src={cardImageUrl} alt={cardImageAlt} /> : null}
       </div>
       <div className="card-content">
         <h4 className="card-content__heading heading-level-4-card">

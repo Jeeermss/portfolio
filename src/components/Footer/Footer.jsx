@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Container } from '@mui/material';
 import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram';
 import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin';
@@ -9,6 +9,8 @@ import { FaRegCopyright } from '@react-icons/all-files/fa/FaRegCopyright';
 import './footer.css';
 
 const Footer = () => {
+  const location = useLocation();
+
   return (
     <div className="footer">
       <Container className="footer__container">
@@ -36,13 +38,19 @@ const Footer = () => {
           </div>
           <ul className="footer__navigation">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" state={{ location }} replace>
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/talent-pipelines">Case Studies</Link>
+              <Link to="/case-studies" state={{ location }} replace>
+                Case Studies
+              </Link>
             </li>
             <li>
-              <Link to="/about-me">About Me</Link>
+              <Link to="/about-me" state={{ location }} replace>
+                About Me
+              </Link>
             </li>
           </ul>
         </div>

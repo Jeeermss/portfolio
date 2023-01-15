@@ -19,7 +19,7 @@ const CaseStudiesDirectory = () => {
             flag="UX Research"
             contentHeader="The Need of an Evaluation Tool"
             contentDesc="A close examination of how evaluations are conducted and observed in a live site and classroom setting."
-            cardImageUrl="images/cs-1.svg"
+            // cardImageUrl="images/cs-1.svg"
             cardImageAlt="Case Study 1"
           />
         </Grid>
@@ -31,7 +31,7 @@ const CaseStudiesDirectory = () => {
             contentDesc="How did our team assist an organization 
             prepare and transition from a paper evaluation 
             to a digital landscape?"
-            cardImageUrl="images/cs-1.svg"
+            // cardImageUrl="images/cs-1.svg"
             cardImageAlt="Case Study 2"
           />
         </Grid>

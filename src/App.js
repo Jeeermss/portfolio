@@ -6,6 +6,7 @@ import Home from './routes/Home/Home';
 import AboutMe from './routes/AboutMe/AboutMe';
 import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer';
+import ScrollToTop from './routes/ScrollToTop';
 import './App.css';
 import './global_styles/typography.css';
 
@@ -13,13 +14,16 @@ function App() {
   return (
     <StyledEngineProvider injectFirst>
       <Container>
-        <Navigation />
-        <Routes>
-          <Route element={<Home />} path="/" />
-          <Route element={<TalentPipelines />} path="/talent-pipelines" />
-          <Route element={<CareerStarter />} path="/career-starter" />
-          <Route element={<AboutMe />} path="/about-me" />
-        </Routes>
+        <ScrollToTop>
+          <Navigation />
+          <Routes>
+            <Route element={<Home />} path="/" />
+            <Route element={<Home />} path="/case-studies" />
+            <Route element={<TalentPipelines />} path="/talent-pipelines" />
+            <Route element={<CareerStarter />} path="/career-starter" />
+            <Route element={<AboutMe />} path="/about-me" />
+          </Routes>
+        </ScrollToTop>
       </Container>
       <Footer />
     </StyledEngineProvider>

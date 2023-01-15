@@ -3,7 +3,7 @@ import { Link, matchPath, useLocation } from 'react-router-dom';
 import './navigation.css';
 
 const Navigation = () => {
-  const { pathname } = useLocation();
+  const location = useLocation();
   const [isContactHovered, setIsContactHovered] = useState(false);
   const menus = [
     {
@@ -11,7 +11,7 @@ const Navigation = () => {
       menuLabel: 'Home',
     },
     {
-      path: '/talent-pipelines',
+      path: '/case-studies',
       menuLabel: 'Case Studies',
     },
     {
@@ -25,10 +25,15 @@ const Navigation = () => {
       <img src="/assets/logo.svg" alt="placeholder" />
       <ul className="navbar-list-items">
         {menus.map(({ path, menuLabel }) => {
-          const isActive = !!matchPath({ path, end: true }, pathname);
+          const isActive = !!matchPath({ path, end: true }, location.pathname);
           return (
             <li className="navbar-list-item" key={path}>
-              <Link to={path} className={`${isActive ? 'active-link' : ''}`}>
+              <Link
+                to={path}
+                className={`${isActive ? 'active-link' : ''}`}
+                state={{ location }}
+                replace
+              >
                 {menuLabel}
               </Link>
             </li>

@@ -1,8 +1,18 @@
+import { useNavigate } from 'react-router-dom';
 import { Grid } from '@mui/material';
 import CaseStudyCard from '../CaseStudyCard/CaseStudyCard';
+
+import {
+  TALENT_PIPELINE,
+  CAREER_STARTER,
+  EVALUATION_TOOL,
+  PERFORMANCE_PROFILES,
+} from '../../constants/routes';
 import './case-study-directory.css';
 
 const CaseStudiesDirectory = () => {
+  const navigate = useNavigate();
+
   return (
     <Grid container className="case-study-directory">
       <Grid container>
@@ -21,6 +31,7 @@ const CaseStudiesDirectory = () => {
             contentDesc="A close examination of how evaluations are conducted and observed in a live site and classroom setting."
             // cardImageUrl="images/cs-1.svg"
             cardImageAlt="Case Study 1"
+            onClick={() => navigate(EVALUATION_TOOL)}
           />
         </Grid>
         <Grid item sm={12} md={6} className="case-studies-card-wrapper">
@@ -33,6 +44,7 @@ const CaseStudiesDirectory = () => {
             to a digital landscape?"
             // cardImageUrl="images/cs-1.svg"
             cardImageAlt="Case Study 2"
+            onClick={() => navigate(PERFORMANCE_PROFILES)}
           />
         </Grid>
         <Grid item sm={12} md={6} className="case-studies-card-wrapper">
@@ -45,6 +57,7 @@ const CaseStudiesDirectory = () => {
             of high school and college educators."
             cardImageUrl="images/cs-3.svg"
             cardImageAlt="Case Study 3"
+            onClick={() => navigate(TALENT_PIPELINE)}
           />
         </Grid>
         <Grid item sm={12} md={6} className="case-studies-card-wrapper">
@@ -56,6 +69,7 @@ const CaseStudiesDirectory = () => {
             to educators, training programs, and recruiters within the Construction and Maintenance field."
             cardImageUrl="images/cs-4.svg"
             cardImageAlt="Case Study 4"
+            onClick={() => navigate(CAREER_STARTER)}
           />
         </Grid>
       </Grid>

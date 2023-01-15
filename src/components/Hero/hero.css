@@ -1,3 +1,7 @@
+.hero {
+  min-height: 575px;
+}
+
 .hero__first-col h1 {
   margin-bottom: 48px;
 }

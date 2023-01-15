@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { Link, matchPath, useLocation } from 'react-router-dom';
+
+import { CASE_STUDIES, ABOUT_ME } from '../../constants/routes';
 import './navigation.css';
 
 const Navigation = () => {
@@ -11,11 +13,11 @@ const Navigation = () => {
       menuLabel: 'Home',
     },
     {
-      path: '/case-studies',
+      path: CASE_STUDIES,
       menuLabel: 'Case Studies',
     },
     {
-      path: '/about-me',
+      path: ABOUT_ME,
       menuLabel: 'About Me',
     },
   ];

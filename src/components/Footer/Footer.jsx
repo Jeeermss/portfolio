@@ -6,6 +6,8 @@ import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin';
 import { FaBehance } from '@react-icons/all-files/fa/FaBehance';
 import { FaRegCopyright } from '@react-icons/all-files/fa/FaRegCopyright';
 
+import { CASE_STUDIES, ABOUT_ME } from '../../constants/routes';
+
 import './footer.css';
 
 const Footer = () => {
@@ -16,11 +18,11 @@ const Footer = () => {
       menuLabel: 'Home',
     },
     {
-      path: '/case-studies',
+      path: CASE_STUDIES,
       menuLabel: 'Case Studies',
     },
     {
-      path: '/about-me',
+      path: ABOUT_ME,
       menuLabel: 'About Me',
     },
   ];

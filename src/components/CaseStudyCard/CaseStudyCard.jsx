@@ -7,9 +7,10 @@ const CaseStudyCard = ({
   contentDesc,
   cardImageUrl,
   cardImageAlt,
+  onClick,
 }) => {
   return (
-    <div className="card">
+    <div className="card" onClick={onClick}>
       <div className="card-header">
         <h4 className="heading-level-4">{header}</h4>
         <p className="card-header__flag body-2">{flag}</p>

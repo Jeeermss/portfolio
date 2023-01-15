@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, matchPath } from 'react-router-dom';
 import { Container } from '@mui/material';
 import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram';
 import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin';
@@ -10,6 +10,20 @@ import './footer.css';
 
 const Footer = () => {
   const location = useLocation();
+  const menus = [
+    {
+      path: '/',
+      menuLabel: 'Home',
+    },
+    {
+      path: '/case-studies',
+      menuLabel: 'Case Studies',
+    },
+    {
+      path: '/about-me',
+      menuLabel: 'About Me',
+    },
+  ];
 
   return (
     <div className="footer">
@@ -37,21 +51,24 @@ const Footer = () => {
             <p>Copyright 2022. Intellectual property of Jeremie Montero.</p>
           </div>
           <ul className="footer__navigation">
-            <li>
-              <Link to="/" state={{ location }} replace>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/case-studies" state={{ location }} replace>
-                Case Studies
-              </Link>
-            </li>
-            <li>
-              <Link to="/about-me" state={{ location }} replace>
-                About Me
-              </Link>
-            </li>
+            {menus.map(({ path, menuLabel }) => {
+              const isActive = !!matchPath(
+                { path, end: true },
+                location.pathname
+              );
+              return (
+                <li key={path}>
+                  <Link
+                    to={path}
+                    className={`${isActive ? 'active-link-footer' : ''}`}
+                    state={{ location }}
+                    replace
+                  >
+                    {menuLabel}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </Container>

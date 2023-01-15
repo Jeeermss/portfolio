@@ -86,3 +86,12 @@
   height: 8px;
   border-radius: 8px;
 }
+
+.active-link-footer {
+  color: var(--rose) !important;
+  font-weight: 750;
+  font-size: 18px;
+  line-height: 22px;
+  padding-bottom: 12px;
+  position: relative;
+}

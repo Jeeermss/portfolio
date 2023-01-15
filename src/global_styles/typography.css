@@ -6,6 +6,7 @@
   --dark-magenta: #2f2c2f;
   --dark-blue: #25283d;
   --rose: #c95d63;
+  --gray: #808080;
 }
 
 .jm-typography {
@@ -22,6 +23,13 @@
   font-weight: 750;
   font-size: 88px;
   line-height: 105px;
+  color: var(--charcoal);
+}
+
+.heading-level-2 {
+  font-weight: 750;
+  font-size: 72px;
+  line-height: 86px;
   color: var(--charcoal);
 }
 

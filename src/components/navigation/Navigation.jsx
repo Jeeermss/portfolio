@@ -13,7 +13,7 @@ const Navigation = () => {
       menuLabel: 'Case Studies',
     },
     {
-      path: '/career-starter',
+      path: '/about-me',
       menuLabel: 'About Me',
     },
   ];

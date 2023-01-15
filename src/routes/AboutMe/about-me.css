@@ -1,0 +1,51 @@
+.about-me__info {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 180px;
+}
+
+.about-me__info-data {
+  margin-left: 64px;
+}
+
+.about-me__info-name {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 4px;
+}
+
+.about-me__info-name p {
+  margin-left: 24px;
+  font-weight: 750;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--gray);
+  padding-bottom: 17px;
+}
+
+.about-me__info-noun {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--gray);
+  margin-bottom: 40px;
+}
+
+.about-me__info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-left: 17px;
+}
+
+.about-me__more-info {
+  margin: 180px 0 1000px;
+}
+
+.about-me__more-info-label {
+  font-weight: 750;
+  font-size: 56px;
+  line-height: 67px;
+  color: #263238;
+}

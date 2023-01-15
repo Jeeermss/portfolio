@@ -42,7 +42,7 @@ const Footer = () => {
               <Link to="/talent-pipelines">Case Studies</Link>
             </li>
             <li>
-              <Link to="/career-starter">About Me</Link>
+              <Link to="/about-me">About Me</Link>
             </li>
           </ul>
         </div>

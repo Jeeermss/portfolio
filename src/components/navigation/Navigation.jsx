@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import { Link, matchPath, useLocation } from 'react-router-dom';
 import './navigation.css';
 
 const Navigation = () => {
   const { pathname } = useLocation();
+  const [isContactHovered, setIsContactHovered] = useState(false);
   const menus = [
     {
       path: '/',
@@ -33,8 +35,16 @@ const Navigation = () => {
           );
         })}
         <li className="navbar-list-item-contact">
-          <a href="mailto:jeremie.montero@gmail.com">
-            <div className="status-indicator"></div>
+          <a
+            href="mailto:jeremie.montero@gmail.com"
+            onMouseEnter={() => setIsContactHovered(true)}
+            onMouseLeave={() => setIsContactHovered(false)}
+          >
+            <div
+              className={`status-indicator ${
+                isContactHovered ? 'navbar-list-item-contact__blink' : ''
+              }`}
+            ></div>
             Available for work
           </a>
         </li>

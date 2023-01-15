@@ -2,10 +2,6 @@ import { Grid } from '@mui/material';
 import CaseStudyCard from '../CaseStudyCard/CaseStudyCard';
 import './case-study-directory.css';
 
-import Cs1Image from '../../assets/images/case-study-1.png';
-import Cs3Image from '../../assets/images/case-study-3.png';
-import Cs4Image from '../../assets/images/case-study-4.png';
-
 const CaseStudiesDirectory = () => {
   return (
     <Grid container className="case-study-directory">
@@ -23,7 +19,7 @@ const CaseStudiesDirectory = () => {
             flag="UX Research"
             contentHeader="The Need of an Evaluation Tool"
             contentDesc="A close examination of how evaluations are conducted and observed in a live site and classroom setting."
-            cardImageUrl={Cs1Image}
+            cardImageUrl="images/cs-1.svg"
             cardImageAlt="Case Study 1"
           />
         </Grid>
@@ -35,7 +31,7 @@ const CaseStudiesDirectory = () => {
             contentDesc="How did our team assist an organization 
             prepare and transition from a paper evaluation 
             to a digital landscape?"
-            cardImageUrl={Cs1Image}
+            cardImageUrl="images/cs-1.svg"
             cardImageAlt="Case Study 2"
           />
         </Grid>
@@ -47,7 +43,7 @@ const CaseStudiesDirectory = () => {
             contentDesc="An opportunity to merge the gap between 
             Job Seekers and Recruiters with the assistance 
             of high school and college educators."
-            cardImageUrl={Cs3Image}
+            cardImageUrl="images/cs-3.svg"
             cardImageAlt="Case Study 3"
           />
         </Grid>
@@ -58,7 +54,7 @@ const CaseStudiesDirectory = () => {
             contentHeader="The Birth of CareerStarter"
             contentDesc="A web app that helps connect Job Seekers 
             to educators, training programs, and recruiters within the Construction and Maintenance field."
-            cardImageUrl={Cs4Image}
+            cardImageUrl="images/cs-4.svg"
             cardImageAlt="Case Study 4"
           />
         </Grid>

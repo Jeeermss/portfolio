@@ -1,9 +1,6 @@
-import { Grid, Stack } from '@mui/material';
+import { Stack } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import './hero.css';
-
-import HeroImg from '../../assets/images/hero.png';
-import LocationIcon from '../../assets/icons/Location.png';
 
 const Item = styled('div')(({ theme }) => ({
   padding: theme.spacing(1),
@@ -25,7 +22,7 @@ const Hero = () => {
         </h1>
         <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
           <img
-            src={LocationIcon}
+            src="assets/location.svg"
             alt="born & raised in san francisco"
             style={{ marginRight: '8px' }}
           />
@@ -37,7 +34,7 @@ const Hero = () => {
       </Item>
 
       <Item className="hero__second-col">
-        <img src={HeroImg} alt="Hi, I'm Jeremie!" />
+        <img src="images/Hero.svg" alt="Hi, I'm Jeremie!" />
       </Item>
 
       <Item sx={{ alignSelf: 'flex-end' }} className="hero__third-col">

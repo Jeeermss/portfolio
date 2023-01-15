@@ -52,6 +52,21 @@
   color: #000;
 }
 
+.navbar-list-item-contact__blink {
+  animation: blink-animation 0.5s steps(5, start) infinite;
+  -webkit-animation: blink-animation 0.5s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
 .active-link {
   color: var(--rose) !important;
   font-weight: 750;

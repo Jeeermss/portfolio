@@ -60,7 +60,7 @@ const Footer = () => {
                 <li key={path}>
                   <Link
                     to={path}
-                    className={`${isActive ? 'active-link-footer' : ''}`}
+                    className={`${isActive ? 'active-link' : ''}`}
                     state={{ location }}
                     replace
                   >

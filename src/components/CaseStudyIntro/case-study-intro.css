@@ -1,0 +1,104 @@
+.cs-intro__page-title {
+  font-weight: 750;
+  font-size: 56px;
+  line-height: 67px;
+  color: var(--dark-magenta);
+  margin-bottom: 48px;
+  font-family: 'AvenirBlack';
+}
+
+.cs-intro__card {
+  background: #f5f5f5;
+  border: 1px solid #2f2c2f;
+  padding: 32px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cs-intro__card h3 {
+  font-weight: 750;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 8px;
+  font-family: 'AvenirBlack';
+}
+
+.cs-intro__card p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 24px;
+  font-family: 'AvenirRoman';
+}
+
+.cs-intro__card p:last-child {
+  margin-bottom: 0;
+}
+
+.cs-intro__summary-roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.cs-intro__summary-role {
+  background: var(--white);
+  border: 1px solid var(--dark-magenta);
+  border-radius: 0px 16px;
+  padding: 8px 16px;
+  gap: 8px;
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.cs-intro__team-members {
+  background: #f5f5f5;
+  border: 1px solid var(--dark-magenta);
+  padding: 32px 0;
+  margin-top: 32px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+
+.cs-intro__team-members h3 {
+  text-align: center;
+  font-weight: 750;
+  font-size: 32px;
+  line-height: 38px;
+  font-family: 'AvenirBlack';
+  margin-bottom: 16px;
+}
+
+.cs-intro__team-member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cs-intro__team-member span {
+  text-align: center;
+  padding-top: 4px;
+  font-weight: 350;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+@media (max-width: 600px) {
+  .cs-intro__summary-role {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cs-intro__summary-roles {
+    gap: 16px;
+  }
+
+  .cs-intro__team-member span {
+    padding-top: 8px;
+  }
+}

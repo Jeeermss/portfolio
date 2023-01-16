@@ -15,8 +15,11 @@ import {
 } from './constants/routes';
 import './App.css';
 import './global_styles/typography.css';
+import './global_styles/mui-breakpoints.css';
 
-const TalentPipeline = React.lazy(() => import('./routes/TalentPipeline'));
+const TalentPipeline = React.lazy(() =>
+  import('./routes/TalentPipeline/TalentPipeline')
+);
 const CareerStarter = React.lazy(() => import('./routes/CareerStarter'));
 const AboutMe = React.lazy(() => import('./routes/AboutMe/AboutMe'));
 const Home = React.lazy(() => import('./routes/Home/Home'));

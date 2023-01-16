@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Grid } from '@mui/material';
 import CaseStudyCard from '../CaseStudyCard/CaseStudyCard';
 
@@ -12,14 +12,13 @@ import './case-study-directory.css';
 
 const CaseStudiesDirectory = () => {
   const navigate = useNavigate();
+  const location = useLocation();
 
   return (
     <Grid container className="case-study-directory">
       <Grid container>
         <Grid item xs={12} className="section-headers">
-          <h3 className="jm-typography heading-level-3">
-            Case Studies Curated for You
-          </h3>
+          <h3 className="heading-level-3">Case Studies Curated for You</h3>
         </Grid>
       </Grid>
       <Grid container spacing={4}>
@@ -31,7 +30,7 @@ const CaseStudiesDirectory = () => {
             contentDesc="A close examination of how evaluations are conducted and observed in a live site and classroom setting."
             // cardImageUrl="images/cs-1.svg"
             cardImageAlt="Case Study 1"
-            onClick={() => navigate(EVALUATION_TOOL)}
+            onClick={() => navigate(EVALUATION_TOOL, { state: { location } })}
           />
         </Grid>
         <Grid item sm={12} md={6} className="case-studies-card-wrapper">
@@ -44,7 +43,9 @@ const CaseStudiesDirectory = () => {
             to a digital landscape?"
             // cardImageUrl="images/cs-1.svg"
             cardImageAlt="Case Study 2"
-            onClick={() => navigate(PERFORMANCE_PROFILES)}
+            onClick={() =>
+              navigate(PERFORMANCE_PROFILES, { state: { location } })
+            }
           />
         </Grid>
         <Grid item sm={12} md={6} className="case-studies-card-wrapper">
@@ -57,7 +58,7 @@ const CaseStudiesDirectory = () => {
             of high school and college educators."
             cardImageUrl="images/cs-3.svg"
             cardImageAlt="Case Study 3"
-            onClick={() => navigate(TALENT_PIPELINE)}
+            onClick={() => navigate(TALENT_PIPELINE, { state: { location } })}
           />
         </Grid>
         <Grid item sm={12} md={6} className="case-studies-card-wrapper">
@@ -69,7 +70,7 @@ const CaseStudiesDirectory = () => {
             to educators, training programs, and recruiters within the Construction and Maintenance field."
             cardImageUrl="images/cs-4.svg"
             cardImageAlt="Case Study 4"
-            onClick={() => navigate(CAREER_STARTER)}
+            onClick={() => navigate(CAREER_STARTER, { state: { location } })}
           />
         </Grid>
       </Grid>

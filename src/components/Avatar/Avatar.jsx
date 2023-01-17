@@ -5,6 +5,7 @@ const Avatar = ({ avatarUrl, sx }) => {
   return (
     <Box
       sx={{
+        maxWidth: '100%',
         width: 400,
         height: 470,
         backgroundColor: '#F9F9F9',

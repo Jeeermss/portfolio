@@ -51,3 +51,35 @@
   padding: 8px 16px;
   gap: 8px;
 }
+
+/* MaterialUI breakpoint `md` */
+@media (max-width: 900px) {
+  /* .card-media {
+    height: 345px;
+  } */
+}
+
+/* MaterialUI breakpoint `sm` */
+@media (max-width: 600px) {
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .card-header h4 {
+    font-size: 21px;
+  }
+  .card-header p {
+    font-size: 16px;
+  }
+  .card-content {
+    padding: 16px;
+  }
+  .card-content__heading {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  .card-content p {
+    font-size: 16px;
+  }
+}

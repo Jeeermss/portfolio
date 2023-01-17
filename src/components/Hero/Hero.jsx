@@ -2,46 +2,118 @@ import { Stack } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import './hero.css';
 
-const Item = styled('div')(({ theme }) => ({
-  padding: theme.spacing(1),
+const StyledDiv = styled('div')(({ theme }) => ({
   textAlign: 'center',
-  color: theme.palette.text.secondary,
 }));
+const StyledHeading = styled('h1')();
+const StyledParagraph = styled('p')();
+const StyledImg = styled('img')();
+const styledHeadingBreakpoints = {
+  fontSize: {
+    xs: '56px !important',
+    lg: '64px !important',
+    xl: '88px !important',
+  },
+  lineHeight: {
+    xs: '67.2px !important',
+    lg: '80px !important',
+    xl: '105px !important',
+  },
+};
 
 const Hero = () => {
   return (
     <Stack
-      direction={{ xs: 'column', sm: 'row' }}
+      direction={{ xs: 'column', md: 'row' }}
       justifyContent="center"
       spacing={{ xs: 1, sm: 2, md: 4 }}
       className="hero"
     >
-      <Item className="hero__first-col">
-        <h1 className="jm-typography heading-level-1 text-end">
+      <StyledDiv sx={{ mb: { xs: 3, md: 0 } }} className="hero__first-col">
+        <StyledHeading
+          sx={{
+            fontSize: styledHeadingBreakpoints.fontSize,
+            lineHeight: styledHeadingBreakpoints.lineHeight,
+            mb: {
+              xs: 3,
+              lg: 6,
+            },
+            textAlign: {
+              xs: 'center',
+              md: 'end',
+            },
+          }}
+          className="jm-typography heading-level-1"
+        >
           Jeremie <br /> Montero
-        </h1>
-        <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-          <img
+        </StyledHeading>
+        <StyledDiv
+          sx={{
+            display: 'flex',
+            justifyContent: {
+              xs: 'center',
+              lg: 'flex-end',
+            },
+          }}
+        >
+          <StyledImg
             src="assets/location.svg"
             alt="born & raised in san francisco"
-            style={{ marginRight: '8px' }}
+            sx={{
+              mr: {
+                xs: '4px',
+                lg: '8px',
+              },
+              width: {
+                xs: 40,
+                lg: 'auto',
+              },
+            }}
           />
-          <p className="jm-typography-2 body-1 text-start">
+          <StyledParagraph
+            sx={{
+              fontSize: {
+                xs: '18px !important',
+                lg: '26px !important',
+              },
+              lineHeight: {
+                xs: '21px !important',
+                lg: '31px !important',
+              },
+            }}
+            className="jm-typography-2 body-1 text-start"
+          >
             BORN & RAISED IN
             <br /> SAN FRANCISCO
-          </p>
-        </div>
-      </Item>
+          </StyledParagraph>
+        </StyledDiv>
+      </StyledDiv>
 
-      <Item className="hero__second-col">
-        <img src="images/Hero.svg" alt="Hi, I'm Jeremie!" />
-      </Item>
+      <StyledDiv
+        sx={{ mb: { xs: '24px !important', md: '0 !important' } }}
+        className="hero__second-col"
+      >
+        <StyledImg src="images/Hero.svg" alt="Hi, I'm Jeremie!" />
+      </StyledDiv>
 
-      <Item sx={{ alignSelf: 'flex-end' }} className="hero__third-col">
-        <h2 className="jm-typography heading-level-1 text-start">
+      <StyledDiv
+        sx={{ alignSelf: { xs: 'center', md: 'flex-end' } }}
+        className="hero__third-col"
+      >
+        <StyledHeading
+          sx={{
+            fontSize: styledHeadingBreakpoints.fontSize,
+            lineHeight: styledHeadingBreakpoints.lineHeight,
+            textAlign: {
+              xs: 'center',
+              md: 'start',
+            },
+          }}
+          className="jm-typography heading-level-1"
+        >
           Senior <br /> Product <br /> Designer
-        </h2>
-      </Item>
+        </StyledHeading>
+      </StyledDiv>
     </Stack>
   );
 };

@@ -15,12 +15,21 @@ const AboutMe = () => {
     <main className="about-me">
       <section className="about-me__info">
         <Avatar
-          sx={{ minWidth: 400 }}
+          sx={{
+            minWidth: {
+              xs: '100%',
+              md: 400,
+            },
+            mb: {
+              xs: 5,
+              md: 0,
+            },
+          }}
           // avatarUrl={HeroImage}
         />
         <div className="about-me__info-data">
           <div className="about-me__info-name">
-            <h2 className="heading-level-2">Jeremie</h2>
+            <h2>Jeremie</h2>
             <p>[ jer-uh-mee ]</p>
           </div>
           <p className="about-me__info-noun">noun.</p>
@@ -41,8 +50,8 @@ const AboutMe = () => {
         </div>
       </section>
       <section className="about-me__more-info">
-        <Grid container spacing={2} sx={{ marginBottom: '160px' }}>
-          <Grid item xs={5}>
+        <Grid container spacing={2} direction={{ xs: 'column', md: 'row' }}>
+          <Grid item xs={5} sx={{ mb: 4 }}>
             <p className="about-me__more-info-label">Her Career Journey</p>
           </Grid>
           <Grid item xs={7}>
@@ -59,8 +68,8 @@ const AboutMe = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} sx={{ marginBottom: '160px' }}>
-          <Grid item xs={5}>
+        <Grid container spacing={2} direction={{ xs: 'column', md: 'row' }}>
+          <Grid item xs={5} sx={{ mb: 4 }}>
             <p className="about-me__more-info-label">Her Toolbox</p>
           </Grid>
           <Grid item xs={7}>
@@ -75,8 +84,8 @@ const AboutMe = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2}>
-          <Grid item xs={5}>
+        <Grid container spacing={2} direction={{ xs: 'column', md: 'row' }}>
+          <Grid item xs={5} sx={{ mb: 4 }}>
             <p className="about-me__more-info-label">Her Hobbies</p>
           </Grid>
           <Grid item xs={7}>

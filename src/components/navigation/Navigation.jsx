@@ -1,8 +1,17 @@
 import { useState } from 'react';
+import { IconButton } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+import { styled } from '@mui/material/styles';
 import { Link, matchPath, useLocation } from 'react-router-dom';
 
 import { CASE_STUDIES, ABOUT_ME } from '../../constants/routes';
 import './navigation.css';
+
+const StyledList = styled('ul')(({ theme }) => ({
+  padding: theme.spacing(1),
+}));
+const StyledImg = styled('img')();
+const StyledNav = styled('nav')();
 
 const Navigation = () => {
   const location = useLocation();
@@ -23,9 +32,42 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="navbar">
-      <img src="/assets/logo.svg" alt="placeholder" />
-      <ul className="navbar-list-items">
+    <StyledNav
+      className="navbar"
+      sx={{
+        mx: {
+          xs: '8px',
+          sm: 'auto',
+        },
+        mt: {
+          xs: '24px',
+          sm: '64px',
+        },
+        mb: {
+          xs: '72px',
+          sm: '120px',
+        },
+      }}
+    >
+      <StyledImg
+        src="/assets/logo.svg"
+        alt="placeholder"
+        sx={{
+          width: {
+            xs: '60px',
+            md: 'auto',
+          },
+        }}
+      />
+      <StyledList
+        className="navbar-list-items"
+        sx={{
+          display: {
+            xs: 'none !important',
+            md: 'flex !important',
+          },
+        }}
+      >
         {menus.map(({ path, menuLabel }) => {
           const isActive = !!matchPath({ path, end: true }, location.pathname);
           return (
@@ -55,8 +97,19 @@ const Navigation = () => {
             Available for work
           </a>
         </li>
-      </ul>
-    </nav>
+      </StyledList>
+      <IconButton
+        color="inherit"
+        aria-label="open drawer"
+        // onClick={handleDrawerToggle}
+        sx={{
+          p: 1,
+          display: { md: 'none' },
+        }}
+      >
+        <MenuIcon sx={{ width: 30, height: 'auto' }} />
+      </IconButton>
+    </StyledNav>
   );
 };
 

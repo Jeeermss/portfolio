@@ -15,8 +15,16 @@ const CaseStudyCard = ({
         <h4 className="heading-level-4">{header}</h4>
         <p className="card-header__flag body-2">{flag}</p>
       </div>
-      <div className="card-media">
-        {cardImageUrl ? <img src={cardImageUrl} alt={cardImageAlt} /> : null}
+      <div
+        className="card-media"
+        style={{
+          backgroundImage: `url(${cardImageUrl})`,
+          backgroundSize: 'auto',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
+        {/* {cardImageUrl ? <img src={cardImageUrl} alt={cardImageAlt} /> : null} */}
       </div>
       <div className="card-content">
         <h4 className="card-content__heading heading-level-4-card">

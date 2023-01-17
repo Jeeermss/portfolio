@@ -1,10 +1,11 @@
 .footer * {
-  color: #fff4e9;
+  color: var(--white);
 }
 
 .footer {
   background-color: var(--dark-blue);
   padding: 56px 0;
+  margin-top: 112px;
 }
 
 .footer__first-row {
@@ -38,13 +39,14 @@
   font-weight: 600;
   padding-bottom: 16px;
   font-size: 28px;
+  font-family: 'AvenirBlack';
 }
 
 .footer__message p {
   font-size: 21px;
   font-weight: 600;
   line-height: 25px;
-  font-family: 'AvenirRoman';
+  font-family: 'AvenirBook';
 }
 
 .footer__social-media {
@@ -62,30 +64,87 @@
   border-top: 1px dashed #fff4e9;
   padding-top: 20px;
   margin-top: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
 }
 
 .footer__social-media-icons i {
   font-size: 30px;
 }
 
-.footer__navigation {
+.footer__navigation,
+.footer__navigation-mobile {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.footer__navigation li {
+.footer__navigation-mobile {
+  display: none;
+}
+
+.footer__navigation li,
+.footer__navigation-mobile li {
   list-style: none;
   margin-left: 64px;
 }
 
-.footer__navigation li a {
+.footer__navigation li a,
+.footer__navigation-mobile li a {
   text-decoration: none;
   font-family: AvenirBlack;
   font-size: 18px;
   font-weight: 700;
 }
 
-.footer__navigation li a:hover {
+.footer__navigation li a:hover,
+.footer__navigation-mobile li a:hover {
   color: var(--rose);
+}
+
+/* MaterialUI breakpoint `md` */
+@media (max-width: 900px) {
+  .footer {
+    padding: 32px 0;
+  }
+  .footer__first-row {
+    flex-direction: column-reverse;
+  }
+  .footer__second-row div p {
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .footer__message h4 {
+    font-weight: 750;
+    padding-bottom: 8px;
+    line-height: 22px;
+    font-size: 18px;
+  }
+  .footer__message p {
+    font-weight: 600;
+    font-size: 14px;
+    width: 172px;
+    line-height: 17px;
+  }
+  .footer__social-media p {
+    font-weight: 500;
+    font-family: 'AvenirBlack';
+    line-height: 25px;
+  }
+  .footer__navigation-mobile {
+    display: flex;
+    padding: 49px 0;
+    gap: 40px;
+  }
+  .footer__navigation {
+    display: none;
+  }
+  .footer__navigation-mobile li {
+    margin-left: 0;
+  }
+  .footer__navigation-mobile li a {
+    font-size: 16px;
+  }
 }

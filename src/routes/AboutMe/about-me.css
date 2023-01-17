@@ -14,6 +14,14 @@
   padding-bottom: 4px;
 }
 
+.about-me__info-name h2 {
+  font-weight: 750;
+  font-size: 72px;
+  line-height: 86px;
+  font-family: 'AvenirBlack';
+  color: var(--charcoal);
+}
+
 .about-me__info-name p {
   margin-left: 24px;
   font-weight: 750;
@@ -40,12 +48,65 @@
 }
 
 .about-me__more-info {
-  margin: 180px 0 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 140px;
+  margin: 0 0 800px;
 }
 
 .about-me__more-info-label {
   font-weight: 750;
   font-size: 56px;
   line-height: 67px;
-  color: #263238;
+  color: var(--charcoal);
+  font-family: 'AvenirBlack';
+}
+
+/* MaterialUI breakpoint `lg` */
+@media (max-width: 1200px) {
+  .about-me__info-data {
+    margin-left: 32px;
+  }
+  .about-me__info-name h2 {
+    font-size: 60px;
+  }
+  .about-me__info-list {
+    font-size: 22px;
+  }
+}
+
+/* MaterialUI breakpoint `md` */
+@media (max-width: 900px) {
+  .about-me__info {
+    flex-direction: column;
+    margin-bottom: 104px;
+  }
+  .about-me__info-data {
+    margin-left: 0px;
+  }
+  .about-me__info-name h2 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  .about-me__info-name {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 4px;
+  }
+  .about-me__info-name p {
+    margin: 0;
+    padding: 0;
+  }
+  .about-me__info-list {
+    gap: 24px;
+    font-size: 16px;
+  }
+  .about-me__more-info {
+    gap: 124px;
+    margin: 0 0 549px;
+  }
+  .about-me__more-info-label {
+    font-size: 38px;
+    line-height: 46px;
+  }
 }

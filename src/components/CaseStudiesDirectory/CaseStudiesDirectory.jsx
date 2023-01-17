@@ -21,19 +21,28 @@ const CaseStudiesDirectory = () => {
           <h3 className="heading-level-3">Case Studies Curated for You</h3>
         </Grid>
       </Grid>
-      <Grid container spacing={4}>
-        <Grid item sm={12} md={6} className="case-studies-card-wrapper">
+      <Grid
+        container
+        spacing={4}
+        sx={{
+          justifyContent: {
+            xs: 'center',
+            md: 'space-between',
+          },
+        }}
+      >
+        <Grid item xs={12} md={6} className="case-studies-card-wrapper">
           <CaseStudyCard
             header="Q1 2022 - Ongoing"
             flag="UX Research"
             contentHeader="The Need of an Evaluation Tool"
             contentDesc="A close examination of how evaluations are conducted and observed in a live site and classroom setting."
-            // cardImageUrl="images/cs-1.svg"
+            cardImageUrl="images/cs-1.svg"
             cardImageAlt="Case Study 1"
             onClick={() => navigate(EVALUATION_TOOL, { state: { location } })}
           />
         </Grid>
-        <Grid item sm={12} md={6} className="case-studies-card-wrapper">
+        <Grid item xs={12} md={6} className="case-studies-card-wrapper">
           <CaseStudyCard
             header="Q1 2022 - Ongoing"
             flag="UI Design"
@@ -48,7 +57,7 @@ const CaseStudiesDirectory = () => {
             }
           />
         </Grid>
-        <Grid item sm={12} md={6} className="case-studies-card-wrapper">
+        <Grid item xs={12} md={6} className="case-studies-card-wrapper">
           <CaseStudyCard
             header="Q3 2021 - Q1 2022"
             flag="UX Research"
@@ -61,7 +70,7 @@ const CaseStudiesDirectory = () => {
             onClick={() => navigate(TALENT_PIPELINE, { state: { location } })}
           />
         </Grid>
-        <Grid item sm={12} md={6} className="case-studies-card-wrapper">
+        <Grid item xs={12} md={6} className="case-studies-card-wrapper">
           <CaseStudyCard
             header="Q3 2021 - Ongoing"
             flag="UI Design"

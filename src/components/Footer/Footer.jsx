@@ -1,10 +1,6 @@
 import React from 'react';
 import { Link, useLocation, matchPath } from 'react-router-dom';
 import { Container } from '@mui/material';
-import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram';
-import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin';
-import { FaBehance } from '@react-icons/all-files/fa/FaBehance';
-import { FaRegCopyright } from '@react-icons/all-files/fa/FaRegCopyright';
 
 import { CASE_STUDIES, ABOUT_ME } from '../../constants/routes';
 
@@ -27,6 +23,28 @@ const Footer = () => {
     },
   ];
 
+  const FooterNavigation = ({ className }) => {
+    return (
+      <ul className={className}>
+        {menus.map(({ path, menuLabel }) => {
+          const isActive = !!matchPath({ path, end: true }, location.pathname);
+          return (
+            <li key={path}>
+              <Link
+                to={path}
+                className={`${isActive ? 'active-link' : ''}`}
+                state={{ location }}
+                replace
+              >
+                {menuLabel}
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
+    );
+  };
+
   return (
     <div className="footer">
       <Container className="footer__container">
@@ -38,40 +56,26 @@ const Footer = () => {
               immensely.
             </p>
           </div>
+          <FooterNavigation className="footer__navigation-mobile" />
           <div className="footer__social-media">
             <p>Let's Connect</p>
             <div className="footer__social-media-icons">
-              <FaBehance size={30} style={{ marginRight: 30 }} />
-              <FaInstagram size={30} style={{ marginRight: 30 }} />
-              <FaLinkedin size={30} />
+              <img src="images/social_media/behance_2.svg" alt="behance" />
+              <img src="images/social_media/instagram.svg" alt="instagram" />
+              <img src="images/social_media/linkedin.svg" alt="linkedin" />
             </div>
           </div>
         </div>
         <div className="footer__second-row">
           <div>
-            <FaRegCopyright size={16} style={{ marginRight: 4 }} />
+            <img
+              src="images/copyright.svg"
+              alt="behance"
+              style={{ marginRight: 4 }}
+            />
             <p>Copyright 2022. Intellectual property of Jeremie Montero.</p>
           </div>
-          <ul className="footer__navigation">
-            {menus.map(({ path, menuLabel }) => {
-              const isActive = !!matchPath(
-                { path, end: true },
-                location.pathname
-              );
-              return (
-                <li key={path}>
-                  <Link
-                    to={path}
-                    className={`${isActive ? 'active-link' : ''}`}
-                    state={{ location }}
-                    replace
-                  >
-                    {menuLabel}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
+          <FooterNavigation className="footer__navigation" />
         </div>
       </Container>
     </div>

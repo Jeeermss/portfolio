@@ -16,6 +16,10 @@
   padding: 13px;
 }
 
+.about-me-item__logo img {
+  width: 100%;
+}
+
 .about-me-item__details {
   padding: 24px 32px 28px;
   display: flex;
@@ -27,6 +31,7 @@
   font-weight: 750;
   font-size: 24px;
   line-height: 33px;
+  font-family: 'AvenirBlack';
 }
 
 .about-me-item__details-position {
@@ -48,4 +53,30 @@
   font-size: 24px;
   line-height: 33px;
   color: var(--charcoal);
+}
+
+/* MaterialUI breakpoint `md` */
+@media (max-width: 900px) {
+  .about-me-item__details-name {
+    font-size: 21px;
+  }
+  .about-me-item__details {
+    padding: 16px 20px;
+  }
+  .about-me-item__details-position {
+    font-size: 16px;
+    line-height: 32px;
+  }
+  .about-me-item__details-duration {
+    font-size: 13px;
+  }
+  .about-me-item__logo {
+    min-width: 112px;
+    max-width: 112px;
+  }
+  .about-me-item__details-custom-item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }

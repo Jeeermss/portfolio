@@ -1,5 +1,6 @@
 .case-studies-card-wrapper {
-  margin-bottom: 14.8125rem;
+  margin-bottom: 240px;
+  /* max-width: 548px; */
 }
 
 .section-headers {
@@ -9,4 +10,21 @@
   margin: 118px auto 80px;
   padding: 24px 0;
   font-family: 'AvenirRoman';
+}
+
+/* MaterialUI breakpoint `md` */
+@media (max-width: 900px) {
+  .section-headers {
+    margin: 56px auto;
+    padding: 24px 0;
+  }
+
+  .section-headers h3 {
+    font-size: 21px;
+  }
+
+  .case-studies-card-wrapper {
+    margin-bottom: 141px;
+    max-width: 548px;
+  }
 }

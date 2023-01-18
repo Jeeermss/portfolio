@@ -1,12 +1,16 @@
 import React from 'react';
 import { Link, useLocation, matchPath } from 'react-router-dom';
 import { Container } from '@mui/material';
+import {
+  LazyLoadImage,
+  trackWindowScroll,
+} from 'react-lazy-load-image-component';
 
 import { CASE_STUDIES, ABOUT_ME } from '../../constants/routes';
 
 import './footer.css';
 
-const Footer = () => {
+const Footer = ({ scrollPosition }) => {
   const location = useLocation();
   const menus = [
     {
@@ -60,17 +64,33 @@ const Footer = () => {
           <div className="footer__social-media">
             <p>Let's Connect</p>
             <div className="footer__social-media-icons">
-              <img src="images/social_media/behance_2.svg" alt="behance" />
-              <img src="images/social_media/instagram.svg" alt="instagram" />
-              <img src="images/social_media/linkedin.svg" alt="linkedin" />
+              <LazyLoadImage
+                scrollPosition={scrollPosition}
+                effect="blur"
+                src="images/social_media/behance_2.svg"
+                alt="behance"
+              />
+              <LazyLoadImage
+                scrollPosition={scrollPosition}
+                src="images/social_media/instagram.svg"
+                alt="instagram"
+              />
+              <LazyLoadImage
+                scrollPosition={scrollPosition}
+                effect="blur"
+                src="images/social_media/linkedin.svg"
+                alt="linkedin"
+              />
             </div>
           </div>
         </div>
         <div className="footer__second-row">
           <div>
-            <img
+            <LazyLoadImage
+              scrollPosition={scrollPosition}
+              effect="blur"
               src="images/copyright.svg"
-              alt="behance"
+              alt="copyright"
               style={{ marginRight: 4 }}
             />
             <p>Copyright 2022. Intellectual property of Jeremie Montero.</p>
@@ -82,4 +102,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default trackWindowScroll(Footer);

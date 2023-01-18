@@ -1,5 +1,9 @@
 import React from 'react';
 import { Grid, Container } from '@mui/material';
+import {
+  LazyLoadImage,
+  trackWindowScroll,
+} from 'react-lazy-load-image-component';
 
 import './case-study-intro.css';
 
@@ -10,13 +14,14 @@ const CaseStudyIntro = ({
   problems,
   firstRowMembers,
   secondRowMembers,
+  scrollPosition,
 }) => {
   return (
     <div className="cs-intro">
       <h2 className="cs-intro__page-title">{pageTitle}</h2>
       <Grid
         container
-        rowSpacing={1}
+        rowSpacing={{ xs: 6, md: 0 }}
         columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         columns={{ xs: 6, md: 12 }}
       >
@@ -49,11 +54,34 @@ const CaseStudyIntro = ({
           <div className="cs-intro__team-members">
             <Container maxWidth="md">
               <h3>Build Your Future’s Team Members</h3>
-              <Grid container spacing={{ xs: 1, sm: 3, md: 10 }}>
+              <Grid container spacing={{ xs: 4, md: 10 }}>
                 {firstRowMembers.map((member, idx) => (
                   <Grid key={idx} item xs={6} sm={3} md={3}>
                     <div className="cs-intro__team-member">
-                      <img alt="team-member" src={member.imgUrl} />
+                      <LazyLoadImage
+                        scrollPosition={scrollPosition}
+                        src={member.imgUrl}
+                        effect="blur"
+                        alt="team-member"
+                      />
+                      <span>{member.role}</span>
+                    </div>
+                  </Grid>
+                ))}
+              </Grid>
+            </Container>
+            <Container maxWidth="md" sx={{ mt: 6 }}>
+              <h3>Future’s Team Members</h3>
+              <Grid container spacing={{ xs: 4, md: 10 }}>
+                {secondRowMembers.map((member, idx) => (
+                  <Grid key={idx} item xs={6} sm={3} md={3}>
+                    <div className="cs-intro__team-member">
+                      <LazyLoadImage
+                        scrollPosition={scrollPosition}
+                        effect="blur"
+                        alt="team-member"
+                        src={member.imgUrl}
+                      />
                       <span>{member.role}</span>
                     </div>
                   </Grid>
@@ -67,4 +95,4 @@ const CaseStudyIntro = ({
   );
 };
 
-export default CaseStudyIntro;
+export default trackWindowScroll(CaseStudyIntro);

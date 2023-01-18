@@ -1,3 +1,66 @@
 .talent-pipeline {
   color: var(--charcoal);
 }
+
+.talent-pipeline__opportunity {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.talent-pipeline__opportunity h2 {
+  font-weight: 750;
+  font-size: 32px;
+  line-height: 38px;
+  color: var(--charcoal);
+  font-family: 'AvenirBlack';
+}
+
+.talent-pipeline__opportunity p {
+  font-weight: 750;
+  font-size: 28px;
+  line-height: 42px;
+  color: var(--gray);
+  font-family: 'AvenirBlack';
+}
+
+.talent-pipeline__opportunity span {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: var(--charcoal);
+}
+
+.talent-pipeline__role {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.talent-pipeline__role span {
+  text-align: center;
+  padding: 0 30px;
+  font-weight: 350;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+.talent-pipeline__personas {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.talent-pipeline__personas h3 {
+  font-weight: 750;
+  font-size: 32px;
+  line-height: 38px;
+  color: var(--charcoal);
+  font-family: 'AvenirBlack';
+}
+
+.talent-pipeline__personas p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+}

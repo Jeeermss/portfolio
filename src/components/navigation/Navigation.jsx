@@ -10,8 +10,8 @@ import './navigation.css';
 const StyledList = styled('ul')(({ theme }) => ({
   padding: theme.spacing(1),
 }));
-const StyledImg = styled('img')();
-const StyledNav = styled('nav')();
+const StyledImg = styled('img')(() => ({}));
+const StyledNav = styled('nav')(() => ({}));
 
 const Navigation = () => {
   const location = useLocation();

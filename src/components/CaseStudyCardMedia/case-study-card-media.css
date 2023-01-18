@@ -1,0 +1,22 @@
+.case-study-card-media {
+  box-shadow: none;
+  border-radius: 0;
+  border: 1px solid var(--dark-magenta);
+  width: 100%;
+}
+
+.case-study-card-media__content {
+  border-top: 1px solid var(--dark-magenta);
+  padding: 24px;
+}
+
+.case-study-card-media__image {
+  /* width: 100%; */
+}
+
+.case-study-card-media__content-text {
+  font-weight: 350;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--charcoal);
+}

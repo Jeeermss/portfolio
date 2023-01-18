@@ -1,11 +1,27 @@
 import React from 'react';
 import './about-me-item.css';
+import {
+  LazyLoadImage,
+  trackWindowScroll,
+} from 'react-lazy-load-image-component';
 
-const AboutMeItem = ({ imgUrl, name, position, duration, customContent }) => {
+const AboutMeItem = ({
+  imgUrl,
+  name,
+  position,
+  duration,
+  customContent,
+  scrollPosition,
+}) => {
   return (
     <div className="about-me-item">
       <div className="about-me-item__logo">
-        <img src={imgUrl} alt="exp" />
+        <LazyLoadImage
+          scrollPosition={scrollPosition}
+          src={imgUrl}
+          effect="blur"
+          alt="exp"
+        />
       </div>
       <div className="about-me-item__details">
         {customContent ? (
@@ -26,4 +42,4 @@ const AboutMeItem = ({ imgUrl, name, position, duration, customContent }) => {
   );
 };
 
-export default AboutMeItem;
+export default trackWindowScroll(AboutMeItem);

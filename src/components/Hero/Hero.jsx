@@ -1,13 +1,18 @@
 import { Stack } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import {
+  LazyLoadImage,
+  trackWindowScroll,
+} from 'react-lazy-load-image-component';
+
 import './hero.css';
 
 const StyledDiv = styled('div')(({ theme }) => ({
   textAlign: 'center',
 }));
-const StyledHeading = styled('h1')();
-const StyledParagraph = styled('p')();
-const StyledImg = styled('img')();
+const StyledHeading = styled('h1')(() => ({}));
+const StyledParagraph = styled('p')(() => ({}));
+const StyledImg = styled(LazyLoadImage)(() => ({}));
 const styledHeadingBreakpoints = {
   fontSize: {
     xs: '56px !important',
@@ -21,7 +26,7 @@ const styledHeadingBreakpoints = {
   },
 };
 
-const Hero = () => {
+const Hero = ({ scrollPosition }) => {
   return (
     <Stack
       direction={{ xs: 'column', md: 'row' }}
@@ -57,6 +62,8 @@ const Hero = () => {
           }}
         >
           <StyledImg
+            scrollPosition={scrollPosition}
+            effect="blur"
             src="assets/location.svg"
             alt="born & raised in san francisco"
             sx={{
@@ -93,7 +100,13 @@ const Hero = () => {
         sx={{ mb: { xs: '24px !important', md: '0 !important' } }}
         className="hero__second-col"
       >
-        <StyledImg src="images/Hero.svg" alt="Hi, I'm Jeremie!" />
+        <StyledImg
+          scrollPosition={scrollPosition}
+          effect="blur"
+          src="images/Hero.svg"
+          alt="Hi, I'm Jeremie!"
+          sx={{ minWidth: 333 }}
+        />
       </StyledDiv>
 
       <StyledDiv
@@ -118,4 +131,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default trackWindowScroll(Hero);

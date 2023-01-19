@@ -64,3 +64,32 @@
   font-size: 24px;
   line-height: 33px;
 }
+
+.talent-pipeline__documenting-user-stories {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.talent-pipeline__documenting-user-stories h3 {
+  font-weight: 750;
+  font-size: 32px;
+  line-height: 42px;
+  font-family: 'AvenirBlack';
+  color: var(--charcoal);
+  width: 45%;
+}
+
+.talent-pipeline__documenting-user-stories h4 {
+  font-weight: 750;
+  font-size: 28px;
+  line-height: 42px;
+  font-family: 'AvenirBlack';
+  color: var(--gray);
+}
+
+.talent-pipeline__documenting-user-stories p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+}

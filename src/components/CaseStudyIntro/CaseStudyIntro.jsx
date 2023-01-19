@@ -4,6 +4,7 @@ import {
   LazyLoadImage,
   trackWindowScroll,
 } from 'react-lazy-load-image-component';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import './case-study-intro.css';
 
@@ -58,12 +59,14 @@ const CaseStudyIntro = ({
                 {firstRowMembers.map((member, idx) => (
                   <Grid key={idx} item xs={6} sm={3} md={3}>
                     <div className="cs-intro__team-member">
-                      <LazyLoadImage
-                        scrollPosition={scrollPosition}
-                        src={member.imgUrl}
-                        effect="blur"
-                        alt="team-member"
-                      />
+                      <ScrollAnimation animateOnce animateIn="animate__pulse">
+                        <LazyLoadImage
+                          scrollPosition={scrollPosition}
+                          src={member.imgUrl}
+                          effect="blur"
+                          alt="team-member"
+                        />
+                      </ScrollAnimation>
                       <span>{member.role}</span>
                     </div>
                   </Grid>
@@ -76,12 +79,14 @@ const CaseStudyIntro = ({
                 {secondRowMembers.map((member, idx) => (
                   <Grid key={idx} item xs={6} sm={3} md={3}>
                     <div className="cs-intro__team-member">
-                      <LazyLoadImage
-                        scrollPosition={scrollPosition}
-                        effect="blur"
-                        alt="team-member"
-                        src={member.imgUrl}
-                      />
+                      <ScrollAnimation animateOnce animateIn="animate__pulse">
+                        <LazyLoadImage
+                          scrollPosition={scrollPosition}
+                          effect="blur"
+                          alt="team-member"
+                          src={member.imgUrl}
+                        />
+                      </ScrollAnimation>
                       <span>{member.role}</span>
                     </div>
                   </Grid>

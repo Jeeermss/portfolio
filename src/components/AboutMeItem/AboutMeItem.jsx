@@ -4,6 +4,7 @@ import {
   LazyLoadImage,
   trackWindowScroll,
 } from 'react-lazy-load-image-component';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const AboutMeItem = ({
   imgUrl,
@@ -16,12 +17,13 @@ const AboutMeItem = ({
   return (
     <div className="about-me-item">
       <div className="about-me-item__logo">
-        <LazyLoadImage
-          scrollPosition={scrollPosition}
-          src={imgUrl}
-          effect="blur"
-          alt="exp"
-        />
+        <ScrollAnimation animateOnce animateIn="animate__pulse">
+          <LazyLoadImage
+            scrollPosition={scrollPosition}
+            src={imgUrl}
+            alt="exp"
+          />
+        </ScrollAnimation>
       </div>
       <div className="about-me-item__details">
         {customContent ? (

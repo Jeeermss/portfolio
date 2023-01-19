@@ -18,6 +18,7 @@ import './App.css';
 import './global_styles/typography.css';
 import './global_styles/mui-breakpoints.css';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import 'animate.css/animate.min.css';
 
 const TalentPipeline = React.lazy(() =>
   import('./routes/TalentPipeline/TalentPipeline')

@@ -1,0 +1,21 @@
+.next-case-study {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+  color: var(--charcoal);
+}
+
+.next-case-study span {
+  font-weight: 350;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.next-case-study a {
+  font-weight: 750;
+  font-size: 30px;
+  line-height: 33px;
+  text-decoration-line: underline;
+  font-family: 'AvenirBlack';
+  color: var(--charcoal);
+}

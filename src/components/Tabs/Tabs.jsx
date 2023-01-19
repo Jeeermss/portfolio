@@ -3,14 +3,7 @@ import { Grid } from '@mui/material';
 
 import './tabs.css';
 
-const Tabs = ({
-  activeTab = 0,
-  setActiveTab,
-  tabsData,
-  isContentLoading = false,
-  sx,
-}) => {
-  console.log('rerender');
+const Tabs = ({ activeTab = 0, setActiveTab, tabsData, sx }) => {
   return (
     <Grid container className="tabs" rowGap={3} sx={{ ...sx }}>
       <Grid item xs={12} className="tabs__headers">
@@ -21,19 +14,14 @@ const Tabs = ({
               className={`tabs__headers-item ${
                 activeTab === idx ? 'tabs__headers-item--active' : ''
               }`}
-              onClick={() => setActiveTab(idx)}
+              onClick={() => setActiveTab(idx, tab.imgUrl)}
             >
               {tab.name}
             </span>
           );
         })}
       </Grid>
-      <Grid
-        item
-        xs={12}
-        className="tabs__content"
-        height={isContentLoading ? 900 : 'auto'}
-      >
+      <Grid item xs={12} className="tabs__content" height>
         {tabsData.map((tab, idx) =>
           activeTab === idx ? (
             <Fragment key={idx}>{tab.content}</Fragment>

@@ -7,7 +7,6 @@ import {
 
 import CaseStudyCardMedia from '../../components/CaseStudyCardMedia/CaseStudyCardMedia';
 import CaseStudyIntro from '../../components/CaseStudyIntro/CaseStudyIntro';
-import Tabs from '../../components/Tabs/Tabs';
 
 import {
   summaryRoles,
@@ -17,103 +16,10 @@ import {
   secondRowMembers,
 } from '../../constants/talent-pipeline';
 import './talent-pipeline.css';
+import PersonasTabs from '../../components/TalentPipeline/PersonasTabs';
+import CareerJourneyTabs from '../../components/TalentPipeline/CareerJourneyTabs';
 
 const TalentPipeline = ({ scrollPosition }) => {
-  const [personasActiveTab, setPersonasActiveTab] = useState(0);
-  const [careerJourneyActiveTab, setCareerJourneyActiveTab] = useState(0);
-
-  const [personasTabsLoading, setPersonasTabsLoading] = useState(false);
-  const [careerJourneyLoading, setCareerJourneyTabsLoading] = useState(false);
-
-  const personasTabsData = [
-    {
-      name: 'Job Seekers',
-      content: (
-        <LazyLoadImage
-          scrollPosition={scrollPosition}
-          src="images/case_studies/talent_pipeline/personas_job_seekers.svg"
-          effect="blur"
-          alt="job seekers"
-          width="100%"
-          beforeLoad={() => setPersonasTabsLoading(true)}
-          afterLoad={() => setPersonasTabsLoading(false)}
-        />
-      ),
-    },
-    {
-      name: 'Employee Representatives',
-      content: (
-        <LazyLoadImage
-          scrollPosition={scrollPosition}
-          src="images/case_studies/talent_pipeline/personas_employee_representatives.svg"
-          effect="blur"
-          alt="employee rep"
-          width="100%"
-          beforeLoad={() => setPersonasTabsLoading(true)}
-          afterLoad={() => setPersonasTabsLoading(false)}
-        />
-      ),
-    },
-    {
-      name: 'Case Managers',
-      content: (
-        <LazyLoadImage
-          scrollPosition={scrollPosition}
-          src="images/case_studies/talent_pipeline/personas_case_managers.svg"
-          effect="blur"
-          alt="case managers"
-          width="100%"
-          beforeLoad={() => setPersonasTabsLoading(true)}
-          afterLoad={() => setPersonasTabsLoading(false)}
-        />
-      ),
-    },
-  ];
-  const careerJourneyTabsData = [
-    {
-      name: 'Job Seekers',
-      content: (
-        <LazyLoadImage
-          scrollPosition={scrollPosition}
-          src="images/case_studies/talent_pipeline/cj_job_seekers.svg"
-          effect="blur"
-          alt="job seekers"
-          width="100%"
-          beforeLoad={() => setCareerJourneyTabsLoading(true)}
-          afterLoad={() => setCareerJourneyTabsLoading(false)}
-        />
-      ),
-    },
-    {
-      name: 'Employee Representatives',
-      content: (
-        <LazyLoadImage
-          scrollPosition={scrollPosition}
-          src="images/case_studies/talent_pipeline/cj_employee_representatives.svg"
-          effect="blur"
-          alt="employee rep"
-          width="100%"
-          beforeLoad={() => setCareerJourneyTabsLoading(true)}
-          afterLoad={() => setCareerJourneyTabsLoading(false)}
-        />
-      ),
-    },
-    {
-      name: 'Case Managers',
-      content: (
-        <LazyLoadImage
-          scrollPosition={scrollPosition}
-          src="images/case_studies/talent_pipeline/cj_case_managers.svg"
-          effect="blur"
-          alt="case managers"
-          width="100%"
-          beforeLoad={() => setCareerJourneyTabsLoading(true)}
-          afterLoad={() => setCareerJourneyTabsLoading(false)}
-        />
-      ),
-    },
-  ];
-
   return (
     <div className="talent-pipeline">
       <CaseStudyIntro
@@ -249,13 +155,7 @@ const TalentPipeline = ({ scrollPosition }) => {
         </Grid>
       </Grid>
 
-      <Tabs
-        activeTab={personasActiveTab}
-        setActiveTab={(tabIndex) => setPersonasActiveTab(tabIndex)}
-        tabsData={personasTabsData}
-        isContentLoading={personasTabsLoading}
-        sx={{ mb: 15 }}
-      />
+      <PersonasTabs />
 
       <Grid
         container
@@ -279,13 +179,7 @@ const TalentPipeline = ({ scrollPosition }) => {
         </Grid>
       </Grid>
 
-      <Tabs
-        activeTab={careerJourneyActiveTab}
-        setActiveTab={(tabIndex) => setCareerJourneyActiveTab(tabIndex)}
-        tabsData={careerJourneyTabsData}
-        isContentLoading={careerJourneyLoading}
-        sx={{ mb: 15 }}
-      />
+      <CareerJourneyTabs />
     </div>
   );
 };

@@ -19,6 +19,7 @@ import {
 } from '../../constants/talent-pipeline';
 import './talent-pipeline.css';
 import NextCaseStudy from '../../components/NextCaseStudy/NextCaseStudy';
+import ScrollingContainer from '../../components/ScrollingContainer';
 
 const TalentPipeline = ({ scrollPosition }) => {
   return (
@@ -304,13 +305,15 @@ const TalentPipeline = ({ scrollPosition }) => {
             animateIn="animate__pulse"
             initiallyVisible
           >
-            <LazyLoadImage
-              scrollPosition={scrollPosition}
-              src="images/case_studies/talent_pipeline/sample_design.svg"
-              effect="blur"
-              alt="sample design"
-              width="100%"
-            />
+            <ScrollingContainer>
+              <LazyLoadImage
+                scrollPosition={scrollPosition}
+                src="images/case_studies/talent_pipeline/sample_design.svg"
+                effect="blur"
+                alt="sample design"
+                width="100%"
+              />
+            </ScrollingContainer>
           </ScrollAnimation>
         </Grid>
       </Grid>
@@ -495,13 +498,15 @@ const TalentPipeline = ({ scrollPosition }) => {
             animateIn="animate__pulse"
             initiallyVisible
           >
-            <LazyLoadImage
-              scrollPosition={scrollPosition}
-              src="images/case_studies/talent_pipeline/tp_landing_page_2.svg"
-              effect="blur"
-              alt="talent pipeline landing page"
-              width="100%"
-            />
+            <ScrollingContainer>
+              <LazyLoadImage
+                scrollPosition={scrollPosition}
+                src="images/case_studies/talent_pipeline/tp_landing_page_scrolling.svg"
+                effect="blur"
+                alt="talent pipeline landing page"
+                width="100%"
+              />
+            </ScrollingContainer>
           </ScrollAnimation>
         </Grid>
       </Grid>

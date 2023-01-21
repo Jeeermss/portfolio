@@ -76,7 +76,6 @@ const Navigation = () => {
                 to={path}
                 className={`${isActive ? 'active-link' : ''}`}
                 state={{ location }}
-                replace
               >
                 {menuLabel}
               </Link>

@@ -20,6 +20,7 @@
   font-family: AvenirBlack;
   font-size: 18px;
   font-weight: 350;
+  transition: 0.2s ease-in-out;
 }
 
 .navbar-list-item a:hover {

@@ -3,6 +3,7 @@ import './page-road-map.css';
 
 const PageRoadMap = () => {
   const [sectionsData, setSectionsData] = useState([]);
+  const [sectionsTopOffset, setSectionsTopOffset] = useState([]);
 
   useEffect(() => {
     const sections = document.getElementsByClassName('page-section');
@@ -32,6 +33,7 @@ const PageRoadMap = () => {
         let h = sections[s].offsetTop;
         sectionsTop.push(h - 100);
       }
+      setSectionsTopOffset(sectionsTop);
       updateIndicators(sectionsTop, clientMid);
     }
 
@@ -72,10 +74,21 @@ const PageRoadMap = () => {
     window.onresize = updateClientMid;
   }, []);
 
+  const handleItemClick = (offsetTop) => {
+    if (!offsetTop) return;
+    window.scroll(0, offsetTop);
+  };
+
   return (
     <div className="page-road-map" id="page-road-map">
       {sectionsData.map((section, idx) => (
-        <div className="page-road-map__item" key={idx}>
+        <div
+          className={`page-road-map__item ${
+            section.isCurrentSection ? 'page-road-map__item--active' : ''
+          }`}
+          key={idx}
+          onClick={() => handleItemClick(sectionsTopOffset[idx])}
+        >
           <img
             src={`${
               section.isCurrentSection

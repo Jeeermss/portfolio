@@ -12,18 +12,22 @@ import {
   TALENT_PIPELINE,
   CAREER_STARTER,
   ABOUT_ME,
+  EVALUATION_TOOL,
 } from './constants/routes';
 
 import './App.css';
 import './global_styles/typography.css';
 import './global_styles/mui-breakpoints.css';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import 'animate.css/animate.min.css';
+import EvaluationTool from './routes/EvaluationTool/EvaluationTool';
+// import 'animate.css/animate.min.css';
 
 const TalentPipeline = React.lazy(() =>
   import('./routes/TalentPipeline/TalentPipeline')
 );
-const CareerStarter = React.lazy(() => import('./routes/CareerStarter'));
+const CareerStarter = React.lazy(() =>
+  import('./routes/CareerStarter/CareerStarter')
+);
 const AboutMe = React.lazy(() => import('./routes/AboutMe/AboutMe'));
 const Home = React.lazy(() => import('./routes/Home/Home'));
 
@@ -40,6 +44,7 @@ function App() {
               <Route element={<Home />} path={CASE_STUDIES} />
               <Route element={<TalentPipeline />} path={TALENT_PIPELINE} />
               <Route element={<CareerStarter />} path={CAREER_STARTER} />
+              <Route element={<EvaluationTool />} path={EVALUATION_TOOL} />
               <Route element={<AboutMe />} path={ABOUT_ME} />
             </Routes>
           </React.Suspense>

@@ -14,7 +14,7 @@ const CaseStudyCardMedia = ({ sx, cardContent, cardImageUrl }) => {
       <CardMedia
         component="img"
         alt="card image"
-        height="325"
+        // height="325"
         loading="lazy"
         image={cardImageUrl}
         className="case-study-card-media__image"

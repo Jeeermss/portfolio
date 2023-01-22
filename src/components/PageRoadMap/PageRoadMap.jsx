@@ -72,6 +72,19 @@ const PageRoadMap = () => {
 
     window.onscroll = updateClientMid;
     window.onresize = updateClientMid;
+
+    // const resizeObserver = new ResizeObserver(() =>
+    //   updateSectionTops(
+    //     window.scrollY +
+    //       (window.innerHeight ||
+    //         document.documentElement.clientHeight ||
+    //         document.body.clientHeight) /
+    //         2
+    //   )
+    // );
+
+    // // start observing a DOM node
+    // resizeObserver.observe(document.body);
   }, []);
 
   const handleItemClick = (offsetTop) => {

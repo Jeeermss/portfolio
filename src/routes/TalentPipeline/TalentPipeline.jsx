@@ -22,6 +22,8 @@ import NextCaseStudy from '../../components/NextCaseStudy/NextCaseStudy';
 import ScrollingContainer from '../../components/ScrollingContainer';
 import PageRoadMap from '../../components/PageRoadMap/PageRoadMap';
 
+import { CAREER_STARTER } from '../../constants/routes';
+
 const TalentPipeline = ({ scrollPosition }) => {
   return (
     <div className="talent-pipeline">
@@ -584,7 +586,7 @@ const TalentPipeline = ({ scrollPosition }) => {
       </div>
 
       <NextCaseStudy
-        csLink="/career-starter"
+        csLink={CAREER_STARTER}
         csName="The Birth of Career Starter"
       />
     </div>

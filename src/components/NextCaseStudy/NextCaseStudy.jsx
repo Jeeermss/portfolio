@@ -8,7 +8,7 @@ const NextCaseStudy = ({ csLink, csName }) => {
   return (
     <div className="next-case-study">
       <span>Next Case Study >></span>
-      <Link to={csLink} state={{ location }} replace>
+      <Link to={csLink} state={{ location }}>
         {csName}
       </Link>
     </div>

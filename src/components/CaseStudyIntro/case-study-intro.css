@@ -77,7 +77,8 @@
 .cs-intro__team-member {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .cs-intro__team-member span {

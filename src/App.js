@@ -13,6 +13,7 @@ import {
   CAREER_STARTER,
   ABOUT_ME,
   EVALUATION_TOOL,
+  PROFILES_AND_VERIFICATIONS,
 } from './constants/routes';
 
 import './App.css';
@@ -20,6 +21,7 @@ import './global_styles/typography.css';
 import './global_styles/mui-breakpoints.css';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import EvaluationTool from './routes/EvaluationTool/EvaluationTool';
+import ProfilesAndVerifications from './routes/ProfilesAndVerifications/ProfilesAndVerifications';
 // import 'animate.css/animate.min.css';
 
 const TalentPipeline = React.lazy(() =>
@@ -45,6 +47,10 @@ function App() {
               <Route element={<TalentPipeline />} path={TALENT_PIPELINE} />
               <Route element={<CareerStarter />} path={CAREER_STARTER} />
               <Route element={<EvaluationTool />} path={EVALUATION_TOOL} />
+              <Route
+                element={<ProfilesAndVerifications />}
+                path={PROFILES_AND_VERIFICATIONS}
+              />
               <Route element={<AboutMe />} path={ABOUT_ME} />
             </Routes>
           </React.Suspense>

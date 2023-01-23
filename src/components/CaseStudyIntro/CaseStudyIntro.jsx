@@ -15,6 +15,8 @@ const CaseStudyIntro = ({
   problems,
   firstRowMembers,
   secondRowMembers,
+  firstRowMembersTitle = 'Build Your Future’s Team Members',
+  secondRowMembersTitle = 'Future’s Team Members',
   scrollPosition,
 }) => {
   return (
@@ -54,7 +56,7 @@ const CaseStudyIntro = ({
         <Grid item xs={12}>
           <div className="cs-intro__team-members">
             <Container maxWidth="md">
-              <h3>Build Your Future’s Team Members</h3>
+              <h3>{firstRowMembersTitle}</h3>
               <Grid container spacing={{ xs: 4, md: 10 }}>
                 {firstRowMembers.map((member, idx) => (
                   <Grid key={idx} item xs={6} sm={3} md={3}>
@@ -74,7 +76,7 @@ const CaseStudyIntro = ({
               </Grid>
             </Container>
             <Container maxWidth="md" sx={{ mt: 6 }}>
-              <h3>Future’s Team Members</h3>
+              <h3>{secondRowMembersTitle}</h3>
               <Grid container spacing={{ xs: 4, md: 10 }}>
                 {secondRowMembers.map((member, idx) => (
                   <Grid key={idx} item xs={6} sm={3} md={3}>

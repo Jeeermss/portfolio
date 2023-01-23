@@ -8,6 +8,7 @@
   color: var(--charcoal);
   max-width: 108px;
   font-family: 'AvenirRoman';
+  z-index: 1000;
 }
 
 .page-road-map__item {

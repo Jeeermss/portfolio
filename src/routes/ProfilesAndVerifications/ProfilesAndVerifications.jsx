@@ -17,27 +17,31 @@ import {
   problems,
   firstRowMembers,
   secondRowMembers,
-} from '../../constants/career-starter';
-import { EVALUATION_TOOL } from '../../constants/routes';
-import './career-starter.css';
+  firstRowMembersTitle,
+  secondRowMembersTitle,
+} from '../../constants/profiles-and-verifications';
+import { TALENT_PIPELINE } from '../../constants/routes';
+import './profiles-and-verifications.css';
 
-const CareerStarter = ({ scrollPosition }) => {
+const ProfilesAndVerifications = ({ scrollPosition }) => {
   return (
-    <div className="career-starter">
+    <div className="profiles-and-verifications">
       <PageRoadMap />
 
       <div className="page-section" data-section-label="Overview">
         <CaseStudyIntro
-          pageTitle="The Birth of CareerStarter"
+          pageTitle="Performance Profiles & Verifications"
           summaryRoles={summaryRoles}
           summary={summary}
           problems={problems}
           firstRowMembers={firstRowMembers}
           secondRowMembers={secondRowMembers}
+          firstRowMembersTitle={firstRowMembersTitle}
+          secondRowMembersTitle={secondRowMembersTitle}
         />
       </div>
 
-      <div className="page-section" data-section-label="Product Video">
+      {/* <div className="page-section" data-section-label="Product Video">
         <ProductVideoTabs />
       </div>
 
@@ -48,14 +52,18 @@ const CareerStarter = ({ scrollPosition }) => {
           spacing={{ xs: 0, md: 7 }}
           sx={{ mb: 15 }}
         >
-          <Grid item xs={12} className="career-starter__common-paragraph">
+          <Grid
+            item
+            xs={12}
+            className="profiles-and-verifications__common-paragraph"
+          >
             <h2>User Testing Plan</h2>
           </Grid>
           <Grid
             item
             xs={12}
             md={6}
-            className="career-starter__common-paragraph"
+            className="profiles-and-verifications__common-paragraph"
           >
             <p>
               Can entry-level job seekers seamlessly sign up and access the
@@ -70,7 +78,7 @@ const CareerStarter = ({ scrollPosition }) => {
             item
             xs={12}
             md={6}
-            className="career-starter__common-paragraph"
+            className="profiles-and-verifications__common-paragraph"
           >
             <span>
               The organization’s culture built and shipped out products based on
@@ -105,14 +113,18 @@ const CareerStarter = ({ scrollPosition }) => {
           spacing={{ xs: 0, md: 7 }}
           sx={{ mb: 15 }}
         >
-          <Grid item xs={12} className="career-starter__common-paragraph">
+          <Grid
+            item
+            xs={12}
+            className="profiles-and-verifications__common-paragraph"
+          >
             <h2>Our Findings</h2>
           </Grid>
           <Grid
             item
             xs={12}
             md={6}
-            className="career-starter__common-paragraph"
+            className="profiles-and-verifications__common-paragraph"
           >
             <p>
               5 out of 5 users stated that the messaging on the CareerStarter’s
@@ -133,10 +145,10 @@ const CareerStarter = ({ scrollPosition }) => {
             item
             xs={12}
             md={6}
-            className="career-starter__common-paragraph"
+            className="profiles-and-verifications__common-paragraph"
           >
             <span>
-              <ul className="career-starter__ut-report-list">
+              <ul className="profiles-and-verifications__ut-report-list">
                 <li>
                   Employer representatives requested the need to search job
                   seekers who carry an National Center for Construction
@@ -166,14 +178,18 @@ const CareerStarter = ({ scrollPosition }) => {
           spacing={{ xs: 0, md: 7 }}
           sx={{ mb: 15 }}
         >
-          <Grid item xs={12} className="career-starter__common-paragraph">
+          <Grid
+            item
+            xs={12}
+            className="profiles-and-verifications__common-paragraph"
+          >
             <h2>Post-Launch User Research</h2>
           </Grid>
           <Grid
             item
             xs={12}
             md={6}
-            className="career-starter__common-paragraph"
+            className="profiles-and-verifications__common-paragraph"
           >
             <p>
               Since February 2022, CareerStarter gained 2 major sponsorships
@@ -205,7 +221,7 @@ const CareerStarter = ({ scrollPosition }) => {
             item
             xs={12}
             md={6}
-            className="career-starter__common-paragraph"
+            className="profiles-and-verifications__common-paragraph"
           >
             <span>
               The product’s current goal is to gain more insight and discovery
@@ -250,14 +266,18 @@ const CareerStarter = ({ scrollPosition }) => {
           spacing={{ xs: 0, md: 7 }}
           sx={{ mb: 15 }}
         >
-          <Grid item xs={12} className="career-starter__common-paragraph">
+          <Grid
+            item
+            xs={12}
+            className="profiles-and-verifications__common-paragraph"
+          >
             <h2>Whiteboarding Sessions</h2>
           </Grid>
           <Grid
             item
             xs={12}
             md={6}
-            className="career-starter__common-paragraph"
+            className="profiles-and-verifications__common-paragraph"
           >
             <p>
               Our goal is to expand on platform utilization within classroom and
@@ -269,7 +289,7 @@ const CareerStarter = ({ scrollPosition }) => {
             item
             xs={12}
             md={6}
-            className="career-starter__common-paragraph"
+            className="profiles-and-verifications__common-paragraph"
           >
             <span>
               I’ve facilitated two whiteboard sessions to go over
@@ -278,7 +298,7 @@ const CareerStarter = ({ scrollPosition }) => {
               wanted to know the following:{' '}
             </span>
             <span>
-              <ul className="career-starter__ut-report-list">
+              <ul className="profiles-and-verifications__ut-report-list">
                 <li>
                   What feedback do we want to know about how our users are
                   engaging within the platform?
@@ -303,14 +323,18 @@ const CareerStarter = ({ scrollPosition }) => {
           spacing={{ xs: 0, md: 7 }}
           sx={{ mb: 15 }}
         >
-          <Grid item xs={12} className="career-starter__common-paragraph">
+          <Grid
+            item
+            xs={12}
+            className="profiles-and-verifications__common-paragraph"
+          >
             <h2>Put a hold on user testing. We have priorities to sort out.</h2>
           </Grid>
           <Grid
             item
             xs={12}
             md={6}
-            className="career-starter__common-paragraph"
+            className="profiles-and-verifications__common-paragraph"
           >
             <p>
               The goal is to have the product requirements built out by August
@@ -321,7 +345,7 @@ const CareerStarter = ({ scrollPosition }) => {
             item
             xs={12}
             md={6}
-            className="career-starter__common-paragraph"
+            className="profiles-and-verifications__common-paragraph"
           >
             <span>
               As the Case Manager user testing plan was created in June 2022,
@@ -354,14 +378,18 @@ const CareerStarter = ({ scrollPosition }) => {
           spacing={{ xs: 0, md: 7 }}
           sx={{ mb: 15 }}
         >
-          <Grid item xs={12} className="career-starter__common-paragraph">
+          <Grid
+            item
+            xs={12}
+            className="profiles-and-verifications__common-paragraph"
+          >
             <h2>Reflection</h2>
           </Grid>
           <Grid
             item
             xs={12}
             md={6}
-            className="career-starter__common-paragraph"
+            className="profiles-and-verifications__common-paragraph"
           >
             <p>
               Not all products abide by a linear UX/UI process of what most
@@ -372,7 +400,7 @@ const CareerStarter = ({ scrollPosition }) => {
             item
             xs={12}
             md={6}
-            className="career-starter__common-paragraph"
+            className="profiles-and-verifications__common-paragraph"
           >
             <span>
               As CareerStarter being a product to conduct a variety of UX and UI
@@ -390,14 +418,14 @@ const CareerStarter = ({ scrollPosition }) => {
             </span>
           </Grid>
         </Grid>
-      </div>
+      </div> */}
 
       <NextCaseStudy
-        csLink={EVALUATION_TOOL}
-        csName="The Need for an Evalution Tool"
+        csLink={TALENT_PIPELINE}
+        csName="Discover the Talent Pipeline"
       />
     </div>
   );
 };
 
-export default trackWindowScroll(CareerStarter);
+export default trackWindowScroll(ProfilesAndVerifications);

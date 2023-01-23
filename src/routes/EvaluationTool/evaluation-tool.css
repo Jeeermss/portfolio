@@ -1,0 +1,54 @@
+.evaluation-tool {
+  color: var(--charcoal);
+}
+
+.evaluation-tool__common-paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.evaluation-tool__common-paragraph h2 {
+  font-weight: 750;
+  font-size: 32px;
+  line-height: 38px;
+  color: var(--charcoal);
+  font-family: 'AvenirBlack';
+  width: 50%;
+}
+
+.evaluation-tool__common-paragraph p {
+  font-weight: 750;
+  font-size: 28px;
+  line-height: 42px;
+  color: var(--gray);
+  font-family: 'AvenirBlack';
+}
+
+.evaluation-tool__common-paragraph span {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: var(--charcoal);
+}
+
+.evaluation-tool__common-paragraph ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.evaluation-tool__common-paragraph ul {
+  list-style-image: url('/public/images/case_studies/career_starter/bullet_point.svg');
+}
+
+.evaluation-tool__common-paragraph ul li {
+  padding-left: 8px;
+}
+
+/* MaterialUI breakpoint `md` */
+@media (max-width: 900px) {
+  .evaluation-tool__common-paragraph h2 {
+    width: 100%;
+  }
+}

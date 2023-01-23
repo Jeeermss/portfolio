@@ -10,6 +10,9 @@
   padding: 24px;
 }
 
+.case-study-card-media__image-container {
+  position: relative;
+}
 .case-study-card-media__image {
   /* width: 100%; */
 }

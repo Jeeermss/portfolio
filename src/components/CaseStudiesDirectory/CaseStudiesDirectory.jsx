@@ -6,7 +6,7 @@ import {
   TALENT_PIPELINE,
   CAREER_STARTER,
   EVALUATION_TOOL,
-  PERFORMANCE_PROFILES,
+  PROFILES_AND_VERIFICATIONS,
 } from '../../constants/routes';
 import './case-study-directory.css';
 
@@ -53,7 +53,7 @@ const CaseStudiesDirectory = () => {
             // cardImageUrl="images/cs-1.svg"
             cardImageAlt="Case Study 2"
             onClick={() =>
-              navigate(PERFORMANCE_PROFILES, { state: { location } })
+              navigate(PROFILES_AND_VERIFICATIONS, { state: { location } })
             }
           />
         </Grid>

@@ -29,6 +29,7 @@ import ImageCarousel from '../../components/ImageCarousel';
 const EvaluationTool = ({ scrollPosition }) => {
   const [observationsInterviewsActiveTab, setObservationsInterviewsActiveTab] =
     useState(0);
+  const [personasJourneysActiveTab, setPersonasJourneysActiveTab] = useState(0);
 
   return (
     <div className="evaluation-tool">
@@ -506,6 +507,265 @@ const EvaluationTool = ({ scrollPosition }) => {
                 ]}
               />
             </ScrollAnimation>
+          </Grid>
+        </Grid>
+      </div>
+
+      <div className="page-section" data-section-label="Synthesize and Analyze">
+        <Grid
+          container
+          rowGap={{ xs: 7, md: 0 }}
+          spacing={{ xs: 0, md: 7 }}
+          sx={{ mb: 15 }}
+        >
+          <Grid item xs={12} className="evaluation-tool__common-paragraph">
+            <h2>Synthesize and Analyze</h2>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            className="evaluation-tool__common-paragraph"
+          >
+            <p>
+              We dissected the gathered data and grouped them based on emerging
+              themes.
+            </p>
+            <span>
+              <button className="evaluation-tool__affinity-map-btn">
+                <img src="images/eye_icon.svg" alt="eye icon" />
+                Affinity Map on Figma
+              </button>
+            </span>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            className="evaluation-tool__common-paragraph"
+            sx={{
+              position: 'relative',
+            }}
+          >
+            <span>
+              Through this process, we were able to identify four elements that
+              we could then formulate insights from.
+            </span>
+            <span>
+              <ul>
+                <li>Problems</li>
+                <li>Solutions</li>
+                <li>Users</li>
+                <li>Goals</li>
+              </ul>
+            </span>
+          </Grid>
+        </Grid>
+      </div>
+
+      <div
+        className="page-section"
+        data-section-label="Personas and Customer Journeys"
+      >
+        <Grid
+          container
+          rowGap={{ xs: 7, md: 0 }}
+          spacing={{ xs: 0, md: 7 }}
+          sx={{ mb: 15 }}
+        >
+          <Grid item xs={12} className="evaluation-tool__common-paragraph">
+            <h2>Personas and Customer Journeys</h2>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            className="evaluation-tool__common-paragraph"
+          >
+            <p>
+              As part of crafting up an in-person 3-day design sprint, the team
+              created personas and customer journeys in continuation to educate
+              the organization about the UX/UI Design process.
+            </p>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            className="evaluation-tool__common-paragraph"
+          >
+            <span>
+              These personas and customer journeys are based off of the data
+              accumulated from the observations and interviews.
+            </span>
+            <span>
+              We wanted our team members to empathize and understand our
+              customers in order to make user centered decisions within the
+              products we plan to build.
+            </span>
+          </Grid>
+          <Grid item xs={12}>
+            <ScrollAnimation animateOnce animateIn="animate__pulse">
+              <Tabs
+                activeTab={personasJourneysActiveTab}
+                setActiveTab={(tabIndex) =>
+                  setPersonasJourneysActiveTab(tabIndex)
+                }
+                tabsData={[
+                  {
+                    name: 'Performance Profiles',
+                    content: (
+                      <ImageCarousel
+                        images={[
+                          'images/case_studies/evaluation_tool/personas_customer_journeys.svg',
+                          'images/case_studies/evaluation_tool/personas_customer_journeys.svg',
+                        ]}
+                        scrollingContent={true}
+                      />
+                    ),
+                  },
+                  {
+                    name: 'Performance Verifications',
+                    content: (
+                      <ImageCarousel
+                        images={[
+                          'images/case_studies/evaluation_tool/personas_customer_journeys.svg',
+                          'images/case_studies/evaluation_tool/personas_customer_journeys.svg',
+                        ]}
+                        scrollingContent={true}
+                      />
+                    ),
+                  },
+                ]}
+              />
+            </ScrollAnimation>
+          </Grid>
+        </Grid>
+      </div>
+
+      <div className="page-section" data-section-label="Design Sprint">
+        <Grid
+          container
+          rowGap={{ xs: 7, md: 0 }}
+          spacing={{ xs: 0, md: 7 }}
+          sx={{ mb: 15 }}
+        >
+          <Grid item xs={12} className="evaluation-tool__common-paragraph">
+            <h2>My First Design Sprint Facilitation</h2>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            className="evaluation-tool__common-paragraph"
+          >
+            <p>
+              I ended my Summer 2022 by crafting up an extensive 3-day design
+              sprint plan, presentation deck, and workshop exercises.
+            </p>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            className="evaluation-tool__common-paragraph"
+            sx={{
+              position: 'relative',
+            }}
+          >
+            <span className="font-family-black">Key Takeaways:</span>
+            <span>
+              <ul>
+                <li>
+                  There is such a thing as “Improv Design Sprint” as you uncover
+                  how each team member dynamically works together and plan
+                  instantaneously based off of their behaviors.
+                </li>
+                <li>
+                  If they do not want to do it themselves in smaller groups, you
+                  have to take action and visualize ideas yourself in one large
+                  big group.*
+                  <br />
+                  <span
+                    style={{
+                      fontSize: '16px',
+                      color: '#808080',
+                      lineHeight: '19px',
+                      display: 'flex',
+                      marginTop: '16px',
+                    }}
+                  >
+                    *Note - <br />
+                    Ask me during the interview and I will expand on this.
+                  </span>
+                </li>
+                <li>
+                  Is it the Product Designers duty to identify the gaps within
+                  the current business requirements? <br />
+                  <br />I come to realize business and user requirements work
+                  hand-in-hand.
+                </li>
+              </ul>
+            </span>
+          </Grid>
+          <Grid item xs={12}>
+            <ImageCarousel
+              images={[
+                'images/case_studies/evaluation_tool/first_design_sprint_facilitation_1.svg',
+                'images/case_studies/evaluation_tool/first_design_sprint_facilitation_2.svg',
+              ]}
+            />
+          </Grid>
+        </Grid>
+      </div>
+
+      <div className="page-section" data-section-label="Cognitive Thoughts">
+        <Grid
+          container
+          rowGap={{ xs: 7, md: 0 }}
+          spacing={{ xs: 0, md: 7 }}
+          sx={{ mb: 15 }}
+        >
+          <Grid item xs={12} className="evaluation-tool__common-paragraph">
+            <h2>Cognitive Thoughts</h2>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            className="evaluation-tool__common-paragraph"
+          >
+            <p>
+              In the beginning stages of my career, I thrived for an opportunity
+              to conduct UX research because I believe in validating our
+              solutions based off of data.
+            </p>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            className="evaluation-tool__common-paragraph"
+            sx={{
+              position: 'relative',
+            }}
+          >
+            <span>
+              I have come to realize that not all organizations or companies in
+              the digital landscape respect UX/UI Design as the core foundation
+              of building a successful product.
+            </span>
+            <span>
+              Time and time again, we see products become massively successful
+              because the company molds the product based on user wants and
+              needs (take Apple as an example).
+            </span>
+            <span>
+              I do not know when that day will arrives for the organization to
+              realize there must be a product development standardization
+              process in order to build a successful application for the
+              customers.
+            </span>
           </Grid>
         </Grid>
       </div>

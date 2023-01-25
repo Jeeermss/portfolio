@@ -1,16 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Carousel from 'react-material-ui-carousel';
 import {
   ArrowCircleRightOutlined,
   ArrowCircleLeftOutlined,
 } from '@mui/icons-material/';
 
+import ScrollingContainer from './ScrollingContainer';
+
 const arrowButtonsStyle = {
   color: '#C9C9C9',
   fontSize: '50px',
 };
 
-const ImageCarousel = ({ images, label }) => {
+const ImageCarousel = ({ images, scrollingContent = false }) => {
   const [firstImgLoaded, setFirstImgLoaded] = useState(false);
   const [showIndicators, setShowIndicators] = useState(false);
 
@@ -23,36 +25,38 @@ const ImageCarousel = ({ images, label }) => {
         alt="checker"
       />
       {firstImgLoaded ? (
-        <Carousel
+        <div
           className="image-carousel"
-          navButtonsAlwaysVisible
-          NextIcon={<ArrowCircleRightOutlined sx={arrowButtonsStyle} />}
-          PrevIcon={<ArrowCircleLeftOutlined sx={arrowButtonsStyle} />}
-          navButtonsProps={{
-            style: {
-              backgroundColor: 'rgba(0, 0, 0, 0.4)',
-              borderRadius: 0,
-              margin: 0,
-              padding: '36px 16px',
-            },
-            onMouseEnter: () => setShowIndicators(true),
-            onMouseLeave: () => setShowIndicators(false),
-          }}
-          autoPlay={false}
-          animation="slide"
-          indicators={showIndicators}
+          onMouseEnter={() => setShowIndicators(true)}
+          onMouseLeave={() => setShowIndicators(false)}
         >
-          {images.map((item, i) => (
-            <img
-              src={item}
-              key={i}
-              alt="carousel"
-              width="100%"
-              onMouseEnter={() => setShowIndicators(true)}
-              onMouseLeave={() => setShowIndicators(false)}
-            />
-          ))}
-        </Carousel>
+          <Carousel
+            navButtonsAlwaysVisible
+            NextIcon={<ArrowCircleRightOutlined sx={arrowButtonsStyle} />}
+            PrevIcon={<ArrowCircleLeftOutlined sx={arrowButtonsStyle} />}
+            navButtonsProps={{
+              style: {
+                backgroundColor: 'rgba(0, 0, 0, 0.4)',
+                borderRadius: 0,
+                margin: 0,
+                padding: '36px 16px',
+              },
+            }}
+            autoPlay={false}
+            animation="slide"
+            indicators={showIndicators}
+          >
+            {scrollingContent
+              ? images.map((item, i) => (
+                  <ScrollingContainer key={i}>
+                    <img src={item} alt="carousel" width="100%" />
+                  </ScrollingContainer>
+                ))
+              : images.map((item, i) => (
+                  <img src={item} key={i} alt="carousel" width="100%" />
+                ))}
+          </Carousel>
+        </div>
       ) : null}
     </>
   );

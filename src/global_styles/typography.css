@@ -92,3 +92,7 @@
 .text-white {
   color: var(--white);
 }
+
+.font-family-black {
+  font-family: 'AvenirBlack';
+}

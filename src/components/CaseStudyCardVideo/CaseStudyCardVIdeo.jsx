@@ -27,9 +27,11 @@ const CaseStudyCardVideo = ({
         className="case-study-card-video__player"
       />
       <CardContent className="case-study-card-video__content">
-        <span className="case-study-card-video__content-text">
-          {cardContent}
-        </span>
+        <div className="case-study-card-video__content-text">
+          {cardContent.map((content, idx) => (
+            <p key={idx}>{content}</p>
+          ))}
+        </div>
       </CardContent>
     </Card>
   );

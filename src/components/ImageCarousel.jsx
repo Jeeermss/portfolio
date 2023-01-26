@@ -12,7 +12,7 @@ const arrowButtonsStyle = {
   fontSize: '50px',
 };
 
-const ImageCarousel = ({ images, scrollingContent = false }) => {
+const ImageCarousel = ({ images, noIndicators, scrollingContent = false }) => {
   const [firstImgLoaded, setFirstImgLoaded] = useState(false);
   const [showIndicators, setShowIndicators] = useState(false);
 
@@ -44,7 +44,7 @@ const ImageCarousel = ({ images, scrollingContent = false }) => {
             }}
             autoPlay={false}
             animation="slide"
-            indicators={showIndicators}
+            indicators={noIndicators ? false : showIndicators}
           >
             {scrollingContent
               ? images.map((item, i) => (

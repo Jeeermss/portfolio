@@ -719,7 +719,7 @@ const EvaluationTool = ({ scrollPosition }) => {
         </Grid>
       </div>
 
-      <div className="page-section" data-section-label="Cognitive Thoughts">
+      <div className="page-section" data-section-label="Cogitated Thoughts">
         <Grid
           container
           rowGap={{ xs: 7, md: 0 }}

@@ -4,3 +4,5 @@ export const CAREER_STARTER = '/career-starter';
 export const TALENT_PIPELINE = '/talent-pipeline';
 export const EVALUATION_TOOL = '/evaluation-tool';
 export const PROFILES_AND_VERIFICATIONS = '/profiles-and-verifications';
+export const PASSWORD_PROTECTED = '/password-protected';
+export const PRIVATE_URL = '/private-stuff';

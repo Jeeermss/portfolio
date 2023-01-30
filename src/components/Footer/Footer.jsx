@@ -1,5 +1,9 @@
 import React from 'react';
-import { Link, useLocation, matchPath } from 'react-router-dom';
+import {
+  Link,
+  useLocation,
+  // matchPath
+} from 'react-router-dom';
 import { Container } from '@mui/material';
 import {
   LazyLoadImage,
@@ -31,12 +35,12 @@ const Footer = ({ scrollPosition }) => {
     return (
       <ul className={className}>
         {menus.map(({ path, menuLabel }) => {
-          const isActive = !!matchPath({ path, end: true }, location.pathname);
+          // const isActive = !!matchPath({ path, end: true }, location.pathname);
           return (
             <li key={path}>
               <Link
                 to={path}
-                className={`${isActive ? 'active-link' : ''}`}
+                // className={`${isActive ? 'active-link' : ''}`}
                 state={{ location }}
               >
                 {menuLabel}

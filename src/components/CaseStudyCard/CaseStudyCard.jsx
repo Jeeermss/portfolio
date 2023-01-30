@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './case-study-card.css';
 
 const CaseStudyCard = ({
@@ -9,8 +10,14 @@ const CaseStudyCard = ({
   cardImageAlt,
   onClick,
 }) => {
+  const [cardHovered, setCardHovered] = useState(false);
   return (
-    <div className="card" onClick={onClick}>
+    <div
+      className="card"
+      onClick={onClick}
+      onMouseEnter={() => setCardHovered(true)}
+      onMouseLeave={() => setCardHovered(false)}
+    >
       <div className="card-header">
         <h4 className="heading-level-4">{header}</h4>
         <p className="card-header__flag body-2">{flag}</p>
@@ -26,7 +33,7 @@ const CaseStudyCard = ({
       >
         {/* {cardImageUrl ? <img src={cardImageUrl} alt={cardImageAlt} /> : null} */}
       </div>
-      <div className="card-content">
+      <div className={`card-content ${cardHovered ? 'card-hovered' : ''}`}>
         <h4 className="card-content__heading heading-level-4-card">
           {contentHeader}
         </h4>

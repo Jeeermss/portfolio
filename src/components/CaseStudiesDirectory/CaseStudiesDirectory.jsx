@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Grid } from '@mui/material';
 import CaseStudyCard from '../CaseStudyCard/CaseStudyCard';
@@ -7,12 +8,20 @@ import {
   CAREER_STARTER,
   EVALUATION_TOOL,
   PROFILES_AND_VERIFICATIONS,
+  CASE_STUDIES,
 } from '../../constants/routes';
 import './case-study-directory.css';
 
 const CaseStudiesDirectory = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const caseStudiesRef = useRef();
+
+  useEffect(() => {
+    if (caseStudiesRef.current && location.pathname === CASE_STUDIES) {
+      window.scrollTo(0, caseStudiesRef.current.offsetTop);
+    }
+  }, [location]);
 
   return (
     <Grid container className="case-study-directory">
@@ -30,6 +39,7 @@ const CaseStudiesDirectory = () => {
             md: 'space-between',
           },
         }}
+        ref={caseStudiesRef}
       >
         <Grid item xs={12} md={6} className="case-studies-card-wrapper">
           <CaseStudyCard

@@ -14,7 +14,6 @@ const arrowButtonsStyle = {
 
 const ImageCarousel = ({ images, noIndicators, scrollingContent = false }) => {
   const [firstImgLoaded, setFirstImgLoaded] = useState(false);
-  const [showIndicators, setShowIndicators] = useState(false);
 
   return (
     <>
@@ -25,26 +24,42 @@ const ImageCarousel = ({ images, noIndicators, scrollingContent = false }) => {
         alt="checker"
       />
       {firstImgLoaded ? (
-        <div
-          className="image-carousel"
-          onMouseEnter={() => setShowIndicators(true)}
-          onMouseLeave={() => setShowIndicators(false)}
-        >
+        <div className="image-carousel">
           <Carousel
             navButtonsAlwaysVisible
             NextIcon={<ArrowCircleRightOutlined sx={arrowButtonsStyle} />}
             PrevIcon={<ArrowCircleLeftOutlined sx={arrowButtonsStyle} />}
             navButtonsProps={{
               style: {
-                backgroundColor: 'rgba(0, 0, 0, 0.4)',
+                backgroundColor: 'rgba(0, 0, 0, 0.150)',
                 borderRadius: 0,
                 margin: 0,
                 padding: '36px 16px',
               },
             }}
+            sx={{
+              /* Left button */
+              '.css-hn784z:hover button': {
+                opacity: '1 !important',
+                backgroundColor: 'rgba(0, 0, 0, 0.3) !important',
+              },
+              /* Right button */
+              '.css-1abc02a:hover button': {
+                opacity: '1 !important',
+                backgroundColor: 'rgba(0, 0, 0, 0.3) !important',
+              },
+              /* Left button */
+              '.css-hn784z button svg': {
+                color: '#fff',
+              },
+              /* Right button */
+              '.css-1abc02a button svg': {
+                color: '#fff',
+              },
+            }}
             autoPlay={false}
             animation="slide"
-            indicators={noIndicators ? false : showIndicators}
+            indicators={noIndicators ? false : true}
           >
             {scrollingContent
               ? images.map((item, i) => (

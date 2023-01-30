@@ -15,32 +15,32 @@ const AboutMeItem = ({
   scrollPosition,
 }) => {
   return (
-    <div className="about-me-item">
-      <div className="about-me-item__logo">
-        <ScrollAnimation animateOnce animateIn="animate__pulse">
+    <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+      <div className="about-me-item">
+        <div className="about-me-item__logo">
           <LazyLoadImage
             scrollPosition={scrollPosition}
             src={imgUrl}
             alt="exp"
           />
-        </ScrollAnimation>
+        </div>
+        <div className="about-me-item__details">
+          {customContent ? (
+            customContent.map((item, idx) => (
+              <p key={idx} className="about-me-item__details-custom-item">
+                {item}
+              </p>
+            ))
+          ) : (
+            <>
+              <p className="about-me-item__details-name">{name}</p>
+              <p className="about-me-item__details-position">{position}</p>
+              <p className="about-me-item__details-duration">{duration}</p>
+            </>
+          )}
+        </div>
       </div>
-      <div className="about-me-item__details">
-        {customContent ? (
-          customContent.map((item, idx) => (
-            <p key={idx} className="about-me-item__details-custom-item">
-              {item}
-            </p>
-          ))
-        ) : (
-          <>
-            <p className="about-me-item__details-name">{name}</p>
-            <p className="about-me-item__details-position">{position}</p>
-            <p className="about-me-item__details-duration">{duration}</p>
-          </>
-        )}
-      </div>
-    </div>
+    </ScrollAnimation>
   );
 };
 

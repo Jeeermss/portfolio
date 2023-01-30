@@ -37,10 +37,10 @@ const Hero = ({ scrollPosition }) => {
     >
       <StyledDiv sx={{ mb: { xs: 3, md: 0 } }} className="hero__first-col">
         <ScrollAnimation
-          animateOnce
-          animateIn="animate__backInLeft"
-          duration={2}
+          animateIn="animate__fadeInUp"
+          animatePreScroll
           initiallyVisible
+          animateOnce
         >
           <StyledHeading
             sx={{
@@ -109,9 +109,10 @@ const Hero = ({ scrollPosition }) => {
         className="hero__second-col"
       >
         <ScrollAnimation
-          animateOnce
-          animateIn="animate__bounce"
+          animateIn="animate__fadeInUp"
+          animatePreScroll
           initiallyVisible
+          animateOnce
         >
           <StyledImg
             scrollPosition={scrollPosition}
@@ -128,10 +129,10 @@ const Hero = ({ scrollPosition }) => {
         className="hero__third-col"
       >
         <ScrollAnimation
-          animateOnce
-          animateIn="animate__backInRight"
-          duration={2}
+          animateIn="animate__fadeInUp"
+          animatePreScroll
           initiallyVisible
+          animateOnce
         >
           <StyledHeading
             sx={{

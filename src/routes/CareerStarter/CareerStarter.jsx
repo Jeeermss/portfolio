@@ -85,7 +85,7 @@ const CareerStarter = ({ scrollPosition }) => {
             </span>
           </Grid>
           <Grid item xs={12}>
-            <ScrollAnimation animateOnce animateIn="animate__pulse">
+            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <LazyLoadImage
                 scrollPosition={scrollPosition}
                 src="images/case_studies/career_starter/ut_plan.svg"
@@ -180,8 +180,8 @@ const CareerStarter = ({ scrollPosition }) => {
               within the industry.
             </p>
             <ScrollAnimation
-              animateOnce
-              animateIn="animate__backInLeft"
+              animateIn="animate__fadeInUp"
+              animatePreScroll
               style={{
                 display: 'flex',
                 gap: '24px',
@@ -219,7 +219,7 @@ const CareerStarter = ({ scrollPosition }) => {
             </span>
           </Grid>
           <Grid item xs={12}>
-            <ScrollAnimation animateOnce animateIn="animate__pulse">
+            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <LazyLoadImage
                 scrollPosition={scrollPosition}
                 src="images/case_studies/career_starter/post_research_image_1.svg"
@@ -230,7 +230,7 @@ const CareerStarter = ({ scrollPosition }) => {
             </ScrollAnimation>
           </Grid>
           <Grid item xs={12}>
-            <ScrollAnimation animateOnce animateIn="animate__pulse">
+            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <LazyLoadImage
                 scrollPosition={scrollPosition}
                 src="images/case_studies/career_starter/post_research_image_2.svg"
@@ -334,7 +334,7 @@ const CareerStarter = ({ scrollPosition }) => {
             </span>
           </Grid>
           <Grid item xs={12}>
-            <ScrollAnimation animateOnce animateIn="animate__pulse">
+            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <LazyLoadImage
                 scrollPosition={scrollPosition}
                 src="images/case_studies/career_starter/high_low_priorities.svg"

@@ -61,7 +61,11 @@ const CaseStudyIntro = ({
                 {firstRowMembers.map((member, idx) => (
                   <Grid key={idx} item xs={6} sm={3} md={3}>
                     <div className="cs-intro__team-member">
-                      <ScrollAnimation animateOnce animateIn="animate__pulse">
+                      <ScrollAnimation
+                        animateIn="animate__fadeInUp"
+                        animatePreScroll
+                        offset={250}
+                      >
                         <LazyLoadImage
                           scrollPosition={scrollPosition}
                           src={member.imgUrl}
@@ -81,7 +85,11 @@ const CaseStudyIntro = ({
                 {secondRowMembers.map((member, idx) => (
                   <Grid key={idx} item xs={6} sm={3} md={3}>
                     <div className="cs-intro__team-member">
-                      <ScrollAnimation animateOnce animateIn="animate__pulse">
+                      <ScrollAnimation
+                        animateIn="animate__fadeInUp"
+                        animatePreScroll
+                        offset={250}
+                      >
                         <LazyLoadImage
                           scrollPosition={scrollPosition}
                           effect="blur"

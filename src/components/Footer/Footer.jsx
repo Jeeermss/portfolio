@@ -65,19 +65,20 @@ const Footer = ({ scrollPosition }) => {
             <div className="footer__social-media-icons">
               <LazyLoadImage
                 scrollPosition={scrollPosition}
+                src="images/social_media/behance.svg"
                 effect="blur"
-                src="images/social_media/behance_2.svg"
                 alt="behance"
               />
               <LazyLoadImage
                 scrollPosition={scrollPosition}
                 src="images/social_media/instagram.svg"
+                effect="blur"
                 alt="instagram"
               />
               <LazyLoadImage
                 scrollPosition={scrollPosition}
-                effect="blur"
                 src="images/social_media/linkedin.svg"
+                effect="blur"
                 alt="linkedin"
               />
             </div>

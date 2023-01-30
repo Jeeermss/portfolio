@@ -25,7 +25,7 @@ import './global_styles/typography.css';
 import './global_styles/mui-breakpoints.css';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import 'react-toastify/dist/ReactToastify.css';
-// import 'animate.css/animate.min.css';
+import 'animate.css/animate.min.css';
 
 const TalentPipeline = React.lazy(() =>
   import('./routes/TalentPipeline/TalentPipeline')
@@ -50,7 +50,7 @@ function App() {
       authStore.setIsAuthenticated(true);
       return;
     }
-    // authStore.setIsAuthenticated(false);
+    authStore.setIsAuthenticated(false);
   });
 
   return (

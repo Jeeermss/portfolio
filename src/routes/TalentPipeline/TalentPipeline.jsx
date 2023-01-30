@@ -95,7 +95,7 @@ const TalentPipeline = ({ scrollPosition }) => {
           sx={{ mb: 15 }}
         >
           <Grid item xs={12} md={4} className="talent-pipeline__role">
-            <ScrollAnimation animateOnce animateIn="animate__pulse">
+            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <LazyLoadImage
                 scrollPosition={scrollPosition}
                 src="images/case_studies/talent_pipeline/job_seeker.svg"
@@ -106,7 +106,7 @@ const TalentPipeline = ({ scrollPosition }) => {
             <span>Entry-level Construction and Maintenance Job Seekers</span>
           </Grid>
           <Grid item xs={12} md={4} className="talent-pipeline__role">
-            <ScrollAnimation animateOnce animateIn="animate__pulse">
+            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <LazyLoadImage
                 scrollPosition={scrollPosition}
                 src="images/case_studies/talent_pipeline/employee_rep.svg"
@@ -119,7 +119,7 @@ const TalentPipeline = ({ scrollPosition }) => {
             </span>
           </Grid>
           <Grid item xs={12} md={4} className="talent-pipeline__role">
-            <ScrollAnimation animateOnce animateIn="animate__pulse">
+            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <LazyLoadImage
                 scrollPosition={scrollPosition}
                 src="images/case_studies/talent_pipeline/training_instructor.svg"
@@ -157,7 +157,7 @@ const TalentPipeline = ({ scrollPosition }) => {
           </Grid>
           <Grid item xs={12} md={6} className="talent-pipeline__personas">
             <div>
-              <ScrollAnimation animateOnce animateIn="animate__backInRight">
+              <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
                 <LazyLoadImage
                   scrollPosition={scrollPosition}
                   src="images/case_studies/talent_pipeline/personas_female.svg"
@@ -165,7 +165,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   alt="female persona"
                 />
               </ScrollAnimation>
-              <ScrollAnimation animateOnce animateIn="animate__backInRight">
+              <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
                 <LazyLoadImage
                   scrollPosition={scrollPosition}
                   src="images/case_studies/talent_pipeline/personas_male.svg"
@@ -255,8 +255,8 @@ const TalentPipeline = ({ scrollPosition }) => {
           </Grid>
           <Grid item xs={12}>
             <ScrollAnimation
-              animateOnce
-              animateIn="animate__pulse"
+              animateIn="animate__fadeInUp"
+              animatePreScroll
               initiallyVisible
             >
               <LazyLoadImage
@@ -270,8 +270,8 @@ const TalentPipeline = ({ scrollPosition }) => {
           </Grid>
           <Grid item xs={12}>
             <ScrollAnimation
-              animateOnce
-              animateIn="animate__pulse"
+              animateIn="animate__fadeInUp"
+              animatePreScroll
               initiallyVisible
             >
               <LazyLoadImage
@@ -317,8 +317,8 @@ const TalentPipeline = ({ scrollPosition }) => {
           </Grid>
           <Grid item xs={12}>
             <ScrollAnimation
-              animateOnce
-              animateIn="animate__pulse"
+              animateIn="animate__fadeInUp"
+              animatePreScroll
               initiallyVisible
             >
               <ScrollingContainer>
@@ -382,8 +382,8 @@ const TalentPipeline = ({ scrollPosition }) => {
           </Grid>
           <Grid item xs={12}>
             <ScrollAnimation
-              animateOnce
-              animateIn="animate__pulse"
+              animateIn="animate__fadeInUp"
+              animatePreScroll
               initiallyVisible
             >
               <LazyLoadImage
@@ -397,8 +397,8 @@ const TalentPipeline = ({ scrollPosition }) => {
           </Grid>
           <Grid item xs={12}>
             <ScrollAnimation
-              animateOnce
-              animateIn="animate__pulse"
+              animateIn="animate__fadeInUp"
+              animatePreScroll
               initiallyVisible
             >
               <LazyLoadImage
@@ -412,8 +412,8 @@ const TalentPipeline = ({ scrollPosition }) => {
           </Grid>
           <Grid item xs={12}>
             <ScrollAnimation
-              animateOnce
-              animateIn="animate__pulse"
+              animateIn="animate__fadeInUp"
+              animatePreScroll
               initiallyVisible
             >
               <LazyLoadImage
@@ -467,8 +467,8 @@ const TalentPipeline = ({ scrollPosition }) => {
           </Grid>
           <Grid item xs={12}>
             <ScrollAnimation
-              animateOnce
-              animateIn="animate__pulse"
+              animateIn="animate__fadeInUp"
+              animatePreScroll
               initiallyVisible
             >
               <LazyLoadImage
@@ -516,8 +516,8 @@ const TalentPipeline = ({ scrollPosition }) => {
           </Grid>
           <Grid item xs={12}>
             <ScrollAnimation
-              animateOnce
-              animateIn="animate__pulse"
+              animateIn="animate__fadeInUp"
+              animatePreScroll
               initiallyVisible
             >
               <ScrollingContainer>

@@ -23,9 +23,6 @@
 
 .tabs__headers-item:hover {
   cursor: pointer;
-  background: #ffffff;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
   color: var(--charcoal);
   font-family: 'AvenirBlack';
   opacity: 0.6;

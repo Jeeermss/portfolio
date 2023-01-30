@@ -111,8 +111,8 @@ const EvaluationTool = ({ scrollPosition }) => {
         >
           <Grid item xs={12}>
             <ScrollAnimation
-              animateOnce
-              animateIn="animate__pulse"
+              animateIn="animate__fadeInUp"
+              animatePreScroll
               initiallyVisible
             >
               <ScrollingContainer>
@@ -165,7 +165,7 @@ const EvaluationTool = ({ scrollPosition }) => {
             </button>
           </Grid>
           <Grid item xs={12}>
-            <ScrollAnimation animateOnce animateIn="animate__pulse">
+            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <LazyLoadImage
                 scrollPosition={scrollPosition}
                 src="images/case_studies/evaluation_tool/user_flow.svg"
@@ -275,7 +275,7 @@ const EvaluationTool = ({ scrollPosition }) => {
             <span>This was a career battle I was willing to take. </span>
           </Grid>
           <Grid item xs={12}>
-            <ScrollAnimation animateOnce animateIn="animate__pulse">
+            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <LazyLoadImage
                 scrollPosition={scrollPosition}
                 src="images/case_studies/evaluation_tool/project_roadmap.svg"
@@ -344,7 +344,7 @@ const EvaluationTool = ({ scrollPosition }) => {
             </span>
           </Grid>
           <Grid item xs={12}>
-            <ScrollAnimation animateOnce animateIn="animate__pulse">
+            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <LazyLoadImage
                 scrollPosition={scrollPosition}
                 src="images/case_studies/evaluation_tool/whiteboard_session_1.svg"
@@ -355,7 +355,7 @@ const EvaluationTool = ({ scrollPosition }) => {
             </ScrollAnimation>
           </Grid>
           <Grid item xs={12}>
-            <ScrollAnimation animateOnce animateIn="animate__pulse">
+            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <LazyLoadImage
                 scrollPosition={scrollPosition}
                 src="images/case_studies/evaluation_tool/whiteboard_session_2.svg"
@@ -420,7 +420,7 @@ const EvaluationTool = ({ scrollPosition }) => {
             </span>
           </Grid>
           <Grid item xs={12}>
-            <ScrollAnimation animateOnce animateIn="animate__pulse">
+            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <LazyLoadImage
                 scrollPosition={scrollPosition}
                 src="images/case_studies/evaluation_tool/first_ux_ui_team_as_lead.svg"
@@ -475,7 +475,7 @@ const EvaluationTool = ({ scrollPosition }) => {
             </span>
           </Grid>
           <Grid item xs={12}>
-            <ScrollAnimation animateOnce animateIn="animate__pulse">
+            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <Tabs
                 activeTab={observationsInterviewsActiveTab}
                 setActiveTab={(tabIndex) =>
@@ -560,6 +560,15 @@ const EvaluationTool = ({ scrollPosition }) => {
               </ul>
             </span>
           </Grid>
+          <Grid item xs={12} className="evaluation-tool__common-paragraph">
+            <iframe
+              style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }}
+              width="100%"
+              height="450"
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FWRO5soZQcri1WG60vkEdYN%2FPP%252FPV-User-Flow%3Ft%3D26xxBvFmfGc9YbId-1"
+              allowFullScreen
+            ></iframe>
+          </Grid>
         </Grid>
       </div>
 
@@ -605,7 +614,7 @@ const EvaluationTool = ({ scrollPosition }) => {
             </span>
           </Grid>
           <Grid item xs={12}>
-            <ScrollAnimation animateOnce animateIn="animate__pulse">
+            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <Tabs
                 activeTab={personasJourneysActiveTab}
                 setActiveTab={(tabIndex) =>

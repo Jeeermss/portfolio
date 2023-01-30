@@ -101,7 +101,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
             </span>
           </Grid>
           <Grid item xs={12}>
-            <ScrollAnimation animateOnce animateIn="animate__pulse">
+            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <Tabs
                 activeTab={userTestingIPActiveTab}
                 setActiveTab={(tabIndex) => setUserTestingIPActiveTab(tabIndex)}
@@ -172,7 +172,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
             </span>
           </Grid>
           <Grid item xs={12}>
-            <ScrollAnimation animateOnce animateIn="animate__pulse">
+            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <Tabs
                 activeTab={userTestingReportActiveTab}
                 setActiveTab={(tabIndex) =>
@@ -260,7 +260,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
             </span>
           </Grid>
           <Grid item xs={12}>
-            <ScrollAnimation animateOnce animateIn="animate__pulse">
+            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <CaseStudyCardCarousel
                 carouselContent={[
                   'It is imperative we design an application that is intuitive, clean, and help educate our users on how to navigate within our products.',
@@ -330,7 +330,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
             </span>
           </Grid>
           <Grid item xs={12}>
-            <ScrollAnimation animateOnce animateIn="animate__pulse">
+            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <CaseStudyCardCarousel
                 carouselContent={[
                   "Let's compare and contrast.",

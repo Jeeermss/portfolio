@@ -235,9 +235,14 @@ const EvaluationTool = ({ scrollPosition }) => {
               <ImageCarousel
                 images={[
                   'images/case_studies/evaluation_tool/initial_mockups_1.svg',
-                  'images/case_studies/evaluation_tool/user_flow.svg',
-                  'images/case_studies/evaluation_tool/initial_mockups_1.svg',
+                  'images/case_studies/evaluation_tool/initial_mockups_2.svg',
+                  'images/case_studies/evaluation_tool/initial_mockups_3.svg',
+                  'images/case_studies/evaluation_tool/initial_mockups_4.svg',
+                  'images/case_studies/evaluation_tool/initial_mockups_5.svg',
+                  'images/case_studies/evaluation_tool/initial_mockups_6.svg',
+                  'images/case_studies/evaluation_tool/initial_mockups_7.svg',
                 ]}
+                toolbarImage="images/case_studies/evaluation_tool/chrome_toolbar.svg"
               />
             </ScrollAnimation>
           </Grid>

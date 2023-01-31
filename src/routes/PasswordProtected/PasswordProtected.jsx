@@ -44,6 +44,7 @@ const PasswordProtected = () => {
             placeholder="Enter Password"
             onFocus={() => setInputFocused(true)}
             onBlur={() => setInputFocused(false)}
+            autoFocus
           />
           <img
             className="password-protected-input__show-password"

@@ -12,7 +12,12 @@ const arrowButtonsStyle = {
   fontSize: '50px',
 };
 
-const ImageCarousel = ({ images, noIndicators, scrollingContent = false }) => {
+const ImageCarousel = ({
+  images,
+  noIndicators,
+  scrollingContent = false,
+  toolbarImage = '',
+}) => {
   const [firstImgLoaded, setFirstImgLoaded] = useState(false);
 
   return (
@@ -24,7 +29,13 @@ const ImageCarousel = ({ images, noIndicators, scrollingContent = false }) => {
         alt="checker"
       />
       {firstImgLoaded ? (
-        <div className="image-carousel">
+        <div
+          className="image-carousel"
+          style={{ display: 'flex', flexDirection: 'column' }}
+        >
+          {toolbarImage ? (
+            <img src={toolbarImage} alt="toolbar" width="100%" />
+          ) : null}
           <Carousel
             navButtonsAlwaysVisible
             NextIcon={<ArrowCircleRightOutlined sx={arrowButtonsStyle} />}

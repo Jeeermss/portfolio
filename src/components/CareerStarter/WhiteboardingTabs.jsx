@@ -34,7 +34,7 @@ const WhiteboardingTabs = ({ scrollPosition }) => {
       content: (
         <LazyLoadImage
           scrollPosition={scrollPosition}
-          src="images/case_studies/career_starter/whiteboarding_job_seekers.svg"
+          src="images/case_studies/career_starter/whiteboarding_employer_reps.svg"
           effect="blur"
           alt="employee rep"
           width="100%"
@@ -42,14 +42,14 @@ const WhiteboardingTabs = ({ scrollPosition }) => {
         />
       ),
       imgUrl:
-        'images/case_studies/career_starter/whiteboarding_job_seekers.svg',
+        'images/case_studies/career_starter/whiteboarding_employer_reps.svg',
     },
     {
       name: 'Case Managers',
       content: (
         <LazyLoadImage
           scrollPosition={scrollPosition}
-          src="images/case_studies/career_starter/whiteboarding_job_seekers.svg"
+          src="images/case_studies/career_starter/whiteboarding_case_managers.svg"
           effect="blur"
           alt="case managers"
           width="100%"
@@ -57,7 +57,7 @@ const WhiteboardingTabs = ({ scrollPosition }) => {
         />
       ),
       imgUrl:
-        'images/case_studies/career_starter/whiteboarding_job_seekers.svg',
+        'images/case_studies/career_starter/whiteboarding_case_managers.svg',
     },
   ];
 
@@ -76,7 +76,6 @@ const WhiteboardingTabs = ({ scrollPosition }) => {
           handleSetActiveTab(tabIndex, imgUrl)
         }
         tabsData={tabsData}
-        // sx={{ mb: 15 }}
       />
       {tabsLoading && (
         <Grid container minHeight={contentPlaceHolderHeight}>

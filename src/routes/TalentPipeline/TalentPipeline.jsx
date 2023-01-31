@@ -40,14 +40,16 @@ const TalentPipeline = ({ scrollPosition }) => {
       </div>
 
       <div className="page-section" data-section-label="Roadmap">
-        <CaseStudyCardMedia
-          sx={{ my: 14 }}
-          cardContent="My primary role started out as a Contractor UX/UI Designer for this
+        <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+          <CaseStudyCardMedia
+            sx={{ my: 14 }}
+            cardContent="My primary role started out as a Contractor UX/UI Designer for this
           project. I closely collaborated with various team members (internal
           and external) on a quest to understand, mold, and ship a product that
           caters to upcoming craft professionals."
-          cardImageUrl="images/case_studies/talent_pipeline/byf_collaborations_roadmap.svg"
-        />
+            cardImageUrl="images/case_studies/talent_pipeline/byf_collaborations_roadmap.svg"
+          />
+        </ScrollAnimation>
       </div>
 
       <div className="page-section" data-section-label="Opportunity">
@@ -176,7 +178,9 @@ const TalentPipeline = ({ scrollPosition }) => {
             </div>
           </Grid>
         </Grid>
-        <PersonasTabs />
+        <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+          <PersonasTabs />
+        </ScrollAnimation>
       </div>
 
       <div className="page-section" data-section-label="Customer Journeys">
@@ -201,7 +205,9 @@ const TalentPipeline = ({ scrollPosition }) => {
             </p>
           </Grid>
         </Grid>
-        <CareerJourneyTabs />
+        <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+          <CareerJourneyTabs />
+        </ScrollAnimation>
       </div>
 
       <div className="page-section" data-section-label="User Stories">

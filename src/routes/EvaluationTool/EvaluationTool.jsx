@@ -49,11 +49,13 @@ const EvaluationTool = ({ scrollPosition }) => {
       </div>
 
       <div className="page-section" data-section-label="Roadmap">
-        <CaseStudyCardMedia
-          sx={{ my: 14 }}
-          cardContent="My primary role started out as a Contractor UX/UI Designer for this project. I closely collaborated with various team members (internal and external) on a quest to understand, mold, and ship a product that caters to upcoming craft professionals."
-          cardImageUrl="images/case_studies/evaluation_tool/product_roadmap.svg"
-        />
+        <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+          <CaseStudyCardMedia
+            sx={{ my: 14 }}
+            cardContent="My primary role started out as a Contractor UX/UI Designer for this project. I closely collaborated with various team members (internal and external) on a quest to understand, mold, and ship a product that caters to upcoming craft professionals."
+            cardImageUrl="images/case_studies/evaluation_tool/product_roadmap.svg"
+          />
+        </ScrollAnimation>
       </div>
 
       <div className="page-section" data-section-label="The Objective">
@@ -228,13 +230,15 @@ const EvaluationTool = ({ scrollPosition }) => {
             </span>
           </Grid>
           <Grid item xs={12}>
-            <ImageCarousel
-              images={[
-                'images/case_studies/evaluation_tool/initial_mockups_1.svg',
-                'images/case_studies/evaluation_tool/user_flow.svg',
-                'images/case_studies/evaluation_tool/initial_mockups_1.svg',
-              ]}
-            />
+            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+              <ImageCarousel
+                images={[
+                  'images/case_studies/evaluation_tool/initial_mockups_1.svg',
+                  'images/case_studies/evaluation_tool/user_flow.svg',
+                  'images/case_studies/evaluation_tool/initial_mockups_1.svg',
+                ]}
+              />
+            </ScrollAnimation>
           </Grid>
         </Grid>
       </div>
@@ -366,12 +370,14 @@ const EvaluationTool = ({ scrollPosition }) => {
             </ScrollAnimation>
           </Grid>
           <Grid item xs={12}>
-            <ImageCarousel
-              images={[
-                'images/case_studies/evaluation_tool/whiteboard_session_3.svg',
-                'images/case_studies/evaluation_tool/whiteboard_session_4.svg',
-              ]}
-            />
+            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+              <ImageCarousel
+                images={[
+                  'images/case_studies/evaluation_tool/whiteboard_session_3.svg',
+                  'images/case_studies/evaluation_tool/whiteboard_session_4.svg',
+                ]}
+              />
+            </ScrollAnimation>
           </Grid>
         </Grid>
       </div>
@@ -485,23 +491,33 @@ const EvaluationTool = ({ scrollPosition }) => {
                   {
                     name: 'Performance Profiles',
                     content: (
-                      <ImageCarousel
-                        images={[
-                          'images/case_studies/evaluation_tool/observations_interviews_1.svg',
-                          'images/case_studies/evaluation_tool/observations_interviews_2.svg',
-                        ]}
-                      />
+                      <ScrollAnimation
+                        animateIn="animate__fadeInUp"
+                        animatePreScroll
+                      >
+                        <ImageCarousel
+                          images={[
+                            'images/case_studies/evaluation_tool/observations_interviews_1.svg',
+                            'images/case_studies/evaluation_tool/observations_interviews_2.svg',
+                          ]}
+                        />
+                      </ScrollAnimation>
                     ),
                   },
                   {
                     name: 'Performance Verifications',
                     content: (
-                      <ImageCarousel
-                        images={[
-                          'images/case_studies/evaluation_tool/observations_interviews_1.svg',
-                          'images/case_studies/evaluation_tool/observations_interviews_2.svg',
-                        ]}
-                      />
+                      <ScrollAnimation
+                        animateIn="animate__fadeInUp"
+                        animatePreScroll
+                      >
+                        <ImageCarousel
+                          images={[
+                            'images/case_studies/evaluation_tool/observations_interviews_1.svg',
+                            'images/case_studies/evaluation_tool/observations_interviews_2.svg',
+                          ]}
+                        />
+                      </ScrollAnimation>
                     ),
                   },
                 ]}
@@ -624,25 +640,35 @@ const EvaluationTool = ({ scrollPosition }) => {
                   {
                     name: 'Performance Profiles',
                     content: (
-                      <ImageCarousel
-                        images={[
-                          'images/case_studies/evaluation_tool/personas_customer_journeys.svg',
-                          'images/case_studies/evaluation_tool/personas_customer_journeys.svg',
-                        ]}
-                        scrollingContent={true}
-                      />
+                      <ScrollAnimation
+                        animateIn="animate__fadeInUp"
+                        animatePreScroll
+                      >
+                        <ImageCarousel
+                          images={[
+                            'images/case_studies/evaluation_tool/personas_customer_journeys.svg',
+                            'images/case_studies/evaluation_tool/personas_customer_journeys.svg',
+                          ]}
+                          scrollingContent={true}
+                        />
+                      </ScrollAnimation>
                     ),
                   },
                   {
                     name: 'Performance Verifications',
                     content: (
-                      <ImageCarousel
-                        images={[
-                          'images/case_studies/evaluation_tool/personas_customer_journeys.svg',
-                          'images/case_studies/evaluation_tool/personas_customer_journeys.svg',
-                        ]}
-                        scrollingContent={true}
-                      />
+                      <ScrollAnimation
+                        animateIn="animate__fadeInUp"
+                        animatePreScroll
+                      >
+                        <ImageCarousel
+                          images={[
+                            'images/case_studies/evaluation_tool/personas_customer_journeys.svg',
+                            'images/case_studies/evaluation_tool/personas_customer_journeys.svg',
+                          ]}
+                          scrollingContent={true}
+                        />
+                      </ScrollAnimation>
                     ),
                   },
                 ]}
@@ -718,12 +744,14 @@ const EvaluationTool = ({ scrollPosition }) => {
             </span>
           </Grid>
           <Grid item xs={12}>
-            <ImageCarousel
-              images={[
-                'images/case_studies/evaluation_tool/first_design_sprint_facilitation_1.svg',
-                'images/case_studies/evaluation_tool/first_design_sprint_facilitation_2.svg',
-              ]}
-            />
+            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+              <ImageCarousel
+                images={[
+                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_1.svg',
+                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_2.svg',
+                ]}
+              />
+            </ScrollAnimation>
           </Grid>
         </Grid>
       </div>

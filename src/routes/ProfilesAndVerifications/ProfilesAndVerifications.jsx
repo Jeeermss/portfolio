@@ -109,23 +109,33 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   {
                     name: 'Performance Profiles',
                     content: (
-                      <ImageCarousel
-                        images={[
-                          'images/case_studies/profiles_and_verifications/user_testing_inprogress.svg',
-                          'images/case_studies/profiles_and_verifications/user_testing_inprogress.svg',
-                        ]}
-                      />
+                      <ScrollAnimation
+                        animateIn="animate__fadeInUp"
+                        animatePreScroll
+                      >
+                        <ImageCarousel
+                          images={[
+                            'images/case_studies/profiles_and_verifications/user_testing_inprogress.svg',
+                            'images/case_studies/profiles_and_verifications/user_testing_inprogress.svg',
+                          ]}
+                        />
+                      </ScrollAnimation>
                     ),
                   },
                   {
                     name: 'Performance Verifications',
                     content: (
-                      <ImageCarousel
-                        images={[
-                          'images/case_studies/profiles_and_verifications/user_testing_inprogress.svg',
-                          'images/case_studies/profiles_and_verifications/user_testing_inprogress.svg',
-                        ]}
-                      />
+                      <ScrollAnimation
+                        animateIn="animate__fadeInUp"
+                        animatePreScroll
+                      >
+                        <ImageCarousel
+                          images={[
+                            'images/case_studies/profiles_and_verifications/user_testing_inprogress.svg',
+                            'images/case_studies/profiles_and_verifications/user_testing_inprogress.svg',
+                          ]}
+                        />
+                      </ScrollAnimation>
                     ),
                   },
                 ]}
@@ -182,23 +192,33 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   {
                     name: 'Performance Profiles',
                     content: (
-                      <ImageCarousel
-                        images={[
-                          'images/case_studies/profiles_and_verifications/user_testing_report_1.svg',
-                          'images/case_studies/profiles_and_verifications/user_testing_report_2.svg',
-                        ]}
-                      />
+                      <ScrollAnimation
+                        animateIn="animate__fadeInUp"
+                        animatePreScroll
+                      >
+                        <ImageCarousel
+                          images={[
+                            'images/case_studies/profiles_and_verifications/user_testing_report_1.svg',
+                            'images/case_studies/profiles_and_verifications/user_testing_report_2.svg',
+                          ]}
+                        />
+                      </ScrollAnimation>
                     ),
                   },
                   {
                     name: 'Performance Verifications',
                     content: (
-                      <ImageCarousel
-                        images={[
-                          'images/case_studies/profiles_and_verifications/user_testing_report_1.svg',
-                          'images/case_studies/profiles_and_verifications/user_testing_report_2.svg',
-                        ]}
-                      />
+                      <ScrollAnimation
+                        animateIn="animate__fadeInUp"
+                        animatePreScroll
+                      >
+                        <ImageCarousel
+                          images={[
+                            'images/case_studies/profiles_and_verifications/user_testing_report_1.svg',
+                            'images/case_studies/profiles_and_verifications/user_testing_report_2.svg',
+                          ]}
+                        />
+                      </ScrollAnimation>
                     ),
                   },
                 ]}
@@ -476,14 +496,16 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
             </span>
           </Grid>
           <Grid item xs={12}>
-            <CaseStudyCardVideo
-              cardContent={[
-                'User Testing Participant #1:',
-                'Jane Dough, an evaluator from a National Center for Construction Education and Research sponsor organization, agreed to participant in our second user testing session.',
-              ]}
-              cardVideoUrl="https://www.youtube.com/watch?v=xcJtL7QggTI"
-              cardVideoThumbnail="images/glittered_screen.jpg"
-            />
+            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+              <CaseStudyCardVideo
+                cardContent={[
+                  'User Testing Participant #1:',
+                  'Jane Dough, an evaluator from a National Center for Construction Education and Research sponsor organization, agreed to participant in our second user testing session.',
+                ]}
+                cardVideoUrl="https://www.youtube.com/watch?v=xcJtL7QggTI"
+                cardVideoThumbnail="images/glittered_screen.jpg"
+              />
+            </ScrollAnimation>
           </Grid>
         </Grid>
       </div>

@@ -38,7 +38,9 @@ const CareerStarter = ({ scrollPosition }) => {
       </div>
 
       <div className="page-section" data-section-label="Product Video">
-        <ProductVideoTabs />
+        <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+          <ProductVideoTabs />
+        </ScrollAnimation>
       </div>
 
       <div className="page-section" data-section-label="UT Plan">
@@ -288,7 +290,9 @@ const CareerStarter = ({ scrollPosition }) => {
             </span>
           </Grid>
           <Grid item xs={12}>
-            <WhiteboardingTabs />
+            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+              <WhiteboardingTabs />
+            </ScrollAnimation>
           </Grid>
         </Grid>
       </div>

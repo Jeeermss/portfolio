@@ -50,10 +50,12 @@ const ImageCarousel = ({ images, noIndicators, scrollingContent = false }) => {
               },
               /* Left button */
               '.css-hn784z button svg': {
+                opacity: '0.7 !important',
                 color: '#fff',
               },
               /* Right button */
               '.css-1abc02a button svg': {
+                opacity: '0.7 !important',
                 color: '#fff',
               },
             }}

@@ -161,20 +161,21 @@ const EvaluationTool = ({ scrollPosition }) => {
               position: 'relative',
             }}
           >
-            <button className="evaluation-tool__open-in-figma">
+            {/* <button className="evaluation-tool__open-in-figma">
               <img src="images/eye_icon.svg" alt="eye icon" />
               User flow on Figma
-            </button>
+            </button> */}
           </Grid>
           <Grid item xs={12}>
             <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
-              <LazyLoadImage
-                scrollPosition={scrollPosition}
-                src="images/case_studies/evaluation_tool/user_flow.svg"
-                effect="blur"
-                alt="user flow"
+              <iframe
+                style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }}
                 width="100%"
-              />
+                height="450"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FWRO5soZQcri1WG60vkEdYN%2FPP%252FPV-User-Flow%3Ft%3D26xxBvFmfGc9YbId-1"
+                allowFullScreen
+                title="User Flows"
+              ></iframe>
             </ScrollAnimation>
           </Grid>
         </Grid>
@@ -547,12 +548,12 @@ const EvaluationTool = ({ scrollPosition }) => {
               We dissected the gathered data and grouped them based on emerging
               themes.
             </p>
-            <span>
+            {/* <span>
               <button className="evaluation-tool__affinity-map-btn">
                 <img src="images/eye_icon.svg" alt="eye icon" />
                 Affinity Map on Figma
               </button>
-            </span>
+            </span> */}
           </Grid>
           <Grid
             item
@@ -577,13 +578,16 @@ const EvaluationTool = ({ scrollPosition }) => {
             </span>
           </Grid>
           <Grid item xs={12} className="evaluation-tool__common-paragraph">
-            <iframe
-              style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }}
-              width="100%"
-              height="450"
-              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FWRO5soZQcri1WG60vkEdYN%2FPP%252FPV-User-Flow%3Ft%3D26xxBvFmfGc9YbId-1"
-              allowFullScreen
-            ></iframe>
+            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+              <iframe
+                style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }}
+                width="100%"
+                height="450"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FxkjC1835vVJt4skj5MOrsC%2FPP-%2526-PV-Interviews---Affinity-Mapping%3Fnode-id%3D0%253A1%26t%3DhK4MPG4MrPEKdoMz-1"
+                allowFullScreen
+                title="Synthesize and Analyze"
+              ></iframe>
+            </ScrollAnimation>
           </Grid>
         </Grid>
       </div>

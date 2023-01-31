@@ -1,12 +1,13 @@
 .case-study-card-media {
   box-shadow: none;
   border-radius: 0;
-  border: 1px solid var(--dark-magenta);
+  /* border: 1px solid var(--dark-magenta); */
   width: 100%;
 }
 
 .case-study-card-media__content {
-  border-top: 1px solid var(--dark-magenta);
+  border: 1.5px solid var(--dark-magenta);
+  border-top: none;
   padding: 24px;
 }
 

@@ -1,10 +1,7 @@
-import { useState } from 'react';
 import Tabs from '../../components/Tabs/Tabs';
 import CaseStudyCardVideo from '../../components/CaseStudyCardVideo/CaseStudyCardVIdeo';
 
 const PersonasTabs = () => {
-  const [activeTab, setActiveTab] = useState(0);
-
   const personasTabsData = [
     {
       name: 'Job Seekers',
@@ -34,18 +31,9 @@ const PersonasTabs = () => {
     },
   ];
 
-  const handleSetActiveTab = async (tabIndex) => {
-    setActiveTab(tabIndex);
-  };
-
   return (
     <div>
-      <Tabs
-        activeTab={activeTab}
-        setActiveTab={(tabIndex) => handleSetActiveTab(tabIndex)}
-        tabsData={personasTabsData}
-        sx={{ my: 15 }}
-      />
+      <Tabs activeTab={0} tabsData={personasTabsData} sx={{ my: 15 }} />
     </div>
   );
 };

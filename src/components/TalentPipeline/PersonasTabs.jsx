@@ -1,18 +1,10 @@
-import { useState } from 'react';
-import { Grid } from '@mui/material';
 import {
   LazyLoadImage,
   trackWindowScroll,
 } from 'react-lazy-load-image-component';
 import Tabs from '../../components/Tabs/Tabs';
 
-import getImageMeta from '../../utils/getImageMeta';
-
 const PersonasTabs = ({ scrollPosition }) => {
-  const [personasActiveTab, setPersonasActiveTab] = useState(0);
-  const [personasTabsLoading, setPersonasTabsLoading] = useState(false);
-  const [contentPlaceHolderHeight, setContentPlaceHolderHeight] = useState(0);
-
   const personasTabsData = [
     {
       name: 'Job Seekers',
@@ -23,7 +15,6 @@ const PersonasTabs = ({ scrollPosition }) => {
           effect="blur"
           alt="job seekers"
           width="100%"
-          afterLoad={() => setPersonasTabsLoading(false)}
         />
       ),
       imgUrl: 'images/case_studies/talent_pipeline/personas_job_seekers.svg',
@@ -37,7 +28,6 @@ const PersonasTabs = ({ scrollPosition }) => {
           effect="blur"
           alt="employee rep"
           width="100%"
-          afterLoad={() => setPersonasTabsLoading(false)}
         />
       ),
       imgUrl:
@@ -52,37 +42,15 @@ const PersonasTabs = ({ scrollPosition }) => {
           effect="blur"
           alt="case managers"
           width="100%"
-          afterLoad={() => setPersonasTabsLoading(false)}
         />
       ),
       imgUrl: 'images/case_studies/talent_pipeline/personas_case_managers.svg',
     },
   ];
 
-  const handleSetActiveTab = async (tabIndex, imgUrl) => {
-    const img = await getImageMeta(imgUrl);
-    setContentPlaceHolderHeight(img.naturalHeight);
-    setPersonasTabsLoading(true);
-    setPersonasActiveTab(tabIndex);
-  };
-
   return (
     <div>
-      <Tabs
-        activeTab={personasActiveTab}
-        setActiveTab={(tabIndex, imgUrl) =>
-          handleSetActiveTab(tabIndex, imgUrl)
-        }
-        tabsData={personasTabsData}
-        sx={{ mb: 15 }}
-      />
-      {personasTabsLoading && (
-        <Grid container minHeight={contentPlaceHolderHeight}>
-          <Grid item xs={12}>
-            <div style={{ width: '100%' }}></div>
-          </Grid>
-        </Grid>
-      )}
+      <Tabs activeTab={0} tabsData={personasTabsData} sx={{ mb: 15 }} />
     </div>
   );
 };

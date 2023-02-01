@@ -32,9 +32,6 @@ const iFrameLoadingStyle = {
 };
 
 const EvaluationTool = ({ scrollPosition }) => {
-  const [observationsInterviewsActiveTab, setObservationsInterviewsActiveTab] =
-    useState(0);
-  const [personasJourneysActiveTab, setPersonasJourneysActiveTab] = useState(0);
   const [userFlowIFrameLoading, setUserFlowIFrameLoading] = useState(true);
   const [synthesizeIFrameLoading, setSynthesizeIFrameLoading] = useState(true);
 
@@ -521,41 +518,28 @@ const EvaluationTool = ({ scrollPosition }) => {
           <Grid item xs={12}>
             <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <Tabs
-                activeTab={observationsInterviewsActiveTab}
-                setActiveTab={(tabIndex) =>
-                  setObservationsInterviewsActiveTab(tabIndex)
-                }
+                activeTab={0}
                 tabsData={[
                   {
                     name: 'Performance Profiles',
                     content: (
-                      <ScrollAnimation
-                        animateIn="animate__fadeInUp"
-                        animatePreScroll
-                      >
-                        <ImageCarousel
-                          images={[
-                            'images/case_studies/evaluation_tool/observations_interviews_1.svg',
-                            'images/case_studies/evaluation_tool/observations_interviews_2.svg',
-                          ]}
-                        />
-                      </ScrollAnimation>
+                      <ImageCarousel
+                        images={[
+                          'images/case_studies/evaluation_tool/observations_interviews_1.svg',
+                          'images/case_studies/evaluation_tool/observations_interviews_2.svg',
+                        ]}
+                      />
                     ),
                   },
                   {
                     name: 'Performance Verifications',
                     content: (
-                      <ScrollAnimation
-                        animateIn="animate__fadeInUp"
-                        animatePreScroll
-                      >
-                        <ImageCarousel
-                          images={[
-                            'images/case_studies/evaluation_tool/observations_interviews_1.svg',
-                            'images/case_studies/evaluation_tool/observations_interviews_2.svg',
-                          ]}
-                        />
-                      </ScrollAnimation>
+                      <ImageCarousel
+                        images={[
+                          'images/case_studies/evaluation_tool/observations_interviews_1.svg',
+                          'images/case_studies/evaluation_tool/observations_interviews_2.svg',
+                        ]}
+                      />
                     ),
                   },
                 ]}
@@ -672,43 +656,30 @@ const EvaluationTool = ({ scrollPosition }) => {
           <Grid item xs={12}>
             <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <Tabs
-                activeTab={personasJourneysActiveTab}
-                setActiveTab={(tabIndex) =>
-                  setPersonasJourneysActiveTab(tabIndex)
-                }
+                activeTab={0}
                 tabsData={[
                   {
                     name: 'Performance Profiles',
                     content: (
-                      <ScrollAnimation
-                        animateIn="animate__fadeInUp"
-                        animatePreScroll
-                      >
-                        <ImageCarousel
-                          images={[
-                            'images/case_studies/evaluation_tool/personas_customer_journeys.svg',
-                            'images/case_studies/evaluation_tool/personas_customer_journeys.svg',
-                          ]}
-                          scrollingContent={true}
-                        />
-                      </ScrollAnimation>
+                      <ImageCarousel
+                        images={[
+                          'images/case_studies/evaluation_tool/personas_customer_journeys.svg',
+                          'images/case_studies/evaluation_tool/personas_customer_journeys.svg',
+                        ]}
+                        scrollingContent={true}
+                      />
                     ),
                   },
                   {
                     name: 'Performance Verifications',
                     content: (
-                      <ScrollAnimation
-                        animateIn="animate__fadeInUp"
-                        animatePreScroll
-                      >
-                        <ImageCarousel
-                          images={[
-                            'images/case_studies/evaluation_tool/personas_customer_journeys.svg',
-                            'images/case_studies/evaluation_tool/personas_customer_journeys.svg',
-                          ]}
-                          scrollingContent={true}
-                        />
-                      </ScrollAnimation>
+                      <ImageCarousel
+                        images={[
+                          'images/case_studies/evaluation_tool/personas_customer_journeys.svg',
+                          'images/case_studies/evaluation_tool/personas_customer_journeys.svg',
+                        ]}
+                        scrollingContent={true}
+                      />
                     ),
                   },
                 ]}

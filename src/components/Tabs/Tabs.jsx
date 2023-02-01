@@ -1,22 +1,35 @@
-import React, { Fragment } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Grid } from '@mui/material';
 
 import './tabs.css';
 
-const Tabs = ({ activeTab = 0, setActiveTab, tabsData, sx }) => {
+const Tabs = ({ activeTab = 0, tabsData, sx }) => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    setActiveIndex(activeTab);
+  }, [activeTab]);
+
+  useEffect(() => {
+    if (tabsData && tabsData.length) {
+      setData(tabsData);
+    }
+  }, [tabsData]);
+
   return (
     <Grid container className="tabs" rowGap={3} sx={{ ...sx }}>
       <Grid item xs={12} className="tabs__headers">
-        {tabsData.map((tab, idx) => {
+        {data.map((tab, idx) => {
           return (
             <span
               key={idx}
               className={`tabs__headers-item ${
-                activeTab === idx ? 'tabs__headers-item--active' : ''
+                activeIndex === idx ? 'tabs__headers-item--active' : ''
               }`}
               onClick={() => {
-                if (idx === activeTab) return;
-                setActiveTab(idx, tab.imgUrl);
+                if (idx === activeIndex) return;
+                setActiveIndex(idx);
               }}
             >
               {tab.name}
@@ -25,11 +38,14 @@ const Tabs = ({ activeTab = 0, setActiveTab, tabsData, sx }) => {
         })}
       </Grid>
       <Grid item xs={12} className="tabs__content" height>
-        {tabsData.map((tab, idx) =>
-          activeTab === idx ? (
-            <Fragment key={idx}>{tab.content}</Fragment>
-          ) : null
-        )}
+        {data.map((tab, idx) => (
+          <div
+            key={idx}
+            style={{ display: `${activeIndex === idx ? 'block' : 'none'}` }}
+          >
+            {tab.content}
+          </div>
+        ))}
       </Grid>
     </Grid>
   );

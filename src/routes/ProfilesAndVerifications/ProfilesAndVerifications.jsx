@@ -29,9 +29,6 @@ const iFrameLoadingStyle = {
 };
 
 const ProfilesAndVerifications = ({ scrollPosition }) => {
-  const [userTestingIPActiveTab, setUserTestingIPActiveTab] = useState(0);
-  const [userTestingReportActiveTab, setUserTestingReportActiveTab] =
-    useState(0);
   const [userTestingIFrameLoading, setUserTestingIFrameLoading] =
     useState(true);
 
@@ -135,12 +132,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
           <Grid item xs={12}>
             <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <Tabs
-                isIFrame={true}
-                activeTab={userTestingIPActiveTab}
-                setActiveTab={(tabIndex) => {
-                  setUserTestingIPActiveTab(tabIndex);
-                  setUserTestingIFrameLoading(true);
-                }}
+                activeTab={0}
                 tabsData={[
                   {
                     name: 'Performance Profiles',
@@ -212,41 +204,28 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
           <Grid item xs={12}>
             <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <Tabs
-                activeTab={userTestingReportActiveTab}
-                setActiveTab={(tabIndex) =>
-                  setUserTestingReportActiveTab(tabIndex)
-                }
+                activeTab={0}
                 tabsData={[
                   {
                     name: 'Performance Profiles',
                     content: (
-                      <ScrollAnimation
-                        animateIn="animate__fadeInUp"
-                        animatePreScroll
-                      >
-                        <ImageCarousel
-                          images={[
-                            'images/case_studies/profiles_and_verifications/user_testing_report_1.svg',
-                            'images/case_studies/profiles_and_verifications/user_testing_report_2.svg',
-                          ]}
-                        />
-                      </ScrollAnimation>
+                      <ImageCarousel
+                        images={[
+                          'images/case_studies/profiles_and_verifications/user_testing_report_1.svg',
+                          'images/case_studies/profiles_and_verifications/user_testing_report_2.svg',
+                        ]}
+                      />
                     ),
                   },
                   {
                     name: 'Performance Verifications',
                     content: (
-                      <ScrollAnimation
-                        animateIn="animate__fadeInUp"
-                        animatePreScroll
-                      >
-                        <ImageCarousel
-                          images={[
-                            'images/case_studies/profiles_and_verifications/user_testing_report_1.svg',
-                            'images/case_studies/profiles_and_verifications/user_testing_report_2.svg',
-                          ]}
-                        />
-                      </ScrollAnimation>
+                      <ImageCarousel
+                        images={[
+                          'images/case_studies/profiles_and_verifications/user_testing_report_1.svg',
+                          'images/case_studies/profiles_and_verifications/user_testing_report_2.svg',
+                        ]}
+                      />
                     ),
                   },
                 ]}

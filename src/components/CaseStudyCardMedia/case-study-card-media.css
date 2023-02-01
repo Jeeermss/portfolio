@@ -6,7 +6,7 @@
 }
 
 .case-study-card-media__content {
-  border: 1.5px solid var(--dark-magenta);
+  border: 1px solid var(--dark-magenta);
   border-top: none;
   padding: 24px;
 }

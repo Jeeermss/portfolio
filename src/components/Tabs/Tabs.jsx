@@ -14,7 +14,10 @@ const Tabs = ({ activeTab = 0, setActiveTab, tabsData, sx }) => {
               className={`tabs__headers-item ${
                 activeTab === idx ? 'tabs__headers-item--active' : ''
               }`}
-              onClick={() => setActiveTab(idx, tab.imgUrl)}
+              onClick={() => {
+                if (idx === activeTab) return;
+                setActiveTab(idx, tab.imgUrl);
+              }}
             >
               {tab.name}
             </span>

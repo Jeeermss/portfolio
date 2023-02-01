@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Grid } from '@mui/material';
+import React, { useState } from 'react';
+import { Grid, CircularProgress } from '@mui/material';
 import { trackWindowScroll } from 'react-lazy-load-image-component';
 import ScrollAnimation from 'react-animate-on-scroll';
 
@@ -23,10 +23,42 @@ import { TALENT_PIPELINE } from '../../constants/routes';
 import './profiles-and-verifications.css';
 import CaseStudyCardVideo from '../../components/CaseStudyCardVideo/CaseStudyCardVIdeo';
 
+const iFrameLoadingStyle = {
+  color: '#c95d63',
+  my: 3,
+};
+
 const ProfilesAndVerifications = ({ scrollPosition }) => {
   const [userTestingIPActiveTab, setUserTestingIPActiveTab] = useState(0);
   const [userTestingReportActiveTab, setUserTestingReportActiveTab] =
     useState(0);
+  const [userTestingIFrameLoading, setUserTestingIFrameLoading] =
+    useState(true);
+
+  const IFrameLoading = () => {
+    return (
+      <div style={{ textAlign: 'center' }}>
+        <CircularProgress sx={iFrameLoadingStyle} />
+      </div>
+    );
+  };
+
+  const UserTestingIFrame = React.memo(({ src, title }) => {
+    return (
+      <iframe
+        style={{
+          border: '1px solid rgba(0, 0, 0, 0.1)',
+          display: `${userTestingIFrameLoading ? 'none' : 'block'}`,
+        }}
+        width="100%"
+        height="450"
+        src={src}
+        allowFullScreen
+        title={title}
+        onLoad={() => setUserTestingIFrameLoading(false)}
+      ></iframe>
+    );
+  });
 
   return (
     <div className="profiles-and-verifications">
@@ -103,39 +135,35 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
           <Grid item xs={12}>
             <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <Tabs
+                isIFrame={true}
                 activeTab={userTestingIPActiveTab}
-                setActiveTab={(tabIndex) => setUserTestingIPActiveTab(tabIndex)}
+                setActiveTab={(tabIndex) => {
+                  setUserTestingIPActiveTab(tabIndex);
+                  setUserTestingIFrameLoading(true);
+                }}
                 tabsData={[
                   {
                     name: 'Performance Profiles',
                     content: (
-                      <ScrollAnimation
-                        animateIn="animate__fadeInUp"
-                        animatePreScroll
-                      >
-                        <ImageCarousel
-                          images={[
-                            'images/case_studies/profiles_and_verifications/user_testing_inprogress.svg',
-                            'images/case_studies/profiles_and_verifications/user_testing_inprogress.svg',
-                          ]}
+                      <>
+                        {userTestingIFrameLoading && <IFrameLoading />}
+                        <UserTestingIFrame
+                          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fr6rp9K5m2CNORBlxdKhxZV%2FWorkshop-User-Test_07_21%3Fnode-id%3D2%253A2%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D2%253A2%26show-proto-sidebar%3D1"
+                          title="User Testing Performance Profiles"
                         />
-                      </ScrollAnimation>
+                      </>
                     ),
                   },
                   {
                     name: 'Performance Verifications',
                     content: (
-                      <ScrollAnimation
-                        animateIn="animate__fadeInUp"
-                        animatePreScroll
-                      >
-                        <ImageCarousel
-                          images={[
-                            'images/case_studies/profiles_and_verifications/user_testing_inprogress.svg',
-                            'images/case_studies/profiles_and_verifications/user_testing_inprogress.svg',
-                          ]}
+                      <>
+                        {userTestingIFrameLoading && <IFrameLoading />}
+                        <UserTestingIFrame
+                          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fr6rp9K5m2CNORBlxdKhxZV%2FWorkshop-User-Test_07_21%3Fnode-id%3D17%253A2461%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D17%253A2461"
+                          title="User Testing Performance Verifications"
                         />
-                      </ScrollAnimation>
+                      </>
                     ),
                   },
                 ]}

@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Grid } from '@mui/material';
+import React, { useState } from 'react';
+import { Grid, CircularProgress } from '@mui/material';
 import {
   LazyLoadImage,
   trackWindowScroll,
@@ -26,11 +26,44 @@ import { PROFILES_AND_VERIFICATIONS } from '../../constants/routes';
 import './evaluation-tool.css';
 import ImageCarousel from '../../components/ImageCarousel';
 
+const iFrameLoadingStyle = {
+  color: '#c95d63',
+  my: 8,
+};
+
 const EvaluationTool = ({ scrollPosition }) => {
   const [observationsInterviewsActiveTab, setObservationsInterviewsActiveTab] =
     useState(0);
   const [personasJourneysActiveTab, setPersonasJourneysActiveTab] = useState(0);
+  const [userFlowIFrameLoading, setUserFlowIFrameLoading] = useState(true);
+  const [synthesizeIFrameLoading, setSynthesizeIFrameLoading] = useState(true);
 
+  const IFrameLoading = () => {
+    return (
+      <div style={{ textAlign: 'center' }}>
+        <CircularProgress sx={iFrameLoadingStyle} />
+      </div>
+    );
+  };
+
+  const IFrameComponent = React.memo(
+    ({ src, title, isLoading, setIsLoading }) => {
+      return (
+        <iframe
+          style={{
+            border: '1px solid rgba(0, 0, 0, 0.1)',
+            display: `${isLoading ? 'none' : 'block'}`,
+          }}
+          width="100%"
+          height="450"
+          src={src}
+          allowFullScreen
+          title={title}
+          onLoad={() => setIsLoading(false)}
+        ></iframe>
+      );
+    }
+  );
   return (
     <div className="evaluation-tool">
       <PageRoadMap />
@@ -168,14 +201,13 @@ const EvaluationTool = ({ scrollPosition }) => {
           </Grid>
           <Grid item xs={12}>
             <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
-              <iframe
-                style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }}
-                width="100%"
-                height="450"
+              {userFlowIFrameLoading && <IFrameLoading />}
+              <IFrameComponent
                 src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FWRO5soZQcri1WG60vkEdYN%2FPP%252FPV-User-Flow%3Ft%3D26xxBvFmfGc9YbId-1"
-                allowFullScreen
                 title="User Flows"
-              ></iframe>
+                isLoading={userFlowIFrameLoading}
+                setIsLoading={(loading) => setUserFlowIFrameLoading(loading)}
+              />
             </ScrollAnimation>
           </Grid>
         </Grid>
@@ -584,14 +616,13 @@ const EvaluationTool = ({ scrollPosition }) => {
           </Grid>
           <Grid item xs={12} className="evaluation-tool__common-paragraph">
             <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
-              <iframe
-                style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }}
-                width="100%"
-                height="450"
+              {synthesizeIFrameLoading && <IFrameLoading />}
+              <IFrameComponent
                 src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FxkjC1835vVJt4skj5MOrsC%2FPP-%2526-PV-Interviews---Affinity-Mapping%3Fnode-id%3D0%253A1%26t%3DhK4MPG4MrPEKdoMz-1"
-                allowFullScreen
                 title="Synthesize and Analyze"
-              ></iframe>
+                isLoading={synthesizeIFrameLoading}
+                setIsLoading={(loading) => setSynthesizeIFrameLoading(loading)}
+              />
             </ScrollAnimation>
           </Grid>
         </Grid>

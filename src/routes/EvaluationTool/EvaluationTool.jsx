@@ -760,6 +760,15 @@ const EvaluationTool = ({ scrollPosition }) => {
                 images={[
                   'images/case_studies/evaluation_tool/first_design_sprint_facilitation_1.svg',
                   'images/case_studies/evaluation_tool/first_design_sprint_facilitation_2.svg',
+                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_3.svg',
+                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_4.svg',
+                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_5.svg',
+                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_6.svg',
+                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_7.svg',
+                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_8.svg',
+                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_9.svg',
+                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_10.svg',
+                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_11.svg',
                 ]}
               />
             </ScrollAnimation>

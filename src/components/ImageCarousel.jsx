@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import Carousel from 'react-material-ui-carousel';
 import {
+  trackWindowScroll,
+  LazyLoadImage,
+} from 'react-lazy-load-image-component';
+import {
   ArrowCircleRightOutlined,
   ArrowCircleLeftOutlined,
 } from '@mui/icons-material/';
@@ -17,6 +21,7 @@ const ImageCarousel = ({
   noIndicators,
   scrollingContent = false,
   toolbarImage = '',
+  scrollPosition,
 }) => {
   const [firstImgLoaded, setFirstImgLoaded] = useState(false);
 
@@ -77,11 +82,21 @@ const ImageCarousel = ({
             {scrollingContent
               ? images.map((item, i) => (
                   <ScrollingContainer key={i}>
-                    <img src={item} alt="carousel" width="100%" />
+                    <LazyLoadImage
+                      scrollPosition={scrollPosition}
+                      src={item}
+                      alt="carousel"
+                      width="100%"
+                    />
                   </ScrollingContainer>
                 ))
               : images.map((item, i) => (
-                  <img src={item} key={i} alt="carousel" width="100%" />
+                  <LazyLoadImage
+                    scrollPosition={scrollPosition}
+                    src={item}
+                    alt="carousel"
+                    width="100%"
+                  />
                 ))}
           </Carousel>
         </div>
@@ -90,4 +105,4 @@ const ImageCarousel = ({
   );
 };
 
-export default ImageCarousel;
+export default trackWindowScroll(ImageCarousel);

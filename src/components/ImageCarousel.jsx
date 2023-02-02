@@ -4,6 +4,10 @@ import {
   ArrowCircleRightOutlined,
   ArrowCircleLeftOutlined,
 } from '@mui/icons-material/';
+import {
+  LazyLoadImage,
+  trackWindowScroll,
+} from 'react-lazy-load-image-component';
 
 import ScrollingContainer from './ScrollingContainer';
 
@@ -17,18 +21,32 @@ const ImageCarousel = ({
   noIndicators,
   scrollingContent = false,
   toolbarImage = '',
+  scrollPosition,
 }) => {
-  const [firstImgLoaded, setFirstImgLoaded] = useState(false);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
 
   return (
     <>
-      <img
-        src={images[0]}
-        onLoad={() => setFirstImgLoaded(true)}
-        style={{ display: 'none' }}
-        alt="checker"
-      />
-      {firstImgLoaded ? (
+      {images.map((img, i) => (
+        <LazyLoadImage
+          scrollPosition={scrollPosition}
+          src={img}
+          key={i}
+          alt={`lazy load checker - ${i}`}
+          width="100%"
+          beforeLoad={() => {
+            setImagesLoaded(false);
+          }}
+          afterLoad={() => {
+            setImagesLoaded(true);
+          }}
+          style={{
+            display: imagesLoaded ? 'none' : 'block',
+            visibility: 'hidden',
+          }}
+        />
+      ))}
+      {imagesLoaded ? (
         <div
           className="image-carousel"
           style={{ display: 'flex', flexDirection: 'column' }}
@@ -77,23 +95,11 @@ const ImageCarousel = ({
             {scrollingContent
               ? images.map((item, i) => (
                   <ScrollingContainer key={i}>
-                    <img
-                      src={item}
-                      key={i}
-                      alt="carousel"
-                      width="100%"
-                      loading="lazy"
-                    />
+                    <img src={item} key={i} alt="carousel" width="100%" />
                   </ScrollingContainer>
                 ))
               : images.map((item, i) => (
-                  <img
-                    src={item}
-                    key={i}
-                    alt="carousel"
-                    width="100%"
-                    loading="lazy"
-                  />
+                  <img src={item} key={i} alt="carousel" width="100%" />
                 ))}
           </Carousel>
         </div>
@@ -102,4 +108,4 @@ const ImageCarousel = ({
   );
 };
 
-export default ImageCarousel;
+export default trackWindowScroll(ImageCarousel);

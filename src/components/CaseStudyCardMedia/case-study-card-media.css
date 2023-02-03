@@ -24,3 +24,23 @@
   line-height: 29px;
   color: var(--charcoal);
 }
+
+/* MaterialUI breakpoint `md` */
+@media (max-width: 900px) {
+  .case-study-card-media__image-container {
+    border-right: 1px solid var(--dark-magenta);
+    overflow: hidden;
+  }
+  .case-study-card-media__content-text {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+/* MaterialUI breakpoint `sm` */
+@media (max-width: 600px) {
+  .case-study-card-media__content-text {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}

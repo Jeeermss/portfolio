@@ -2,7 +2,7 @@
   font-weight: 750;
   font-size: 56px;
   line-height: 67px;
-  color: var(--dark-magenta);
+  color: var(--charcoal);
   margin-bottom: 48px;
   font-family: 'AvenirBlack';
 }
@@ -89,7 +89,42 @@
   line-height: 25px;
 }
 
+/* MaterialUI breakpoint `md` */
+@media (max-width: 900px) {
+  .cs-intro__page-title {
+    font-size: 46px;
+    margin-bottom: 32px;
+  }
+  .cs-intro__card {
+    padding: 24px;
+  }
+  .cs-intro__card h3 {
+    font-size: 24px;
+  }
+  .cs-intro__card p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .cs-intro__team-members {
+    margin-top: 0;
+  }
+  .cs-intro__team-members h3 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .cs-intro__team-member span {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+/* MaterialUI breakpoint `sm` */
 @media (max-width: 600px) {
+  .cs-intro__page-title {
+    font-size: 38px;
+    line-height: 46px;
+  }
+
   .cs-intro__summary-role {
     width: 100%;
     text-align: center;

@@ -24,7 +24,7 @@ const CaseStudyIntro = ({
       <h2 className="cs-intro__page-title">{pageTitle}</h2>
       <Grid
         container
-        rowSpacing={{ xs: 6, md: 0 }}
+        rowSpacing={{ xs: 4, md: 0 }}
         columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         columns={{ xs: 6, md: 12 }}
       >
@@ -79,7 +79,7 @@ const CaseStudyIntro = ({
                 ))}
               </Grid>
             </Container>
-            <Container maxWidth="md" sx={{ mt: 6 }}>
+            <Container maxWidth="md" sx={{ mt: { xs: 4, md: 6 } }}>
               <h3>{secondRowMembersTitle}</h3>
               <Grid container spacing={{ xs: 4, md: 10 }}>
                 {secondRowMembers.map((member, idx) => (

@@ -22,6 +22,7 @@ import {
 
 import './App.css';
 import './global_styles/typography.css';
+import './global_styles/buttons.css';
 import './global_styles/mui-breakpoints.css';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import 'react-toastify/dist/ReactToastify.css';

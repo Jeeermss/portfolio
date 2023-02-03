@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './page-road-map.css';
 
-const PageRoadMap = () => {
+const PageRoadMap = ({ showMore }) => {
   const [sectionsData, setSectionsData] = useState([]);
   const [sectionsTopOffset, setSectionsTopOffset] = useState([]);
 
@@ -85,7 +85,7 @@ const PageRoadMap = () => {
 
     // // start observing a DOM node
     // resizeObserver.observe(document.body);
-  }, []);
+  }, [showMore]);
 
   const handleItemClick = (offsetTop) => {
     if (!offsetTop) return;

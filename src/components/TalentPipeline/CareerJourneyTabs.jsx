@@ -50,7 +50,11 @@ const CareerJourneyTabs = ({ scrollPosition }) => {
 
   return (
     <div>
-      <Tabs activeTab={0} tabsData={careerJourneyTabsData} sx={{ mb: 15 }} />
+      <Tabs
+        activeTab={0}
+        tabsData={careerJourneyTabsData}
+        sx={{ mb: { xs: 9, md: 15 } }}
+      />
     </div>
   );
 };

@@ -15,7 +15,7 @@
   text-align: center;
   width: 100%;
   color: #a9a9a9;
-  padding: 10px 20px;
+  padding: 10px 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,4 +39,40 @@
 .tabs__headers-item--active:hover {
   opacity: 1;
   cursor: default;
+}
+
+/* MaterialUI breakpoint `md` */
+@media (max-width: 900px) {
+  .tabs__headers {
+    gap: 18px;
+  }
+
+  .tabs__headers-item {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 10px 20px;
+  }
+}
+
+/* MaterialUI breakpoint `sm` */
+@media (max-width: 600px) {
+  .tabs__headers {
+    background: none;
+    box-shadow: none;
+    border: none;
+    gap: 35px;
+  }
+  .tabs__headers-item {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 10px 0 5px;
+  }
+
+  .tabs__headers-item--active {
+    background: none;
+    box-shadow: none;
+    border-bottom: 5px solid var(--charcoal);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
 }

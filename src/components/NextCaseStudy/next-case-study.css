@@ -1,6 +1,7 @@
 .next-case-study {
   display: flex;
   justify-content: flex-start;
+  flex-direction: row;
   gap: 16px;
   color: var(--charcoal);
 }
@@ -18,4 +19,32 @@
   text-decoration-line: underline;
   font-family: 'AvenirBlack';
   color: var(--charcoal);
+}
+
+/* MaterialUI breakpoint `md` */
+@media (max-width: 900px) {
+  .next-case-study span {
+    font-size: 26px;
+    line-height: 33px;
+  }
+  .next-case-study a {
+    font-size: 26px;
+    line-height: 33px;
+  }
+}
+
+/* MaterialUI breakpoint `sm` */
+@media (max-width: 600px) {
+  .next-case-study {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .next-case-study span {
+    font-size: 21px;
+    line-height: 25px;
+  }
+  .next-case-study a {
+    font-size: 24px;
+    line-height: 33px;
+  }
 }

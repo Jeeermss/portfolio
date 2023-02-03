@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useLayoutEffect } from 'react';
 import Carousel from 'react-material-ui-carousel';
 import {
   ArrowCircleRightOutlined,
@@ -17,7 +17,7 @@ const arrowButtonsStyle = {
 };
 
 const ImageCarousel = ({
-  images,
+  images = [],
   noIndicators,
   scrollingContent = false,
   toolbarImage = '',
@@ -25,27 +25,56 @@ const ImageCarousel = ({
 }) => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
+  // const loadImagesInSequence = async (images) => {
+  //   console.log(images, 'top images');
+  //   if (!images.length) {
+  //     setImagesLoaded(true);
+  //   }
+
+  //   // for (let i = 0; i < images.length; i++) {
+  //   //   console.log('image' + i);
+
+  //   //   new Promise((resolve, reject) => {
+  //   //     let img = new Image();
+  //   //     img.onload = () => {
+  //   //       return resolve(img.height);
+  //   //     };
+  //   //     img.onerror = reject;
+  //   //     img.src = images[i];
+  //   //   });
+  //   // }
+
+  //   var img = new Image(),
+  //     url = images.shift();
+
+  //   img.onload = function () {
+  //     console.log('loaded');
+  //     setTimeout(() => {
+  //       console.log('loading another image');
+  //       loadImagesInSequence(images);
+  //     }, 500);
+  //   };
+  //   console.log('url', url);
+  //   // await img.decode();
+  //   // console.log('loaded', img);
+  //   // loadImagesInSequence(images);
+  //   img.src = url;
+  // };
+
+  // useEffect(() => {
+  //   if (images && images.length) {
+  //     loadImagesInSequence(images);
+  //   }
+  // }, [images]);
+
   return (
     <>
-      {images.map((img, i) => (
-        <LazyLoadImage
-          scrollPosition={scrollPosition}
-          src={img}
-          key={i}
-          alt={`lazy load checker - ${i}`}
-          width="100%"
-          beforeLoad={() => {
-            setImagesLoaded(false);
-          }}
-          afterLoad={() => {
-            setImagesLoaded(true);
-          }}
-          style={{
-            display: imagesLoaded ? 'none' : 'block',
-            visibility: 'hidden',
-          }}
-        />
-      ))}
+      <img
+        src={images[0]}
+        onLoad={() => setImagesLoaded(true)}
+        style={{ display: 'none' }}
+        alt="checker"
+      />
       {imagesLoaded ? (
         <div
           className="image-carousel"
@@ -95,11 +124,23 @@ const ImageCarousel = ({
             {scrollingContent
               ? images.map((item, i) => (
                   <ScrollingContainer key={i}>
-                    <img src={item} key={i} alt="carousel" width="100%" />
+                    <img
+                      data-src={item}
+                      class="lazyload"
+                      key={i}
+                      alt="carousel"
+                      width="100%"
+                    />
                   </ScrollingContainer>
                 ))
               : images.map((item, i) => (
-                  <img src={item} key={i} alt="carousel" width="100%" />
+                  <img
+                    data-src={item}
+                    class="lazyload"
+                    key={i}
+                    alt="carousel"
+                    width="100%"
+                  />
                 ))}
           </Carousel>
         </div>

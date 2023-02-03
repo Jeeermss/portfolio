@@ -83,7 +83,7 @@ const EvaluationTool = ({ scrollPosition }) => {
           <CaseStudyCardMedia
             sx={{ my: 14 }}
             cardContent="My primary role started out as a Contractor UX/UI Designer for this project. I closely collaborated with various team members (internal and external) on a quest to understand, mold, and ship a product that caters to upcoming craft professionals."
-            cardImageUrl="images/case_studies/evaluation_tool/product_roadmap.svg"
+            cardImageUrl="images/case_studies/evaluation_tool/product_roadmap.webp"
           />
         </ScrollAnimation>
       </div>
@@ -150,7 +150,7 @@ const EvaluationTool = ({ scrollPosition }) => {
               <ScrollingContainer>
                 <LazyLoadImage
                   scrollPosition={scrollPosition}
-                  src="images/case_studies/evaluation_tool/user_stories_scrolling.svg"
+                  src="images/case_studies/evaluation_tool/user_stories_scrolling.webp"
                   effect="blur"
                   alt="user stories scrolling"
                   width="100%"
@@ -263,15 +263,15 @@ const EvaluationTool = ({ scrollPosition }) => {
             <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <ImageCarousel
                 images={[
-                  'images/case_studies/evaluation_tool/initial_mockups_1.svg',
-                  'images/case_studies/evaluation_tool/initial_mockups_2.svg',
-                  'images/case_studies/evaluation_tool/initial_mockups_3.svg',
-                  'images/case_studies/evaluation_tool/initial_mockups_4.svg',
-                  'images/case_studies/evaluation_tool/initial_mockups_5.svg',
-                  'images/case_studies/evaluation_tool/initial_mockups_6.svg',
-                  'images/case_studies/evaluation_tool/initial_mockups_7.svg',
+                  'images/case_studies/evaluation_tool/initial_mockups_1.webp',
+                  'images/case_studies/evaluation_tool/initial_mockups_2.webp',
+                  'images/case_studies/evaluation_tool/initial_mockups_3.webp',
+                  'images/case_studies/evaluation_tool/initial_mockups_4.webp',
+                  'images/case_studies/evaluation_tool/initial_mockups_5.webp',
+                  'images/case_studies/evaluation_tool/initial_mockups_6.webp',
+                  'images/case_studies/evaluation_tool/initial_mockups_7.webp',
                 ]}
-                toolbarImage="images/case_studies/evaluation_tool/chrome_toolbar.svg"
+                toolbarImage="images/case_studies/evaluation_tool/chrome_toolbar.webp"
               />
             </ScrollAnimation>
           </Grid>
@@ -317,7 +317,7 @@ const EvaluationTool = ({ scrollPosition }) => {
             <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <LazyLoadImage
                 scrollPosition={scrollPosition}
-                src="images/case_studies/evaluation_tool/project_roadmap.svg"
+                src="images/case_studies/evaluation_tool/project_roadmap.webp"
                 effect="blur"
                 alt="user flow"
                 width="100%"
@@ -386,7 +386,7 @@ const EvaluationTool = ({ scrollPosition }) => {
             <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <LazyLoadImage
                 scrollPosition={scrollPosition}
-                src="images/case_studies/evaluation_tool/whiteboard_session_1.svg"
+                src="images/case_studies/evaluation_tool/whiteboard_session_1.webp"
                 effect="blur"
                 alt="user flow"
                 width="100%"
@@ -397,7 +397,7 @@ const EvaluationTool = ({ scrollPosition }) => {
             <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <LazyLoadImage
                 scrollPosition={scrollPosition}
-                src="images/case_studies/evaluation_tool/whiteboard_session_2.svg"
+                src="images/case_studies/evaluation_tool/whiteboard_session_2.webp"
                 effect="blur"
                 alt="user flow"
                 width="100%"
@@ -408,8 +408,8 @@ const EvaluationTool = ({ scrollPosition }) => {
             <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <ImageCarousel
                 images={[
-                  'images/case_studies/evaluation_tool/whiteboard_session_3.svg',
-                  'images/case_studies/evaluation_tool/whiteboard_session_4.svg',
+                  'images/case_studies/evaluation_tool/whiteboard_session_3.webp',
+                  'images/case_studies/evaluation_tool/whiteboard_session_4.webp',
                 ]}
               />
             </ScrollAnimation>
@@ -464,7 +464,7 @@ const EvaluationTool = ({ scrollPosition }) => {
             <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <LazyLoadImage
                 scrollPosition={scrollPosition}
-                src="images/case_studies/evaluation_tool/first_ux_ui_team_as_lead.svg"
+                src="images/case_studies/evaluation_tool/first_ux_ui_team_as_lead.webp"
                 effect="blur"
                 alt="user flow"
                 width="100%"
@@ -525,9 +525,16 @@ const EvaluationTool = ({ scrollPosition }) => {
                     content: (
                       <ImageCarousel
                         images={[
-                          'images/case_studies/evaluation_tool/observations_interviews_1.svg',
-                          'images/case_studies/evaluation_tool/observations_interviews_2.svg',
+                          'images/case_studies/evaluation_tool/observations_interviews_1_pp.webp',
+                          'images/case_studies/evaluation_tool/observations_interviews_2_pp.webp',
+                          'images/case_studies/evaluation_tool/observations_interviews_3_pp.webp',
+                          'images/case_studies/evaluation_tool/observations_interviews_4_pp.webp',
+                          'images/case_studies/evaluation_tool/observations_interviews_5_pp.webp',
+                          'images/case_studies/evaluation_tool/observations_interviews_6_pp.webp',
+                          'images/case_studies/evaluation_tool/observations_interviews_7_pp.webp',
+                          'images/case_studies/evaluation_tool/observations_interviews_8_pp.webp',
                         ]}
+                        scrollingMaxHeight={550}
                       />
                     ),
                   },
@@ -536,9 +543,15 @@ const EvaluationTool = ({ scrollPosition }) => {
                     content: (
                       <ImageCarousel
                         images={[
-                          'images/case_studies/evaluation_tool/observations_interviews_1.svg',
-                          'images/case_studies/evaluation_tool/observations_interviews_2.svg',
+                          'images/case_studies/evaluation_tool/observations_interviews_1_pv.webp',
+                          'images/case_studies/evaluation_tool/observations_interviews_2_pv.webp',
+                          'images/case_studies/evaluation_tool/observations_interviews_3_pv.webp',
+                          'images/case_studies/evaluation_tool/observations_interviews_4_pv.webp',
+                          'images/case_studies/evaluation_tool/observations_interviews_5_pv.webp',
+                          'images/case_studies/evaluation_tool/observations_interviews_6_pv.webp',
+                          'images/case_studies/evaluation_tool/observations_interviews_7_pv.webp',
                         ]}
+                        scrollingMaxHeight={550}
                       />
                     ),
                   },
@@ -663,10 +676,9 @@ const EvaluationTool = ({ scrollPosition }) => {
                     content: (
                       <ImageCarousel
                         images={[
-                          'images/case_studies/evaluation_tool/personas_customer_journeys.svg',
-                          'images/case_studies/evaluation_tool/personas_customer_journeys.svg',
+                          'images/case_studies/evaluation_tool/personas_customer_journeys.webp',
+                          'images/case_studies/evaluation_tool/personas_customer_journeys.webp',
                         ]}
-                        scrollingContent={true}
                       />
                     ),
                   },
@@ -675,10 +687,9 @@ const EvaluationTool = ({ scrollPosition }) => {
                     content: (
                       <ImageCarousel
                         images={[
-                          'images/case_studies/evaluation_tool/personas_customer_journeys.svg',
-                          'images/case_studies/evaluation_tool/personas_customer_journeys.svg',
+                          'images/case_studies/evaluation_tool/personas_customer_journeys.webp',
+                          'images/case_studies/evaluation_tool/personas_customer_journeys.webp',
                         ]}
-                        scrollingContent={true}
                       />
                     ),
                   },
@@ -758,18 +769,19 @@ const EvaluationTool = ({ scrollPosition }) => {
             <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
               <ImageCarousel
                 images={[
-                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_1.svg',
-                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_2.svg',
-                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_3.svg',
-                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_4.svg',
-                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_5.svg',
-                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_6.svg',
-                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_7.svg',
-                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_8.svg',
-                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_9.svg',
-                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_10.svg',
-                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_11.svg',
+                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_1.webp',
+                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_2.webp',
+                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_3.webp',
+                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_4.webp',
+                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_5.webp',
+                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_6.webp',
+                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_7.webp',
+                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_8.webp',
+                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_9.webp',
+                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_10.webp',
+                  'images/case_studies/evaluation_tool/first_design_sprint_facilitation_11.webp',
                 ]}
+                scrollingMaxHeight={600}
               />
             </ScrollAnimation>
           </Grid>

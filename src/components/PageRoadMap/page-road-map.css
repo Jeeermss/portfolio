@@ -41,6 +41,11 @@
   display: none;
 }
 
+.page-road-map__mobile-icon {
+  background-color: #f9f9f9;
+  border-radius: 0;
+}
+
 .page-road-map__mobile-items {
   position: fixed;
   left: 5px;

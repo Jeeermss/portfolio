@@ -52,7 +52,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
           display: `${userTestingIFrameLoading ? 'none' : 'block'}`,
         }}
         width="100%"
-        height="450"
+        height={isMobile ? '310' : '450'}
         src={src}
         allowFullScreen
         title={title}
@@ -65,13 +65,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
     <div className="profiles-and-verifications">
       <PageRoadMap showMore={showMore} />
 
-      <div
-        className="page-section"
-        data-section-label="Overview"
-        style={{
-          marginBottom: (showMore && isMobile) || !isMobile ? '120px' : '0px',
-        }}
-      >
+      <div className="page-section" data-section-label="Overview">
         <CaseStudyIntro
           pageTitle="Performance Profiles & Verifications"
           summaryRoles={summaryRoles}
@@ -99,9 +93,9 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
           >
             <Grid
               container
-              rowGap={{ xs: 7, md: 0 }}
+              rowGap={{ xs: 4, md: 0 }}
               spacing={{ xs: 0, md: 7 }}
-              sx={{ mb: { xs: 9, md: 15 } }}
+              sx={{ mb: { xs: 9, md: 15 }, mt: { xs: 7, md: 15 } }}
             >
               <Grid
                 item
@@ -186,9 +180,9 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
           >
             <Grid
               container
-              rowGap={{ xs: 7, md: 0 }}
+              rowGap={{ xs: 4, md: 0 }}
               spacing={{ xs: 0, md: 7 }}
-              sx={{ mb: { xs: 9, md: 15 } }}
+              sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid
                 item
@@ -257,9 +251,9 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="UI Design">
             <Grid
               container
-              rowGap={{ xs: 7, md: 0 }}
+              rowGap={{ xs: 4, md: 0 }}
               spacing={{ xs: 0, md: 7 }}
-              sx={{ mb: { xs: 9, md: 15 } }}
+              sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid
                 item
@@ -325,9 +319,9 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="Current Status">
             <Grid
               container
-              rowGap={{ xs: 7, md: 0 }}
+              rowGap={{ xs: 4, md: 0 }}
               spacing={{ xs: 0, md: 7 }}
-              sx={{ mb: { xs: 9, md: 15 } }}
+              sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid
                 item
@@ -396,9 +390,9 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="The Solution">
             <Grid
               container
-              rowGap={{ xs: 7, md: 0 }}
+              rowGap={{ xs: 4, md: 0 }}
               spacing={{ xs: 0, md: 7 }}
-              sx={{ mb: { xs: 9, md: 15 } }}
+              sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid
                 item
@@ -464,9 +458,9 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="PV User Testing #2">
             <Grid
               container
-              rowGap={{ xs: 7, md: 0 }}
+              rowGap={{ xs: 4, md: 0 }}
               spacing={{ xs: 0, md: 7 }}
-              sx={{ mb: { xs: 9, md: 15 } }}
+              sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid
                 item
@@ -543,7 +537,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
           >
             <Grid
               container
-              rowGap={{ xs: 7, md: 0 }}
+              rowGap={{ xs: 4, md: 0 }}
               spacing={{ xs: 0, md: 7 }}
               sx={{ mb: { xs: 9, md: 15 } }}
             >

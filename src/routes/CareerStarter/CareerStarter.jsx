@@ -61,9 +61,9 @@ const CareerStarter = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="UT Plan">
             <Grid
               container
-              rowGap={{ xs: 7, md: 0 }}
-              spacing={{ xs: 0, md: 7 }}
-              sx={{ mb: { xs: 9, md: 15 } }}
+              rowGap={{ xs: 4, md: 0 }}
+              spacing={{ xs: 0, md: 8 }}
+              sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="career-starter__common-paragraph">
                 <h2>User Testing Plan</h2>
@@ -118,9 +118,9 @@ const CareerStarter = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="UT Report">
             <Grid
               container
-              rowGap={{ xs: 7, md: 0 }}
-              spacing={{ xs: 0, md: 7 }}
-              sx={{ mb: { xs: 9, md: 15 } }}
+              rowGap={{ xs: 4, md: 0 }}
+              spacing={{ xs: 0, md: 8 }}
+              sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="career-starter__common-paragraph">
                 <h2>Our Findings</h2>
@@ -180,9 +180,9 @@ const CareerStarter = ({ scrollPosition }) => {
           >
             <Grid
               container
-              rowGap={{ xs: 7, md: 0 }}
-              spacing={{ xs: 0, md: 7 }}
-              sx={{ mb: { xs: 9, md: 15 } }}
+              rowGap={{ xs: 4, md: 0 }}
+              spacing={{ xs: 0, md: 8 }}
+              sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="career-starter__common-paragraph">
                 <h2>Post-Launch User Research</h2>
@@ -197,27 +197,64 @@ const CareerStarter = ({ scrollPosition }) => {
                   Since February 2022, CareerStarter gained 2 major sponsorships
                   within the industry.
                 </p>
-                <ScrollAnimation
-                  animateIn="animate__fadeInUp"
-                  animatePreScroll
-                  style={{
-                    display: 'flex',
-                    gap: '24px',
-                  }}
-                >
-                  <LazyLoadImage
-                    scrollPosition={scrollPosition}
-                    src="images/case_studies/career_starter/stanley.svg"
-                    effect="blur"
-                    alt="stanley"
-                  />
-                  <LazyLoadImage
-                    scrollPosition={scrollPosition}
-                    src="images/case_studies/career_starter/procore.svg"
-                    effect="blur"
-                    alt="pro core"
-                  />
-                </ScrollAnimation>
+                {isMobile ? (
+                  <>
+                    <ScrollAnimation
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                      style={{
+                        textAlign: 'center',
+                      }}
+                    >
+                      <LazyLoadImage
+                        scrollPosition={scrollPosition}
+                        src="images/case_studies/career_starter/stanley.svg"
+                        effect="blur"
+                        alt="stanley"
+                        width="80%"
+                      />
+                    </ScrollAnimation>
+                    <ScrollAnimation
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                      style={{
+                        textAlign: 'center',
+                      }}
+                    >
+                      <LazyLoadImage
+                        scrollPosition={scrollPosition}
+                        src="images/case_studies/career_starter/procore.svg"
+                        effect="blur"
+                        alt="pro core"
+                        width="80%"
+                      />
+                    </ScrollAnimation>
+                  </>
+                ) : (
+                  <ScrollAnimation
+                    animateIn="animate__fadeInUp"
+                    animatePreScroll
+                    style={{
+                      display: 'flex',
+                      gap: '24px',
+                    }}
+                  >
+                    <LazyLoadImage
+                      scrollPosition={scrollPosition}
+                      src="images/case_studies/career_starter/stanley.svg"
+                      effect="blur"
+                      alt="stanley"
+                      width="100%"
+                    />
+                    <LazyLoadImage
+                      scrollPosition={scrollPosition}
+                      src="images/case_studies/career_starter/procore.svg"
+                      effect="blur"
+                      alt="pro core"
+                      width="100%"
+                    />
+                  </ScrollAnimation>
+                )}
               </Grid>
               <Grid
                 item
@@ -268,9 +305,9 @@ const CareerStarter = ({ scrollPosition }) => {
           >
             <Grid
               container
-              rowGap={{ xs: 7, md: 0 }}
+              rowGap={{ xs: 4, md: 0 }}
               spacing={{ xs: 0, md: 7 }}
-              sx={{ mb: { xs: 9, md: 15 } }}
+              sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="career-starter__common-paragraph">
                 <h2>Whiteboarding Sessions</h2>
@@ -323,9 +360,9 @@ const CareerStarter = ({ scrollPosition }) => {
           >
             <Grid
               container
-              rowGap={{ xs: 7, md: 0 }}
+              rowGap={{ xs: 4, md: 0 }}
               spacing={{ xs: 0, md: 7 }}
-              sx={{ mb: { xs: 9, md: 15 } }}
+              sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="career-starter__common-paragraph">
                 <h2>
@@ -376,9 +413,9 @@ const CareerStarter = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="Reflection">
             <Grid
               container
-              rowGap={{ xs: 7, md: 0 }}
+              rowGap={{ xs: 4, md: 0 }}
               spacing={{ xs: 0, md: 7 }}
-              sx={{ mb: { xs: 9, md: 15 } }}
+              sx={{ mb: { xs: 14, md: 15 } }}
             >
               <Grid item xs={12} className="career-starter__common-paragraph">
                 <h2>Reflection</h2>

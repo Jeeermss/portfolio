@@ -26,11 +26,19 @@
   .case-study-card-video__player {
     height: 400px !important;
   }
+  .case-study-card-video__content-text {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 /* MaterialUI breakpoint `sm` */
 @media (max-width: 600px) {
   .case-study-card-video__player {
     height: 300px !important;
+  }
+  .case-study-card-video__content-text {
+    font-size: 16px;
+    line-height: 23px;
   }
 }

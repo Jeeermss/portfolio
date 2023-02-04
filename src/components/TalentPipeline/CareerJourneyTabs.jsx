@@ -8,11 +8,11 @@ const CareerJourneyTabs = ({ scrollPosition }) => {
   const careerJourneyTabsData = [
     {
       name: 'Job Seekers',
-      imgUrl: 'images/case_studies/talent_pipeline/cj_job_seekers.svg',
+      imgUrl: 'images/case_studies/talent_pipeline/cj_job_seekers.webp',
       content: (
         <LazyLoadImage
           scrollPosition={scrollPosition}
-          src="images/case_studies/talent_pipeline/cj_job_seekers.svg"
+          src="images/case_studies/talent_pipeline/cj_job_seekers.webp"
           effect="blur"
           alt="job seekers"
           width="100%"
@@ -22,11 +22,11 @@ const CareerJourneyTabs = ({ scrollPosition }) => {
     {
       name: 'Employee Representatives',
       imgUrl:
-        'images/case_studies/talent_pipeline/cj_employee_representatives.svg',
+        'images/case_studies/talent_pipeline/cj_employee_representatives.webp',
       content: (
         <LazyLoadImage
           scrollPosition={scrollPosition}
-          src="images/case_studies/talent_pipeline/cj_employee_representatives.svg"
+          src="images/case_studies/talent_pipeline/cj_employee_representatives.webp"
           effect="blur"
           alt="employee rep"
           width="100%"
@@ -35,11 +35,11 @@ const CareerJourneyTabs = ({ scrollPosition }) => {
     },
     {
       name: 'Case Managers',
-      imgUrl: 'images/case_studies/talent_pipeline/cj_case_managers.svg',
+      imgUrl: 'images/case_studies/talent_pipeline/cj_case_managers.webp',
       content: (
         <LazyLoadImage
           scrollPosition={scrollPosition}
-          src="images/case_studies/talent_pipeline/cj_case_managers.svg"
+          src="images/case_studies/talent_pipeline/cj_case_managers.webp"
           effect="blur"
           alt="case managers"
           width="100%"

@@ -11,40 +11,40 @@ const PersonasTabs = ({ scrollPosition }) => {
       content: (
         <LazyLoadImage
           scrollPosition={scrollPosition}
-          src="images/case_studies/talent_pipeline/personas_job_seekers.svg"
+          src="images/case_studies/talent_pipeline/personas_job_seekers.webp"
           effect="blur"
           alt="job seekers"
           width="100%"
         />
       ),
-      imgUrl: 'images/case_studies/talent_pipeline/personas_job_seekers.svg',
+      imgUrl: 'images/case_studies/talent_pipeline/personas_job_seekers.webp',
     },
     {
       name: 'Employee Representatives',
       content: (
         <LazyLoadImage
           scrollPosition={scrollPosition}
-          src="images/case_studies/talent_pipeline/personas_employee_representatives.svg"
+          src="images/case_studies/talent_pipeline/personas_employee_representatives.webp"
           effect="blur"
           alt="employee rep"
           width="100%"
         />
       ),
       imgUrl:
-        'images/case_studies/talent_pipeline/personas_employee_representatives.svg',
+        'images/case_studies/talent_pipeline/personas_employee_representatives.webp',
     },
     {
       name: 'Case Managers',
       content: (
         <LazyLoadImage
           scrollPosition={scrollPosition}
-          src="images/case_studies/talent_pipeline/personas_case_managers.svg"
+          src="images/case_studies/talent_pipeline/personas_case_managers.webp"
           effect="blur"
           alt="case managers"
           width="100%"
         />
       ),
-      imgUrl: 'images/case_studies/talent_pipeline/personas_case_managers.svg',
+      imgUrl: 'images/case_studies/talent_pipeline/personas_case_managers.webp',
     },
   ];
 

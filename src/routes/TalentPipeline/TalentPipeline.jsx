@@ -62,7 +62,7 @@ const TalentPipeline = ({ scrollPosition }) => {
           project. I closely collaborated with various team members (internal
           and external) on a quest to understand, mold, and ship a product that
           caters to upcoming craft professionals."
-                cardImageUrl="images/case_studies/talent_pipeline/byf_collaborations_roadmap.svg"
+                cardImageUrl="images/case_studies/talent_pipeline/byf_collaborations_roadmap.webp"
               />
             </ScrollAnimation>
           </div>
@@ -203,7 +203,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   >
                     <LazyLoadImage
                       scrollPosition={scrollPosition}
-                      src="images/case_studies/talent_pipeline/personas_female.svg"
+                      src="images/case_studies/talent_pipeline/personas_female.webp"
                       effect="blur"
                       alt="female persona"
                       width="100%"
@@ -215,7 +215,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   >
                     <LazyLoadImage
                       scrollPosition={scrollPosition}
-                      src="images/case_studies/talent_pipeline/personas_male.svg"
+                      src="images/case_studies/talent_pipeline/personas_male.webp"
                       effect="blur"
                       alt="male persona"
                       width="100%"
@@ -315,7 +315,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                 >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
-                    src="images/case_studies/talent_pipeline/user_stories.svg"
+                    src="images/case_studies/talent_pipeline/user_stories.webp"
                     effect="blur"
                     alt="user stories"
                     width="100%"
@@ -330,7 +330,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                 >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
-                    src="images/case_studies/talent_pipeline/user_story_mapping.svg"
+                    src="images/case_studies/talent_pipeline/user_story_mapping.webp"
                     effect="blur"
                     alt="user story mapping"
                     width="100%"
@@ -379,7 +379,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   {isMobile ? (
                     <LazyLoadImage
                       scrollPosition={scrollPosition}
-                      src="images/case_studies/talent_pipeline/sample_design.svg"
+                      src="images/case_studies/talent_pipeline/sample_design.webp"
                       effect="blur"
                       alt="sample design"
                       width="100%"
@@ -388,7 +388,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                     <ScrollingContainer>
                       <LazyLoadImage
                         scrollPosition={scrollPosition}
-                        src="images/case_studies/talent_pipeline/sample_design.svg"
+                        src="images/case_studies/talent_pipeline/sample_design.webp"
                         effect="blur"
                         alt="sample design"
                         width="100%"
@@ -450,7 +450,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                 >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
-                    src="images/case_studies/talent_pipeline/strenghts.svg"
+                    src="images/case_studies/talent_pipeline/strenghts.webp"
                     effect="blur"
                     alt="strenghts"
                     width="100%"
@@ -465,7 +465,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                 >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
-                    src="images/case_studies/talent_pipeline/weaknesses.svg"
+                    src="images/case_studies/talent_pipeline/weaknesses.webp"
                     effect="blur"
                     alt="weaknesses"
                     width="100%"
@@ -480,7 +480,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                 >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
-                    src="images/case_studies/talent_pipeline/opportunities.svg"
+                    src="images/case_studies/talent_pipeline/opportunities.webp"
                     effect="blur"
                     alt="opportunities"
                     width="100%"
@@ -535,7 +535,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                 >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
-                    src="images/case_studies/talent_pipeline/tp_landing_page.svg"
+                    src="images/case_studies/talent_pipeline/tp_landing_page.webp"
                     effect="blur"
                     alt="talent pipeline landing page"
                     width="100%"
@@ -581,7 +581,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   {isMobile ? (
                     <LazyLoadImage
                       scrollPosition={scrollPosition}
-                      src="images/case_studies/talent_pipeline/tp_landing_page_scrolling.svg"
+                      src="images/case_studies/talent_pipeline/tp_landing_page_scrolling.webp"
                       effect="blur"
                       alt="talent pipeline landing page"
                       width="100%"
@@ -590,7 +590,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                     <ScrollingContainer>
                       <LazyLoadImage
                         scrollPosition={scrollPosition}
-                        src="images/case_studies/talent_pipeline/tp_landing_page_scrolling.svg"
+                        src="images/case_studies/talent_pipeline/tp_landing_page_scrolling.webp"
                         effect="blur"
                         alt="talent pipeline landing page"
                         width="100%"

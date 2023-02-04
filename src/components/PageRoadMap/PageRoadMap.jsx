@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import { IconButton, Backdrop, Grow } from '@mui/material';
+import FormatListBulletedOutlinedIcon from '@mui/icons-material/FormatListBulletedOutlined';
 import './page-road-map.css';
 
 const PageRoadMap = ({ showMore }) => {
   const [sectionsData, setSectionsData] = useState([]);
   const [sectionsTopOffset, setSectionsTopOffset] = useState([]);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   useEffect(() => {
     const sections = document.getElementsByClassName('page-section');
@@ -72,19 +75,6 @@ const PageRoadMap = ({ showMore }) => {
 
     window.onscroll = updateClientMid;
     window.onresize = updateClientMid;
-
-    // const resizeObserver = new ResizeObserver(() =>
-    //   updateSectionTops(
-    //     window.scrollY +
-    //       (window.innerHeight ||
-    //         document.documentElement.clientHeight ||
-    //         document.body.clientHeight) /
-    //         2
-    //   )
-    // );
-
-    // // start observing a DOM node
-    // resizeObserver.observe(document.body);
   }, [showMore]);
 
   const handleItemClick = (offsetTop) => {
@@ -94,6 +84,63 @@ const PageRoadMap = ({ showMore }) => {
 
   return (
     <div className="page-road-map" id="page-road-map">
+      <div className="page-road-map__mobile">
+        <IconButton
+          aria-label="delete"
+          className="page-road-map__mobile-icon"
+          sx={{
+            fontSize: '2rem',
+            padding: 0,
+          }}
+          onClick={() => setIsDropdownOpen(true)}
+        >
+          <FormatListBulletedOutlinedIcon fontSize="42px" />
+        </IconButton>
+        <Backdrop
+          sx={{
+            color: '#fff',
+            zIndex: (theme) => theme.zIndex.drawer + 1,
+            backgroundColor: 'rgba(0, 0, 0, 0.05)',
+          }}
+          open={isDropdownOpen}
+          onClick={() => setIsDropdownOpen(false)}
+        >
+          <Grow
+            in={isDropdownOpen}
+            style={{ transformOrigin: '0 0 0' }}
+            {...(isDropdownOpen ? { timeout: 800 } : {})}
+          >
+            <div className="page-road-map__mobile-items">
+              <span className="page-road-map__mobile-items-title">
+                Contents
+              </span>
+              <div
+                className="page-road-map__mobile-item"
+                onClick={() => window.scroll(0, 0)}
+              >
+                <span className="page-road-map__mobile-item-label">
+                  (Move to top)
+                </span>
+              </div>
+              {sectionsData.map((section, idx) => (
+                <div
+                  className={`page-road-map__mobile-item ${
+                    section.isCurrentSection
+                      ? 'page-road-map__mobile-item--active'
+                      : ''
+                  }`}
+                  key={idx}
+                  onClick={() => handleItemClick(sectionsTopOffset[idx])}
+                >
+                  <span className="page-road-map__mobile-item-label">
+                    {section.sectionLabel}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </Grow>
+        </Backdrop>
+      </div>
       {sectionsData.map((section, idx) => (
         <div
           className={`page-road-map__item ${

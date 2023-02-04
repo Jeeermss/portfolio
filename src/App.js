@@ -6,6 +6,7 @@ import useStore from './hooks/useStore';
 
 import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer';
+import ScrollToTopButton from './components/ScrollToTopButton';
 import ScrollToTop from './routes/ScrollToTop';
 import ProtectedRoute from './routes/ProtectedRoute';
 import LoadingScreen from './components/LoadingScreen';
@@ -102,6 +103,7 @@ function App() {
           <ToastContainer position="top-right" autoClose={3000} limit={1} />
         </ScrollToTop>
       </Container>
+      <ScrollToTopButton />
       <Footer />
     </StyledEngineProvider>
   );

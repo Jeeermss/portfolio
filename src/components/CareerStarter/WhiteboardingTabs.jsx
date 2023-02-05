@@ -11,42 +11,42 @@ const WhiteboardingTabs = ({ scrollPosition }) => {
       content: (
         <LazyLoadImage
           scrollPosition={scrollPosition}
-          src="images/case_studies/career_starter/whiteboarding_job_seekers.svg"
+          src="images/case_studies/career_starter/whiteboarding_job_seekers.webp"
           effect="blur"
           alt="job seekers"
           width="100%"
         />
       ),
       imgUrl:
-        'images/case_studies/career_starter/whiteboarding_job_seekers.svg',
+        'images/case_studies/career_starter/whiteboarding_job_seekers.webp',
     },
     {
       name: 'Employee Representatives',
       content: (
         <LazyLoadImage
           scrollPosition={scrollPosition}
-          src="images/case_studies/career_starter/whiteboarding_employer_reps.svg"
+          src="images/case_studies/career_starter/whiteboarding_employer_reps.webp"
           effect="blur"
           alt="employee rep"
           width="100%"
         />
       ),
       imgUrl:
-        'images/case_studies/career_starter/whiteboarding_employer_reps.svg',
+        'images/case_studies/career_starter/whiteboarding_employer_reps.webp',
     },
     {
       name: 'Case Managers',
       content: (
         <LazyLoadImage
           scrollPosition={scrollPosition}
-          src="images/case_studies/career_starter/whiteboarding_case_managers.svg"
+          src="images/case_studies/career_starter/whiteboarding_case_managers.webp"
           effect="blur"
           alt="case managers"
           width="100%"
         />
       ),
       imgUrl:
-        'images/case_studies/career_starter/whiteboarding_case_managers.svg',
+        'images/case_studies/career_starter/whiteboarding_case_managers.webp',
     },
   ];
 

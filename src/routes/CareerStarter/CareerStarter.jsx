@@ -105,7 +105,7 @@ const CareerStarter = ({ scrollPosition }) => {
                 <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
-                    src="images/case_studies/career_starter/ut_plan.svg"
+                    src="images/case_studies/career_starter/ut_plan.webp"
                     effect="blur"
                     alt="UT plan"
                     width="100%"
@@ -208,7 +208,7 @@ const CareerStarter = ({ scrollPosition }) => {
                     >
                       <LazyLoadImage
                         scrollPosition={scrollPosition}
-                        src="images/case_studies/career_starter/stanley.svg"
+                        src="images/case_studies/career_starter/stanley.webp"
                         effect="blur"
                         alt="stanley"
                         width="80%"
@@ -223,7 +223,7 @@ const CareerStarter = ({ scrollPosition }) => {
                     >
                       <LazyLoadImage
                         scrollPosition={scrollPosition}
-                        src="images/case_studies/career_starter/procore.svg"
+                        src="images/case_studies/career_starter/procore.webp"
                         effect="blur"
                         alt="pro core"
                         width="80%"
@@ -241,14 +241,14 @@ const CareerStarter = ({ scrollPosition }) => {
                   >
                     <LazyLoadImage
                       scrollPosition={scrollPosition}
-                      src="images/case_studies/career_starter/stanley.svg"
+                      src="images/case_studies/career_starter/stanley.webp"
                       effect="blur"
                       alt="stanley"
                       width="100%"
                     />
                     <LazyLoadImage
                       scrollPosition={scrollPosition}
-                      src="images/case_studies/career_starter/procore.svg"
+                      src="images/case_studies/career_starter/procore.webp"
                       effect="blur"
                       alt="pro core"
                       width="100%"
@@ -278,7 +278,7 @@ const CareerStarter = ({ scrollPosition }) => {
                 <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
-                    src="images/case_studies/career_starter/post_research_image_1.svg"
+                    src="images/case_studies/career_starter/post_research_image_1.webp"
                     effect="blur"
                     alt="post research img 1"
                     width="100%"
@@ -289,7 +289,7 @@ const CareerStarter = ({ scrollPosition }) => {
                 <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
-                    src="images/case_studies/career_starter/post_research_image_2.svg"
+                    src="images/case_studies/career_starter/post_research_image_2.webp"
                     effect="blur"
                     alt="post research img 2"
                     width="100%"
@@ -400,7 +400,7 @@ const CareerStarter = ({ scrollPosition }) => {
                 <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
-                    src="images/case_studies/career_starter/high_low_priorities.svg"
+                    src="images/case_studies/career_starter/high_low_priorities.webp"
                     effect="blur"
                     alt="high low priorities"
                     width="100%"

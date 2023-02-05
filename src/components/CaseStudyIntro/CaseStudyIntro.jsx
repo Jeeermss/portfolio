@@ -36,9 +36,14 @@ const CaseStudyIntro = ({
             </div>
             <div className="cs-intro__summary-roles">
               {summaryRoles.map((role, idx) => (
-                <span key={idx} className="cs-intro__summary-role">
-                  {role}
-                </span>
+                <ScrollAnimation
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                  offset={250}
+                  key={idx}
+                >
+                  <span className="cs-intro__summary-role">{role}</span>
+                </ScrollAnimation>
               ))}
             </div>
           </div>

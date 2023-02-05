@@ -10,6 +10,8 @@ import {
 } from '../../constants/about-me';
 import './about-me.css';
 
+import ScrollAnimation from 'react-animate-on-scroll';
+
 const AboutMe = () => {
   return (
     <main className="about-me">
@@ -28,24 +30,59 @@ const AboutMe = () => {
           // avatarUrl={HeroImage}
         />
         <div className="about-me__info-data">
-          <div className="about-me__info-name">
-            <h2>Jeremie</h2>
-            <p>[ jer-uh-mee ]</p>
-          </div>
-          <p className="about-me__info-noun">noun.</p>
+          <ScrollAnimation
+            animateIn="animate__fadeInUp"
+            animatePreScroll
+            animateOnce
+          >
+            <div className="about-me__info-name">
+              <h2>Jeremie</h2>
+              <p>[ jer-uh-mee ]</p>
+            </div>
+          </ScrollAnimation>
+          <ScrollAnimation
+            animateIn="animate__fadeInUp"
+            animatePreScroll
+            animateOnce
+            delay={300}
+          >
+            <p className="about-me__info-noun">noun.</p>
+          </ScrollAnimation>
           <ol className="about-me__info-list body-2">
-            <li>
-              A Filipina-American woman who is passionate about solving problems
-              by using research, critical thinking, and ideation. Her
-              educational career started in 2012 and lasted for 6 years.
-            </li>
-            <li>
-              On her 6th year, she transitioned to Tech, focusing in UI Design.
-            </li>
-            <li>
-              Now, she works within the EdTech industry with a focus of Adult
-              Education in digital products.
-            </li>
+            <ScrollAnimation
+              animateIn="animate__fadeInUp"
+              animatePreScroll
+              animateOnce
+              delay={900}
+            >
+              <li>
+                A Filipina-American woman who is passionate about solving
+                problems by using research, critical thinking, and ideation. Her
+                educational career started in 2012 and lasted for 6 years.
+              </li>
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn="animate__fadeInUp"
+              animatePreScroll
+              animateOnce
+              delay={1400}
+            >
+              <li>
+                On her 6th year, she transitioned to Tech, focusing in UI
+                Design.
+              </li>
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn="animate__fadeInUp"
+              animatePreScroll
+              animateOnce
+              delay={1900}
+            >
+              <li>
+                Now, she works within the EdTech industry with a focus of Adult
+                Education in digital products.
+              </li>
+            </ScrollAnimation>
           </ol>
         </div>
       </section>

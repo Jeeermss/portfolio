@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Grid } from '@mui/material';
+import ScrollAnimation from 'react-animate-on-scroll';
 import CaseStudyCard from '../CaseStudyCard/CaseStudyCard';
 
 import {
@@ -26,8 +27,15 @@ const CaseStudiesDirectory = () => {
   return (
     <Grid container className="case-study-directory">
       <Grid container>
-        <Grid item xs={12} className="section-headers">
-          <h3 className="heading-level-3">Case Studies Curated for You</h3>
+        <Grid item xs={12}>
+          <ScrollAnimation
+            animateIn="animate__fadeInUp"
+            animatePreScroll
+            animateOnce
+            className="section-headers"
+          >
+            <h3 className="heading-level-3">Case Studies Curated for You</h3>
+          </ScrollAnimation>
         </Grid>
       </Grid>
       <Grid

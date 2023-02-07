@@ -100,7 +100,12 @@ function App() {
               <Route element={<AboutMe />} path={ABOUT_ME} />
             </Routes>
           </React.Suspense>
-          <ToastContainer position="top-right" autoClose={3000} limit={1} />
+          <ToastContainer
+            position="top-right"
+            autoClose={3000}
+            limit={1}
+            style={{ zIndex: 10001 }}
+          />
         </ScrollToTop>
       </Container>
       <ScrollToTopButton />

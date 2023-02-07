@@ -152,8 +152,8 @@ const PageRoadMap = ({ showMore }) => {
           <img
             src={`${
               section.isCurrentSection
-                ? 'assets/ellipse_checked.svg'
-                : 'assets/ellipse.svg'
+                ? 'assets/ellipse_checked.webp'
+                : 'assets/ellipse.webp'
             }`}
             alt="ellipse"
           />

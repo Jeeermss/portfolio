@@ -79,12 +79,21 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-left: 20px;
-  list-style-image: url('/public/images/case_studies/career_starter/bullet_point.svg');
+  list-style: none;
 }
 
 .talent-pipeline__common-paragraph ul li {
   padding-left: 8px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.talent-pipeline__common-paragraph ul li:before {
+  content: url('/public/images/case_studies/career_starter/bullet_point.svg');
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+  line-height: 1.3;
 }
 
 /* MaterialUI breakpoint `md` */
@@ -129,5 +138,8 @@
   .talent-pipeline__role span {
     font-size: 14px;
     line-height: 17px;
+  }
+  .talent-pipeline__common-paragraph ul li:before {
+    line-height: 1.7;
   }
 }

@@ -224,8 +224,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                         content: (
                           <ImageCarousel
                             images={[
-                              'images/case_studies/profiles_and_verifications/user_testing_report_1.svg',
-                              'images/case_studies/profiles_and_verifications/user_testing_report_2.svg',
+                              'images/case_studies/profiles_and_verifications/user_testing_report_1.webp',
+                              'images/case_studies/profiles_and_verifications/user_testing_report_2.webp',
                             ]}
                           />
                         ),
@@ -235,8 +235,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                         content: (
                           <ImageCarousel
                             images={[
-                              'images/case_studies/profiles_and_verifications/user_testing_report_1.svg',
-                              'images/case_studies/profiles_and_verifications/user_testing_report_2.svg',
+                              'images/case_studies/profiles_and_verifications/user_testing_report_1.webp',
+                              'images/case_studies/profiles_and_verifications/user_testing_report_2.webp',
                             ]}
                           />
                         ),
@@ -307,8 +307,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       'It is imperative we design an application that is intuitive, clean, and help educate our users on how to navigate within our products.',
                     ]}
                     carouselImages={[
-                      'images/case_studies/profiles_and_verifications/ui_design_1.svg',
-                      'images/case_studies/profiles_and_verifications/ui_design_1.svg',
+                      'images/case_studies/profiles_and_verifications/ui_design_1.webp',
+                      'images/case_studies/profiles_and_verifications/ui_design_1.webp',
                     ]}
                   />
                 </ScrollAnimation>
@@ -378,8 +378,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       'This first slide is a snapshot provided by the Full-Stack Developer.',
                     ]}
                     carouselImages={[
-                      'images/case_studies/profiles_and_verifications/current_status_1.svg',
-                      'images/case_studies/profiles_and_verifications/current_status_2.svg',
+                      'images/case_studies/profiles_and_verifications/current_status_1.webp',
+                      'images/case_studies/profiles_and_verifications/current_status_2.webp',
                     ]}
                   />
                 </ScrollAnimation>

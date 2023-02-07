@@ -62,7 +62,7 @@ const ImageCarousel = ({
             PrevIcon={<ArrowCircleLeftOutlined sx={arrowButtonsStyle} />}
             navButtonsProps={{
               style: {
-                backgroundColor: 'rgba(0, 0, 0, 0.150)',
+                backgroundColor: 'rgba(0, 0, 0, 0.10)',
                 borderRadius: 0,
                 margin: 0,
                 padding: '36px 16px',
@@ -72,12 +72,12 @@ const ImageCarousel = ({
               /* Left button */
               '.css-hn784z:hover button': {
                 opacity: '1 !important',
-                backgroundColor: 'rgba(0, 0, 0, 0.3) !important',
+                backgroundColor: 'rgba(0, 0, 0, 0.15) !important',
               },
               /* Right button */
               '.css-1abc02a:hover button': {
                 opacity: '1 !important',
-                backgroundColor: 'rgba(0, 0, 0, 0.3) !important',
+                backgroundColor: 'rgba(0, 0, 0, 0.15) !important',
               },
               /* Left button */
               '.css-hn784z button svg': {

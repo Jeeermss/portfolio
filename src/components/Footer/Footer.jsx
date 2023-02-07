@@ -97,7 +97,7 @@ const Footer = ({ scrollPosition }) => {
               alt="copyright"
               style={{ marginRight: 4 }}
             />
-            <p>Copyright 2022. Intellectual property of Jeremie Montero.</p>
+            <p>Intellectual property of Jeremie Montero.</p>
           </div>
           <FooterNavigation className="footer__navigation" />
         </div>

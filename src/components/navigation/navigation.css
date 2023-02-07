@@ -7,11 +7,11 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  gap: 56px;
 }
 
 .navbar-list-item {
   list-style: none;
-  padding: 0 24px;
 }
 
 .navbar-list-item a {

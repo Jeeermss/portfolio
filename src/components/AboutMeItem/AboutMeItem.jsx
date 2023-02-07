@@ -15,7 +15,7 @@ const AboutMeItem = ({
   scrollPosition,
 }) => {
   return (
-    <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+    <ScrollAnimation animateOnce animateIn="animate__fadeInUp" animatePreScroll>
       <div className="about-me-item">
         <div className="about-me-item__logo">
           <LazyLoadImage

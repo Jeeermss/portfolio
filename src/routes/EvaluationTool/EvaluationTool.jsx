@@ -92,7 +92,11 @@ const EvaluationTool = ({ scrollPosition }) => {
       {(showMore && isMobile) || !isMobile ? (
         <>
           <div className="page-section" data-section-label="Roadmap">
-            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+            <ScrollAnimation
+              animateOnce
+              animateIn="animate__fadeInUp"
+              animatePreScroll
+            >
               <CaseStudyCardMedia
                 sx={{
                   mb: { xs: 9, md: 15 },
@@ -158,26 +162,20 @@ const EvaluationTool = ({ scrollPosition }) => {
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12}>
-                <ScrollAnimation
-                  animateIn="animate__fadeInUp"
-                  animatePreScroll
-                  initiallyVisible
+                <ScrollingContainer
+                  sx={{
+                    maxHeight: { xs: '100%', md: 720 },
+                    height: { xs: '100%', md: 720 },
+                  }}
                 >
-                  <ScrollingContainer
-                    sx={{
-                      maxHeight: { xs: '100%', md: 720 },
-                      height: { xs: '100%', md: 720 },
-                    }}
-                  >
-                    <LazyLoadImage
-                      scrollPosition={scrollPosition}
-                      src="images/case_studies/evaluation_tool/user_stories_scrolling.webp"
-                      effect="blur"
-                      alt="user stories scrolling"
-                      width="100%"
-                    />
-                  </ScrollingContainer>
-                </ScrollAnimation>
+                  <LazyLoadImage
+                    scrollPosition={scrollPosition}
+                    src="images/case_studies/evaluation_tool/user_stories_scrolling.webp"
+                    effect="blur"
+                    alt="user stories scrolling"
+                    width="100%"
+                  />
+                </ScrollingContainer>
               </Grid>
             </Grid>
           </div>
@@ -214,7 +212,11 @@ const EvaluationTool = ({ scrollPosition }) => {
                 }}
               ></Grid>
               <Grid item xs={12}>
-                <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
                   {userFlowIFrameLoading && <IFrameLoading />}
                   <IFrameComponent
                     src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FWRO5soZQcri1WG60vkEdYN%2FPP%252FPV-User-Flow%3Ft%3D26xxBvFmfGc9YbId-1"
@@ -279,7 +281,11 @@ const EvaluationTool = ({ scrollPosition }) => {
                 </span>
               </Grid>
               <Grid item xs={12}>
-                <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
                   <ImageCarousel
                     images={[
                       'images/case_studies/evaluation_tool/initial_mockups_1.webp',
@@ -333,7 +339,11 @@ const EvaluationTool = ({ scrollPosition }) => {
                 <span>This was a career battle I was willing to take. </span>
               </Grid>
               <Grid item xs={12}>
-                <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
                     src="images/case_studies/evaluation_tool/project_roadmap.webp"
@@ -404,7 +414,11 @@ const EvaluationTool = ({ scrollPosition }) => {
                 </span>
               </Grid>
               <Grid item xs={12}>
-                <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
                     src="images/case_studies/evaluation_tool/whiteboard_session_1.webp"
@@ -415,7 +429,11 @@ const EvaluationTool = ({ scrollPosition }) => {
                 </ScrollAnimation>
               </Grid>
               <Grid item xs={12}>
-                <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
                     src="images/case_studies/evaluation_tool/whiteboard_session_2.webp"
@@ -426,7 +444,11 @@ const EvaluationTool = ({ scrollPosition }) => {
                 </ScrollAnimation>
               </Grid>
               <Grid item xs={12}>
-                <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
                   <ImageCarousel
                     images={[
                       'images/case_studies/evaluation_tool/whiteboard_session_3.webp',
@@ -482,7 +504,11 @@ const EvaluationTool = ({ scrollPosition }) => {
                 </span>
               </Grid>
               <Grid item xs={12}>
-                <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
                     src="images/case_studies/evaluation_tool/first_ux_ui_team_as_lead.webp"
@@ -537,7 +563,11 @@ const EvaluationTool = ({ scrollPosition }) => {
                 </span>
               </Grid>
               <Grid item xs={12}>
-                <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
                   <Tabs
                     activeTab={0}
                     tabsData={[
@@ -630,7 +660,11 @@ const EvaluationTool = ({ scrollPosition }) => {
                 </span>
               </Grid>
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
-                <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
                   {synthesizeIFrameLoading && <IFrameLoading />}
                   <IFrameComponent
                     src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FxkjC1835vVJt4skj5MOrsC%2FPP-%2526-PV-Interviews---Affinity-Mapping%3Fnode-id%3D0%253A1%26t%3DhK4MPG4MrPEKdoMz-1"
@@ -687,7 +721,11 @@ const EvaluationTool = ({ scrollPosition }) => {
                 </span>
               </Grid>
               <Grid item xs={12}>
-                <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
                   <Tabs
                     activeTab={0}
                     tabsData={[
@@ -759,22 +797,24 @@ const EvaluationTool = ({ scrollPosition }) => {
                       and plan instantaneously based off of their behaviors.
                     </li>
                     <li>
-                      If they do not want to do it themselves in smaller groups,
-                      you have to take action and visualize ideas yourself in
-                      one large big group.*
-                      <br />
-                      <span
-                        style={{
-                          fontSize: '16px',
-                          color: '#808080',
-                          lineHeight: '19px',
-                          display: 'flex',
-                          marginTop: '16px',
-                        }}
-                      >
-                        *Note - <br />
-                        Ask me during the interview and I will expand on this.
-                      </span>
+                      <div>
+                        If they do not want to do it themselves in smaller
+                        groups, you have to take action and visualize ideas
+                        yourself in one large big group.*
+                        <br />
+                        <span
+                          style={{
+                            fontSize: '16px',
+                            color: '#808080',
+                            lineHeight: '19px',
+                            display: 'flex',
+                            marginTop: '16px',
+                          }}
+                        >
+                          *Note - <br />
+                          Ask me during the interview and I will expand on this.
+                        </span>
+                      </div>
                     </li>
                     <li>
                       Is it the Product Designers duty to identify the gaps
@@ -786,7 +826,11 @@ const EvaluationTool = ({ scrollPosition }) => {
                 </span>
               </Grid>
               <Grid item xs={12}>
-                <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
                   <ImageCarousel
                     images={[
                       'images/case_studies/evaluation_tool/first_design_sprint_facilitation_1.webp',

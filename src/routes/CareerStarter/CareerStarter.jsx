@@ -53,7 +53,11 @@ const CareerStarter = ({ scrollPosition }) => {
       {(showMore && isMobile) || !isMobile ? (
         <>
           <div className="page-section" data-section-label="Product Video">
-            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+            <ScrollAnimation
+              animateOnce
+              animateIn="animate__fadeInUp"
+              animatePreScroll
+            >
               <ProductVideoTabs />
             </ScrollAnimation>
           </div>
@@ -102,7 +106,11 @@ const CareerStarter = ({ scrollPosition }) => {
                 </span>
               </Grid>
               <Grid item xs={12}>
-                <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
                     src="images/case_studies/career_starter/ut_plan.webp"
@@ -200,6 +208,7 @@ const CareerStarter = ({ scrollPosition }) => {
                 {isMobile ? (
                   <>
                     <ScrollAnimation
+                      animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
                       style={{
@@ -215,6 +224,7 @@ const CareerStarter = ({ scrollPosition }) => {
                       />
                     </ScrollAnimation>
                     <ScrollAnimation
+                      animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
                       style={{
@@ -232,6 +242,7 @@ const CareerStarter = ({ scrollPosition }) => {
                   </>
                 ) : (
                   <ScrollAnimation
+                    animateOnce
                     animateIn="animate__fadeInUp"
                     animatePreScroll
                     style={{
@@ -275,7 +286,11 @@ const CareerStarter = ({ scrollPosition }) => {
                 </span>
               </Grid>
               <Grid item xs={12}>
-                <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
                     src="images/case_studies/career_starter/post_research_image_1.webp"
@@ -286,7 +301,11 @@ const CareerStarter = ({ scrollPosition }) => {
                 </ScrollAnimation>
               </Grid>
               <Grid item xs={12}>
-                <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
                     src="images/case_studies/career_starter/post_research_image_2.webp"
@@ -347,7 +366,11 @@ const CareerStarter = ({ scrollPosition }) => {
                 </span>
               </Grid>
               <Grid item xs={12}>
-                <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
                   <WhiteboardingTabs />
                 </ScrollAnimation>
               </Grid>
@@ -397,7 +420,11 @@ const CareerStarter = ({ scrollPosition }) => {
                 </span>
               </Grid>
               <Grid item xs={12}>
-                <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
                     src="images/case_studies/career_starter/high_low_priorities.webp"

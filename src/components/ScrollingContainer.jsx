@@ -14,7 +14,7 @@ const ScrollingContainer = ({
       sx={{
         maxHeight: maxHeight,
         height: 720,
-        overflow: 'auto',
+        overflowY: 'auto',
         border: '1px solid #474747',
         backgroundColor: '#fff',
         ...sx,

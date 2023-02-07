@@ -139,7 +139,11 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                 </span>
               </Grid>
               <Grid item xs={12}>
-                <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
                   <Tabs
                     activeTab={0}
                     tabsData={[
@@ -215,7 +219,11 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                 </span>
               </Grid>
               <Grid item xs={12}>
-                <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
                   <Tabs
                     activeTab={0}
                     tabsData={[
@@ -301,7 +309,11 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                 </span>
               </Grid>
               <Grid item xs={12}>
-                <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
                   <CaseStudyCardCarousel
                     carouselContent={[
                       'It is imperative we design an application that is intuitive, clean, and help educate our users on how to navigate within our products.',
@@ -371,7 +383,11 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                 </span>
               </Grid>
               <Grid item xs={12}>
-                <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
                   <CaseStudyCardCarousel
                     carouselContent={[
                       "Let's compare and contrast.",
@@ -517,7 +533,11 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                 </span>
               </Grid>
               <Grid item xs={12}>
-                <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
                   <CaseStudyCardVideo
                     cardContent={[
                       'User Testing Participant #1:',

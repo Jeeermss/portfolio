@@ -55,7 +55,11 @@ const TalentPipeline = ({ scrollPosition }) => {
       {(showMore && isMobile) || !isMobile ? (
         <>
           <div className="page-section" data-section-label="Roadmap">
-            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+            <ScrollAnimation
+              animateOnce
+              animateIn="animate__fadeInUp"
+              animatePreScroll
+            >
               <CaseStudyCardMedia
                 sx={{ my: isMobile ? 7 : 14 }}
                 cardContent="My primary role started out as a Contractor UX/UI Designer for this
@@ -122,7 +126,11 @@ const TalentPipeline = ({ scrollPosition }) => {
               sx={{ mb: { xs: 9, md: 15 } }}
             >
               <Grid item xs={12} md={4} className="talent-pipeline__role">
-                <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
                     src="images/case_studies/talent_pipeline/job_seeker.svg"
@@ -135,7 +143,11 @@ const TalentPipeline = ({ scrollPosition }) => {
                 </span>
               </Grid>
               <Grid item xs={12} md={4} className="talent-pipeline__role">
-                <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
                     src="images/case_studies/talent_pipeline/employee_rep.svg"
@@ -148,7 +160,11 @@ const TalentPipeline = ({ scrollPosition }) => {
                 </span>
               </Grid>
               <Grid item xs={12} md={4} className="talent-pipeline__role">
-                <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
                     src="images/case_studies/talent_pipeline/training_instructor.svg"
@@ -198,6 +214,7 @@ const TalentPipeline = ({ scrollPosition }) => {
               >
                 <div>
                   <ScrollAnimation
+                    animateOnce
                     animateIn="animate__fadeInUp"
                     animatePreScroll
                   >
@@ -210,6 +227,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                     />
                   </ScrollAnimation>
                   <ScrollAnimation
+                    animateOnce
                     animateIn="animate__fadeInUp"
                     animatePreScroll
                   >
@@ -224,7 +242,11 @@ const TalentPipeline = ({ scrollPosition }) => {
                 </div>
               </Grid>
             </Grid>
-            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+            <ScrollAnimation
+              animateOnce
+              animateIn="animate__fadeInUp"
+              animatePreScroll
+            >
               <PersonasTabs />
             </ScrollAnimation>
           </div>
@@ -256,7 +278,11 @@ const TalentPipeline = ({ scrollPosition }) => {
                 </span>
               </Grid>
             </Grid>
-            <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll>
+            <ScrollAnimation
+              animateOnce
+              animateIn="animate__fadeInUp"
+              animatePreScroll
+            >
               <CareerJourneyTabs />
             </ScrollAnimation>
           </div>
@@ -309,6 +335,7 @@ const TalentPipeline = ({ scrollPosition }) => {
               </Grid>
               <Grid item xs={12}>
                 <ScrollAnimation
+                  animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
                   initiallyVisible
@@ -324,6 +351,7 @@ const TalentPipeline = ({ scrollPosition }) => {
               </Grid>
               <Grid item xs={12}>
                 <ScrollAnimation
+                  animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
                   initiallyVisible
@@ -372,6 +400,7 @@ const TalentPipeline = ({ scrollPosition }) => {
               </Grid>
               <Grid item xs={12}>
                 <ScrollAnimation
+                  animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
                   initiallyVisible
@@ -444,6 +473,7 @@ const TalentPipeline = ({ scrollPosition }) => {
               </Grid>
               <Grid item xs={12}>
                 <ScrollAnimation
+                  animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
                   initiallyVisible
@@ -459,6 +489,7 @@ const TalentPipeline = ({ scrollPosition }) => {
               </Grid>
               <Grid item xs={12}>
                 <ScrollAnimation
+                  animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
                   initiallyVisible
@@ -474,6 +505,7 @@ const TalentPipeline = ({ scrollPosition }) => {
               </Grid>
               <Grid item xs={12}>
                 <ScrollAnimation
+                  animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
                   initiallyVisible
@@ -529,6 +561,7 @@ const TalentPipeline = ({ scrollPosition }) => {
               </Grid>
               <Grid item xs={12}>
                 <ScrollAnimation
+                  animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
                   initiallyVisible
@@ -574,6 +607,7 @@ const TalentPipeline = ({ scrollPosition }) => {
               </Grid>
               <Grid item xs={12}>
                 <ScrollAnimation
+                  animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
                   initiallyVisible

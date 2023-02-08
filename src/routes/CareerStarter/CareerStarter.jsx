@@ -113,7 +113,7 @@ const CareerStarter = ({ scrollPosition }) => {
                 >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
-                    src="images/case_studies/career_starter/ut_plan.webp"
+                    src="images/case_studies/career_starter/ut_plan.png"
                     effect="blur"
                     alt="UT plan"
                     width="100%"

@@ -17,6 +17,9 @@ const ScrollingContainer = ({
         overflowY: 'auto',
         border: '1px solid #474747',
         backgroundColor: '#fff',
+        display: 'flex',
+        alignItems: 'flex-start',
+        justifyContent: 'center',
         ...sx,
       }}
     >

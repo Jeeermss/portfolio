@@ -170,7 +170,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                 >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
-                    src="images/case_studies/evaluation_tool/user_stories_scrolling.webp"
+                    src="images/case_studies/evaluation_tool/user_stories_scrolling.png"
                     effect="blur"
                     alt="user stories scrolling"
                     width="100%"
@@ -296,7 +296,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                       'images/case_studies/evaluation_tool/initial_mockups_6.webp',
                       'images/case_studies/evaluation_tool/initial_mockups_7.webp',
                     ]}
-                    toolbarImage="images/case_studies/evaluation_tool/chrome_toolbar.webp"
+                    toolbarImage="images/case_studies/evaluation_tool/chrome_toolbar.png"
                   />
                 </ScrollAnimation>
               </Grid>
@@ -346,7 +346,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                 >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
-                    src="images/case_studies/evaluation_tool/project_roadmap.webp"
+                    src="images/case_studies/evaluation_tool/project_roadmap.png"
                     effect="blur"
                     alt="user flow"
                     width="100%"
@@ -511,7 +511,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                 >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
-                    src="images/case_studies/evaluation_tool/first_ux_ui_team_as_lead.webp"
+                    src="images/case_studies/evaluation_tool/first_ux_ui_team_as_lead.png"
                     effect="blur"
                     alt="user flow"
                     width="100%"

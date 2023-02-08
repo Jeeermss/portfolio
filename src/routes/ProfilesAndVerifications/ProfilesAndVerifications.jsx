@@ -94,7 +94,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
             <Grid
               container
               rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 7 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 9, md: 15 }, mt: { xs: 7, md: 15 } }}
             >
               <Grid
@@ -185,7 +185,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
             <Grid
               container
               rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 7 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid
@@ -260,7 +260,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
             <Grid
               container
               rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 7 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid
@@ -332,7 +332,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
             <Grid
               container
               rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 7 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid
@@ -407,7 +407,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
             <Grid
               container
               rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 7 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid
@@ -475,7 +475,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
             <Grid
               container
               rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 7 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid
@@ -558,7 +558,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
             <Grid
               container
               rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 7 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 9, md: 15 } }}
             >
               <Grid

@@ -66,7 +66,7 @@ const CareerStarter = ({ scrollPosition }) => {
             <Grid
               container
               rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 8 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="career-starter__common-paragraph">
@@ -127,7 +127,7 @@ const CareerStarter = ({ scrollPosition }) => {
             <Grid
               container
               rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 8 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="career-starter__common-paragraph">
@@ -189,7 +189,7 @@ const CareerStarter = ({ scrollPosition }) => {
             <Grid
               container
               rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 8 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="career-starter__common-paragraph">
@@ -325,7 +325,7 @@ const CareerStarter = ({ scrollPosition }) => {
             <Grid
               container
               rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 7 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="career-starter__common-paragraph">
@@ -384,7 +384,7 @@ const CareerStarter = ({ scrollPosition }) => {
             <Grid
               container
               rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 7 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="career-starter__common-paragraph">
@@ -441,7 +441,7 @@ const CareerStarter = ({ scrollPosition }) => {
             <Grid
               container
               rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 7 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 14, md: 15 } }}
             >
               <Grid item xs={12} className="career-starter__common-paragraph">

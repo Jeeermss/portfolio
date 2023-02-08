@@ -182,19 +182,17 @@ const TalentPipeline = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="Personas">
             <Grid
               container
-              rowGap={{ xs: 2, md: 0 }}
+              rowGap={{ xs: 7, md: 0 }}
               spacing={{ xs: 0, md: 8 }}
               sx={{ mb: { xs: 4, md: 7 } }}
             >
-              <Grid item xs={12} className="talent-pipeline__common-paragraph">
-                <h2>Personas</h2>
-              </Grid>
               <Grid
                 item
                 xs={12}
                 md={6}
                 className="talent-pipeline__common-paragraph"
               >
+                <h2>Personas</h2>
                 <span>
                   The marketing team conducted a focus group to gather specific
                   insights from the GenZ target audience, which were in the

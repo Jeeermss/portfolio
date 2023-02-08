@@ -112,7 +112,7 @@ const EvaluationTool = ({ scrollPosition }) => {
             <Grid
               container
               rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 7 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 4, md: 7 } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
@@ -158,7 +158,7 @@ const EvaluationTool = ({ scrollPosition }) => {
             <Grid
               container
               rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 7 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12}>
@@ -184,7 +184,7 @@ const EvaluationTool = ({ scrollPosition }) => {
             <Grid
               container
               rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 7 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
@@ -235,7 +235,7 @@ const EvaluationTool = ({ scrollPosition }) => {
             <Grid
               container
               rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 7 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
@@ -307,7 +307,7 @@ const EvaluationTool = ({ scrollPosition }) => {
             <Grid
               container
               rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 7 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
@@ -360,7 +360,7 @@ const EvaluationTool = ({ scrollPosition }) => {
             <Grid
               container
               rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 7 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
@@ -467,7 +467,7 @@ const EvaluationTool = ({ scrollPosition }) => {
             <Grid
               container
               rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 7 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
@@ -528,7 +528,7 @@ const EvaluationTool = ({ scrollPosition }) => {
             <Grid
               container
               rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 7 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
@@ -620,7 +620,7 @@ const EvaluationTool = ({ scrollPosition }) => {
             <Grid
               container
               rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 7 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
@@ -686,7 +686,7 @@ const EvaluationTool = ({ scrollPosition }) => {
             <Grid
               container
               rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 7 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
@@ -762,7 +762,7 @@ const EvaluationTool = ({ scrollPosition }) => {
             <Grid
               container
               rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 7 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
@@ -856,7 +856,7 @@ const EvaluationTool = ({ scrollPosition }) => {
             <Grid
               container
               rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 7 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 9, md: 15 } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">

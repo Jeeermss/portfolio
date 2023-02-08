@@ -36,9 +36,7 @@ const CaseStudyCard = ({
         <div
           className="card-media"
           style={{
-            backgroundImage: `url(${
-              cardImageUrl ? cardImageUrl : 'images/bg-dots.png'
-            })`,
+            backgroundImage: cardImageUrl ? `url(${cardImageUrl})` : 'none',
             backgroundSize: isMobile ? cardImageMobileSize : cardImageSize,
             backgroundPosition: isMobile
               ? cardImagePositionMobile

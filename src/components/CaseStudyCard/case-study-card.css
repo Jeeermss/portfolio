@@ -30,9 +30,15 @@
   justify-content: center;
   align-items: center;
   height: 456px;
-  background-image: url('/src/assets/images/bg-dots.png');
+}
+
+.card-media::before {
+  content: '';
+  background-image: url('/public/images/bg-dots.png');
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .card-content {
@@ -60,9 +66,10 @@
 
 /* MaterialUI breakpoint `md` */
 @media (max-width: 900px) {
-  /* .card-media {
+  .card-media {
     height: 345px;
-  } */
+    /* background-size: contain !important; */
+  }
 }
 
 /* MaterialUI breakpoint `sm` */

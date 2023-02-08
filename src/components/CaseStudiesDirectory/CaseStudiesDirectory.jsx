@@ -58,6 +58,8 @@ const CaseStudiesDirectory = () => {
             cardImageUrl="images/cs-1.svg"
             cardImageAlt="Case Study 1"
             onClick={() => navigate(EVALUATION_TOOL, { state: { location } })}
+            cardImageSize="contain"
+            cardImageMobileSize="contain"
           />
         </Grid>
         <Grid item xs={12} md={6} className="case-studies-card-wrapper">
@@ -73,6 +75,8 @@ const CaseStudiesDirectory = () => {
             onClick={() =>
               navigate(PROFILES_AND_VERIFICATIONS, { state: { location } })
             }
+            cardImageSize="contain"
+            cardImageMobileSize="contain"
           />
         </Grid>
         <Grid item xs={12} md={6} className="case-studies-card-wrapper">
@@ -86,6 +90,8 @@ const CaseStudiesDirectory = () => {
             cardImageUrl="images/cs-3.svg"
             cardImageAlt="Case Study 3"
             onClick={() => navigate(TALENT_PIPELINE, { state: { location } })}
+            cardImageSize="70%"
+            cardImageMobileSize="60%"
           />
         </Grid>
         <Grid item xs={12} md={6} className="case-studies-card-wrapper">
@@ -98,6 +104,9 @@ const CaseStudiesDirectory = () => {
             cardImageUrl="images/cs-4.svg"
             cardImageAlt="Case Study 4"
             onClick={() => navigate(CAREER_STARTER, { state: { location } })}
+            cardImageSize="80%"
+            cardImageMobileSize="80%"
+            cardImagePositionMobile="center 65%"
           />
         </Grid>
       </Grid>

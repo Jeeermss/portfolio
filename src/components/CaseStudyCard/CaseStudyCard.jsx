@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { useMediaQuery } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 import { trackWindowScroll } from 'react-lazy-load-image-component';
 import ScrollAnimation from 'react-animate-on-scroll';
 
@@ -10,10 +12,15 @@ const CaseStudyCard = ({
   contentHeader,
   contentDesc,
   cardImageUrl,
-  cardImageAlt,
+  cardImageSize = 'auto',
+  cardImageMobileSize = 'contain',
+  cardImagePositionMobile = 'center center',
   onClick,
 }) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const [cardHovered, setCardHovered] = useState(false);
+
   return (
     <ScrollAnimation animateIn="animate__fadeInUp" animatePreScroll animateOnce>
       <div
@@ -29,14 +36,16 @@ const CaseStudyCard = ({
         <div
           className="card-media"
           style={{
-            backgroundImage: `url(${cardImageUrl})`,
-            backgroundSize: 'auto',
-            backgroundPosition: 'center',
+            backgroundImage: `url(${
+              cardImageUrl ? cardImageUrl : 'images/bg-dots.png'
+            })`,
+            backgroundSize: isMobile ? cardImageMobileSize : cardImageSize,
+            backgroundPosition: isMobile
+              ? cardImagePositionMobile
+              : 'center center',
             backgroundRepeat: 'no-repeat',
           }}
-        >
-          {/* {cardImageUrl ? <img src={cardImageUrl} alt={cardImageAlt} /> : null} */}
-        </div>
+        ></div>
         <div className={`card-content ${cardHovered ? 'card-hovered' : ''}`}>
           <h4 className="card-content__heading heading-level-4-card">
             {contentHeader}

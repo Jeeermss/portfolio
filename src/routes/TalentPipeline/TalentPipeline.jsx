@@ -182,17 +182,19 @@ const TalentPipeline = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="Personas">
             <Grid
               container
-              rowGap={{ xs: 7, md: 0 }}
-              spacing={{ xs: 0, md: 8 }}
+              rowGap={{ xs: 3, md: 0 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 4, md: 7 } }}
             >
+              <Grid item xs={12} className="talent-pipeline__common-paragraph">
+                <h2>Personas</h2>
+              </Grid>
               <Grid
                 item
                 xs={12}
                 md={6}
                 className="talent-pipeline__common-paragraph"
               >
-                <h2>Personas</h2>
                 <span>
                   The marketing team conducted a focus group to gather specific
                   insights from the GenZ target audience, which were in the
@@ -215,6 +217,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                     animateOnce
                     animateIn="animate__fadeInUp"
                     animatePreScroll
+                    style={{ marginBottom: 10 }}
                   >
                     <LazyLoadImage
                       scrollPosition={scrollPosition}
@@ -252,7 +255,7 @@ const TalentPipeline = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="Customer Journeys">
             <Grid
               container
-              rowGap={{ xs: 2, md: 0 }}
+              rowGap={{ xs: 3, md: 0 }}
               spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 4, md: 7 } }}
             >
@@ -288,9 +291,8 @@ const TalentPipeline = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="User Stories">
             <Grid
               container
-              rowGap={{ xs: 2, md: 0 }}
-              rowSpacing={3}
-              spacing={{ xs: 0, md: 8 }}
+              rowGap={{ xs: 3, md: 0 }}
+              spacing={{ xs: 0, md: 3 }}
               sx={{ mb: { xs: 9, md: 15 } }}
             >
               <Grid item xs={12} className="talent-pipeline__common-paragraph">
@@ -340,7 +342,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                 >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
-                    src="images/case_studies/talent_pipeline/user_stories.webp"
+                    src="images/case_studies/talent_pipeline/user_stories.png"
                     effect="blur"
                     alt="user stories"
                     width="100%"
@@ -356,7 +358,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                 >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
-                    src="images/case_studies/talent_pipeline/user_story_mapping.webp"
+                    src="images/case_studies/talent_pipeline/user_story_mapping.png"
                     effect="blur"
                     alt="user story mapping"
                     width="100%"
@@ -369,7 +371,7 @@ const TalentPipeline = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="Design System">
             <Grid
               container
-              rowGap={{ xs: 2, md: 0 }}
+              rowGap={{ xs: 3, md: 0 }}
               spacing={{ xs: 0, md: 4 }}
               sx={{ mb: { xs: 9, md: 15 } }}
             >
@@ -406,7 +408,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   {isMobile ? (
                     <LazyLoadImage
                       scrollPosition={scrollPosition}
-                      src="images/case_studies/talent_pipeline/sample_design.webp"
+                      src="images/case_studies/talent_pipeline/sample_design.png"
                       effect="blur"
                       alt="sample design"
                       width="100%"
@@ -415,7 +417,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                     <ScrollingContainer>
                       <LazyLoadImage
                         scrollPosition={scrollPosition}
-                        src="images/case_studies/talent_pipeline/sample_design.webp"
+                        src="images/case_studies/talent_pipeline/sample_design.png"
                         effect="blur"
                         alt="sample design"
                         width="100%"
@@ -430,9 +432,9 @@ const TalentPipeline = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="LP Analysis">
             <Grid
               container
-              rowGap={{ xs: 1, md: 0 }}
+              rowGap={{ xs: 3, md: 0 }}
               rowSpacing={{ xs: 0, md: 3 }}
-              spacing={{ xs: 0, md: 8 }}
+              spacing={{ xs: 0, md: 4 }}
               sx={{ mb: { xs: 9, md: 22 } }}
             >
               <Grid item xs={12} className="talent-pipeline__common-paragraph">
@@ -478,7 +480,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                 >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
-                    src="images/case_studies/talent_pipeline/strenghts.webp"
+                    src="images/case_studies/talent_pipeline/strenghts.png"
                     effect="blur"
                     alt="strenghts"
                     width="100%"
@@ -494,7 +496,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                 >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
-                    src="images/case_studies/talent_pipeline/weaknesses.webp"
+                    src="images/case_studies/talent_pipeline/weaknesses.png"
                     effect="blur"
                     alt="weaknesses"
                     width="100%"
@@ -510,7 +512,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                 >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
-                    src="images/case_studies/talent_pipeline/opportunities.webp"
+                    src="images/case_studies/talent_pipeline/opportunities.png"
                     effect="blur"
                     alt="opportunities"
                     width="100%"
@@ -526,9 +528,9 @@ const TalentPipeline = ({ scrollPosition }) => {
           >
             <Grid
               container
-              rowGap={{ xs: 1, md: 0 }}
+              rowGap={{ xs: 3, md: 0 }}
               rowSpacing={{ xs: 0, md: 3 }}
-              spacing={{ xs: 0, md: 8 }}
+              spacing={{ xs: 0, md: 4 }}
               sx={{ mb: { xs: 9, md: 15 } }}
             >
               <Grid item xs={12} className="talent-pipeline__common-paragraph">
@@ -566,7 +568,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                 >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
-                    src="images/case_studies/talent_pipeline/tp_landing_page.webp"
+                    src="images/case_studies/talent_pipeline/tp_landing_page.png"
                     effect="blur"
                     alt="talent pipeline landing page"
                     width="100%"
@@ -579,9 +581,9 @@ const TalentPipeline = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="LP Final Result">
             <Grid
               container
-              rowGap={{ xs: 1, md: 0 }}
+              rowGap={{ xs: 3, md: 0 }}
               rowSpacing={{ xs: 0, md: 3 }}
-              spacing={{ xs: 0, md: 8 }}
+              spacing={{ xs: 0, md: 4 }}
               sx={{ mb: { xs: 9, md: 15 } }}
             >
               <Grid item xs={12} className="talent-pipeline__common-paragraph">
@@ -613,7 +615,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   {isMobile ? (
                     <LazyLoadImage
                       scrollPosition={scrollPosition}
-                      src="images/case_studies/talent_pipeline/tp_landing_page_scrolling.webp"
+                      src="images/case_studies/talent_pipeline/tp_landing_page_scrolling.png"
                       effect="blur"
                       alt="talent pipeline landing page"
                       width="100%"
@@ -622,7 +624,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                     <ScrollingContainer>
                       <LazyLoadImage
                         scrollPosition={scrollPosition}
-                        src="images/case_studies/talent_pipeline/tp_landing_page_scrolling.webp"
+                        src="images/case_studies/talent_pipeline/tp_landing_page_scrolling.png"
                         effect="blur"
                         alt="talent pipeline landing page"
                         width="100%"
@@ -640,9 +642,9 @@ const TalentPipeline = ({ scrollPosition }) => {
           >
             <Grid
               container
-              rowGap={{ xs: 1, md: 0 }}
+              rowGap={{ xs: 3, md: 0 }}
               rowSpacing={{ xs: 0, md: 3 }}
-              spacing={{ xs: 0, md: 8 }}
+              spacing={{ xs: 0, md: 4 }}
               sx={{ mb: { xs: 14, md: 16 } }}
             >
               <Grid item xs={12} className="talent-pipeline__common-paragraph">

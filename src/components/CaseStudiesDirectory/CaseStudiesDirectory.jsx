@@ -90,7 +90,7 @@ const CaseStudiesDirectory = () => {
             cardImageUrl="images/cs-3.svg"
             cardImageAlt="Case Study 3"
             onClick={() => navigate(TALENT_PIPELINE, { state: { location } })}
-            cardImageSize="70%"
+            cardImageSize="60%"
             cardImageMobileSize="60%"
           />
         </Grid>

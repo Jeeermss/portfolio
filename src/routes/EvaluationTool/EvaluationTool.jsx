@@ -734,8 +734,11 @@ const EvaluationTool = ({ scrollPosition }) => {
                         content: (
                           <ImageCarousel
                             images={[
-                              'images/case_studies/evaluation_tool/personas_customer_journeys.webp',
-                              'images/case_studies/evaluation_tool/personas_customer_journeys.webp',
+                              'images/case_studies/evaluation_tool/personas_customer_journeys_1_pp.webp',
+                              'images/case_studies/evaluation_tool/personas_customer_journeys_2_pp.webp',
+                              'images/case_studies/evaluation_tool/personas_customer_journeys_3_pp.webp',
+                              'images/case_studies/evaluation_tool/personas_customer_journeys_4_pp.webp',
+                              'images/case_studies/evaluation_tool/personas_customer_journeys_5_pp.webp',
                             ]}
                           />
                         ),
@@ -745,8 +748,12 @@ const EvaluationTool = ({ scrollPosition }) => {
                         content: (
                           <ImageCarousel
                             images={[
-                              'images/case_studies/evaluation_tool/personas_customer_journeys.webp',
-                              'images/case_studies/evaluation_tool/personas_customer_journeys.webp',
+                              'images/case_studies/evaluation_tool/personas_customer_journeys_1_pv.webp',
+                              'images/case_studies/evaluation_tool/personas_customer_journeys_2_pv.webp',
+                              'images/case_studies/evaluation_tool/personas_customer_journeys_3_pv.webp',
+                              'images/case_studies/evaluation_tool/personas_customer_journeys_4_pv.webp',
+                              'images/case_studies/evaluation_tool/personas_customer_journeys_5_pv.webp',
+                              'images/case_studies/evaluation_tool/personas_customer_journeys_6_pv.webp',
                             ]}
                           />
                         ),

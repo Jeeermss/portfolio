@@ -56,7 +56,7 @@ const EvaluationTool = ({ scrollPosition }) => {
             display: `${isLoading ? 'none' : 'block'}`,
           }}
           width="100%"
-          height={isMobile ? '310' : '450'}
+          height={isMobile ? '314px' : '720px'}
           src={src}
           allowFullScreen
           title={title}

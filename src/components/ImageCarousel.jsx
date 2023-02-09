@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { useMediaQuery } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 import Carousel from 'react-material-ui-carousel';
 import {
   ArrowCircleRightOutlined,
@@ -19,6 +21,8 @@ const ImageCarousel = ({
   toolbarImage = '',
   scrollingMaxHeight = 720,
 }) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
   const loadImagesInSequence = (images) => {
@@ -65,29 +69,27 @@ const ImageCarousel = ({
                 backgroundColor: 'rgba(0, 0, 0, 0.10)',
                 borderRadius: 0,
                 margin: 0,
-                padding: '36px 16px',
+                padding: isMobile ? '8px' : '36px 16px',
               },
             }}
             sx={{
-              /* Left button */
-              '.css-hn784z:hover button': {
+              /* Button Hover */
+              '.css-hn784z:hover button, .css-1abc02a:hover button': {
                 opacity: '1 !important',
                 backgroundColor: 'rgba(0, 0, 0, 0.15) !important',
               },
-              /* Right button */
-              '.css-1abc02a:hover button': {
-                opacity: '1 !important',
-                backgroundColor: 'rgba(0, 0, 0, 0.15) !important',
-              },
-              /* Left button */
-              '.css-hn784z button svg': {
+              /* Button Icon */
+              '.css-hn784z button svg, .css-1abc02a button svg': {
                 opacity: '0.7 !important',
                 color: '#fff',
+                width: {
+                  xs: '32px',
+                  sm: 'auto',
+                },
               },
-              /* Right button */
-              '.css-1abc02a button svg': {
-                opacity: '0.7 !important',
-                color: '#fff',
+              /* Button */
+              '.css-hn784z, .css-1abc02a': {
+                top: { xs: '-25px', sm: '-35px' },
               },
             }}
             autoPlay={false}

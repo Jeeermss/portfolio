@@ -5,7 +5,7 @@ const style = {
   position: 'fixed',
   top: '50%',
   left: '50%',
-  color: '#c95d63',
+  color: '#c95d63 !important',
 };
 
 const LoadingScreen = () => {

@@ -25,7 +25,7 @@ import './profiles-and-verifications.css';
 import CaseStudyCardVideo from '../../components/CaseStudyCardVideo/CaseStudyCardVIdeo';
 
 const iFrameLoadingStyle = {
-  color: '#c95d63',
+  color: '#c95d63 !important',
   my: 3,
 };
 

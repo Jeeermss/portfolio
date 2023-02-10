@@ -28,7 +28,7 @@ import './evaluation-tool.css';
 import ImageCarousel from '../../components/ImageCarousel';
 
 const iFrameLoadingStyle = {
-  color: '#c95d63',
+  color: '#c95d63 !important',
   my: 8,
 };
 

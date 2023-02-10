@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useMediaQuery } from '@mui/material';
+import { useMediaQuery, CircularProgress } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import Carousel from 'react-material-ui-carousel';
 import {
@@ -103,7 +103,11 @@ const ImageCarousel = ({
             ))}
           </Carousel>
         </div>
-      ) : null}
+      ) : (
+        <div style={{ textAlign: 'center' }}>
+          <CircularProgress sx={{ color: '#c95d63 !important', my: 8 }} />
+        </div>
+      )}
     </>
   );
 };

@@ -601,6 +601,11 @@ const EvaluationTool = ({ scrollPosition }) => {
                               'images/case_studies/evaluation_tool/observations_interviews_5_pv.webp',
                               'images/case_studies/evaluation_tool/observations_interviews_6_pv.webp',
                               'images/case_studies/evaluation_tool/observations_interviews_7_pv.webp',
+                              'images/case_studies/evaluation_tool/observations_interviews_8_pv.webp',
+                              'images/case_studies/evaluation_tool/observations_interviews_9_pv.webp',
+                              'images/case_studies/evaluation_tool/observations_interviews_10_pv.webp',
+                              'images/case_studies/evaluation_tool/observations_interviews_11_pv.webp',
+                              'images/case_studies/evaluation_tool/observations_interviews_12_pv.webp',
                             ]}
                             scrollingMaxHeight={550}
                           />

@@ -139,6 +139,9 @@
     font-size: 14px;
     line-height: 17px;
   }
+  .talent-pipeline__common-paragraph ul {
+    gap: 8px;
+  }
   .talent-pipeline__common-paragraph ul li:before {
     line-height: 1.7;
   }

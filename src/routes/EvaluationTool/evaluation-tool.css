@@ -84,6 +84,9 @@
     font-size: 16px;
     line-height: 23px;
   }
+  .evaluation-tool__common-paragraph ul {
+    gap: 8px;
+  }
   .evaluation-tool__common-paragraph ul li:before {
     line-height: 1.7;
   }

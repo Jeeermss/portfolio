@@ -10,6 +10,8 @@ const PageRoadMap = ({ showMore }) => {
 
   useEffect(() => {
     const sections = document.getElementsByClassName('page-section');
+    const pageSectionsContainer = document.getElementById('page-road-map');
+    const footerContainer = document.querySelectorAll('.footer');
     let sectionsArr = [];
     let sectionsTop = [];
     const cMid =
@@ -73,6 +75,8 @@ const PageRoadMap = ({ showMore }) => {
     updateClientMid();
     getSections();
 
+    pageSectionsContainer.style.bottom = `${footerContainer[0].clientHeight}px`;
+
     window.onscroll = updateClientMid;
     window.onresize = updateClientMid;
   }, [showMore]);
@@ -83,7 +87,7 @@ const PageRoadMap = ({ showMore }) => {
   };
 
   return (
-    <div className="page-road-map" id="page-road-map">
+    <div className="page-road-map" id="page-road-map" style={{ bottom: '0' }}>
       <div className="page-road-map__mobile">
         <IconButton
           aria-label="delete"

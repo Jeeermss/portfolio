@@ -1,7 +1,6 @@
 .page-road-map {
   position: fixed;
   left: 16px;
-  top: 43%;
   display: flex;
   flex-direction: column;
   gap: 8px;

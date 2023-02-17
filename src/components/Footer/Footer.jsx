@@ -53,7 +53,7 @@ const Footer = ({ scrollPosition }) => {
   };
 
   return (
-    <div className="footer">
+    <div className="footer" id="footer">
       <Container className="footer__container">
         <div className="footer__first-row">
           <div className="footer__message">

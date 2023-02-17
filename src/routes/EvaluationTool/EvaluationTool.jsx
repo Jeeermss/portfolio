@@ -116,7 +116,13 @@ const EvaluationTool = ({ scrollPosition }) => {
               sx={{ mb: { xs: 4, md: 7 } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
-                <h2>The Objective</h2>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <h2>The Objective</h2>
+                </ScrollAnimation>
               </Grid>
               <Grid
                 item
@@ -124,16 +130,22 @@ const EvaluationTool = ({ scrollPosition }) => {
                 md={6}
                 className="evaluation-tool__common-paragraph"
               >
-                <p>
-                  The Performance Profiles and Verifications evaluation process
-                  is conducted in paper format then they enter the results
-                  through the system.
-                </p>
-                <p>
-                  This allows them to submit trainee and craft professional
-                  results to the organization.
-                </p>
-                <p>How might we have user’s submit evaluations online? </p>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <p>
+                    The Performance Profiles and Verifications evaluation
+                    process is conducted in paper format then they enter the
+                    results through the system.
+                  </p>
+                  <p>
+                    This allows them to submit trainee and craft professional
+                    results to the organization.
+                  </p>
+                  <p>How might we have user’s submit evaluations online? </p>
+                </ScrollAnimation>
               </Grid>
               <Grid
                 item
@@ -141,15 +153,21 @@ const EvaluationTool = ({ scrollPosition }) => {
                 md={6}
                 className="evaluation-tool__common-paragraph"
               >
-                <span>
-                  The LMS Testing Manager provided a brief project scope and
-                  sent me user stories.
-                </span>
-                <span>
-                  According to the user stories, Performance Profiles and
-                  Verifications mostly have evaluation setup task actions, but
-                  cater to two different case scenarios.
-                </span>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <span>
+                    The LMS Testing Manager provided a brief project scope and
+                    sent me user stories.
+                  </span>
+                  <span>
+                    According to the user stories, Performance Profiles and
+                    Verifications mostly have evaluation setup task actions, but
+                    cater to two different case scenarios.
+                  </span>
+                </ScrollAnimation>
               </Grid>
             </Grid>
           </div>

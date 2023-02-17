@@ -55,20 +55,14 @@ const TalentPipeline = ({ scrollPosition }) => {
       {(showMore && isMobile) || !isMobile ? (
         <>
           <div className="page-section" data-section-label="Roadmap">
-            <ScrollAnimation
-              animateOnce
-              animateIn="animate__fadeInUp"
-              animatePreScroll
-            >
-              <CaseStudyCardMedia
-                sx={{ my: isMobile ? 7 : 14 }}
-                cardContent="My primary role started out as a Contractor UX/UI Designer for this
+            <CaseStudyCardMedia
+              sx={{ my: isMobile ? 7 : 14 }}
+              cardContent="My primary role started out as a Contractor UX/UI Designer for this
           project. I closely collaborated with various team members (internal
           and external) on a quest to understand, mold, and ship a product that
           caters to upcoming craft professionals."
-                cardImageUrl="images/case_studies/talent_pipeline/byf_collaborations_roadmap.webp"
-              />
-            </ScrollAnimation>
+              cardImageUrl="images/case_studies/talent_pipeline/byf_collaborations_roadmap.webp"
+            />
           </div>
 
           <div className="page-section" data-section-label="Opportunity">
@@ -84,17 +78,35 @@ const TalentPipeline = ({ scrollPosition }) => {
                 md={6}
                 className="talent-pipeline__common-paragraph"
               >
-                <h2>Opportunity</h2>
-                <p>
-                  Stakeholders discovered and researched an opportunity to merge
-                  the gap between job seekers and recruiters with the assistance
-                  of educators.
-                </p>
-                <p>
-                  Build Your Future then built a partnership with Futures to
-                  launch a product that assists to these three different user
-                  types (see below).
-                </p>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <h2>Opportunity</h2>
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <p>
+                    Stakeholders discovered and researched an opportunity to
+                    merge the gap between job seekers and recruiters with the
+                    assistance of educators.
+                  </p>
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <p>
+                    Build Your Future then built a partnership with Futures to
+                    launch a product that assists to these three different user
+                    types (see below).
+                  </p>
+                </ScrollAnimation>
               </Grid>
               <Grid
                 item
@@ -102,21 +114,40 @@ const TalentPipeline = ({ scrollPosition }) => {
                 md={6}
                 className="talent-pipeline__common-paragraph"
               >
-                <h2>Who are they?</h2>
-                <p>
-                  75% of Construction and Maintenance industry professionals
-                  reported they proactively seek to build new talent, even if
-                  talent is not currently needed.
-                </p>
-                <span>
-                  The marketing team conducted focus groups of all 3 user types.
-                  <br />
-                  <br />
-                  As part of my onboarding process, I reviewed and compiled
-                  their findings so I can initiate a persona white-boarding
-                  session. Followed after was the creation of the requirement
-                  gathering process.
-                </span>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <h2>Who are they?</h2>
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <p>
+                    75% of Construction and Maintenance industry professionals
+                    reported they proactively seek to build new talent, even if
+                    talent is not currently needed.
+                  </p>
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <span>
+                    The marketing team conducted focus groups of all 3 user
+                    types.
+                    <br />
+                    <br />
+                    As part of my onboarding process, I reviewed and compiled
+                    their findings so I can initiate a persona white-boarding
+                    session. Followed after was the creation of the requirement
+                    gathering process.
+                  </span>
+                </ScrollAnimation>
               </Grid>
             </Grid>
             <Grid
@@ -126,55 +157,55 @@ const TalentPipeline = ({ scrollPosition }) => {
               sx={{ mb: { xs: 9, md: 15 } }}
             >
               <Grid item xs={12} md={4} className="talent-pipeline__role">
+                <LazyLoadImage
+                  scrollPosition={scrollPosition}
+                  src="images/case_studies/talent_pipeline/job_seeker.svg"
+                  effect="blur"
+                  alt="job seeker"
+                />
                 <ScrollAnimation
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
                 >
-                  <LazyLoadImage
-                    scrollPosition={scrollPosition}
-                    src="images/case_studies/talent_pipeline/job_seeker.svg"
-                    effect="blur"
-                    alt="job seeker"
-                  />
+                  <span di>
+                    Entry-level Construction and Maintenance Job Seekers
+                  </span>
                 </ScrollAnimation>
-                <span>
-                  Entry-level Construction and Maintenance Job Seekers
-                </span>
               </Grid>
               <Grid item xs={12} md={4} className="talent-pipeline__role">
+                <LazyLoadImage
+                  scrollPosition={scrollPosition}
+                  src="images/case_studies/talent_pipeline/employee_rep.svg"
+                  effect="blur"
+                  alt="employee rep"
+                />
                 <ScrollAnimation
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
                 >
-                  <LazyLoadImage
-                    scrollPosition={scrollPosition}
-                    src="images/case_studies/talent_pipeline/employee_rep.svg"
-                    effect="blur"
-                    alt="employee rep"
-                  />
+                  <span>
+                    Employer Representatives <br /> (Recruiters)
+                  </span>
                 </ScrollAnimation>
-                <span>
-                  Employer Representatives <br /> (Recruiters)
-                </span>
               </Grid>
               <Grid item xs={12} md={4} className="talent-pipeline__role">
+                <LazyLoadImage
+                  scrollPosition={scrollPosition}
+                  src="images/case_studies/talent_pipeline/training_instructor.svg"
+                  effect="blur"
+                  alt="training instructor"
+                />
                 <ScrollAnimation
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
                 >
-                  <LazyLoadImage
-                    scrollPosition={scrollPosition}
-                    src="images/case_studies/talent_pipeline/training_instructor.svg"
-                    effect="blur"
-                    alt="training instructor"
-                  />
+                  <span>
+                    Training Instructors <br /> (Case Managers)
+                  </span>
                 </ScrollAnimation>
-                <span>
-                  Training Instructors <br /> (Case Managers)
-                </span>
               </Grid>
             </Grid>
           </div>
@@ -187,7 +218,13 @@ const TalentPipeline = ({ scrollPosition }) => {
               sx={{ mb: { xs: 4, md: 7 } }}
             >
               <Grid item xs={12} className="talent-pipeline__common-paragraph">
-                <h2>Personas</h2>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <h2>Personas</h2>
+                </ScrollAnimation>
               </Grid>
               <Grid
                 item
@@ -195,16 +232,28 @@ const TalentPipeline = ({ scrollPosition }) => {
                 md={6}
                 className="talent-pipeline__common-paragraph"
               >
-                <span>
-                  The marketing team conducted a focus group to gather specific
-                  insights from the GenZ target audience, which were in the
-                  process of completing their craft training high school
-                  program.
-                </span>
-                <span>
-                  These personas I’ve crafted were based on the results they’ve
-                  accumulated.{' '}
-                </span>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <span>
+                    The marketing team conducted a focus group to gather
+                    specific insights from the GenZ target audience, which were
+                    in the process of completing their craft training high
+                    school program.
+                  </span>
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <span>
+                    These personas I’ve crafted were based on the results
+                    they’ve accumulated.
+                  </span>
+                </ScrollAnimation>
               </Grid>
               <Grid
                 item
@@ -213,43 +262,25 @@ const TalentPipeline = ({ scrollPosition }) => {
                 className="talent-pipeline__common-paragraph"
               >
                 <div>
-                  <ScrollAnimation
-                    animateOnce
-                    animateIn="animate__fadeInUp"
-                    animatePreScroll
+                  <LazyLoadImage
+                    scrollPosition={scrollPosition}
+                    src="images/case_studies/talent_pipeline/personas_female.webp"
+                    effect="blur"
+                    alt="female persona"
                     style={{ marginBottom: 10 }}
-                  >
-                    <LazyLoadImage
-                      scrollPosition={scrollPosition}
-                      src="images/case_studies/talent_pipeline/personas_female.webp"
-                      effect="blur"
-                      alt="female persona"
-                      width="100%"
-                    />
-                  </ScrollAnimation>
-                  <ScrollAnimation
-                    animateOnce
-                    animateIn="animate__fadeInUp"
-                    animatePreScroll
-                  >
-                    <LazyLoadImage
-                      scrollPosition={scrollPosition}
-                      src="images/case_studies/talent_pipeline/personas_male.webp"
-                      effect="blur"
-                      alt="male persona"
-                      width="100%"
-                    />
-                  </ScrollAnimation>
+                    width="100%"
+                  />
+                  <LazyLoadImage
+                    scrollPosition={scrollPosition}
+                    src="images/case_studies/talent_pipeline/personas_male.webp"
+                    effect="blur"
+                    alt="male persona"
+                    width="100%"
+                  />
                 </div>
               </Grid>
             </Grid>
-            <ScrollAnimation
-              animateOnce
-              animateIn="animate__fadeInUp"
-              animatePreScroll
-            >
-              <PersonasTabs />
-            </ScrollAnimation>
+            <PersonasTabs />
           </div>
 
           <div className="page-section" data-section-label="Customer Journeys">
@@ -260,7 +291,13 @@ const TalentPipeline = ({ scrollPosition }) => {
               sx={{ mb: { xs: 4, md: 7 } }}
             >
               <Grid item xs={12} className="talent-pipeline__common-paragraph">
-                <h2>Customer Journeys</h2>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <h2>Customer Journeys</h2>
+                </ScrollAnimation>
               </Grid>
               <Grid
                 item
@@ -268,24 +305,30 @@ const TalentPipeline = ({ scrollPosition }) => {
                 md={6}
                 className="talent-pipeline__common-paragraph"
               >
-                <span>
-                  These customer journeys were created to formulate a strong,
-                  aligned vision with team members involved in this project.
-                </span>
-                <span>
-                  This visually helped talking through the intentions of user
-                  pathway for each user type. This helped build business and
-                  user requirements.
-                </span>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <span>
+                    These customer journeys were created to formulate a strong,
+                    aligned vision with team members involved in this project.
+                  </span>
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <span>
+                    This visually helped talking through the intentions of user
+                    pathway for each user type. This helped build business and
+                    user requirements.
+                  </span>
+                </ScrollAnimation>
               </Grid>
             </Grid>
-            <ScrollAnimation
-              animateOnce
-              animateIn="animate__fadeInUp"
-              animatePreScroll
-            >
-              <CareerJourneyTabs />
-            </ScrollAnimation>
+            <CareerJourneyTabs />
           </div>
 
           <div className="page-section" data-section-label="User Stories">
@@ -296,10 +339,16 @@ const TalentPipeline = ({ scrollPosition }) => {
               sx={{ mb: { xs: 9, md: 15 } }}
             >
               <Grid item xs={12} className="talent-pipeline__common-paragraph">
-                <h2>
-                  A new structure of documenting user stories and user story
-                  mapping
-                </h2>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <h2>
+                    A new structure of documenting user stories and user story
+                    mapping
+                  </h2>
+                </ScrollAnimation>
               </Grid>
               <Grid
                 item
@@ -307,14 +356,26 @@ const TalentPipeline = ({ scrollPosition }) => {
                 md={6}
                 className="talent-pipeline__common-paragraph"
               >
-                <p>
-                  Internal team members had trouble identifying what is the
-                  Minimum Viable Product for post-launch.
-                </p>
-                <p>
-                  What and which requirements, for each user role, is feasible
-                  for development within the given time span?
-                </p>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <p>
+                    Internal team members had trouble identifying what is the
+                    Minimum Viable Product for post-launch.
+                  </p>
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <p>
+                    What and which requirements, for each user role, is feasible
+                    for development within the given time span?
+                  </p>
+                </ScrollAnimation>
               </Grid>
               <Grid
                 item
@@ -322,48 +383,46 @@ const TalentPipeline = ({ scrollPosition }) => {
                 md={6}
                 className="talent-pipeline__common-paragraph"
               >
-                <span>
-                  Once team members understood the product’s target audience and
-                  identified the customer experience, I created a set of user
-                  stories for release 1.
-                </span>
-                <span>
-                  The objective and goal was for internal and external teams to
-                  understand the set of requirements, prioritize “must-haves”,
-                  and estimate development implementation.
-                </span>
-              </Grid>
-              <Grid item xs={12}>
                 <ScrollAnimation
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  initiallyVisible
                 >
-                  <LazyLoadImage
-                    scrollPosition={scrollPosition}
-                    src="images/case_studies/talent_pipeline/user_stories.png"
-                    effect="blur"
-                    alt="user stories"
-                    width="100%"
-                  />
+                  <span>
+                    Once team members understood the product’s target audience
+                    and identified the customer experience, I created a set of
+                    user stories for release 1.
+                  </span>
                 </ScrollAnimation>
-              </Grid>
-              <Grid item xs={12}>
                 <ScrollAnimation
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  initiallyVisible
                 >
-                  <LazyLoadImage
-                    scrollPosition={scrollPosition}
-                    src="images/case_studies/talent_pipeline/user_story_mapping.png"
-                    effect="blur"
-                    alt="user story mapping"
-                    width="100%"
-                  />
+                  <span>
+                    The objective and goal was for internal and external teams
+                    to understand the set of requirements, prioritize
+                    “must-haves”, and estimate development implementation.
+                  </span>
                 </ScrollAnimation>
+              </Grid>
+              <Grid item xs={12}>
+                <LazyLoadImage
+                  scrollPosition={scrollPosition}
+                  src="images/case_studies/talent_pipeline/user_stories.png"
+                  effect="blur"
+                  alt="user stories"
+                  width="100%"
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <LazyLoadImage
+                  scrollPosition={scrollPosition}
+                  src="images/case_studies/talent_pipeline/user_story_mapping.png"
+                  effect="blur"
+                  alt="user story mapping"
+                  width="100%"
+                />
               </Grid>
             </Grid>
           </div>
@@ -376,10 +435,16 @@ const TalentPipeline = ({ scrollPosition }) => {
               sx={{ mb: { xs: 9, md: 15 } }}
             >
               <Grid item xs={12} className="talent-pipeline__common-paragraph">
-                <h2>
-                  No design system in place?
-                  <br /> Let me create one!
-                </h2>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <h2>
+                    No design system in place?
+                    <br /> Let me create one!
+                  </h2>
+                </ScrollAnimation>
               </Grid>
               <Grid
                 item
@@ -388,24 +453,39 @@ const TalentPipeline = ({ scrollPosition }) => {
                 className="talent-pipeline__common-paragraph"
                 mb={6}
               >
-                <span>
-                  Although an existing product was built by the external team
-                  members, we wanted to alter the UI based on the organization’s
-                  existing brand.
-                </span>
-                <span>
-                  This lead to my next initiative, which is to create the
-                  product’s design system.
-                </span>
-              </Grid>
-              <Grid item xs={12}>
                 <ScrollAnimation
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  initiallyVisible
                 >
-                  {isMobile ? (
+                  <span>
+                    Although an existing product was built by the external team
+                    members, we wanted to alter the UI based on the
+                    organization’s existing brand.
+                  </span>
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <span>
+                    This lead to my next initiative, which is to create the
+                    product’s design system.
+                  </span>
+                </ScrollAnimation>
+              </Grid>
+              <Grid item xs={12}>
+                {isMobile ? (
+                  <LazyLoadImage
+                    scrollPosition={scrollPosition}
+                    src="images/case_studies/talent_pipeline/sample_design.png"
+                    effect="blur"
+                    alt="sample design"
+                    width="100%"
+                  />
+                ) : (
+                  <ScrollingContainer>
                     <LazyLoadImage
                       scrollPosition={scrollPosition}
                       src="images/case_studies/talent_pipeline/sample_design.png"
@@ -413,18 +493,8 @@ const TalentPipeline = ({ scrollPosition }) => {
                       alt="sample design"
                       width="100%"
                     />
-                  ) : (
-                    <ScrollingContainer>
-                      <LazyLoadImage
-                        scrollPosition={scrollPosition}
-                        src="images/case_studies/talent_pipeline/sample_design.png"
-                        effect="blur"
-                        alt="sample design"
-                        width="100%"
-                      />
-                    </ScrollingContainer>
-                  )}
-                </ScrollAnimation>
+                  </ScrollingContainer>
+                )}
               </Grid>
             </Grid>
           </div>
@@ -438,7 +508,13 @@ const TalentPipeline = ({ scrollPosition }) => {
               sx={{ mb: { xs: 9, md: 22 } }}
             >
               <Grid item xs={12} className="talent-pipeline__common-paragraph">
-                <h2>Full-time role lead to more responsibilities</h2>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <h2>Full-time role lead to more responsibilities</h2>
+                </ScrollAnimation>
               </Grid>
               <Grid
                 item
@@ -446,10 +522,16 @@ const TalentPipeline = ({ scrollPosition }) => {
                 md={6}
                 className="talent-pipeline__common-paragraph"
               >
-                <p>
-                  How and what type of message do we want to market out to our
-                  target audiences about talent pipeline?
-                </p>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <p>
+                    How and what type of message do we want to market out to our
+                    target audiences about talent pipeline?
+                  </p>
+                </ScrollAnimation>
               </Grid>
               <Grid
                 item
@@ -458,66 +540,57 @@ const TalentPipeline = ({ scrollPosition }) => {
                 mb={4}
                 className="talent-pipeline__common-paragraph"
               >
-                <span>
-                  The task was to create the product’s landing page for people
-                  to learn more and create an account. The marketing team
-                  thought the first draft did not convey the product’s intent
-                  and appeal.
-                </span>
-                <span>
-                  I created a strength and weakness analysis of several
-                  competitor landing pages to present quick findings and
-                  potential opportunities of how our product can insert itself
-                  within the existing competition.
-                </span>
-              </Grid>
-              <Grid item xs={12}>
                 <ScrollAnimation
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  initiallyVisible
                 >
-                  <LazyLoadImage
-                    scrollPosition={scrollPosition}
-                    src="images/case_studies/talent_pipeline/strenghts.png"
-                    effect="blur"
-                    alt="strenghts"
-                    width="100%"
-                  />
+                  <span>
+                    The task was to create the product’s landing page for people
+                    to learn more and create an account. The marketing team
+                    thought the first draft did not convey the product’s intent
+                    and appeal.
+                  </span>
                 </ScrollAnimation>
-              </Grid>
-              <Grid item xs={12}>
                 <ScrollAnimation
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  initiallyVisible
                 >
-                  <LazyLoadImage
-                    scrollPosition={scrollPosition}
-                    src="images/case_studies/talent_pipeline/weaknesses.png"
-                    effect="blur"
-                    alt="weaknesses"
-                    width="100%"
-                  />
+                  <span>
+                    I created a strength and weakness analysis of several
+                    competitor landing pages to present quick findings and
+                    potential opportunities of how our product can insert itself
+                    within the existing competition.
+                  </span>
                 </ScrollAnimation>
               </Grid>
               <Grid item xs={12}>
-                <ScrollAnimation
-                  animateOnce
-                  animateIn="animate__fadeInUp"
-                  animatePreScroll
-                  initiallyVisible
-                >
-                  <LazyLoadImage
-                    scrollPosition={scrollPosition}
-                    src="images/case_studies/talent_pipeline/opportunities.png"
-                    effect="blur"
-                    alt="opportunities"
-                    width="100%"
-                  />
-                </ScrollAnimation>
+                <LazyLoadImage
+                  scrollPosition={scrollPosition}
+                  src="images/case_studies/talent_pipeline/strenghts.png"
+                  effect="blur"
+                  alt="strenghts"
+                  width="100%"
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <LazyLoadImage
+                  scrollPosition={scrollPosition}
+                  src="images/case_studies/talent_pipeline/weaknesses.png"
+                  effect="blur"
+                  alt="weaknesses"
+                  width="100%"
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <LazyLoadImage
+                  scrollPosition={scrollPosition}
+                  src="images/case_studies/talent_pipeline/opportunities.png"
+                  effect="blur"
+                  alt="opportunities"
+                  width="100%"
+                />
               </Grid>
             </Grid>
           </div>
@@ -534,46 +607,57 @@ const TalentPipeline = ({ scrollPosition }) => {
               sx={{ mb: { xs: 9, md: 15 } }}
             >
               <Grid item xs={12} className="talent-pipeline__common-paragraph">
-                <h2>Now what? Facilitate a UI white-boarding session!</h2>
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                md={6}
-                className="talent-pipeline__common-paragraph"
-              >
-                <p>
-                  With all of these ideas in mind, how do we bring it all
-                  together to shine light on the product’s features?
-                </p>
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                md={6}
-                className="talent-pipeline__common-paragraph"
-              >
-                <span>
-                  I scheduled a brainstorm workshop session with the marketing
-                  team to collaborate on the messaging hierarchy and visual
-                  layout.
-                </span>
-              </Grid>
-              <Grid item xs={12}>
                 <ScrollAnimation
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  initiallyVisible
                 >
-                  <LazyLoadImage
-                    scrollPosition={scrollPosition}
-                    src="images/case_studies/talent_pipeline/tp_landing_page.png"
-                    effect="blur"
-                    alt="talent pipeline landing page"
-                    width="100%"
-                  />
+                  <h2>Now what? Facilitate a UI white-boarding session!</h2>
                 </ScrollAnimation>
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                md={6}
+                className="talent-pipeline__common-paragraph"
+              >
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <p>
+                    With all of these ideas in mind, how do we bring it all
+                    together to shine light on the product’s features?
+                  </p>
+                </ScrollAnimation>
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                md={6}
+                className="talent-pipeline__common-paragraph"
+              >
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <span>
+                    I scheduled a brainstorm workshop session with the marketing
+                    team to collaborate on the messaging hierarchy and visual
+                    layout.
+                  </span>
+                </ScrollAnimation>
+              </Grid>
+              <Grid item xs={12}>
+                <LazyLoadImage
+                  scrollPosition={scrollPosition}
+                  src="images/case_studies/talent_pipeline/tp_landing_page.png"
+                  effect="blur"
+                  alt="talent pipeline landing page"
+                  width="100%"
+                />
               </Grid>
             </Grid>
           </div>
@@ -587,7 +671,13 @@ const TalentPipeline = ({ scrollPosition }) => {
               sx={{ mb: { xs: 9, md: 15 } }}
             >
               <Grid item xs={12} className="talent-pipeline__common-paragraph">
-                <h2>Go back to the Figma board and show the final result</h2>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <h2>Go back to the Figma board and show the final result</h2>
+                </ScrollAnimation>
               </Grid>
               <Grid
                 item
@@ -596,23 +686,38 @@ const TalentPipeline = ({ scrollPosition }) => {
                 mb={4}
                 className="talent-pipeline__common-paragraph"
               >
-                <span>
-                  This landing page starts off with the main tag line then
-                  entices the visitor to learn more about the product.
-                </span>
-                <span>
-                  We wanted to showcase a visual indicator that people can
-                  access the product using their phone or desktop.{' '}
-                </span>
-              </Grid>
-              <Grid item xs={12}>
                 <ScrollAnimation
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  initiallyVisible
                 >
-                  {isMobile ? (
+                  <span>
+                    This landing page starts off with the main tag line then
+                    entices the visitor to learn more about the product.
+                  </span>
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <span>
+                    We wanted to showcase a visual indicator that people can
+                    access the product using their phone or desktop.{' '}
+                  </span>
+                </ScrollAnimation>
+              </Grid>
+              <Grid item xs={12}>
+                {isMobile ? (
+                  <LazyLoadImage
+                    scrollPosition={scrollPosition}
+                    src="images/case_studies/talent_pipeline/tp_landing_page_scrolling.png"
+                    effect="blur"
+                    alt="talent pipeline landing page"
+                    width="100%"
+                  />
+                ) : (
+                  <ScrollingContainer>
                     <LazyLoadImage
                       scrollPosition={scrollPosition}
                       src="images/case_studies/talent_pipeline/tp_landing_page_scrolling.png"
@@ -620,18 +725,8 @@ const TalentPipeline = ({ scrollPosition }) => {
                       alt="talent pipeline landing page"
                       width="100%"
                     />
-                  ) : (
-                    <ScrollingContainer>
-                      <LazyLoadImage
-                        scrollPosition={scrollPosition}
-                        src="images/case_studies/talent_pipeline/tp_landing_page_scrolling.png"
-                        effect="blur"
-                        alt="talent pipeline landing page"
-                        width="100%"
-                      />
-                    </ScrollingContainer>
-                  )}
-                </ScrollAnimation>
+                  </ScrollingContainer>
+                )}
               </Grid>
             </Grid>
           </div>
@@ -648,7 +743,13 @@ const TalentPipeline = ({ scrollPosition }) => {
               sx={{ mb: { xs: 14, md: 16 } }}
             >
               <Grid item xs={12} className="talent-pipeline__common-paragraph">
-                <h2>Design // Development Collaboration</h2>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <h2>Design // Development Collaboration</h2>
+                </ScrollAnimation>
               </Grid>
               <Grid
                 item
@@ -656,11 +757,17 @@ const TalentPipeline = ({ scrollPosition }) => {
                 md={6}
                 className="talent-pipeline__common-paragraph"
               >
-                <p>
-                  On a 2-month span, we needed to meet the deadline of the soft
-                  launch date and ship the platform to states: Texas and North
-                  Carolina.
-                </p>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <p>
+                    On a 2-month span, we needed to meet the deadline of the
+                    soft launch date and ship the platform to states: Texas and
+                    North Carolina.
+                  </p>
+                </ScrollAnimation>
               </Grid>
               <Grid
                 item
@@ -668,17 +775,29 @@ const TalentPipeline = ({ scrollPosition }) => {
                 md={6}
                 className="talent-pipeline__common-paragraph"
               >
-                <span>
-                  As a design team of one with the support of the Project
-                  Manager, I created and designed a thorough web and mobile
-                  style guide to ensure the UI and branding stays consistent
-                  throughout the platform.
-                </span>
-                <span>
-                  I also took on sole ownership and responsibility of creating
-                  and managing the Jira boards so we have full transparency of
-                  what each team worked on within each 2-week sprint.
-                </span>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <span>
+                    As a design team of one with the support of the Project
+                    Manager, I created and designed a thorough web and mobile
+                    style guide to ensure the UI and branding stays consistent
+                    throughout the platform.
+                  </span>
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <span>
+                    I also took on sole ownership and responsibility of creating
+                    and managing the Jira boards so we have full transparency of
+                    what each team worked on within each 2-week sprint.
+                  </span>
+                </ScrollAnimation>
               </Grid>
             </Grid>
           </div>

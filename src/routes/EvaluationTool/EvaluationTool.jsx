@@ -92,20 +92,14 @@ const EvaluationTool = ({ scrollPosition }) => {
       {(showMore && isMobile) || !isMobile ? (
         <>
           <div className="page-section" data-section-label="Roadmap">
-            <ScrollAnimation
-              animateOnce
-              animateIn="animate__fadeInUp"
-              animatePreScroll
-            >
-              <CaseStudyCardMedia
-                sx={{
-                  mb: { xs: 9, md: 15 },
-                  mt: { xs: 7, md: 15 },
-                }}
-                cardContent="My primary role started out as a Contractor UX/UI Designer for this project. I closely collaborated with various team members (internal and external) on a quest to understand, mold, and ship a product that caters to upcoming craft professionals."
-                cardImageUrl="images/case_studies/evaluation_tool/product_roadmap.webp"
-              />
-            </ScrollAnimation>
+            <CaseStudyCardMedia
+              sx={{
+                mb: { xs: 9, md: 15 },
+                mt: { xs: 7, md: 15 },
+              }}
+              cardContent="My primary role started out as a Contractor UX/UI Designer for this project. I closely collaborated with various team members (internal and external) on a quest to understand, mold, and ship a product that caters to upcoming craft professionals."
+              cardImageUrl="images/case_studies/evaluation_tool/product_roadmap.webp"
+            />
           </div>
 
           <div className="page-section" data-section-label="The Objective">
@@ -140,6 +134,12 @@ const EvaluationTool = ({ scrollPosition }) => {
                     process is conducted in paper format then they enter the
                     results through the system.
                   </p>
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
                   <p>
                     This allows them to submit trainee and craft professional
                     results to the organization.
@@ -162,6 +162,12 @@ const EvaluationTool = ({ scrollPosition }) => {
                     The LMS Testing Manager provided a brief project scope and
                     sent me user stories.
                   </span>
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
                   <span>
                     According to the user stories, Performance Profiles and
                     Verifications mostly have evaluation setup task actions, but
@@ -206,7 +212,15 @@ const EvaluationTool = ({ scrollPosition }) => {
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
-                <h2>Create a user flow to connect the requirements together</h2>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <h2>
+                    Create a user flow to connect the requirements together
+                  </h2>
+                </ScrollAnimation>
               </Grid>
               <Grid
                 item
@@ -214,11 +228,17 @@ const EvaluationTool = ({ scrollPosition }) => {
                 md={6}
                 className="evaluation-tool__common-paragraph"
               >
-                <span>
-                  By reading the user stories, I created a sitemap to showcase
-                  the user’s pathway when they take action to each required
-                  task.
-                </span>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <span>
+                    By reading the user stories, I created a sitemap to showcase
+                    the user’s pathway when they take action to each required
+                    task.
+                  </span>
+                </ScrollAnimation>
               </Grid>
               <Grid
                 item
@@ -230,21 +250,13 @@ const EvaluationTool = ({ scrollPosition }) => {
                 }}
               ></Grid>
               <Grid item xs={12}>
-                <ScrollAnimation
-                  animateOnce
-                  animateIn="animate__fadeInUp"
-                  animatePreScroll
-                >
-                  {userFlowIFrameLoading && <IFrameLoading />}
-                  <IFrameComponent
-                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FWRO5soZQcri1WG60vkEdYN%2FPP%252FPV-User-Flow%3Ft%3D26xxBvFmfGc9YbId-1"
-                    title="User Flows"
-                    isLoading={userFlowIFrameLoading}
-                    setIsLoading={(loading) =>
-                      setUserFlowIFrameLoading(loading)
-                    }
-                  />
-                </ScrollAnimation>
+                {userFlowIFrameLoading && <IFrameLoading />}
+                <IFrameComponent
+                  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FWRO5soZQcri1WG60vkEdYN%2FPP%252FPV-User-Flow%3Ft%3D26xxBvFmfGc9YbId-1"
+                  title="User Flows"
+                  isLoading={userFlowIFrameLoading}
+                  setIsLoading={(loading) => setUserFlowIFrameLoading(loading)}
+                />
               </Grid>
             </Grid>
           </div>
@@ -257,7 +269,13 @@ const EvaluationTool = ({ scrollPosition }) => {
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
-                <h2>Initial Mockups</h2>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <h2>Initial Mockups</h2>
+                </ScrollAnimation>
               </Grid>
               <Grid
                 item
@@ -265,11 +283,17 @@ const EvaluationTool = ({ scrollPosition }) => {
                 md={6}
                 className="evaluation-tool__common-paragraph"
               >
-                <p>
-                  As I was in the middle of designing the mockups for this
-                  project, I’ve uncovered questions that required additional
-                  discovery and research.
-                </p>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <p>
+                    As I was in the middle of designing the mockups for this
+                    project, I’ve uncovered questions that required additional
+                    discovery and research.
+                  </p>
+                </ScrollAnimation>
               </Grid>
               <Grid
                 item
@@ -279,44 +303,62 @@ const EvaluationTool = ({ scrollPosition }) => {
               >
                 <span>
                   <ul>
-                    <li>
-                      How will evaluators utilize this application within the
-                      classroom? Within live job sites?
-                    </li>
-                    <li>
-                      Will administration provide devices to these evaluators?
-                      If so, what devices are available?
-                    </li>
-                    <li>
-                      How many evaluations are going to be submitted each week?
-                      A month?
-                    </li>
-                    <li>
-                      What is the current evaluation process for Performance
-                      Profiles and Verifications?
-                    </li>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                    >
+                      <li>
+                        How will evaluators utilize this application within the
+                        classroom? Within live job sites?
+                      </li>
+                    </ScrollAnimation>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                    >
+                      <li>
+                        Will administration provide devices to these evaluators?
+                        If so, what devices are available?
+                      </li>
+                    </ScrollAnimation>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                    >
+                      <li>
+                        How many evaluations are going to be submitted each
+                        week? A month?
+                      </li>
+                    </ScrollAnimation>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                    >
+                      <li>
+                        What is the current evaluation process for Performance
+                        Profiles and Verifications?
+                      </li>
+                    </ScrollAnimation>
                   </ul>
                 </span>
               </Grid>
               <Grid item xs={12}>
-                <ScrollAnimation
-                  animateOnce
-                  animateIn="animate__fadeInUp"
-                  animatePreScroll
-                >
-                  <ImageCarousel
-                    images={[
-                      'images/case_studies/evaluation_tool/initial_mockups_1.webp',
-                      'images/case_studies/evaluation_tool/initial_mockups_2.webp',
-                      'images/case_studies/evaluation_tool/initial_mockups_3.webp',
-                      'images/case_studies/evaluation_tool/initial_mockups_4.webp',
-                      'images/case_studies/evaluation_tool/initial_mockups_5.webp',
-                      'images/case_studies/evaluation_tool/initial_mockups_6.webp',
-                      'images/case_studies/evaluation_tool/initial_mockups_7.webp',
-                    ]}
-                    toolbarImage="images/case_studies/evaluation_tool/chrome_toolbar.png"
-                  />
-                </ScrollAnimation>
+                <ImageCarousel
+                  images={[
+                    'images/case_studies/evaluation_tool/initial_mockups_1.webp',
+                    'images/case_studies/evaluation_tool/initial_mockups_2.webp',
+                    'images/case_studies/evaluation_tool/initial_mockups_3.webp',
+                    'images/case_studies/evaluation_tool/initial_mockups_4.webp',
+                    'images/case_studies/evaluation_tool/initial_mockups_5.webp',
+                    'images/case_studies/evaluation_tool/initial_mockups_6.webp',
+                    'images/case_studies/evaluation_tool/initial_mockups_7.webp',
+                  ]}
+                  toolbarImage="images/case_studies/evaluation_tool/chrome_toolbar.png"
+                />
               </Grid>
             </Grid>
           </div>
@@ -329,47 +371,65 @@ const EvaluationTool = ({ scrollPosition }) => {
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
-                <h2>Project Roadmap</h2>
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                md={6}
-                className="evaluation-tool__common-paragraph"
-              >
-                <p>
-                  Primary Objective: <br /> In creating a project roadmap is to
-                  inform leadership the UX &gt; UI &gt; handoff process.
-                </p>
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                md={6}
-                className="evaluation-tool__common-paragraph"
-              >
-                <span>
-                  When a 15 year old organization is in the early stages of
-                  transitioning to the digital product space, the constant issue
-                  I have encountered is the lack of awareness to the
-                  consultations of their new employees
-                </span>
-                <span>This was a career battle I was willing to take. </span>
-              </Grid>
-              <Grid item xs={12}>
                 <ScrollAnimation
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
                 >
-                  <LazyLoadImage
-                    scrollPosition={scrollPosition}
-                    src="images/case_studies/evaluation_tool/project_roadmap.png"
-                    effect="blur"
-                    alt="user flow"
-                    width="100%"
-                  />
+                  <h2>Project Roadmap</h2>
                 </ScrollAnimation>
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                md={6}
+                className="evaluation-tool__common-paragraph"
+              >
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <p>
+                    Primary Objective: <br /> In creating a project roadmap is
+                    to inform leadership the UX &gt; UI &gt; handoff process.
+                  </p>
+                </ScrollAnimation>
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                md={6}
+                className="evaluation-tool__common-paragraph"
+              >
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <span>
+                    When a 15 year old organization is in the early stages of
+                    transitioning to the digital product space, the constant
+                    issue I have encountered is the lack of awareness to the
+                    consultations of their new employees
+                  </span>
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <span>This was a career battle I was willing to take. </span>
+                </ScrollAnimation>
+              </Grid>
+              <Grid item xs={12}>
+                <LazyLoadImage
+                  scrollPosition={scrollPosition}
+                  src="images/case_studies/evaluation_tool/project_roadmap.png"
+                  effect="blur"
+                  alt="user flow"
+                  width="100%"
+                />
               </Grid>
             </Grid>
           </div>
@@ -382,7 +442,13 @@ const EvaluationTool = ({ scrollPosition }) => {
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
-                <h2>Whiteboard Session</h2>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <h2>Whiteboard Session</h2>
+                </ScrollAnimation>
               </Grid>
               <Grid
                 item
@@ -390,11 +456,17 @@ const EvaluationTool = ({ scrollPosition }) => {
                 md={6}
                 className="evaluation-tool__common-paragraph"
               >
-                <p>
-                  One of the opportunities I wanted to do when I arrived in the
-                  office is to present how white boarding sessions typically
-                  work.
-                </p>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <p>
+                    One of the opportunities I wanted to do when I arrived in
+                    the office is to present how white boarding sessions
+                    typically work.
+                  </p>
+                </ScrollAnimation>
               </Grid>
               <Grid
                 item
@@ -402,78 +474,104 @@ const EvaluationTool = ({ scrollPosition }) => {
                 md={6}
                 className="evaluation-tool__common-paragraph"
               >
-                <span className="font-family-black">Benefits:</span>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <span className="font-family-black">Benefits:</span>
+                </ScrollAnimation>
                 <span>
                   <ul>
-                    <li>Team alignment in research process of the project.</li>
-                    <li>
-                      Focus on the conversations that pertain to the questions
-                      being developed in the session.
-                    </li>
-                    <li>
-                      Placed customer satisfaction first alongside emphasizing
-                      their concerns.
-                    </li>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                    >
+                      <li>
+                        Team alignment in research process of the project.
+                      </li>
+                    </ScrollAnimation>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                    >
+                      <li>
+                        Focus on the conversations that pertain to the questions
+                        being developed in the session.
+                      </li>
+                    </ScrollAnimation>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                    >
+                      <li>
+                        Placed customer satisfaction first alongside emphasizing
+                        their concerns.
+                      </li>
+                    </ScrollAnimation>
                   </ul>
                 </span>
-                <span className="font-family-black">Goals:</span>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <span className="font-family-black">Goals:</span>
+                </ScrollAnimation>
                 <span>
                   <ul>
-                    <li>
-                      Assist teammates to immerse themselves into thinking,
-                      sharing and communicating their questions with one
-                      another.
-                    </li>
-                    <li>
-                      Opportunity to obtain a broader scope of the problem being
-                      investigated and aiming to solve.
-                    </li>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                    >
+                      <li>
+                        Assist teammates to immerse themselves into thinking,
+                        sharing and communicating their questions with one
+                        another.
+                      </li>
+                    </ScrollAnimation>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                    >
+                      <li>
+                        Opportunity to obtain a broader scope of the problem
+                        being investigated and aiming to solve.
+                      </li>
+                    </ScrollAnimation>
                   </ul>
                 </span>
               </Grid>
               <Grid item xs={12}>
-                <ScrollAnimation
-                  animateOnce
-                  animateIn="animate__fadeInUp"
-                  animatePreScroll
-                >
-                  <LazyLoadImage
-                    scrollPosition={scrollPosition}
-                    src="images/case_studies/evaluation_tool/whiteboard_session_1.webp"
-                    effect="blur"
-                    alt="user flow"
-                    width="100%"
-                  />
-                </ScrollAnimation>
+                <LazyLoadImage
+                  scrollPosition={scrollPosition}
+                  src="images/case_studies/evaluation_tool/whiteboard_session_1.webp"
+                  effect="blur"
+                  alt="user flow"
+                  width="100%"
+                />
               </Grid>
               <Grid item xs={12}>
-                <ScrollAnimation
-                  animateOnce
-                  animateIn="animate__fadeInUp"
-                  animatePreScroll
-                >
-                  <LazyLoadImage
-                    scrollPosition={scrollPosition}
-                    src="images/case_studies/evaluation_tool/whiteboard_session_2.webp"
-                    effect="blur"
-                    alt="user flow"
-                    width="100%"
-                  />
-                </ScrollAnimation>
+                <LazyLoadImage
+                  scrollPosition={scrollPosition}
+                  src="images/case_studies/evaluation_tool/whiteboard_session_2.webp"
+                  effect="blur"
+                  alt="user flow"
+                  width="100%"
+                />
               </Grid>
               <Grid item xs={12}>
-                <ScrollAnimation
-                  animateOnce
-                  animateIn="animate__fadeInUp"
-                  animatePreScroll
-                >
-                  <ImageCarousel
-                    images={[
-                      'images/case_studies/evaluation_tool/whiteboard_session_3.webp',
-                      'images/case_studies/evaluation_tool/whiteboard_session_4.webp',
-                    ]}
-                  />
-                </ScrollAnimation>
+                <ImageCarousel
+                  images={[
+                    'images/case_studies/evaluation_tool/whiteboard_session_3.webp',
+                    'images/case_studies/evaluation_tool/whiteboard_session_4.webp',
+                  ]}
+                />
               </Grid>
             </Grid>
           </div>
@@ -489,52 +587,70 @@ const EvaluationTool = ({ scrollPosition }) => {
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
-                <h2>First UX/UI Team as Lead</h2>
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                md={6}
-                className="evaluation-tool__common-paragraph"
-              >
-                <p>
-                  I’ve showcased my ability as a UX/UI Designer to a point where
-                  my boss gave me the go ahead to create the first UX/UI Design
-                  team within the organization.
-                </p>
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                md={6}
-                className="evaluation-tool__common-paragraph"
-              >
-                <span>
-                  This was a great opportunity to create an extensive field
-                  study with now the support of two UX/UI Designer, Christian B
-                  and Nicole H.
-                </span>
-                <span>
-                  This field studies plan is to educate the Director of
-                  Workforce Development why our team want to reach out to other
-                  National Center for Construction Education and Research
-                  sponsor organizations.
-                </span>
-              </Grid>
-              <Grid item xs={12}>
                 <ScrollAnimation
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
                 >
-                  <LazyLoadImage
-                    scrollPosition={scrollPosition}
-                    src="images/case_studies/evaluation_tool/first_ux_ui_team_as_lead.png"
-                    effect="blur"
-                    alt="user flow"
-                    width="100%"
-                  />
+                  <h2>First UX/UI Team as Lead</h2>
                 </ScrollAnimation>
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                md={6}
+                className="evaluation-tool__common-paragraph"
+              >
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <p>
+                    I’ve showcased my ability as a UX/UI Designer to a point
+                    where my boss gave me the go ahead to create the first UX/UI
+                    Design team within the organization.
+                  </p>
+                </ScrollAnimation>
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                md={6}
+                className="evaluation-tool__common-paragraph"
+              >
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <span>
+                    This was a great opportunity to create an extensive field
+                    study with now the support of two UX/UI Designer, Christian
+                    B and Nicole H.
+                  </span>
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <span>
+                    This field studies plan is to educate the Director of
+                    Workforce Development why our team want to reach out to
+                    other National Center for Construction Education and
+                    Research sponsor organizations.
+                  </span>
+                </ScrollAnimation>
+              </Grid>
+              <Grid item xs={12}>
+                <LazyLoadImage
+                  scrollPosition={scrollPosition}
+                  src="images/case_studies/evaluation_tool/first_ux_ui_team_as_lead.png"
+                  effect="blur"
+                  alt="user flow"
+                  width="100%"
+                />
               </Grid>
             </Grid>
           </div>
@@ -550,88 +666,107 @@ const EvaluationTool = ({ scrollPosition }) => {
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
-                <h2>Observations and Interviews</h2>
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                md={6}
-                className="evaluation-tool__common-paragraph"
-              >
-                <p>
-                  I spent the middle of summer 2022 to conduct my first
-                  in-person observations and interviews in Texas and Louisiana.
-                </p>
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                md={6}
-                className="evaluation-tool__common-paragraph"
-              >
-                <span>
-                  At this point of my UX/UI Design career I felt I needed to
-                  take this great opportunity even though there are severe
-                  trials and tribulations within the organization.
-                </span>
-                <span style={{ color: '#C95D63' }}>
-                  When do UX/UI Designers get the opportunity to conduct field
-                  studies and build a strong, concrete base of a foreseeable
-                  powerful application tool?
-                </span>
-              </Grid>
-              <Grid item xs={12}>
                 <ScrollAnimation
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
                 >
-                  <Tabs
-                    activeTab={0}
-                    tabsData={[
-                      {
-                        name: 'Performance Profiles',
-                        content: (
-                          <ImageCarousel
-                            images={[
-                              'images/case_studies/evaluation_tool/observations_interviews_1_pp.webp',
-                              'images/case_studies/evaluation_tool/observations_interviews_2_pp.webp',
-                              'images/case_studies/evaluation_tool/observations_interviews_3_pp.webp',
-                              'images/case_studies/evaluation_tool/observations_interviews_4_pp.webp',
-                              'images/case_studies/evaluation_tool/observations_interviews_5_pp.webp',
-                              'images/case_studies/evaluation_tool/observations_interviews_6_pp.webp',
-                              'images/case_studies/evaluation_tool/observations_interviews_7_pp.webp',
-                              'images/case_studies/evaluation_tool/observations_interviews_8_pp.webp',
-                            ]}
-                            scrollingMaxHeight={550}
-                          />
-                        ),
-                      },
-                      {
-                        name: 'Performance Verifications',
-                        content: (
-                          <ImageCarousel
-                            images={[
-                              'images/case_studies/evaluation_tool/observations_interviews_1_pv.webp',
-                              'images/case_studies/evaluation_tool/observations_interviews_2_pv.webp',
-                              'images/case_studies/evaluation_tool/observations_interviews_3_pv.webp',
-                              'images/case_studies/evaluation_tool/observations_interviews_4_pv.webp',
-                              'images/case_studies/evaluation_tool/observations_interviews_5_pv.webp',
-                              'images/case_studies/evaluation_tool/observations_interviews_6_pv.webp',
-                              'images/case_studies/evaluation_tool/observations_interviews_7_pv.webp',
-                              'images/case_studies/evaluation_tool/observations_interviews_8_pv.webp',
-                              'images/case_studies/evaluation_tool/observations_interviews_9_pv.webp',
-                              'images/case_studies/evaluation_tool/observations_interviews_10_pv.webp',
-                              'images/case_studies/evaluation_tool/observations_interviews_11_pv.webp',
-                              'images/case_studies/evaluation_tool/observations_interviews_12_pv.webp',
-                            ]}
-                            scrollingMaxHeight={550}
-                          />
-                        ),
-                      },
-                    ]}
-                  />
+                  <h2>Observations and Interviews</h2>
                 </ScrollAnimation>
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                md={6}
+                className="evaluation-tool__common-paragraph"
+              >
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <p>
+                    I spent the middle of summer 2022 to conduct my first
+                    in-person observations and interviews in Texas and
+                    Louisiana.
+                  </p>
+                </ScrollAnimation>
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                md={6}
+                className="evaluation-tool__common-paragraph"
+              >
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <span>
+                    At this point of my UX/UI Design career I felt I needed to
+                    take this great opportunity even though there are severe
+                    trials and tribulations within the organization.
+                  </span>
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <span style={{ color: '#C95D63' }}>
+                    When do UX/UI Designers get the opportunity to conduct field
+                    studies and build a strong, concrete base of a foreseeable
+                    powerful application tool?
+                  </span>
+                </ScrollAnimation>
+              </Grid>
+              <Grid item xs={12}>
+                <Tabs
+                  activeTab={0}
+                  tabsData={[
+                    {
+                      name: 'Performance Profiles',
+                      content: (
+                        <ImageCarousel
+                          images={[
+                            'images/case_studies/evaluation_tool/observations_interviews_1_pp.webp',
+                            'images/case_studies/evaluation_tool/observations_interviews_2_pp.webp',
+                            'images/case_studies/evaluation_tool/observations_interviews_3_pp.webp',
+                            'images/case_studies/evaluation_tool/observations_interviews_4_pp.webp',
+                            'images/case_studies/evaluation_tool/observations_interviews_5_pp.webp',
+                            'images/case_studies/evaluation_tool/observations_interviews_6_pp.webp',
+                            'images/case_studies/evaluation_tool/observations_interviews_7_pp.webp',
+                            'images/case_studies/evaluation_tool/observations_interviews_8_pp.webp',
+                          ]}
+                          scrollingMaxHeight={550}
+                        />
+                      ),
+                    },
+                    {
+                      name: 'Performance Verifications',
+                      content: (
+                        <ImageCarousel
+                          images={[
+                            'images/case_studies/evaluation_tool/observations_interviews_1_pv.webp',
+                            'images/case_studies/evaluation_tool/observations_interviews_2_pv.webp',
+                            'images/case_studies/evaluation_tool/observations_interviews_3_pv.webp',
+                            'images/case_studies/evaluation_tool/observations_interviews_4_pv.webp',
+                            'images/case_studies/evaluation_tool/observations_interviews_5_pv.webp',
+                            'images/case_studies/evaluation_tool/observations_interviews_6_pv.webp',
+                            'images/case_studies/evaluation_tool/observations_interviews_7_pv.webp',
+                            'images/case_studies/evaluation_tool/observations_interviews_8_pv.webp',
+                            'images/case_studies/evaluation_tool/observations_interviews_9_pv.webp',
+                            'images/case_studies/evaluation_tool/observations_interviews_10_pv.webp',
+                            'images/case_studies/evaluation_tool/observations_interviews_11_pv.webp',
+                            'images/case_studies/evaluation_tool/observations_interviews_12_pv.webp',
+                          ]}
+                          scrollingMaxHeight={550}
+                        />
+                      ),
+                    },
+                  ]}
+                />
               </Grid>
             </Grid>
           </div>
@@ -647,7 +782,13 @@ const EvaluationTool = ({ scrollPosition }) => {
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
-                <h2>Synthesize and Analyze</h2>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <h2>Synthesize and Analyze</h2>
+                </ScrollAnimation>
               </Grid>
               <Grid
                 item
@@ -655,10 +796,16 @@ const EvaluationTool = ({ scrollPosition }) => {
                 md={6}
                 className="evaluation-tool__common-paragraph"
               >
-                <p>
-                  We dissected the gathered data and grouped them based on
-                  emerging themes.
-                </p>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <p>
+                    We dissected the gathered data and grouped them based on
+                    emerging themes.
+                  </p>
+                </ScrollAnimation>
               </Grid>
               <Grid
                 item
@@ -669,35 +816,59 @@ const EvaluationTool = ({ scrollPosition }) => {
                   position: 'relative',
                 }}
               >
-                <span>
-                  Through this process, we were able to identify four elements
-                  that we could then formulate insights from.
-                </span>
-                <span>
-                  <ul>
-                    <li>Problems</li>
-                    <li>Solutions</li>
-                    <li>Users</li>
-                    <li>Goals</li>
-                  </ul>
-                </span>
-              </Grid>
-              <Grid item xs={12} className="evaluation-tool__common-paragraph">
                 <ScrollAnimation
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
                 >
-                  {synthesizeIFrameLoading && <IFrameLoading />}
-                  <IFrameComponent
-                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FxkjC1835vVJt4skj5MOrsC%2FPP-%2526-PV-Interviews---Affinity-Mapping%3Fnode-id%3D0%253A1%26t%3DhK4MPG4MrPEKdoMz-1"
-                    title="Synthesize and Analyze"
-                    isLoading={synthesizeIFrameLoading}
-                    setIsLoading={(loading) =>
-                      setSynthesizeIFrameLoading(loading)
-                    }
-                  />
+                  <span>
+                    Through this process, we were able to identify four elements
+                    that we could then formulate insights from.
+                  </span>
                 </ScrollAnimation>
+                <span>
+                  <ul>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                    >
+                      <li>Problems</li>
+                    </ScrollAnimation>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                    >
+                      <li>Solutions</li>
+                    </ScrollAnimation>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                    >
+                      <li>Users</li>
+                    </ScrollAnimation>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                    >
+                      <li>Goals</li>
+                    </ScrollAnimation>
+                  </ul>
+                </span>
+              </Grid>
+              <Grid item xs={12} className="evaluation-tool__common-paragraph">
+                {synthesizeIFrameLoading && <IFrameLoading />}
+                <IFrameComponent
+                  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FxkjC1835vVJt4skj5MOrsC%2FPP-%2526-PV-Interviews---Affinity-Mapping%3Fnode-id%3D0%253A1%26t%3DhK4MPG4MrPEKdoMz-1"
+                  title="Synthesize and Analyze"
+                  isLoading={synthesizeIFrameLoading}
+                  setIsLoading={(loading) =>
+                    setSynthesizeIFrameLoading(loading)
+                  }
+                />
               </Grid>
             </Grid>
           </div>
@@ -713,77 +884,95 @@ const EvaluationTool = ({ scrollPosition }) => {
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
-                <h2>Personas and Customer Journeys</h2>
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                md={6}
-                className="evaluation-tool__common-paragraph"
-              >
-                <p>
-                  As part of crafting up an in-person 3-day design sprint, the
-                  team created personas and customer journeys in continuation to
-                  educate the organization about the UX/UI Design process.
-                </p>
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                md={6}
-                className="evaluation-tool__common-paragraph"
-              >
-                <span>
-                  These personas and customer journeys are based off of the data
-                  accumulated from the observations and interviews.
-                </span>
-                <span>
-                  We wanted our team members to empathize and understand our
-                  customers in order to make user centered decisions within the
-                  products we plan to build.
-                </span>
-              </Grid>
-              <Grid item xs={12}>
                 <ScrollAnimation
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
                 >
-                  <Tabs
-                    activeTab={0}
-                    tabsData={[
-                      {
-                        name: 'Performance Profiles',
-                        content: (
-                          <ImageCarousel
-                            images={[
-                              'images/case_studies/evaluation_tool/personas_customer_journeys_1_pp.webp',
-                              'images/case_studies/evaluation_tool/personas_customer_journeys_2_pp.webp',
-                              'images/case_studies/evaluation_tool/personas_customer_journeys_3_pp.webp',
-                              'images/case_studies/evaluation_tool/personas_customer_journeys_4_pp.webp',
-                              'images/case_studies/evaluation_tool/personas_customer_journeys_5_pp.webp',
-                            ]}
-                          />
-                        ),
-                      },
-                      {
-                        name: 'Performance Verifications',
-                        content: (
-                          <ImageCarousel
-                            images={[
-                              'images/case_studies/evaluation_tool/personas_customer_journeys_1_pv.webp',
-                              'images/case_studies/evaluation_tool/personas_customer_journeys_2_pv.webp',
-                              'images/case_studies/evaluation_tool/personas_customer_journeys_3_pv.webp',
-                              'images/case_studies/evaluation_tool/personas_customer_journeys_4_pv.webp',
-                              'images/case_studies/evaluation_tool/personas_customer_journeys_5_pv.webp',
-                              'images/case_studies/evaluation_tool/personas_customer_journeys_6_pv.webp',
-                            ]}
-                          />
-                        ),
-                      },
-                    ]}
-                  />
+                  <h2>Personas and Customer Journeys</h2>
                 </ScrollAnimation>
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                md={6}
+                className="evaluation-tool__common-paragraph"
+              >
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <p>
+                    As part of crafting up an in-person 3-day design sprint, the
+                    team created personas and customer journeys in continuation
+                    to educate the organization about the UX/UI Design process.
+                  </p>
+                </ScrollAnimation>
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                md={6}
+                className="evaluation-tool__common-paragraph"
+              >
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <span>
+                    These personas and customer journeys are based off of the
+                    data accumulated from the observations and interviews.
+                  </span>
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <span>
+                    We wanted our team members to empathize and understand our
+                    customers in order to make user centered decisions within
+                    the products we plan to build.
+                  </span>
+                </ScrollAnimation>
+              </Grid>
+              <Grid item xs={12}>
+                <Tabs
+                  activeTab={0}
+                  tabsData={[
+                    {
+                      name: 'Performance Profiles',
+                      content: (
+                        <ImageCarousel
+                          images={[
+                            'images/case_studies/evaluation_tool/personas_customer_journeys_1_pp.webp',
+                            'images/case_studies/evaluation_tool/personas_customer_journeys_2_pp.webp',
+                            'images/case_studies/evaluation_tool/personas_customer_journeys_3_pp.webp',
+                            'images/case_studies/evaluation_tool/personas_customer_journeys_4_pp.webp',
+                            'images/case_studies/evaluation_tool/personas_customer_journeys_5_pp.webp',
+                          ]}
+                        />
+                      ),
+                    },
+                    {
+                      name: 'Performance Verifications',
+                      content: (
+                        <ImageCarousel
+                          images={[
+                            'images/case_studies/evaluation_tool/personas_customer_journeys_1_pv.webp',
+                            'images/case_studies/evaluation_tool/personas_customer_journeys_2_pv.webp',
+                            'images/case_studies/evaluation_tool/personas_customer_journeys_3_pv.webp',
+                            'images/case_studies/evaluation_tool/personas_customer_journeys_4_pv.webp',
+                            'images/case_studies/evaluation_tool/personas_customer_journeys_5_pv.webp',
+                            'images/case_studies/evaluation_tool/personas_customer_journeys_6_pv.webp',
+                          ]}
+                        />
+                      ),
+                    },
+                  ]}
+                />
               </Grid>
             </Grid>
           </div>
@@ -796,7 +985,13 @@ const EvaluationTool = ({ scrollPosition }) => {
               sx={{ mb: { xs: 4, md: 15 } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
-                <h2>My First Design Sprint Facilitation</h2>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <h2>My First Design Sprint Facilitation</h2>
+                </ScrollAnimation>
               </Grid>
               <Grid
                 item
@@ -804,10 +999,17 @@ const EvaluationTool = ({ scrollPosition }) => {
                 md={6}
                 className="evaluation-tool__common-paragraph"
               >
-                <p>
-                  I ended my Summer 2022 by crafting up an extensive 3-day
-                  design sprint plan, presentation deck, and workshop exercises.
-                </p>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <p>
+                    I ended my Summer 2022 by crafting up an extensive 3-day
+                    design sprint plan, presentation deck, and workshop
+                    exercises.
+                  </p>
+                </ScrollAnimation>
               </Grid>
               <Grid
                 item
@@ -818,66 +1020,85 @@ const EvaluationTool = ({ scrollPosition }) => {
                   position: 'relative',
                 }}
               >
-                <span className="font-family-black">Key Takeaways:</span>
-                <span>
-                  <ul>
-                    <li>
-                      There is such a thing as “Improv Design Sprint” as you
-                      uncover how each team member dynamically works together
-                      and plan instantaneously based off of their behaviors.
-                    </li>
-                    <li>
-                      <div>
-                        If they do not want to do it themselves in smaller
-                        groups, you have to take action and visualize ideas
-                        yourself in one large big group.*
-                        <br />
-                        <span
-                          style={{
-                            fontSize: '16px',
-                            color: '#808080',
-                            lineHeight: '19px',
-                            display: 'flex',
-                            marginTop: '16px',
-                          }}
-                        >
-                          *Note - <br />
-                          Ask me during the interview and I will expand on this.
-                        </span>
-                      </div>
-                    </li>
-                    <li>
-                      Is it the Product Designers duty to identify the gaps
-                      within the current business requirements? <br />
-                      <br />I come to realize business and user requirements
-                      work hand-in-hand.
-                    </li>
-                  </ul>
-                </span>
-              </Grid>
-              <Grid item xs={12}>
                 <ScrollAnimation
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
                 >
-                  <ImageCarousel
-                    images={[
-                      'images/case_studies/evaluation_tool/first_design_sprint_facilitation_1.webp',
-                      'images/case_studies/evaluation_tool/first_design_sprint_facilitation_2.webp',
-                      'images/case_studies/evaluation_tool/first_design_sprint_facilitation_3.webp',
-                      'images/case_studies/evaluation_tool/first_design_sprint_facilitation_4.webp',
-                      'images/case_studies/evaluation_tool/first_design_sprint_facilitation_5.webp',
-                      'images/case_studies/evaluation_tool/first_design_sprint_facilitation_6.webp',
-                      'images/case_studies/evaluation_tool/first_design_sprint_facilitation_7.webp',
-                      'images/case_studies/evaluation_tool/first_design_sprint_facilitation_8.webp',
-                      'images/case_studies/evaluation_tool/first_design_sprint_facilitation_9.webp',
-                      'images/case_studies/evaluation_tool/first_design_sprint_facilitation_10.webp',
-                      'images/case_studies/evaluation_tool/first_design_sprint_facilitation_11.webp',
-                    ]}
-                    scrollingMaxHeight={600}
-                  />
+                  <span className="font-family-black">Key Takeaways:</span>
                 </ScrollAnimation>
+                <span>
+                  <ul>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                    >
+                      <li>
+                        There is such a thing as “Improv Design Sprint” as you
+                        uncover how each team member dynamically works together
+                        and plan instantaneously based off of their behaviors.
+                      </li>
+                    </ScrollAnimation>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                    >
+                      <li>
+                        <div>
+                          If they do not want to do it themselves in smaller
+                          groups, you have to take action and visualize ideas
+                          yourself in one large big group.*
+                          <br />
+                          <span
+                            style={{
+                              fontSize: '16px',
+                              color: '#808080',
+                              lineHeight: '19px',
+                              display: 'flex',
+                              marginTop: '16px',
+                            }}
+                          >
+                            *Note - <br />
+                            Ask me during the interview and I will expand on
+                            this.
+                          </span>
+                        </div>
+                      </li>
+                    </ScrollAnimation>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                    >
+                      <li>
+                        Is it the Product Designers duty to identify the gaps
+                        within the current business requirements? <br />
+                        <br />I come to realize business and user requirements
+                        work hand-in-hand.
+                      </li>
+                    </ScrollAnimation>
+                  </ul>
+                </span>
+              </Grid>
+              <Grid item xs={12}>
+                <ImageCarousel
+                  images={[
+                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_1.webp',
+                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_2.webp',
+                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_3.webp',
+                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_4.webp',
+                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_5.webp',
+                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_6.webp',
+                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_7.webp',
+                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_8.webp',
+                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_9.webp',
+                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_10.webp',
+                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_11.webp',
+                  ]}
+                  scrollingMaxHeight={600}
+                />
               </Grid>
             </Grid>
           </div>
@@ -890,7 +1111,13 @@ const EvaluationTool = ({ scrollPosition }) => {
               sx={{ mb: { xs: 9, md: 15 } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
-                <h2>Cognitive Thoughts</h2>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <h2>Cognitive Thoughts</h2>
+                </ScrollAnimation>
               </Grid>
               <Grid
                 item
@@ -898,11 +1125,17 @@ const EvaluationTool = ({ scrollPosition }) => {
                 md={6}
                 className="evaluation-tool__common-paragraph"
               >
-                <p>
-                  In the beginning stages of my career, I thrived for an
-                  opportunity to conduct UX research because I believe in
-                  validating our solutions based off of data.
-                </p>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <p>
+                    In the beginning stages of my career, I thrived for an
+                    opportunity to conduct UX research because I believe in
+                    validating our solutions based off of data.
+                  </p>
+                </ScrollAnimation>
               </Grid>
               <Grid
                 item
@@ -913,22 +1146,40 @@ const EvaluationTool = ({ scrollPosition }) => {
                   position: 'relative',
                 }}
               >
-                <span>
-                  I have come to realize that not all organizations or companies
-                  in the digital landscape respect UX/UI Design as the core
-                  foundation of building a successful product.
-                </span>
-                <span>
-                  Time and time again, we see products become massively
-                  successful because the company molds the product based on user
-                  wants and needs (take Apple as an example).
-                </span>
-                <span>
-                  I do not know when that day will arrives for the organization
-                  to realize there must be a product development standardization
-                  process in order to build a successful application for the
-                  customers.
-                </span>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <span>
+                    I have come to realize that not all organizations or
+                    companies in the digital landscape respect UX/UI Design as
+                    the core foundation of building a successful product.
+                  </span>
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <span>
+                    Time and time again, we see products become massively
+                    successful because the company molds the product based on
+                    user wants and needs (take Apple as an example).
+                  </span>
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll
+                >
+                  <span>
+                    I do not know when that day will arrives for the
+                    organization to realize there must be a product development
+                    standardization process in order to build a successful
+                    application for the customers.
+                  </span>
+                </ScrollAnimation>
               </Grid>
             </Grid>
           </div>

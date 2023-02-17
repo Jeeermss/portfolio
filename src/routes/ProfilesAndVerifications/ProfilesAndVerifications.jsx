@@ -270,8 +270,13 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       content: (
                         <ImageCarousel
                           images={[
-                            'images/case_studies/profiles_and_verifications/user_testing_report_1.webp',
-                            'images/case_studies/profiles_and_verifications/user_testing_report_2.webp',
+                            'images/case_studies/profiles_and_verifications/user_testing_report_1_pp.png',
+                            'images/case_studies/profiles_and_verifications/user_testing_report_2_pp.png',
+                            'images/case_studies/profiles_and_verifications/user_testing_report_3_pp.png',
+                            'images/case_studies/profiles_and_verifications/user_testing_report_4_pp.png',
+                            'images/case_studies/profiles_and_verifications/user_testing_report_5_pp.png',
+                            'images/case_studies/profiles_and_verifications/user_testing_report_6_pp.png',
+                            'images/case_studies/profiles_and_verifications/user_testing_report_7_pp.png',
                           ]}
                         />
                       ),
@@ -281,8 +286,13 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       content: (
                         <ImageCarousel
                           images={[
-                            'images/case_studies/profiles_and_verifications/user_testing_report_1.webp',
-                            'images/case_studies/profiles_and_verifications/user_testing_report_2.webp',
+                            'images/case_studies/profiles_and_verifications/user_testing_report_1_pv.png',
+                            'images/case_studies/profiles_and_verifications/user_testing_report_2_pv.png',
+                            'images/case_studies/profiles_and_verifications/user_testing_report_3_pv.png',
+                            'images/case_studies/profiles_and_verifications/user_testing_report_4_pv.png',
+                            'images/case_studies/profiles_and_verifications/user_testing_report_5_pv.png',
+                            'images/case_studies/profiles_and_verifications/user_testing_report_6_pv.png',
+                            'images/case_studies/profiles_and_verifications/user_testing_report_7_pv.png',
                           ]}
                         />
                       ),
@@ -511,9 +521,10 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                     'This first slide is a snapshot provided by the Full-Stack Developer.',
                   ]}
                   carouselImages={[
-                    'images/case_studies/profiles_and_verifications/current_status_1.webp',
-                    'images/case_studies/profiles_and_verifications/current_status_2.webp',
+                    'images/case_studies/profiles_and_verifications/current_status_1.png',
+                    'images/case_studies/profiles_and_verifications/current_status_2.png',
                   ]}
+                  toolbarImage="images/case_studies/profiles_and_verifications/chrome_bar.png"
                 />
               </Grid>
             </Grid>

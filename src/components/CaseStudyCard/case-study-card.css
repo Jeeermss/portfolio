@@ -8,12 +8,12 @@
 }
 
 .card:hover {
-  box-shadow: var(--charcoal) 0px 3px 8px;
+  box-shadow: var(--charcoal) 0px 1px 3px;
   cursor: pointer;
 }
 
 .card-hovered {
-  box-shadow: var(--charcoal) 0px 3px 8px !important;
+  box-shadow: var(--charcoal) 0px 1px 3px !important;
   cursor: pointer;
 }
 

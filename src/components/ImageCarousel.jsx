@@ -24,10 +24,14 @@ const ImageCarousel = ({
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const [imagesLoaded, setImagesLoaded] = useState(false);
+  const [imagesList, setImagesList] = useState([]);
+
+  const imagesArr = [];
 
   const loadImagesInSequence = (images) => {
     const imagesCopy = images.slice();
     if (!imagesCopy.length) {
+      setImagesList(imagesArr);
       setImagesLoaded(true);
       return;
     }
@@ -36,6 +40,10 @@ const ImageCarousel = ({
     img.width = '100%';
 
     img.onload = function () {
+      imagesArr.push({
+        url: img.src,
+        height: img.naturalHeight <= 740 ? '100%' : 'auto',
+      });
       setTimeout(() => {
         loadImagesInSequence(imagesCopy);
       }, 1000);
@@ -96,9 +104,15 @@ const ImageCarousel = ({
             animation="slide"
             indicators={noIndicators ? false : true}
           >
-            {images.map((item, i) => (
+            {imagesList.map((item, i) => (
               <ScrollingContainer maxHeight={scrollingMaxHeight} key={i}>
-                <img src={item} key={i} alt="carousel" width="100%" />
+                <img
+                  src={item.url}
+                  key={i}
+                  alt="carousel"
+                  width="100%"
+                  style={{ height: item.height }}
+                />
               </ScrollingContainer>
             ))}
           </Carousel>

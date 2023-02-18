@@ -568,8 +568,8 @@ const EvaluationTool = ({ scrollPosition }) => {
               <Grid item xs={12}>
                 <ImageCarousel
                   images={[
-                    'images/case_studies/evaluation_tool/whiteboard_session_3.webp',
-                    'images/case_studies/evaluation_tool/whiteboard_session_4.webp',
+                    'images/case_studies/evaluation_tool/whiteboard_session_3.png',
+                    'images/case_studies/evaluation_tool/whiteboard_session_4.png',
                   ]}
                 />
               </Grid>
@@ -739,7 +739,6 @@ const EvaluationTool = ({ scrollPosition }) => {
                             'images/case_studies/evaluation_tool/observations_interviews_7_pp.webp',
                             'images/case_studies/evaluation_tool/observations_interviews_8_pp.webp',
                           ]}
-                          scrollingMaxHeight={550}
                         />
                       ),
                     },
@@ -761,7 +760,6 @@ const EvaluationTool = ({ scrollPosition }) => {
                             'images/case_studies/evaluation_tool/observations_interviews_11_pv.webp',
                             'images/case_studies/evaluation_tool/observations_interviews_12_pv.webp',
                           ]}
-                          scrollingMaxHeight={550}
                         />
                       ),
                     },
@@ -1097,7 +1095,6 @@ const EvaluationTool = ({ scrollPosition }) => {
                     'images/case_studies/evaluation_tool/first_design_sprint_facilitation_10.webp',
                     'images/case_studies/evaluation_tool/first_design_sprint_facilitation_11.webp',
                   ]}
-                  scrollingMaxHeight={600}
                 />
               </Grid>
             </Grid>

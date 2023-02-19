@@ -37,8 +37,8 @@ const PersonasTabs = () => {
         activeTab={0}
         tabsData={personasTabsData}
         sx={{
-          mb: { xs: 9, md: 15 },
-          mt: { xs: 7, md: 15 },
+          mb: { xs: 9, md: '148px' },
+          mt: { xs: 9, md: '148px' },
         }}
       />
     </div>

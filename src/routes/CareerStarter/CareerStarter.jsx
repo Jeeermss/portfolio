@@ -59,9 +59,9 @@ const CareerStarter = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="UT Plan">
             <Grid
               container
-              rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 3 }}
-              sx={{ mb: { xs: 4, md: 15 } }}
+              rowGap={{ xs: 2, md: 0 }}
+              spacing={{ xs: 0, md: 2 }}
+              sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12} className="career-starter__common-paragraph">
                 <ScrollAnimation
@@ -129,7 +129,7 @@ const CareerStarter = ({ scrollPosition }) => {
                   </span>
                 </ScrollAnimation>
               </Grid>
-              <Grid item xs={12}>
+              <Grid item xs={12} mt={{ xs: 2, md: 3 }}>
                 <LazyLoadImage
                   scrollPosition={scrollPosition}
                   src="images/case_studies/career_starter/ut_plan.png"
@@ -144,9 +144,9 @@ const CareerStarter = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="UT Report">
             <Grid
               container
-              rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 3 }}
-              sx={{ mb: { xs: 4, md: 15 } }}
+              rowGap={{ xs: 2, md: 0 }}
+              spacing={{ xs: 0, md: 2 }}
+              sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12} className="career-starter__common-paragraph">
                 <ScrollAnimation
@@ -236,9 +236,9 @@ const CareerStarter = ({ scrollPosition }) => {
           >
             <Grid
               container
-              rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 3 }}
-              sx={{ mb: { xs: 4, md: 15 } }}
+              rowGap={{ xs: 2, md: 0 }}
+              spacing={{ xs: 0, md: 2 }}
+              sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12} className="career-starter__common-paragraph">
                 <ScrollAnimation
@@ -336,7 +336,7 @@ const CareerStarter = ({ scrollPosition }) => {
                   </span>
                 </ScrollAnimation>
               </Grid>
-              <Grid item xs={12}>
+              <Grid item xs={12} mt={{ xs: 2, md: 3 }}>
                 <LazyLoadImage
                   scrollPosition={scrollPosition}
                   src="images/case_studies/career_starter/post_research_image_1.webp"
@@ -363,9 +363,9 @@ const CareerStarter = ({ scrollPosition }) => {
           >
             <Grid
               container
-              rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 3 }}
-              sx={{ mb: { xs: 4, md: 15 } }}
+              rowGap={{ xs: 2, md: 0 }}
+              spacing={{ xs: 0, md: 2 }}
+              sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12} className="career-starter__common-paragraph">
                 <ScrollAnimation
@@ -428,7 +428,7 @@ const CareerStarter = ({ scrollPosition }) => {
                   </span>
                 </ScrollAnimation>
               </Grid>
-              <Grid item xs={12}>
+              <Grid item xs={12} mt={{ xs: 2, md: 3 }}>
                 <WhiteboardingTabs />
               </Grid>
             </Grid>
@@ -440,9 +440,9 @@ const CareerStarter = ({ scrollPosition }) => {
           >
             <Grid
               container
-              rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 3 }}
-              sx={{ mb: { xs: 4, md: 15 } }}
+              rowGap={{ xs: 2, md: 0 }}
+              spacing={{ xs: 0, md: 2 }}
+              sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12} className="career-starter__common-paragraph">
                 <ScrollAnimation
@@ -500,7 +500,7 @@ const CareerStarter = ({ scrollPosition }) => {
                   </span>
                 </ScrollAnimation>
               </Grid>
-              <Grid item xs={12}>
+              <Grid item xs={12} mt={{ xs: 2, md: 3 }}>
                 <LazyLoadImage
                   scrollPosition={scrollPosition}
                   src="images/case_studies/career_starter/high_low_priorities.webp"
@@ -515,9 +515,9 @@ const CareerStarter = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="Reflection">
             <Grid
               container
-              rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 3 }}
-              sx={{ mb: { xs: 14, md: 15 } }}
+              rowGap={{ xs: 2, md: 0 }}
+              spacing={{ xs: 0, md: 2 }}
+              sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12} className="career-starter__common-paragraph">
                 <ScrollAnimation

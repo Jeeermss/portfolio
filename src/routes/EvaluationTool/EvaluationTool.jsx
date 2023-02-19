@@ -94,8 +94,7 @@ const EvaluationTool = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="Roadmap">
             <CaseStudyCardMedia
               sx={{
-                mb: { xs: 9, md: 15 },
-                mt: { xs: 7, md: 15 },
+                my: { xs: 9, md: '148px' },
               }}
               cardContent="My primary role started out as a Contractor UX/UI Designer for this project. I closely collaborated with various team members (internal and external) on a quest to understand, mold, and ship a product that caters to upcoming craft professionals."
               cardImageUrl="images/case_studies/evaluation_tool/product_roadmap.webp"
@@ -105,9 +104,9 @@ const EvaluationTool = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="The Objective">
             <Grid
               container
-              rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 3 }}
-              sx={{ mb: { xs: 4, md: 7 } }}
+              rowGap={{ xs: 2, md: 0 }}
+              spacing={{ xs: 0, md: 2 }}
+              sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
                 <ScrollAnimation
@@ -181,9 +180,9 @@ const EvaluationTool = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="User Stories">
             <Grid
               container
-              rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 3 }}
-              sx={{ mb: { xs: 4, md: 15 } }}
+              rowGap={{ xs: 2, md: 0 }}
+              spacing={{ xs: 0, md: 2 }}
+              sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12}>
                 <ScrollingContainer
@@ -207,9 +206,9 @@ const EvaluationTool = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="User Flows">
             <Grid
               container
-              rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 3 }}
-              sx={{ mb: { xs: 4, md: 15 } }}
+              rowGap={{ xs: 2, md: 0 }}
+              spacing={{ xs: 0, md: 2 }}
+              sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
                 <ScrollAnimation
@@ -249,7 +248,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   position: 'relative',
                 }}
               ></Grid>
-              <Grid item xs={12}>
+              <Grid item xs={12} mt={{ xs: 2, md: 3 }}>
                 {userFlowIFrameLoading && <IFrameLoading />}
                 <IFrameComponent
                   src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FWRO5soZQcri1WG60vkEdYN%2FPP%252FPV-User-Flow%3Ft%3D26xxBvFmfGc9YbId-1"
@@ -264,9 +263,9 @@ const EvaluationTool = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="Initial Mockups">
             <Grid
               container
-              rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 3 }}
-              sx={{ mb: { xs: 4, md: 15 } }}
+              rowGap={{ xs: 2, md: 0 }}
+              spacing={{ xs: 0, md: 2 }}
+              sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
                 <ScrollAnimation
@@ -346,7 +345,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   </ul>
                 </span>
               </Grid>
-              <Grid item xs={12}>
+              <Grid item xs={12} mt={{ xs: 2, md: 3 }}>
                 <ImageCarousel
                   images={[
                     'images/case_studies/evaluation_tool/initial_mockups_1.webp',
@@ -366,9 +365,9 @@ const EvaluationTool = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="Project Roadmap">
             <Grid
               container
-              rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 3 }}
-              sx={{ mb: { xs: 4, md: 15 } }}
+              rowGap={{ xs: 2, md: 0 }}
+              spacing={{ xs: 0, md: 2 }}
+              sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
                 <ScrollAnimation
@@ -422,7 +421,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   <span>This was a career battle I was willing to take. </span>
                 </ScrollAnimation>
               </Grid>
-              <Grid item xs={12}>
+              <Grid item xs={12} mt={{ xs: 2, md: 3 }}>
                 <LazyLoadImage
                   scrollPosition={scrollPosition}
                   src="images/case_studies/evaluation_tool/project_roadmap.png"
@@ -437,9 +436,9 @@ const EvaluationTool = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="Whiteboard Session">
             <Grid
               container
-              rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 3 }}
-              sx={{ mb: { xs: 4, md: 15 } }}
+              rowGap={{ xs: 2, md: 0 }}
+              spacing={{ xs: 0, md: 2 }}
+              sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
                 <ScrollAnimation
@@ -547,7 +546,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   </ul>
                 </span>
               </Grid>
-              <Grid item xs={12}>
+              <Grid item xs={12} mt={{ xs: 2, md: 3 }}>
                 <LazyLoadImage
                   scrollPosition={scrollPosition}
                   src="images/case_studies/evaluation_tool/whiteboard_session_1.webp"
@@ -582,9 +581,9 @@ const EvaluationTool = ({ scrollPosition }) => {
           >
             <Grid
               container
-              rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 3 }}
-              sx={{ mb: { xs: 4, md: 15 } }}
+              rowGap={{ xs: 2, md: 0 }}
+              spacing={{ xs: 0, md: 2 }}
+              sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
                 <ScrollAnimation
@@ -643,7 +642,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   </span>
                 </ScrollAnimation>
               </Grid>
-              <Grid item xs={12}>
+              <Grid item xs={12} mt={{ xs: 2, md: 3 }}>
                 <LazyLoadImage
                   scrollPosition={scrollPosition}
                   src="images/case_studies/evaluation_tool/first_ux_ui_team_as_lead.png"
@@ -661,9 +660,9 @@ const EvaluationTool = ({ scrollPosition }) => {
           >
             <Grid
               container
-              rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 3 }}
-              sx={{ mb: { xs: 4, md: 15 } }}
+              rowGap={{ xs: 2, md: 0 }}
+              spacing={{ xs: 0, md: 2 }}
+              sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
                 <ScrollAnimation
@@ -721,7 +720,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   </span>
                 </ScrollAnimation>
               </Grid>
-              <Grid item xs={12}>
+              <Grid item xs={12} mt={{ xs: 2, md: 3 }}>
                 <Tabs
                   activeTab={0}
                   tabsData={[
@@ -775,9 +774,9 @@ const EvaluationTool = ({ scrollPosition }) => {
           >
             <Grid
               container
-              rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 3 }}
-              sx={{ mb: { xs: 4, md: 15 } }}
+              rowGap={{ xs: 2, md: 0 }}
+              spacing={{ xs: 0, md: 2 }}
+              sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
                 <ScrollAnimation
@@ -857,7 +856,12 @@ const EvaluationTool = ({ scrollPosition }) => {
                   </ul>
                 </span>
               </Grid>
-              <Grid item xs={12} className="evaluation-tool__common-paragraph">
+              <Grid
+                item
+                xs={12}
+                className="evaluation-tool__common-paragraph"
+                mt={{ xs: 2, md: 3 }}
+              >
                 {synthesizeIFrameLoading && <IFrameLoading />}
                 <IFrameComponent
                   src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FxkjC1835vVJt4skj5MOrsC%2FPP-%2526-PV-Interviews---Affinity-Mapping%3Fnode-id%3D0%253A1%26t%3DhK4MPG4MrPEKdoMz-1"
@@ -877,9 +881,9 @@ const EvaluationTool = ({ scrollPosition }) => {
           >
             <Grid
               container
-              rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 3 }}
-              sx={{ mb: { xs: 4, md: 15 } }}
+              rowGap={{ xs: 2, md: 0 }}
+              spacing={{ xs: 0, md: 2 }}
+              sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
                 <ScrollAnimation
@@ -936,7 +940,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   </span>
                 </ScrollAnimation>
               </Grid>
-              <Grid item xs={12}>
+              <Grid item xs={12} mt={{ xs: 2, md: 3 }}>
                 <Tabs
                   activeTab={0}
                   tabsData={[
@@ -978,9 +982,9 @@ const EvaluationTool = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="Design Sprint">
             <Grid
               container
-              rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 3 }}
-              sx={{ mb: { xs: 4, md: 15 } }}
+              rowGap={{ xs: 2, md: 0 }}
+              spacing={{ xs: 0, md: 2 }}
+              sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
                 <ScrollAnimation
@@ -1080,7 +1084,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   </ul>
                 </span>
               </Grid>
-              <Grid item xs={12}>
+              <Grid item xs={12} mt={{ xs: 2, md: 3 }}>
                 <ImageCarousel
                   images={[
                     'images/case_studies/evaluation_tool/first_design_sprint_facilitation_1.webp',
@@ -1103,9 +1107,9 @@ const EvaluationTool = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="Cogitated Thoughts">
             <Grid
               container
-              rowGap={{ xs: 4, md: 0 }}
-              spacing={{ xs: 0, md: 3 }}
-              sx={{ mb: { xs: 9, md: 15 } }}
+              rowGap={{ xs: 2, md: 0 }}
+              spacing={{ xs: 0, md: 2 }}
+              sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
                 <ScrollAnimation

@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { IconButton, Backdrop, Grow } from '@mui/material';
+import { IconButton, Backdrop, Grow, useMediaQuery } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 import FormatListBulletedOutlinedIcon from '@mui/icons-material/FormatListBulletedOutlined';
 import './page-road-map.css';
 
 const PageRoadMap = ({ showMore }) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const [sectionsData, setSectionsData] = useState([]);
   const [sectionsTopOffset, setSectionsTopOffset] = useState([]);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -75,7 +78,9 @@ const PageRoadMap = ({ showMore }) => {
     updateClientMid();
     getSections();
 
-    pageSectionsContainer.style.bottom = `${footerContainer[0].clientHeight}px`;
+    if (!isMobile) {
+      pageSectionsContainer.style.bottom = `${footerContainer[0].clientHeight}px`;
+    }
 
     window.onscroll = updateClientMid;
     window.onresize = updateClientMid;
@@ -87,7 +92,14 @@ const PageRoadMap = ({ showMore }) => {
   };
 
   return (
-    <div className="page-road-map" id="page-road-map" style={{ bottom: '0' }}>
+    <div
+      className="page-road-map"
+      id="page-road-map"
+      style={{
+        bottom: isMobile ? 'auto' : '0',
+        top: isMobile ? '32%' : 'auto',
+      }}
+    >
       <div className="page-road-map__mobile">
         <IconButton
           aria-label="delete"
@@ -114,7 +126,10 @@ const PageRoadMap = ({ showMore }) => {
             style={{ transformOrigin: '0 0 0' }}
             {...(isDropdownOpen ? { timeout: 800 } : {})}
           >
-            <div className="page-road-map__mobile-items">
+            <div
+              className="page-road-map__mobile-items"
+              id="page-road-map__mobile-items"
+            >
               <span className="page-road-map__mobile-items-title">
                 Contents
               </span>

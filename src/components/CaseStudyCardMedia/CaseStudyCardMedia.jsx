@@ -44,7 +44,7 @@ const CaseStudyCardMedia = ({ sx, cardContent, cardImageUrl }) => {
           className="case-study-card-media__image"
           sx={{ minWidth: 900 }}
         />
-        <IconButton
+        {/* <IconButton
           sx={{
             display: { xs: 'block', md: 'none' },
             position: 'absolute',
@@ -54,7 +54,7 @@ const CaseStudyCardMedia = ({ sx, cardContent, cardImageUrl }) => {
           onClick={() => setIsModalOpen(true)}
         >
           <ZoomInMapIcon />
-        </IconButton>
+        </IconButton> */}
       </div>
       <CardContent className="case-study-card-media__content">
         <span className="case-study-card-media__content-text">

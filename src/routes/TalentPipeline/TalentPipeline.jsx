@@ -56,7 +56,7 @@ const TalentPipeline = ({ scrollPosition }) => {
         <>
           <div className="page-section" data-section-label="Roadmap">
             <CaseStudyCardMedia
-              sx={{ my: isMobile ? 7 : 14 }}
+              sx={{ my: isMobile ? 9 : '148px' }}
               cardContent="My primary role started out as a Contractor UX/UI Designer for this
           project. I closely collaborated with various team members (internal
           and external) on a quest to understand, mold, and ship a product that
@@ -68,9 +68,9 @@ const TalentPipeline = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="Opportunity">
             <Grid
               container
-              rowGap={{ xs: 7, md: 0 }}
+              rowGap={{ xs: 4, md: 0 }}
               spacing={{ xs: 0, md: 8 }}
-              sx={{ mb: { xs: 4, md: 7 } }}
+              sx={{ mb: { xs: 4, md: 5 } }}
             >
               <Grid
                 item
@@ -152,9 +152,9 @@ const TalentPipeline = ({ scrollPosition }) => {
             </Grid>
             <Grid
               container
-              rowGap={{ xs: 7, md: 0 }}
+              rowGap={{ xs: 4, md: 0 }}
               spacing={{ xs: 0, md: 8 }}
-              sx={{ mb: { xs: 9, md: 15 } }}
+              sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12} md={4} className="talent-pipeline__role">
                 <LazyLoadImage
@@ -213,9 +213,9 @@ const TalentPipeline = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="Personas">
             <Grid
               container
-              rowGap={{ xs: 3, md: 0 }}
-              spacing={{ xs: 0, md: 3 }}
-              sx={{ mb: { xs: 4, md: 7 } }}
+              rowGap={{ xs: 0 }}
+              spacing={{ xs: 2 }}
+              sx={{ mb: { xs: 4, md: 5 } }}
             >
               <Grid item xs={12} className="talent-pipeline__common-paragraph">
                 <ScrollAnimation
@@ -280,15 +280,17 @@ const TalentPipeline = ({ scrollPosition }) => {
                 </div>
               </Grid>
             </Grid>
-            <PersonasTabs />
+            <Grid container sx={{ mb: { xs: 9, md: '148px' } }}>
+              <PersonasTabs />
+            </Grid>
           </div>
 
           <div className="page-section" data-section-label="Customer Journeys">
             <Grid
               container
-              rowGap={{ xs: 3, md: 0 }}
-              spacing={{ xs: 0, md: 3 }}
-              sx={{ mb: { xs: 4, md: 7 } }}
+              rowGap={{ xs: 0 }}
+              spacing={{ xs: 2 }}
+              sx={{ mb: { xs: 4, md: 5 } }}
             >
               <Grid item xs={12} className="talent-pipeline__common-paragraph">
                 <ScrollAnimation
@@ -328,15 +330,17 @@ const TalentPipeline = ({ scrollPosition }) => {
                 </ScrollAnimation>
               </Grid>
             </Grid>
-            <CareerJourneyTabs />
+            <Grid container sx={{ mb: { xs: 9, md: '148px' } }}>
+              <CareerJourneyTabs />
+            </Grid>
           </div>
 
           <div className="page-section" data-section-label="User Stories">
             <Grid
               container
               rowGap={{ xs: 3, md: 0 }}
-              spacing={{ xs: 0, md: 3 }}
-              sx={{ mb: { xs: 9, md: 15 } }}
+              spacing={{ xs: 0, md: 2 }}
+              sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12} className="talent-pipeline__common-paragraph">
                 <ScrollAnimation
@@ -406,7 +410,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   </span>
                 </ScrollAnimation>
               </Grid>
-              <Grid item xs={12}>
+              <Grid item xs={12} mt={3}>
                 <LazyLoadImage
                   scrollPosition={scrollPosition}
                   src="images/case_studies/talent_pipeline/user_stories.png"
@@ -430,9 +434,9 @@ const TalentPipeline = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="Design System">
             <Grid
               container
-              rowGap={{ xs: 3, md: 0 }}
-              spacing={{ xs: 0, md: 4 }}
-              sx={{ mb: { xs: 9, md: 15 } }}
+              rowGap={{ xs: 0 }}
+              spacing={{ xs: 0, md: 2 }}
+              sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12} className="talent-pipeline__common-paragraph">
                 <ScrollAnimation
@@ -451,7 +455,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                 xs={12}
                 md={6}
                 className="talent-pipeline__common-paragraph"
-                mb={6}
+                mb={3}
               >
                 <ScrollAnimation
                   animateOnce
@@ -502,10 +506,9 @@ const TalentPipeline = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="LP Analysis">
             <Grid
               container
-              rowGap={{ xs: 3, md: 0 }}
-              rowSpacing={{ xs: 0, md: 3 }}
-              spacing={{ xs: 0, md: 4 }}
-              sx={{ mb: { xs: 9, md: 22 } }}
+              rowGap={{ xs: 0 }}
+              spacing={{ xs: 0, md: 2 }}
+              sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12} className="talent-pipeline__common-paragraph">
                 <ScrollAnimation
@@ -537,7 +540,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                 item
                 xs={12}
                 md={6}
-                mb={4}
+                mb={{ xs: 2, md: 3 }}
                 className="talent-pipeline__common-paragraph"
               >
                 <ScrollAnimation
@@ -601,10 +604,9 @@ const TalentPipeline = ({ scrollPosition }) => {
           >
             <Grid
               container
-              rowGap={{ xs: 3, md: 0 }}
-              rowSpacing={{ xs: 0, md: 3 }}
-              spacing={{ xs: 0, md: 4 }}
-              sx={{ mb: { xs: 9, md: 15 } }}
+              rowGap={{ xs: 0 }}
+              spacing={{ xs: 0, md: 2 }}
+              sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12} className="talent-pipeline__common-paragraph">
                 <ScrollAnimation
@@ -650,7 +652,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   </span>
                 </ScrollAnimation>
               </Grid>
-              <Grid item xs={12}>
+              <Grid item xs={12} mt={{ xs: 2, md: 3 }}>
                 <LazyLoadImage
                   scrollPosition={scrollPosition}
                   src="images/case_studies/talent_pipeline/tp_landing_page.png"
@@ -665,10 +667,9 @@ const TalentPipeline = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="LP Final Result">
             <Grid
               container
-              rowGap={{ xs: 3, md: 0 }}
-              rowSpacing={{ xs: 0, md: 3 }}
-              spacing={{ xs: 0, md: 4 }}
-              sx={{ mb: { xs: 9, md: 15 } }}
+              rowGap={{ xs: 0 }}
+              spacing={{ xs: 0, md: 2 }}
+              sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12} className="talent-pipeline__common-paragraph">
                 <ScrollAnimation
@@ -683,7 +684,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                 item
                 xs={12}
                 md={6}
-                mb={4}
+                mb={{ xs: 2, md: 3 }}
                 className="talent-pipeline__common-paragraph"
               >
                 <ScrollAnimation
@@ -737,10 +738,9 @@ const TalentPipeline = ({ scrollPosition }) => {
           >
             <Grid
               container
-              rowGap={{ xs: 3, md: 0 }}
-              rowSpacing={{ xs: 0, md: 3 }}
-              spacing={{ xs: 0, md: 4 }}
-              sx={{ mb: { xs: 14, md: 16 } }}
+              rowGap={{ xs: 0 }}
+              spacing={{ xs: 0, md: 2 }}
+              sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12} className="talent-pipeline__common-paragraph">
                 <ScrollAnimation

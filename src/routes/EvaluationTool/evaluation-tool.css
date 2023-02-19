@@ -5,7 +5,7 @@
 .evaluation-tool__common-paragraph {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
 }
 
 .evaluation-tool__common-paragraph h2 {

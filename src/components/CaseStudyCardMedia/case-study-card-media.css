@@ -29,7 +29,8 @@
 @media (max-width: 900px) {
   .case-study-card-media__image-container {
     border-right: 1px solid var(--dark-magenta);
-    overflow: hidden;
+    border-left: 1px solid var(--dark-magenta);
+    overflow-x: auto;
   }
   .case-study-card-media__content-text {
     font-size: 20px;

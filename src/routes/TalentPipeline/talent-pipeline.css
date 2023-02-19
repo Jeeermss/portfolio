@@ -51,7 +51,7 @@
 .talent-pipeline__common-paragraph {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
 }
 
 .talent-pipeline__common-paragraph h2 {

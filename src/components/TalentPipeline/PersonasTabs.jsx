@@ -50,11 +50,7 @@ const PersonasTabs = ({ scrollPosition }) => {
 
   return (
     <div>
-      <Tabs
-        activeTab={0}
-        tabsData={personasTabsData}
-        sx={{ mb: { xs: 9, md: 15 } }}
-      />
+      <Tabs activeTab={0} tabsData={personasTabsData} />
     </div>
   );
 };

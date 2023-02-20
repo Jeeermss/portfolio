@@ -415,9 +415,15 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                     'It is imperative we design an application that is intuitive, clean, and help educate our users on how to navigate within our products.',
                   ]}
                   carouselImages={[
-                    'images/case_studies/profiles_and_verifications/ui_design_1.webp',
-                    'images/case_studies/profiles_and_verifications/ui_design_1.webp',
+                    'images/case_studies/profiles_and_verifications/ui_design_1.png',
+                    'images/case_studies/profiles_and_verifications/ui_design_2.png',
+                    'images/case_studies/profiles_and_verifications/ui_design_3.png',
+                    'images/case_studies/profiles_and_verifications/ui_design_4.png',
+                    'images/case_studies/profiles_and_verifications/ui_design_5.png',
+                    'images/case_studies/profiles_and_verifications/ui_design_6.png',
+                    'images/case_studies/profiles_and_verifications/ui_design_7.png',
                   ]}
+                  toolbarImage="images/case_studies/profiles_and_verifications/chrome_bar.png"
                 />
               </Grid>
             </Grid>

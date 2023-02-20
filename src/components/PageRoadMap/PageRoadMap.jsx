@@ -79,7 +79,9 @@ const PageRoadMap = ({ showMore }) => {
     getSections();
 
     if (!isMobile) {
-      pageSectionsContainer.style.bottom = `${footerContainer[0].clientHeight}px`;
+      pageSectionsContainer.style.bottom = `${
+        footerContainer[0].clientHeight + 10
+      }px`;
     }
 
     window.onscroll = updateClientMid;

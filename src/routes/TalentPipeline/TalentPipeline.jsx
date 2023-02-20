@@ -281,7 +281,9 @@ const TalentPipeline = ({ scrollPosition }) => {
               </Grid>
             </Grid>
             <Grid container sx={{ mb: { xs: 9, md: '148px' } }}>
-              <PersonasTabs />
+              <Grid item xs={12}>
+                <PersonasTabs />
+              </Grid>
             </Grid>
           </div>
 
@@ -331,7 +333,9 @@ const TalentPipeline = ({ scrollPosition }) => {
               </Grid>
             </Grid>
             <Grid container sx={{ mb: { xs: 9, md: '148px' } }}>
-              <CareerJourneyTabs />
+              <Grid item xs={12}>
+                <CareerJourneyTabs />
+              </Grid>
             </Grid>
           </div>
 

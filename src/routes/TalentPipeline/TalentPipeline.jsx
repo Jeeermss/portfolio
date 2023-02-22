@@ -81,14 +81,16 @@ const TalentPipeline = ({ scrollPosition }) => {
                 <ScrollAnimation
                   animateOnce
                   animateIn="animate__fadeInUp"
-                  animatePreScroll
+                  animatePreScroll={false}
                 >
                   <h2>Opportunity</h2>
                 </ScrollAnimation>
                 <ScrollAnimation
                   animateOnce
                   animateIn="animate__fadeInUp"
-                  animatePreScroll
+                  animatePreScroll={false}
+                  delay={500}
+                  offset={0}
                 >
                   <p>
                     Stakeholders discovered and researched an opportunity to
@@ -99,7 +101,9 @@ const TalentPipeline = ({ scrollPosition }) => {
                 <ScrollAnimation
                   animateOnce
                   animateIn="animate__fadeInUp"
-                  animatePreScroll
+                  animatePreScroll={false}
+                  delay={1000}
+                  offset={-50}
                 >
                   <p>
                     Build Your Future then built a partnership with Futures to
@@ -117,14 +121,17 @@ const TalentPipeline = ({ scrollPosition }) => {
                 <ScrollAnimation
                   animateOnce
                   animateIn="animate__fadeInUp"
-                  animatePreScroll
+                  animatePreScroll={false}
+                  delay={1500}
                 >
                   <h2>Who are they?</h2>
                 </ScrollAnimation>
                 <ScrollAnimation
                   animateOnce
                   animateIn="animate__fadeInUp"
-                  animatePreScroll
+                  animatePreScroll={false}
+                  delay={2000}
+                  offset={0}
                 >
                   <p>
                     75% of Construction and Maintenance industry professionals
@@ -135,13 +142,23 @@ const TalentPipeline = ({ scrollPosition }) => {
                 <ScrollAnimation
                   animateOnce
                   animateIn="animate__fadeInUp"
-                  animatePreScroll
+                  animatePreScroll={false}
+                  delay={2500}
+                  offset={-50}
                 >
                   <span>
                     The marketing team conducted focus groups of all 3 user
                     types.
-                    <br />
-                    <br />
+                  </span>
+                </ScrollAnimation>
+                <ScrollAnimation
+                  animateOnce
+                  animateIn="animate__fadeInUp"
+                  animatePreScroll={false}
+                  delay={3000}
+                  offset={-100}
+                >
+                  <span>
                     As part of my onboarding process, I reviewed and compiled
                     their findings so I can initiate a persona white-boarding
                     session. Followed after was the creation of the requirement
@@ -157,51 +174,57 @@ const TalentPipeline = ({ scrollPosition }) => {
               sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12} md={4} className="talent-pipeline__role">
-                <LazyLoadImage
-                  scrollPosition={scrollPosition}
-                  src="images/case_studies/talent_pipeline/job_seeker.svg"
-                  effect="blur"
-                  alt="job seeker"
-                />
                 <ScrollAnimation
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={3500}
+                  offset={0}
                 >
+                  <LazyLoadImage
+                    scrollPosition={scrollPosition}
+                    src="images/case_studies/talent_pipeline/job_seeker.svg"
+                    effect="blur"
+                    alt="job seeker"
+                  />
                   <span di>
                     Entry-level Construction and Maintenance Job Seekers
                   </span>
                 </ScrollAnimation>
               </Grid>
               <Grid item xs={12} md={4} className="talent-pipeline__role">
-                <LazyLoadImage
-                  scrollPosition={scrollPosition}
-                  src="images/case_studies/talent_pipeline/employee_rep.svg"
-                  effect="blur"
-                  alt="employee rep"
-                />
                 <ScrollAnimation
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={3500}
+                  offset={0}
                 >
+                  <LazyLoadImage
+                    scrollPosition={scrollPosition}
+                    src="images/case_studies/talent_pipeline/employee_rep.svg"
+                    effect="blur"
+                    alt="employee rep"
+                  />
                   <span>
                     Employer Representatives <br /> (Recruiters)
                   </span>
                 </ScrollAnimation>
               </Grid>
               <Grid item xs={12} md={4} className="talent-pipeline__role">
-                <LazyLoadImage
-                  scrollPosition={scrollPosition}
-                  src="images/case_studies/talent_pipeline/training_instructor.svg"
-                  effect="blur"
-                  alt="training instructor"
-                />
                 <ScrollAnimation
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={3500}
+                  offset={0}
                 >
+                  <LazyLoadImage
+                    scrollPosition={scrollPosition}
+                    src="images/case_studies/talent_pipeline/training_instructor.svg"
+                    effect="blur"
+                    alt="training instructor"
+                  />
                   <span>
                     Training Instructors <br /> (Case Managers)
                   </span>
@@ -236,6 +259,8 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={100}
                 >
                   <span>
                     The marketing team conducted a focus group to gather
@@ -248,6 +273,8 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={50}
                 >
                   <span>
                     These personas I’ve crafted were based on the results
@@ -262,21 +289,36 @@ const TalentPipeline = ({ scrollPosition }) => {
                 className="talent-pipeline__common-paragraph"
               >
                 <div>
-                  <LazyLoadImage
-                    scrollPosition={scrollPosition}
-                    src="images/case_studies/talent_pipeline/personas_female.webp"
-                    effect="blur"
-                    alt="female persona"
-                    style={{ marginBottom: 10 }}
-                    width="100%"
-                  />
-                  <LazyLoadImage
-                    scrollPosition={scrollPosition}
-                    src="images/case_studies/talent_pipeline/personas_male.webp"
-                    effect="blur"
-                    alt="male persona"
-                    width="100%"
-                  />
+                  <ScrollAnimation
+                    animateOnce
+                    animateIn="animate__fadeInUp"
+                    animatePreScroll
+                    delay={1500}
+                  >
+                    <LazyLoadImage
+                      scrollPosition={scrollPosition}
+                      src="images/case_studies/talent_pipeline/personas_female.webp"
+                      effect="blur"
+                      alt="female persona"
+                      style={{ marginBottom: 10 }}
+                      width="100%"
+                    />
+                  </ScrollAnimation>
+                  <ScrollAnimation
+                    animateOnce
+                    animateIn="animate__fadeInUp"
+                    animatePreScroll
+                    delay={2000}
+                    offset={-40}
+                  >
+                    <LazyLoadImage
+                      scrollPosition={scrollPosition}
+                      src="images/case_studies/talent_pipeline/personas_male.webp"
+                      effect="blur"
+                      alt="male persona"
+                      width="100%"
+                    />
+                  </ScrollAnimation>
                 </div>
               </Grid>
             </Grid>
@@ -368,6 +410,8 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={100}
                 >
                   <p>
                     Internal team members had trouble identifying what is the
@@ -378,6 +422,8 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={50}
                 >
                   <p>
                     What and which requirements, for each user role, is feasible
@@ -395,6 +441,8 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1500}
+                  offset={100}
                 >
                   <span>
                     Once team members understood the product’s target audience
@@ -406,6 +454,8 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={2000}
+                  offset={50}
                 >
                   <span>
                     The objective and goal was for internal and external teams
@@ -533,6 +583,8 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={100}
                 >
                   <p>
                     How and what type of message do we want to market out to our
@@ -551,6 +603,8 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={100}
                 >
                   <span>
                     The task was to create the product’s landing page for people
@@ -563,6 +617,8 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1500}
+                  offset={50}
                 >
                   <span>
                     I created a strength and weakness analysis of several
@@ -631,6 +687,8 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={100}
                 >
                   <p>
                     With all of these ideas in mind, how do we bring it all
@@ -648,6 +706,8 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={100}
                 >
                   <span>
                     I scheduled a brainstorm workshop session with the marketing
@@ -765,6 +825,8 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={100}
                 >
                   <p>
                     On a 2-month span, we needed to meet the deadline of the
@@ -783,6 +845,8 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={100}
                 >
                   <span>
                     As a design team of one with the support of the Project
@@ -795,6 +859,8 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1500}
+                  offset={50}
                 >
                   <span>
                     I also took on sole ownership and responsibility of creating

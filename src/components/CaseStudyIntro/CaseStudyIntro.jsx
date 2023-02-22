@@ -72,7 +72,7 @@ const CaseStudyIntro = ({
             animateOnce
             animateIn="animate__fadeInUp"
             animatePreScroll
-            offset={250}
+            offset={50}
           >
             <div className="cs-intro__team-members">
               <Container maxWidth="md">

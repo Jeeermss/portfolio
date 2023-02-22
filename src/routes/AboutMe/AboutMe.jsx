@@ -54,6 +54,7 @@ const AboutMe = () => {
               animatePreScroll
               animateOnce
               delay={900}
+              offset={0}
             >
               <li>
                 A Filipina-American woman who is passionate about solving
@@ -66,6 +67,7 @@ const AboutMe = () => {
               animatePreScroll
               animateOnce
               delay={1400}
+              offset={0}
             >
               <li>
                 On her 6th year, she transitioned to Tech, focusing in UI
@@ -77,6 +79,7 @@ const AboutMe = () => {
               animatePreScroll
               animateOnce
               delay={1900}
+              offset={0}
             >
               <li>
                 Now, she works within the EdTech industry with a focus of Adult

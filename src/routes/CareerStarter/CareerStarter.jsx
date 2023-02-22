@@ -68,6 +68,7 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  offset={50}
                 >
                   <h2>User Testing Plan</h2>
                 </ScrollAnimation>
@@ -82,6 +83,8 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={0}
                 >
                   <p>
                     Can entry-level job seekers seamlessly sign up and access
@@ -92,6 +95,8 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={-50}
                 >
                   <p>
                     Can employer representatives find job seeker candidates and
@@ -109,6 +114,8 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1500}
+                  offset={0}
                 >
                   <span>
                     The organization’s culture built and shipped out products
@@ -120,6 +127,8 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={2000}
+                  offset={-50}
                 >
                   <span>
                     This was an exciting opportunity to introduce a process to
@@ -153,6 +162,7 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  offset={50}
                 >
                   <h2>Our Findings</h2>
                 </ScrollAnimation>
@@ -167,6 +177,8 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={0}
                 >
                   <p>
                     5 out of 5 users stated that the messaging on the
@@ -177,6 +189,8 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={-70}
                 >
                   <p>
                     An average 4.3/5 single ease question completion rating of
@@ -188,6 +202,8 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1500}
+                  offset={-140}
                 >
                   <p>
                     An average 4/5 single ease question completion rating of
@@ -202,13 +218,15 @@ const CareerStarter = ({ scrollPosition }) => {
                 md={6}
                 className="career-starter__common-paragraph"
               >
-                <ScrollAnimation
-                  animateOnce
-                  animateIn="animate__fadeInUp"
-                  animatePreScroll
-                >
-                  <span>
-                    <ul className="career-starter__ut-report-list">
+                <span>
+                  <ul className="career-starter__ut-report-list">
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                      delay={2000}
+                      offset={0}
+                    >
                       <li>
                         Employer representatives requested the need to search
                         job seekers who carry an National Center for
@@ -217,15 +235,31 @@ const CareerStarter = ({ scrollPosition }) => {
                         credentials, an Occupational Safety and Health
                         Administration card holder, etc.
                       </li>
+                    </ScrollAnimation>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                      delay={2500}
+                      offset={-50}
+                    >
                       <li>
                         A product tour to briefly know how to favorite a career,
                         training and job posts, access historical applied job
                         posts and set notifications.
                       </li>
+                    </ScrollAnimation>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                      delay={3000}
+                      offset={-100}
+                    >
                       <li>Create an individual registration page.</li>
-                    </ul>
-                  </span>
-                </ScrollAnimation>
+                    </ScrollAnimation>
+                  </ul>
+                </span>
               </Grid>
             </Grid>
           </div>
@@ -245,6 +279,7 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  offset={50}
                 >
                   <h2>Post-Launch User Research</h2>
                 </ScrollAnimation>
@@ -259,6 +294,8 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={0}
                 >
                   <p>
                     Since February 2022, CareerStarter gained 2 major
@@ -267,20 +304,32 @@ const CareerStarter = ({ scrollPosition }) => {
                 </ScrollAnimation>
                 {isMobile ? (
                   <>
-                    <LazyLoadImage
-                      scrollPosition={scrollPosition}
-                      src="images/case_studies/career_starter/stanley.webp"
-                      effect="blur"
-                      alt="stanley"
-                      width="90%"
-                    />
-                    <LazyLoadImage
-                      scrollPosition={scrollPosition}
-                      src="images/case_studies/career_starter/procore.webp"
-                      effect="blur"
-                      alt="pro core"
-                      width="90%"
-                    />
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                    >
+                      <LazyLoadImage
+                        scrollPosition={scrollPosition}
+                        src="images/case_studies/career_starter/stanley.webp"
+                        effect="blur"
+                        alt="stanley"
+                        width="90%"
+                      />
+                    </ScrollAnimation>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                    >
+                      <LazyLoadImage
+                        scrollPosition={scrollPosition}
+                        src="images/case_studies/career_starter/procore.webp"
+                        effect="blur"
+                        alt="pro core"
+                        width="90%"
+                      />
+                    </ScrollAnimation>
                   </>
                 ) : (
                   <div
@@ -289,20 +338,36 @@ const CareerStarter = ({ scrollPosition }) => {
                       gap: '24px',
                     }}
                   >
-                    <LazyLoadImage
-                      scrollPosition={scrollPosition}
-                      src="images/case_studies/career_starter/stanley.webp"
-                      effect="blur"
-                      alt="stanley"
-                      width="100%"
-                    />
-                    <LazyLoadImage
-                      scrollPosition={scrollPosition}
-                      src="images/case_studies/career_starter/procore.webp"
-                      effect="blur"
-                      alt="pro core"
-                      width="100%"
-                    />
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                      delay={1000}
+                      offset={-50}
+                    >
+                      <LazyLoadImage
+                        scrollPosition={scrollPosition}
+                        src="images/case_studies/career_starter/stanley.webp"
+                        effect="blur"
+                        alt="stanley"
+                        width="100%"
+                      />
+                    </ScrollAnimation>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                      delay={1000}
+                      offset={-50}
+                    >
+                      <LazyLoadImage
+                        scrollPosition={scrollPosition}
+                        src="images/case_studies/career_starter/procore.webp"
+                        effect="blur"
+                        alt="pro core"
+                        width="100%"
+                      />
+                    </ScrollAnimation>
                   </div>
                 )}
               </Grid>
@@ -316,6 +381,8 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1500}
+                  offset={0}
                 >
                   <span>
                     The product’s current goal is to gain more insight and
@@ -328,6 +395,8 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={2000}
+                  offset={-50}
                 >
                   <span>
                     We conducted a benchmarking analyses of our competitors and
@@ -372,6 +441,7 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  offset={50}
                 >
                   <h2>Whiteboarding Sessions</h2>
                 </ScrollAnimation>
@@ -386,6 +456,8 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={0}
                 >
                   <p>
                     Our goal is to expand on platform utilization within
@@ -404,6 +476,8 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={0}
                 >
                   <span>
                     I’ve facilitated two whiteboard sessions to go over
@@ -412,21 +486,31 @@ const CareerStarter = ({ scrollPosition }) => {
                     question board, we wanted to know the following:{' '}
                   </span>
                 </ScrollAnimation>
-                <ScrollAnimation
-                  animateOnce
-                  animateIn="animate__fadeInUp"
-                  animatePreScroll
-                >
-                  <span>
-                    <ul className="career-starter__ut-report-list">
+                <span>
+                  <ul className="career-starter__ut-report-list">
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                      delay={1500}
+                      offset={-50}
+                    >
                       <li>
                         What feedback do we want to know about how our users are
                         engaging within the platform?
                       </li>
+                    </ScrollAnimation>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="animate__fadeInUp"
+                      animatePreScroll
+                      delay={2000}
+                      offset={-100}
+                    >
                       <li>What do we want to learn about our users?</li>
-                    </ul>
-                  </span>
-                </ScrollAnimation>
+                    </ScrollAnimation>
+                  </ul>
+                </span>
               </Grid>
               <Grid item xs={12} mt={{ xs: 2, md: 3 }}>
                 <WhiteboardingTabs />
@@ -449,6 +533,7 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  offset={50}
                 >
                   <h2>
                     Put a hold on user testing. We have priorities to sort out.
@@ -465,6 +550,8 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={0}
                 >
                   <p>
                     The goal is to have the product requirements built out by
@@ -482,6 +569,8 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={0}
                 >
                   <span>
                     As the Case Manager user testing plan was created in June
@@ -493,6 +582,8 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1500}
+                  offset={-50}
                 >
                   <span>
                     We shifted our focus with another task at hand. We sorted
@@ -524,6 +615,7 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  offset={50}
                 >
                   <h2>Reflection</h2>
                 </ScrollAnimation>
@@ -538,6 +630,8 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={0}
                 >
                   <p>
                     Not all products abide by a linear UX/UI process of what
@@ -555,6 +649,8 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={0}
                 >
                   <span>
                     As CareerStarter being a product to conduct a variety of UX
@@ -566,6 +662,8 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1500}
+                  offset={-50}
                 >
                   <span>
                     Whether we post-pone an initiative or cater to other team
@@ -578,6 +676,8 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={2000}
+                  offset={-100}
                 >
                   <span>
                     Our new challenge is to continue to scale the product, but

@@ -284,6 +284,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       content: (
                         <ImageCarousel
                           images={[
+                            'images/case_studies/profiles_and_verifications/user_testing_report_pp_cover.png',
                             'images/case_studies/profiles_and_verifications/user_testing_report_1_pp.png',
                             'images/case_studies/profiles_and_verifications/user_testing_report_2_pp.png',
                             'images/case_studies/profiles_and_verifications/user_testing_report_3_pp.png',
@@ -300,6 +301,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       content: (
                         <ImageCarousel
                           images={[
+                            'images/case_studies/profiles_and_verifications/user_testing_report_pv_cover.png',
                             'images/case_studies/profiles_and_verifications/user_testing_report_1_pv.png',
                             'images/case_studies/profiles_and_verifications/user_testing_report_2_pv.png',
                             'images/case_studies/profiles_and_verifications/user_testing_report_3_pv.png',

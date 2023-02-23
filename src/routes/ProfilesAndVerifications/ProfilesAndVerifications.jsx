@@ -863,10 +863,10 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                 <CaseStudyCardVideo
                   cardContent={[
                     'User Testing Participant #1:',
-                    'Jane Dough, an evaluator from a National Center for Construction Education and Research sponsor organization, agreed to participant in our second user testing session.',
+                    'Scott, an evaluator from a National Center for Construction Education and Research sponsor organization, agreed to participant in our second user testing session.',
                   ]}
-                  cardVideoUrl="https://www.youtube.com/watch?v=xcJtL7QggTI"
-                  cardVideoThumbnail="images/glittered_screen.jpg"
+                  cardVideoUrl="https://www.youtube.com/embed/qPqJWehoP8E?controls=0"
+                  // cardVideoThumbnail="images/glittered_screen.jpg"
                 />
               </Grid>
             </Grid>

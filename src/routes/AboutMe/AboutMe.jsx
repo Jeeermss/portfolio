@@ -2,6 +2,10 @@ import React from 'react';
 import { Grid } from '@mui/material';
 import Avatar from '../../components/Avatar/Avatar';
 import AboutMeItem from '../../components/AboutMeItem/AboutMeItem';
+import {
+  LazyLoadImage,
+  trackWindowScroll,
+} from 'react-lazy-load-image-component';
 
 import {
   aboutMeCareerJourney,
@@ -12,7 +16,7 @@ import './about-me.css';
 
 import ScrollAnimation from 'react-animate-on-scroll';
 
-const AboutMe = () => {
+const AboutMe = ({ scrollPosition }) => {
   return (
     <main className="about-me">
       <section className="about-me__info">
@@ -142,8 +146,48 @@ const AboutMe = () => {
           </Grid>
         </Grid>
       </section>
+
+      <section className="about-me__business_cards">
+        <Grid container spacing={2} direction={{ xs: 'column', md: 'row' }}>
+          <Grid item xs={5} sx={{ mb: 4 }}>
+            <p className="about-me__business_cards-label">
+              Let’s work together to make the biggest impact possible.
+            </p>
+          </Grid>
+          <Grid item xs={7}>
+            <Grid item xs={12} sx={{ paddingBottom: '24px' }}>
+              <ScrollAnimation
+                animateOnce
+                animateIn="animate__fadeInUp"
+                animatePreScroll
+              >
+                <LazyLoadImage
+                  scrollPosition={scrollPosition}
+                  src="images/Front_Business_Card.png"
+                  alt="exp"
+                  width="100%"
+                />
+              </ScrollAnimation>
+            </Grid>
+            <Grid item xs={12}>
+              <ScrollAnimation
+                animateOnce
+                animateIn="animate__fadeInUp"
+                animatePreScroll
+              >
+                <LazyLoadImage
+                  scrollPosition={scrollPosition}
+                  src="images/Back_Business_Card.png"
+                  alt="exp"
+                  width="100%"
+                />
+              </ScrollAnimation>
+            </Grid>
+          </Grid>
+        </Grid>
+      </section>
     </main>
   );
 };
 
-export default AboutMe;
+export default trackWindowScroll(AboutMe);

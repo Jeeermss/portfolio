@@ -51,7 +51,7 @@
   display: flex;
   flex-direction: column;
   gap: 140px;
-  margin: 0 0 800px;
+  margin: 0 0 180px;
 }
 
 .about-me__more-info-label {
@@ -60,6 +60,15 @@
   line-height: 67px;
   color: var(--charcoal);
   font-family: 'AvenirBlack';
+}
+
+.about-me__business_cards-label {
+  font-weight: 750;
+  font-size: 56px;
+  line-height: 67px;
+  color: var(--charcoal);
+  font-family: 'AvenirBlack';
+  width: 80%;
 }
 
 /* MaterialUI breakpoint `lg` */
@@ -103,10 +112,16 @@
   }
   .about-me__more-info {
     gap: 124px;
-    margin: 0 0 549px;
+    margin: 0 0 124px;
   }
   .about-me__more-info-label {
     font-size: 38px;
     line-height: 46px;
+  }
+  .about-me__business_cards-label {
+    font-weight: 750;
+    font-size: 38px;
+    line-height: 46px;
+    width: 100%;
   }
 }

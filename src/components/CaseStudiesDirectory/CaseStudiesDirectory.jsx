@@ -70,13 +70,13 @@ const CaseStudiesDirectory = () => {
             contentDesc="How did our team assist an organization 
             prepare and transition from a paper evaluation 
             to a digital landscape?"
-            // cardImageUrl="images/cs-1.svg"
+            cardImageUrl="images/cs-2.png"
             cardImageAlt="Case Study 2"
             onClick={() =>
               navigate(PROFILES_AND_VERIFICATIONS, { state: { location } })
             }
-            cardImageSize="contain"
-            cardImageMobileSize="contain"
+            cardImageSize="90%"
+            cardImageMobileSize="90%"
           />
         </Grid>
         <Grid item xs={12} md={6} className="case-studies-card-wrapper">
@@ -104,8 +104,8 @@ const CaseStudiesDirectory = () => {
             cardImageUrl="images/cs-4.svg"
             cardImageAlt="Case Study 4"
             onClick={() => navigate(CAREER_STARTER, { state: { location } })}
-            cardImageSize="80%"
-            cardImageMobileSize="80%"
+            cardImageSize="90%"
+            cardImageMobileSize="90%"
             cardImagePositionMobile="center 65%"
           />
         </Grid>

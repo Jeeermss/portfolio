@@ -70,8 +70,12 @@
   gap: 30px;
 }
 
-.footer__social-media-icons i {
+/* .footer__social-media-icons i {
   font-size: 30px;
+} */
+
+.footer__social-media-icons img:hover {
+  cursor: pointer;
 }
 
 .footer__navigation,

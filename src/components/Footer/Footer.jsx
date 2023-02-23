@@ -72,18 +72,33 @@ const Footer = ({ scrollPosition }) => {
                 src="images/social_media/behance.svg"
                 effect="blur"
                 alt="behance"
+                onClick={() =>
+                  window.open('https://www.behance.net/jeremie_89', '_blank')
+                }
               />
               <LazyLoadImage
                 scrollPosition={scrollPosition}
                 src="images/social_media/instagram.svg"
                 effect="blur"
                 alt="instagram"
+                onClick={() =>
+                  window.open(
+                    'https://www.instagram.com/_jeerms/?igshid=MjkzY2Y1YTY%3D',
+                    '_blank'
+                  )
+                }
               />
               <LazyLoadImage
                 scrollPosition={scrollPosition}
                 src="images/social_media/linkedin.svg"
                 effect="blur"
                 alt="linkedin"
+                onClick={() =>
+                  window.open(
+                    'https://www.linkedin.com/In/Jmontero89',
+                    '_blank'
+                  )
+                }
               />
             </div>
           </div>

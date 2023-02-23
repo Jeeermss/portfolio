@@ -31,7 +31,7 @@ const AboutMe = ({ scrollPosition }) => {
               md: 0,
             },
           }}
-          // avatarUrl={HeroImage}
+          avatarUrl="images/about_me_avatar.png"
         />
         <div className="about-me__info-data">
           <ScrollAnimation

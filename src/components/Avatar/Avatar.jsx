@@ -20,7 +20,7 @@ const Avatar = ({ avatarUrl, sx }) => {
       <AvatarComponent
         alt="avatar"
         src={avatarUrl}
-        sx={{ width: 200, height: 200 }}
+        sx={{ width: '100%', height: '100%', borderRadius: 0 }}
       />
     </Box>
   );

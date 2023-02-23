@@ -70,7 +70,7 @@ const CaseStudiesDirectory = () => {
             contentDesc="How did our team assist an organization 
             prepare and transition from a paper evaluation 
             to a digital landscape?"
-            cardImageUrl="images/cs-2.png"
+            cardImageUrl="images/cs-2.svg"
             cardImageAlt="Case Study 2"
             onClick={() =>
               navigate(PROFILES_AND_VERIFICATIONS, { state: { location } })

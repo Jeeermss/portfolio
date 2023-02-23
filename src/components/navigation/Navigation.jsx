@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { styled } from '@mui/material/styles';
-import { Link, matchPath, useLocation } from 'react-router-dom';
+import { Link, matchPath, useLocation, useNavigate } from 'react-router-dom';
 
 import { CASE_STUDIES, ABOUT_ME } from '../../constants/routes';
 import './navigation.css';
@@ -14,6 +14,7 @@ const StyledImg = styled('img')(() => ({}));
 const StyledNav = styled('nav')(() => ({}));
 
 const Navigation = () => {
+  const navigate = useNavigate();
   const location = useLocation();
   const [isContactHovered, setIsContactHovered] = useState(false);
   const menus = [
@@ -50,12 +51,16 @@ const Navigation = () => {
       }}
     >
       <StyledImg
+        onClick={() => navigate('/')}
         src="/assets/logo.svg"
         alt="placeholder"
         sx={{
           width: {
             xs: '60px',
             md: 'auto',
+          },
+          ':hover': {
+            cursor: 'pointer',
           },
         }}
       />

@@ -15,7 +15,7 @@ export const secondRowMembersTitle = 'Leadership Team Members';
 export const firstRowMembers = [
   {
     imgUrl: 'images/team_members/ux_ui.svg',
-    role: '(me) UX/UI Designer',
+    role: 'UX/UI Designer (me)',
   },
   {
     imgUrl: 'images/team_members/ux_ui_2.svg',

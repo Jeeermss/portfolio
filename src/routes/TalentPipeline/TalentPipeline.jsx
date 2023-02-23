@@ -178,8 +178,8 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={3500}
-                  offset={0}
+                  delay={isMobile ? 0 : 3500}
+                  offset={isMobile ? 150 : 0}
                 >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
@@ -197,8 +197,8 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={3500}
-                  offset={0}
+                  delay={isMobile ? 0 : 3500}
+                  offset={isMobile ? 150 : 0}
                 >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
@@ -216,8 +216,8 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={3500}
-                  offset={0}
+                  delay={isMobile ? 0 : 3500}
+                  offset={isMobile ? 150 : 0}
                 >
                   <LazyLoadImage
                     scrollPosition={scrollPosition}
@@ -488,7 +488,7 @@ const TalentPipeline = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="Design System">
             <Grid
               container
-              rowGap={{ xs: 0 }}
+              rowGap={{ xs: 3, md: 0 }}
               spacing={{ xs: 0, md: 2 }}
               sx={{ mb: { xs: 9, md: '148px' } }}
             >
@@ -497,6 +497,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  offset={50}
                 >
                   <h2>
                     No design system in place?
@@ -515,6 +516,8 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={0}
                 >
                   <span>
                     Although an existing product was built by the external team
@@ -526,6 +529,8 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={-50}
                 >
                   <span>
                     This lead to my next initiative, which is to create the
@@ -560,7 +565,7 @@ const TalentPipeline = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="LP Analysis">
             <Grid
               container
-              rowGap={{ xs: 0 }}
+              rowGap={{ xs: 3, md: 0 }}
               spacing={{ xs: 0, md: 2 }}
               sx={{ mb: { xs: 9, md: '148px' } }}
             >
@@ -664,7 +669,7 @@ const TalentPipeline = ({ scrollPosition }) => {
           >
             <Grid
               container
-              rowGap={{ xs: 0 }}
+              rowGap={{ xs: 3, md: 0 }}
               spacing={{ xs: 0, md: 2 }}
               sx={{ mb: { xs: 9, md: '148px' } }}
             >
@@ -731,7 +736,7 @@ const TalentPipeline = ({ scrollPosition }) => {
           <div className="page-section" data-section-label="LP Final Result">
             <Grid
               container
-              rowGap={{ xs: 0 }}
+              rowGap={{ xs: 3, md: 0 }}
               spacing={{ xs: 0, md: 2 }}
               sx={{ mb: { xs: 9, md: '148px' } }}
             >
@@ -740,6 +745,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  offset={50}
                 >
                   <h2>Go back to the Figma board and show the final result</h2>
                 </ScrollAnimation>
@@ -755,6 +761,8 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={0}
                 >
                   <span>
                     This landing page starts off with the main tag line then
@@ -765,6 +773,8 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={-50}
                 >
                   <span>
                     We wanted to showcase a visual indicator that people can
@@ -802,7 +812,7 @@ const TalentPipeline = ({ scrollPosition }) => {
           >
             <Grid
               container
-              rowGap={{ xs: 0 }}
+              rowGap={{ xs: 3, md: 0 }}
               spacing={{ xs: 0, md: 2 }}
               sx={{ mb: { xs: 9, md: '148px' } }}
             >

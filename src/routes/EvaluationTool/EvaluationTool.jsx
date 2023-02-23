@@ -106,13 +106,14 @@ const EvaluationTool = ({ scrollPosition }) => {
               container
               rowGap={{ xs: 2, md: 0 }}
               spacing={{ xs: 0, md: 2 }}
-              sx={{ mb: { xs: 9, md: '148px' } }}
+              sx={{ mb: { xs: 4, md: 5 } }}
             >
               <Grid item xs={12} className="evaluation-tool__common-paragraph">
                 <ScrollAnimation
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  offset={50}
                 >
                   <h2>The Objective</h2>
                 </ScrollAnimation>
@@ -127,6 +128,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={0}
                 >
                   <p>
                     The Performance Profiles and Verifications evaluation
@@ -138,6 +141,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={-50}
                 >
                   <p>
                     This allows them to submit trainee and craft professional
@@ -156,6 +161,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1500}
+                  offset={0}
                 >
                   <span>
                     The LMS Testing Manager provided a brief project scope and
@@ -166,6 +173,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={2000}
+                  offset={-50}
                 >
                   <span>
                     According to the user stories, Performance Profiles and
@@ -215,6 +224,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  offset={50}
                 >
                   <h2>
                     Create a user flow to connect the requirements together
@@ -231,6 +241,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={0}
                 >
                   <span>
                     By reading the user stories, I created a sitemap to showcase
@@ -272,6 +284,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  offset={50}
                 >
                   <h2>Initial Mockups</h2>
                 </ScrollAnimation>
@@ -286,6 +299,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={0}
                 >
                   <p>
                     As I was in the middle of designing the mockups for this
@@ -306,6 +321,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={1000}
+                      offset={0}
                     >
                       <li>
                         How will evaluators utilize this application within the
@@ -316,6 +333,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={1500}
+                      offset={-50}
                     >
                       <li>
                         Will administration provide devices to these evaluators?
@@ -326,6 +345,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={2000}
+                      offset={-100}
                     >
                       <li>
                         How many evaluations are going to be submitted each
@@ -336,6 +357,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={2500}
+                      offset={-150}
                     >
                       <li>
                         What is the current evaluation process for Performance
@@ -374,6 +397,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  offset={50}
                 >
                   <h2>Project Roadmap</h2>
                 </ScrollAnimation>
@@ -388,6 +412,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={0}
                 >
                   <p>
                     Primary Objective: <br /> In creating a project roadmap is
@@ -405,6 +431,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={0}
                 >
                   <span>
                     When a 15 year old organization is in the early stages of
@@ -417,6 +445,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1500}
+                  offset={-50}
                 >
                   <span>This was a career battle I was willing to take. </span>
                 </ScrollAnimation>
@@ -445,6 +475,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  offset={50}
                 >
                   <h2>Whiteboard Session</h2>
                 </ScrollAnimation>
@@ -459,6 +490,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={0}
                 >
                   <p>
                     One of the opportunities I wanted to do when I arrived in
@@ -477,6 +510,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={0}
                 >
                   <span className="font-family-black">Benefits:</span>
                 </ScrollAnimation>
@@ -486,6 +521,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={1500}
+                      offset={-50}
                     >
                       <li>
                         Team alignment in research process of the project.
@@ -495,6 +532,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={2000}
+                      offset={-100}
                     >
                       <li>
                         Focus on the conversations that pertain to the questions
@@ -505,6 +544,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={2500}
+                      offset={-150}
                     >
                       <li>
                         Placed customer satisfaction first alongside emphasizing
@@ -517,6 +558,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={3000}
+                  offset={-200}
                 >
                   <span className="font-family-black">Goals:</span>
                 </ScrollAnimation>
@@ -526,6 +569,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={3500}
+                      offset={-250}
                     >
                       <li>
                         Assist teammates to immerse themselves into thinking,
@@ -537,6 +582,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={4000}
+                      offset={-300}
                     >
                       <li>
                         Opportunity to obtain a broader scope of the problem
@@ -590,6 +637,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  offset={50}
                 >
                   <h2>First UX/UI Team as Lead</h2>
                 </ScrollAnimation>
@@ -604,6 +652,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={0}
                 >
                   <p>
                     I’ve showcased my ability as a UX/UI Designer to a point
@@ -622,6 +672,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={0}
                 >
                   <span>
                     This was a great opportunity to create an extensive field
@@ -633,6 +685,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1500}
+                  offset={-50}
                 >
                   <span>
                     This field studies plan is to educate the Director of
@@ -669,6 +723,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  offset={50}
                 >
                   <h2>Observations and Interviews</h2>
                 </ScrollAnimation>
@@ -683,6 +738,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={0}
                 >
                   <p>
                     I spent the middle of summer 2022 to conduct my first
@@ -701,6 +758,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={0}
                 >
                   <span>
                     At this point of my UX/UI Design career I felt I needed to
@@ -712,6 +771,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1500}
+                  offset={-50}
                 >
                   <span style={{ color: '#C95D63' }}>
                     When do UX/UI Designers get the opportunity to conduct field
@@ -729,14 +790,14 @@ const EvaluationTool = ({ scrollPosition }) => {
                       content: (
                         <ImageCarousel
                           images={[
-                            'images/case_studies/evaluation_tool/observations_interviews_1_pp.webp',
-                            'images/case_studies/evaluation_tool/observations_interviews_2_pp.webp',
-                            'images/case_studies/evaluation_tool/observations_interviews_3_pp.webp',
-                            'images/case_studies/evaluation_tool/observations_interviews_4_pp.webp',
-                            'images/case_studies/evaluation_tool/observations_interviews_5_pp.webp',
-                            'images/case_studies/evaluation_tool/observations_interviews_6_pp.webp',
-                            'images/case_studies/evaluation_tool/observations_interviews_7_pp.webp',
-                            'images/case_studies/evaluation_tool/observations_interviews_8_pp.webp',
+                            'images/case_studies/evaluation_tool/observations_interviews_1_pp.png',
+                            'images/case_studies/evaluation_tool/observations_interviews_2_pp.png',
+                            'images/case_studies/evaluation_tool/observations_interviews_3_pp.png',
+                            'images/case_studies/evaluation_tool/observations_interviews_4_pp.png',
+                            'images/case_studies/evaluation_tool/observations_interviews_5_pp.png',
+                            'images/case_studies/evaluation_tool/observations_interviews_6_pp.png',
+                            'images/case_studies/evaluation_tool/observations_interviews_7_pp.png',
+                            'images/case_studies/evaluation_tool/observations_interviews_8_pp.png',
                           ]}
                         />
                       ),
@@ -746,18 +807,17 @@ const EvaluationTool = ({ scrollPosition }) => {
                       content: (
                         <ImageCarousel
                           images={[
-                            'images/case_studies/evaluation_tool/observations_interviews_1_pv.webp',
-                            'images/case_studies/evaluation_tool/observations_interviews_2_pv.webp',
-                            'images/case_studies/evaluation_tool/observations_interviews_3_pv.webp',
-                            'images/case_studies/evaluation_tool/observations_interviews_4_pv.webp',
-                            'images/case_studies/evaluation_tool/observations_interviews_5_pv.webp',
-                            'images/case_studies/evaluation_tool/observations_interviews_6_pv.webp',
-                            'images/case_studies/evaluation_tool/observations_interviews_7_pv.webp',
-                            'images/case_studies/evaluation_tool/observations_interviews_8_pv.webp',
-                            'images/case_studies/evaluation_tool/observations_interviews_9_pv.webp',
-                            'images/case_studies/evaluation_tool/observations_interviews_10_pv.webp',
-                            'images/case_studies/evaluation_tool/observations_interviews_11_pv.webp',
-                            'images/case_studies/evaluation_tool/observations_interviews_12_pv.webp',
+                            'images/case_studies/evaluation_tool/observations_interviews_1_pv.png',
+                            'images/case_studies/evaluation_tool/observations_interviews_2_pv.png',
+                            'images/case_studies/evaluation_tool/observations_interviews_3_pv.png',
+                            'images/case_studies/evaluation_tool/observations_interviews_4_pv.png',
+                            'images/case_studies/evaluation_tool/observations_interviews_5_pv.png',
+                            'images/case_studies/evaluation_tool/observations_interviews_6_pv.png',
+                            'images/case_studies/evaluation_tool/observations_interviews_7_pv.png',
+                            'images/case_studies/evaluation_tool/observations_interviews_8_pv.png',
+                            'images/case_studies/evaluation_tool/observations_interviews_9_pv.png',
+                            'images/case_studies/evaluation_tool/observations_interviews_10_pv.png',
+                            'images/case_studies/evaluation_tool/observations_interviews_11_pv.png',
                           ]}
                         />
                       ),
@@ -783,6 +843,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  offset={50}
                 >
                   <h2>Synthesize and Analyze</h2>
                 </ScrollAnimation>
@@ -797,6 +858,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={0}
                 >
                   <p>
                     We dissected the gathered data and grouped them based on
@@ -817,6 +880,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={0}
                 >
                   <span>
                     Through this process, we were able to identify four elements
@@ -829,6 +894,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={1500}
+                      offset={-50}
                     >
                       <li>Problems</li>
                     </ScrollAnimation>
@@ -836,6 +903,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={2000}
+                      offset={-100}
                     >
                       <li>Solutions</li>
                     </ScrollAnimation>
@@ -843,6 +912,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={2500}
+                      offset={-150}
                     >
                       <li>Users</li>
                     </ScrollAnimation>
@@ -850,6 +921,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={3000}
+                      offset={-200}
                     >
                       <li>Goals</li>
                     </ScrollAnimation>
@@ -890,6 +963,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  offset={50}
                 >
                   <h2>Personas and Customer Journeys</h2>
                 </ScrollAnimation>
@@ -904,6 +978,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={0}
                 >
                   <p>
                     As part of crafting up an in-person 3-day design sprint, the
@@ -922,6 +998,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={0}
                 >
                   <span>
                     These personas and customer journeys are based off of the
@@ -932,6 +1010,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1500}
+                  offset={-50}
                 >
                   <span>
                     We wanted our team members to empathize and understand our
@@ -991,6 +1071,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  offset={50}
                 >
                   <h2>My First Design Sprint Facilitation</h2>
                 </ScrollAnimation>
@@ -1005,6 +1086,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={0}
                 >
                   <p>
                     I ended my Summer 2022 by crafting up an extensive 3-day
@@ -1026,6 +1109,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={0}
                 >
                   <span className="font-family-black">Key Takeaways:</span>
                 </ScrollAnimation>
@@ -1035,6 +1120,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={1500}
+                      offset={-50}
                     >
                       <li>
                         There is such a thing as “Improv Design Sprint” as you
@@ -1046,6 +1133,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={2000}
+                      offset={-100}
                     >
                       <li>
                         <div>
@@ -1073,6 +1162,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={2500}
+                      offset={-150}
                     >
                       <li>
                         Is it the Product Designers duty to identify the gaps
@@ -1087,17 +1178,17 @@ const EvaluationTool = ({ scrollPosition }) => {
               <Grid item xs={12} mt={{ xs: 2, md: 3 }}>
                 <ImageCarousel
                   images={[
-                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_1.webp',
-                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_2.webp',
-                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_3.webp',
-                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_4.webp',
-                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_5.webp',
-                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_6.webp',
-                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_7.webp',
-                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_8.webp',
-                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_9.webp',
-                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_10.webp',
-                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_11.webp',
+                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_1.png',
+                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_2.png',
+                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_3.png',
+                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_4.png',
+                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_5.png',
+                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_6.png',
+                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_7.png',
+                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_8.png',
+                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_9.png',
+                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_10.png',
+                    'images/case_studies/evaluation_tool/first_design_sprint_facilitation_11.png',
                   ]}
                 />
               </Grid>
@@ -1116,6 +1207,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  offset={50}
                 >
                   <h2>Cognitive Thoughts</h2>
                 </ScrollAnimation>
@@ -1130,6 +1222,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={0}
                 >
                   <p>
                     In the beginning stages of my career, I thrived for an
@@ -1151,6 +1245,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={0}
                 >
                   <span>
                     I have come to realize that not all organizations or
@@ -1162,6 +1258,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1500}
+                  offset={-50}
                 >
                   <span>
                     Time and time again, we see products become massively
@@ -1173,6 +1271,8 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={2000}
+                  offset={-100}
                 >
                   <span>
                     I do not know when that day will arrives for the

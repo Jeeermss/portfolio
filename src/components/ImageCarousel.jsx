@@ -106,7 +106,11 @@ const ImageCarousel = ({
             indicators={noIndicators ? false : true}
           >
             {imagesList.map((item, i) => (
-              <ScrollingContainer maxHeight={scrollingMaxHeight} key={i}>
+              <ScrollingContainer
+                maxHeight={scrollingMaxHeight}
+                key={i}
+                sx={{ backgroundColor: '#f9f9f9' }}
+              >
                 <img
                   src={item.url}
                   key={i}

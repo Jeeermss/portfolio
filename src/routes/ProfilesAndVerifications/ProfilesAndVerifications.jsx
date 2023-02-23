@@ -106,6 +106,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  offset={50}
                 >
                   <h2>User Testing: In Progress</h2>
                 </ScrollAnimation>
@@ -120,6 +121,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={0}
                 >
                   <p>
                     Objectives:
@@ -140,6 +143,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={0}
                 >
                   <span>
                     During the in-person user testing sessions, we only have the
@@ -151,6 +156,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1500}
+                  offset={-50}
                 >
                   <span>
                     Our team needed to avoid biases and not add it to our pool
@@ -161,6 +168,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={2000}
+                  offset={-100}
                 >
                   <span>
                     We continued to conduct user testing where we had a total of
@@ -222,6 +231,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  offset={50}
                 >
                   <h2>Generate a User Testing Report</h2>
                 </ScrollAnimation>
@@ -236,6 +246,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={0}
                 >
                   <p>
                     The intent was to showcase the metrics, major findings, and
@@ -253,6 +265,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={0}
                 >
                   <span>
                     We concluded the report with next action steps, which we
@@ -319,6 +333,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  offset={50}
                 >
                   <h2>UI Design</h2>
                 </ScrollAnimation>
@@ -333,6 +348,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={0}
                 >
                   <p>
                     Based on the requirements, the UX/UI Design team went
@@ -351,6 +368,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={0}
                 >
                   <span>
                     As our first Minimum Viable Product, we wanted to showcase
@@ -363,6 +382,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1500}
+                  offset={-50}
                 >
                   <span>
                     Our last sprint consisted of confirming the feasibility of
@@ -375,6 +396,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={2000}
+                      offset={-100}
                     >
                       <li>Dashboard</li>
                     </ScrollAnimation>
@@ -382,6 +405,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={2500}
+                      offset={-150}
                     >
                       <li>Assign an Evaluation</li>
                     </ScrollAnimation>
@@ -389,6 +414,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={3000}
+                      offset={-200}
                     >
                       <li>Conduct an Evaluation</li>
                     </ScrollAnimation>
@@ -396,6 +423,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={3500}
+                      offset={-250}
                     >
                       <li>View Incomplete and Complete Evaluations</li>
                     </ScrollAnimation>
@@ -403,6 +432,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={4000}
+                      offset={-300}
                     >
                       <li>Notifications and Settings</li>
                     </ScrollAnimation>
@@ -445,6 +476,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  offset={50}
                 >
                   <h2>Current Status: In Development</h2>
                 </ScrollAnimation>
@@ -459,6 +491,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={0}
                 >
                   <p>
                     One of the biggest mistakes I made as a Lead UX/UI Designer
@@ -478,6 +512,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={0}
                 >
                   <span>
                     I made the assumption the full-stack developer had
@@ -489,6 +525,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1500}
+                  offset={-50}
                 >
                   <span>
                     We come to discover the full-stack developer has never
@@ -500,6 +538,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={2000}
+                  offset={-100}
                 >
                   <span>
                     A major occurrence we encountered was his inconsideration
@@ -512,6 +552,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={2500}
+                  offset={-150}
                 >
                   <span style={{ color: 'red' }}>
                     The reason: <br />
@@ -552,6 +594,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  offset={50}
                 >
                   <h2>The Solution: Declare this a Critical Issue</h2>
                 </ScrollAnimation>
@@ -566,6 +609,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={0}
                 >
                   <p>
                     This has been the toughest battle in my career within the
@@ -576,6 +621,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={-50}
                 >
                   <p>
                     I have never encountered a developer disregard my design
@@ -594,6 +641,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1500}
+                  offset={0}
                 >
                   <span>
                     I scheduled an emergency meeting with the Vice President (my
@@ -604,6 +653,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={2000}
+                  offset={-50}
                 >
                   <span>
                     Soon after, she sets up a meeting with the Director of IT to
@@ -616,6 +667,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={2500}
+                  offset={-100}
                 >
                   <span>
                     Of course, the Director of IT lacks experience and knowledge
@@ -629,6 +682,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={3000}
+                      offset={-150}
                     >
                       <li>Does not want to lose employees.</li>
                     </ScrollAnimation>
@@ -636,6 +691,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={3500}
+                      offset={-200}
                     >
                       <li>
                         Undermines the UX/UI Team’s ability in molding the
@@ -646,6 +703,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={4000}
+                      offset={-250}
                     >
                       <li>
                         Conforms to user assumptions because it is a “quick,
@@ -674,6 +733,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  offset={50}
                 >
                   <h2>
                     Performance Verifications: Opportunity to Conduct User
@@ -691,6 +751,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={0}
                 >
                   <p>
                     We experienced a major delay in the hitting the product’s
@@ -701,6 +763,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={-50}
                 >
                   <p>
                     Therefore, the UX/UI Design team took the opportunity to
@@ -718,6 +782,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1500}
+                  offset={0}
                 >
                   <span>
                     The UX/UI Design team’s goal is to capture and validate the
@@ -729,6 +795,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={2000}
+                  offset={-50}
                 >
                   <span>
                     For this task, our primary objective was to observe,
@@ -741,6 +809,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={2500}
+                      offset={-100}
                     >
                       <li>Assign an evaluation</li>
                     </ScrollAnimation>
@@ -748,6 +818,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={3000}
+                      offset={-150}
                     >
                       <li>Conduct a 1:1 evaluation</li>
                     </ScrollAnimation>
@@ -755,6 +827,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={3500}
+                      offset={-200}
                     >
                       <li>Conduct a group (1:5) evaluation</li>
                     </ScrollAnimation>
@@ -762,6 +836,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
+                      delay={4000}
+                      offset={-250}
                     >
                       <li>Manually enter a single evaluation</li>
                     </ScrollAnimation>
@@ -771,6 +847,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={4500}
+                  offset={-300}
                 >
                   <span>
                     Below are a few user responses explaining actual scenarios
@@ -811,6 +889,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  offset={50}
                 >
                   <h2>Cognitive Thoughts Part Deux</h2>
                 </ScrollAnimation>
@@ -825,6 +904,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={500}
+                  offset={0}
                 >
                   <p>
                     The second half of the product’s roadmap has been the
@@ -843,6 +924,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1000}
+                  offset={0}
                 >
                   <span>
                     How did I navigate through the constant critical issues and
@@ -853,6 +936,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={1500}
+                  offset={-50}
                 >
                   <span>
                     Firstly, I take a big deep breath and remember I work for an
@@ -864,6 +949,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={2000}
+                  offset={-100}
                 >
                   <span>
                     Secondly, there are different components that come into play
@@ -876,6 +963,8 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
+                  delay={2500}
+                  offset={-150}
                 >
                   <span>
                     As much as our UX/UI design team has poured sweat, tears and

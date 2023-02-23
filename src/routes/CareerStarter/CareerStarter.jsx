@@ -594,7 +594,7 @@ const CareerStarter = ({ scrollPosition }) => {
               <Grid item xs={12} mt={{ xs: 2, md: 3 }}>
                 <LazyLoadImage
                   scrollPosition={scrollPosition}
-                  src="images/case_studies/career_starter/high_low_priorities.webp"
+                  src="images/case_studies/career_starter/high_low_priorities_2.png"
                   effect="blur"
                   alt="high low priorities"
                   width="100%"

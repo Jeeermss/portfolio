@@ -20,7 +20,7 @@ export const firstRowMembers = [
   },
   {
     imgUrl: 'images/team_members/ux_ui.svg',
-    role: '(me) UX/UI Designer',
+    role: 'UX/UI Designer (me)',
   },
 ];
 export const secondRowMembers = [

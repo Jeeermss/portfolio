@@ -784,15 +784,12 @@ const TalentPipeline = ({ scrollPosition }) => {
               </Grid>
               <Grid item xs={12}>
                 {isMobile ? (
-                  <LazyLoadImage
-                    scrollPosition={scrollPosition}
-                    src="images/case_studies/talent_pipeline/tp_landing_page_scrolling.png"
-                    effect="blur"
-                    alt="talent pipeline landing page"
-                    width="100%"
-                  />
-                ) : (
-                  <ScrollingContainer>
+                  <div style={{ display: 'flex', flexDirection: 'column' }}>
+                    <img
+                      src="images/case_studies/talent_pipeline/chrome_bar.png"
+                      alt="toolbar"
+                      width="100%"
+                    />
                     <LazyLoadImage
                       scrollPosition={scrollPosition}
                       src="images/case_studies/talent_pipeline/tp_landing_page_scrolling.png"
@@ -800,7 +797,24 @@ const TalentPipeline = ({ scrollPosition }) => {
                       alt="talent pipeline landing page"
                       width="100%"
                     />
-                  </ScrollingContainer>
+                  </div>
+                ) : (
+                  <div style={{ display: 'flex', flexDirection: 'column' }}>
+                    <img
+                      src="images/case_studies/talent_pipeline/chrome_bar.png"
+                      alt="toolbar"
+                      width="100%"
+                    />
+                    <ScrollingContainer>
+                      <LazyLoadImage
+                        scrollPosition={scrollPosition}
+                        src="images/case_studies/talent_pipeline/tp_landing_page_scrolling.png"
+                        effect="blur"
+                        alt="talent pipeline landing page"
+                        width="100%"
+                      />
+                    </ScrollingContainer>
+                  </div>
                 )}
               </Grid>
             </Grid>

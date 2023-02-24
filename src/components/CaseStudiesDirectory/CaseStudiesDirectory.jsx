@@ -55,7 +55,7 @@ const CaseStudiesDirectory = () => {
             flag="UX Research"
             contentHeader="The Need of an Evaluation Tool"
             contentDesc="A close examination of how evaluations are conducted and observed in a live site and classroom setting."
-            cardImageUrl="images/cs-1.svg"
+            cardImageUrl="images/cs-1.png"
             cardImageAlt="Case Study 1"
             onClick={() => navigate(EVALUATION_TOOL, { state: { location } })}
             cardImageSize="contain"
@@ -70,7 +70,7 @@ const CaseStudiesDirectory = () => {
             contentDesc="How did our team assist an organization 
             prepare and transition from a paper evaluation 
             to a digital landscape?"
-            cardImageUrl="images/cs-2.svg"
+            cardImageUrl="images/cs-2.png"
             cardImageAlt="Case Study 2"
             onClick={() =>
               navigate(PROFILES_AND_VERIFICATIONS, { state: { location } })
@@ -87,7 +87,7 @@ const CaseStudiesDirectory = () => {
             contentDesc="An opportunity to merge the gap between 
             Job Seekers and Recruiters with the assistance 
             of high school and college educators."
-            cardImageUrl="images/cs-3.svg"
+            cardImageUrl="images/cs-3.png"
             cardImageAlt="Case Study 3"
             onClick={() => navigate(TALENT_PIPELINE, { state: { location } })}
             cardImageSize="60%"
@@ -101,7 +101,7 @@ const CaseStudiesDirectory = () => {
             contentHeader="The Birth of CareerStarter"
             contentDesc="A web app that helps connect Job Seekers 
             to educators, training programs, and recruiters within the Construction and Maintenance field."
-            cardImageUrl="images/cs-4.svg"
+            cardImageUrl="images/cs-4.png"
             cardImageAlt="Case Study 4"
             onClick={() => navigate(CAREER_STARTER, { state: { location } })}
             cardImageSize="90%"

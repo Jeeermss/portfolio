@@ -57,9 +57,9 @@ function App() {
 
   return (
     <StyledEngineProvider injectFirst>
+      <Navigation />
       <Container sx={{ minHeight: '100vh' }}>
         <ScrollToTop>
-          <Navigation />
           <React.Suspense fallback={<LoadingScreen />}>
             <Routes>
               <Route index element={<Home />} path="/" />

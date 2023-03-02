@@ -49,13 +49,14 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
       <iframe
         style={{
           border: '1px solid rgba(0, 0, 0, 0.1)',
-          display: `${userTestingIFrameLoading ? 'none' : 'block'}`,
+          visibility: `${userTestingIFrameLoading ? 'hidden' : 'visible'}`,
         }}
         width="100%"
         height={isMobile ? '314px' : '720px'}
         src={src}
         allowFullScreen
         title={title}
+        loading="lazy"
         onLoad={() => setUserTestingIFrameLoading(false)}
       ></iframe>
     );

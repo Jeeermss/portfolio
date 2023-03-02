@@ -53,18 +53,20 @@ const EvaluationTool = ({ scrollPosition }) => {
         <iframe
           style={{
             border: '1px solid rgba(0, 0, 0, 0.1)',
-            display: `${isLoading ? 'none' : 'block'}`,
+            visibility: `${isLoading ? 'hidden' : 'visible'}`,
           }}
           width="100%"
           height={isMobile ? '314px' : '720px'}
           src={src}
           allowFullScreen
           title={title}
+          loading="lazy"
           onLoad={() => setIsLoading(false)}
         ></iframe>
       );
     }
   );
+
   return (
     <div className="evaluation-tool">
       <PageRoadMap showMore={showMore} />

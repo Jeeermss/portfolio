@@ -12,8 +12,8 @@ const ScrollingContainer = ({
       disableGutters
       maxWidth={maxWidth}
       sx={{
-        maxHeight: { xs: 310, sm: maxHeight },
-        height: { xs: 310, sm: 720 },
+        maxHeight: { xs: 'auto', sm: maxHeight },
+        height: { xs: 'auto', sm: 720 },
         overflowY: 'auto',
         border: '1px solid #474747',
         backgroundColor: '#fff',

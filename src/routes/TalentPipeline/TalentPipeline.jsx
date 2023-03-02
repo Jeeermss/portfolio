@@ -89,7 +89,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll={false}
-                  delay={500}
+                  delay={300}
                   offset={0}
                 >
                   <p>
@@ -102,7 +102,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll={false}
-                  delay={1000}
+                  delay={600}
                   offset={-50}
                 >
                   <p>
@@ -122,7 +122,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll={false}
-                  delay={1500}
+                  delay={900}
                 >
                   <h2>Who are they?</h2>
                 </ScrollAnimation>
@@ -130,7 +130,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll={false}
-                  delay={2000}
+                  delay={1200}
                   offset={0}
                 >
                   <p>
@@ -143,7 +143,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll={false}
-                  delay={2500}
+                  delay={1500}
                   offset={-50}
                 >
                   <span>
@@ -155,7 +155,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll={false}
-                  delay={3000}
+                  delay={1800}
                   offset={-100}
                 >
                   <span>
@@ -178,7 +178,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={isMobile ? 0 : 3500}
+                  delay={isMobile ? 0 : 2100}
                   offset={isMobile ? 150 : 0}
                 >
                   <LazyLoadImage
@@ -197,7 +197,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={isMobile ? 0 : 3500}
+                  delay={isMobile ? 0 : 2100}
                   offset={isMobile ? 150 : 0}
                 >
                   <LazyLoadImage
@@ -216,7 +216,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={isMobile ? 0 : 3500}
+                  delay={isMobile ? 0 : 2100}
                   offset={isMobile ? 150 : 0}
                 >
                   <LazyLoadImage
@@ -259,7 +259,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={100}
                 >
                   <span>
@@ -273,7 +273,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={50}
                 >
                   <span>
@@ -293,7 +293,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                     animateOnce
                     animateIn="animate__fadeInUp"
                     animatePreScroll
-                    delay={1500}
+                    delay={900}
                   >
                     <LazyLoadImage
                       scrollPosition={scrollPosition}
@@ -308,7 +308,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                     animateOnce
                     animateIn="animate__fadeInUp"
                     animatePreScroll
-                    delay={2000}
+                    delay={1200}
                     offset={-40}
                   >
                     <LazyLoadImage
@@ -410,7 +410,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={100}
                 >
                   <p>
@@ -422,7 +422,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={50}
                 >
                   <p>
@@ -441,7 +441,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1500}
+                  delay={900}
                   offset={100}
                 >
                   <span>
@@ -454,7 +454,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={2000}
+                  delay={1200}
                   offset={50}
                 >
                   <span>
@@ -516,7 +516,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={0}
                 >
                   <span>
@@ -529,7 +529,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={-50}
                 >
                   <span>
@@ -588,7 +588,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={100}
                 >
                   <p>
@@ -608,7 +608,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={100}
                 >
                   <span>
@@ -622,7 +622,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1500}
+                  delay={900}
                   offset={50}
                 >
                   <span>
@@ -692,7 +692,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={100}
                 >
                   <p>
@@ -711,7 +711,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={100}
                 >
                   <span>
@@ -761,7 +761,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={0}
                 >
                   <span>
@@ -773,7 +773,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={-50}
                 >
                   <span>
@@ -849,7 +849,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={100}
                 >
                   <p>
@@ -869,7 +869,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={100}
                 >
                   <span>
@@ -883,7 +883,7 @@ const TalentPipeline = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1500}
+                  delay={900}
                   offset={50}
                 >
                   <span>

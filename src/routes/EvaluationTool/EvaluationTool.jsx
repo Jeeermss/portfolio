@@ -130,7 +130,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={0}
                 >
                   <p>
@@ -143,7 +143,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={-50}
                 >
                   <p>
@@ -163,7 +163,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1500}
+                  delay={900}
                   offset={0}
                 >
                   <span>
@@ -175,7 +175,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={2000}
+                  delay={1200}
                   offset={-50}
                 >
                   <span>
@@ -243,7 +243,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={0}
                 >
                   <span>
@@ -301,7 +301,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={0}
                 >
                   <p>
@@ -323,7 +323,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={1000}
+                      delay={600}
                       offset={0}
                     >
                       <li>
@@ -335,7 +335,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={1500}
+                      delay={900}
                       offset={-50}
                     >
                       <li>
@@ -347,7 +347,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={2000}
+                      delay={1200}
                       offset={-100}
                     >
                       <li>
@@ -359,7 +359,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={2500}
+                      delay={1500}
                       offset={-150}
                     >
                       <li>
@@ -414,7 +414,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={0}
                 >
                   <p>
@@ -433,7 +433,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={0}
                 >
                   <span>
@@ -447,7 +447,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1500}
+                  delay={900}
                   offset={-50}
                 >
                   <span>This was a career battle I was willing to take. </span>
@@ -492,7 +492,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={0}
                 >
                   <p>
@@ -512,7 +512,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={0}
                 >
                   <span className="font-family-black">Benefits:</span>
@@ -523,7 +523,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={1500}
+                      delay={900}
                       offset={-50}
                     >
                       <li>
@@ -534,7 +534,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={2000}
+                      delay={1200}
                       offset={-100}
                     >
                       <li>
@@ -546,7 +546,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={2500}
+                      delay={1500}
                       offset={-150}
                     >
                       <li>
@@ -560,7 +560,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={3000}
+                  delay={1800}
                   offset={-200}
                 >
                   <span className="font-family-black">Goals:</span>
@@ -571,7 +571,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={3500}
+                      delay={2100}
                       offset={-250}
                     >
                       <li>
@@ -584,7 +584,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={4000}
+                      delay={2400}
                       offset={-300}
                     >
                       <li>
@@ -654,7 +654,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={0}
                 >
                   <p>
@@ -674,7 +674,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={0}
                 >
                   <span>
@@ -687,7 +687,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1500}
+                  delay={900}
                   offset={-50}
                 >
                   <span>
@@ -740,7 +740,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={0}
                 >
                   <p>
@@ -760,7 +760,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={0}
                 >
                   <span>
@@ -773,7 +773,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1500}
+                  delay={900}
                   offset={-50}
                 >
                   <span style={{ color: '#C95D63' }}>
@@ -860,7 +860,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={0}
                 >
                   <p>
@@ -882,7 +882,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={0}
                 >
                   <span>
@@ -896,7 +896,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={1500}
+                      delay={900}
                       offset={-50}
                     >
                       <li>Problems</li>
@@ -905,7 +905,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={2000}
+                      delay={1200}
                       offset={-100}
                     >
                       <li>Solutions</li>
@@ -914,7 +914,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={2500}
+                      delay={1500}
                       offset={-150}
                     >
                       <li>Users</li>
@@ -923,7 +923,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={3000}
+                      delay={1800}
                       offset={-200}
                     >
                       <li>Goals</li>
@@ -980,7 +980,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={0}
                 >
                   <p>
@@ -1000,7 +1000,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={0}
                 >
                   <span>
@@ -1012,7 +1012,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1500}
+                  delay={900}
                   offset={-50}
                 >
                   <span>
@@ -1088,7 +1088,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={0}
                 >
                   <p>
@@ -1111,7 +1111,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={0}
                 >
                   <span className="font-family-black">Key Takeaways:</span>
@@ -1122,7 +1122,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={1500}
+                      delay={900}
                       offset={-50}
                     >
                       <li>
@@ -1135,7 +1135,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={2000}
+                      delay={1200}
                       offset={-100}
                     >
                       <li>
@@ -1164,7 +1164,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={2500}
+                      delay={1500}
                       offset={-150}
                     >
                       <li>
@@ -1224,7 +1224,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={0}
                 >
                   <p>
@@ -1247,7 +1247,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={0}
                 >
                   <span>
@@ -1260,7 +1260,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1500}
+                  delay={900}
                   offset={-50}
                 >
                   <span>
@@ -1273,7 +1273,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={2000}
+                  delay={1200}
                   offset={-100}
                 >
                   <span>

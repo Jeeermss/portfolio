@@ -177,7 +177,7 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={0}
                 >
                   <p>
@@ -189,7 +189,7 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={-70}
                 >
                   <p>
@@ -202,7 +202,7 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1500}
+                  delay={900}
                   offset={-140}
                 >
                   <p>
@@ -224,7 +224,7 @@ const CareerStarter = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={2000}
+                      delay={1200}
                       offset={0}
                     >
                       <li>
@@ -240,7 +240,7 @@ const CareerStarter = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={2500}
+                      delay={1500}
                       offset={-50}
                     >
                       <li>
@@ -253,7 +253,7 @@ const CareerStarter = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={3000}
+                      delay={1800}
                       offset={-100}
                     >
                       <li>Create an individual registration page.</li>
@@ -294,7 +294,7 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={0}
                 >
                   <p>
@@ -342,7 +342,7 @@ const CareerStarter = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={1000}
+                      delay={600}
                       offset={-50}
                     >
                       <LazyLoadImage
@@ -357,7 +357,7 @@ const CareerStarter = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={1000}
+                      delay={900}
                       offset={-50}
                     >
                       <LazyLoadImage
@@ -381,7 +381,7 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1500}
+                  delay={1200}
                   offset={0}
                 >
                   <span>
@@ -395,7 +395,7 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={2000}
+                  delay={1500}
                   offset={-50}
                 >
                   <span>
@@ -456,7 +456,7 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={0}
                 >
                   <p>
@@ -476,7 +476,7 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={0}
                 >
                   <span>
@@ -492,7 +492,7 @@ const CareerStarter = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={1500}
+                      delay={900}
                       offset={-50}
                     >
                       <li>
@@ -504,7 +504,7 @@ const CareerStarter = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={2000}
+                      delay={1200}
                       offset={-100}
                     >
                       <li>What do we want to learn about our users?</li>
@@ -550,7 +550,7 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={0}
                 >
                   <p>
@@ -569,7 +569,7 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={0}
                 >
                   <span>
@@ -582,7 +582,7 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1500}
+                  delay={900}
                   offset={-50}
                 >
                   <span>
@@ -630,7 +630,7 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={0}
                 >
                   <p>
@@ -649,7 +649,7 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={0}
                 >
                   <span>
@@ -662,7 +662,7 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1500}
+                  delay={900}
                   offset={-50}
                 >
                   <span>
@@ -676,7 +676,7 @@ const CareerStarter = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={2000}
+                  delay={1200}
                   offset={-100}
                 >
                   <span>

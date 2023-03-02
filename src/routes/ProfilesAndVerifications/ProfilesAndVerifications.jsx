@@ -122,7 +122,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={0}
                 >
                   <p>
@@ -144,7 +144,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={0}
                 >
                   <span>
@@ -157,7 +157,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1500}
+                  delay={900}
                   offset={-50}
                 >
                   <span>
@@ -169,7 +169,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={2000}
+                  delay={1200}
                   offset={-100}
                 >
                   <span>
@@ -247,7 +247,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={0}
                 >
                   <p>
@@ -266,7 +266,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={0}
                 >
                   <span>
@@ -351,7 +351,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={0}
                 >
                   <p>
@@ -371,7 +371,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={0}
                 >
                   <span>
@@ -385,7 +385,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1500}
+                  delay={900}
                   offset={-50}
                 >
                   <span>
@@ -399,7 +399,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={2000}
+                      delay={1200}
                       offset={-100}
                     >
                       <li>Dashboard</li>
@@ -408,7 +408,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={2500}
+                      delay={1500}
                       offset={-150}
                     >
                       <li>Assign an Evaluation</li>
@@ -417,7 +417,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={3000}
+                      delay={1800}
                       offset={-200}
                     >
                       <li>Conduct an Evaluation</li>
@@ -426,7 +426,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={3500}
+                      delay={2100}
                       offset={-250}
                     >
                       <li>View Incomplete and Complete Evaluations</li>
@@ -435,7 +435,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={4000}
+                      delay={2400}
                       offset={-300}
                     >
                       <li>Notifications and Settings</li>
@@ -494,7 +494,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={0}
                 >
                   <p>
@@ -515,7 +515,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={0}
                 >
                   <span>
@@ -528,7 +528,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1500}
+                  delay={900}
                   offset={-50}
                 >
                   <span>
@@ -541,7 +541,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={2000}
+                  delay={1200}
                   offset={-100}
                 >
                   <span>
@@ -555,7 +555,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={2500}
+                  delay={1500}
                   offset={-150}
                 >
                   <span style={{ color: 'red' }}>
@@ -612,7 +612,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={0}
                 >
                   <p>
@@ -624,7 +624,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={-50}
                 >
                   <p>
@@ -644,7 +644,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1500}
+                  delay={900}
                   offset={0}
                 >
                   <span>
@@ -656,7 +656,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={2000}
+                  delay={1200}
                   offset={-50}
                 >
                   <span>
@@ -670,7 +670,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={2500}
+                  delay={1500}
                   offset={-100}
                 >
                   <span>
@@ -685,7 +685,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={3000}
+                      delay={1800}
                       offset={-150}
                     >
                       <li>Does not want to lose employees.</li>
@@ -694,7 +694,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={3500}
+                      delay={2100}
                       offset={-200}
                     >
                       <li>
@@ -706,7 +706,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={4000}
+                      delay={2400}
                       offset={-250}
                     >
                       <li>
@@ -754,7 +754,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={0}
                 >
                   <p>
@@ -766,7 +766,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={-50}
                 >
                   <p>
@@ -785,7 +785,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1500}
+                  delay={900}
                   offset={0}
                 >
                   <span>
@@ -798,7 +798,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={2000}
+                  delay={1200}
                   offset={-50}
                 >
                   <span>
@@ -812,7 +812,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={2500}
+                      delay={1500}
                       offset={-100}
                     >
                       <li>Assign an evaluation</li>
@@ -821,7 +821,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={3000}
+                      delay={1800}
                       offset={-150}
                     >
                       <li>Conduct a 1:1 evaluation</li>
@@ -830,7 +830,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={3500}
+                      delay={2100}
                       offset={-200}
                     >
                       <li>Conduct a group (1:5) evaluation</li>
@@ -839,7 +839,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                       animateOnce
                       animateIn="animate__fadeInUp"
                       animatePreScroll
-                      delay={4000}
+                      delay={2400}
                       offset={-250}
                     >
                       <li>Manually enter a single evaluation</li>
@@ -850,7 +850,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={4500}
+                  delay={2700}
                   offset={-300}
                 >
                   <span>
@@ -907,7 +907,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={500}
+                  delay={300}
                   offset={0}
                 >
                   <p>
@@ -927,7 +927,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1000}
+                  delay={600}
                   offset={0}
                 >
                   <span>
@@ -939,7 +939,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={1500}
+                  delay={900}
                   offset={-50}
                 >
                   <span>
@@ -952,7 +952,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={2000}
+                  delay={1200}
                   offset={-100}
                 >
                   <span>
@@ -966,7 +966,7 @@ const ProfilesAndVerifications = ({ scrollPosition }) => {
                   animateOnce
                   animateIn="animate__fadeInUp"
                   animatePreScroll
-                  delay={2500}
+                  delay={1500}
                   offset={-150}
                 >
                   <span>

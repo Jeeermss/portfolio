@@ -193,7 +193,7 @@
 
 .navbar-list-items__mobile-open {
   border-top: 1px solid #0a74a6;
-  height: calc(100% - 130px);
+  height: calc(100vh - 130px);
 }
 
 .navbar-list-items__mobile .navbar-list-items__mobile-menus {
@@ -225,12 +225,12 @@
   position: relative;
 }
 
-/* MaterialUI breakpoint `md` */
+/* MaterialUI breakpoint `sm` */
 @media (max-width: 600px) {
   .navbar-list-items__mobile {
     top: 84px;
   }
   .navbar-list-items__mobile-open {
-    height: calc(100% - 84px);
+    height: calc(100vh - 84px);
   }
 }

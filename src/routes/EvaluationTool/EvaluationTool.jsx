@@ -38,6 +38,8 @@ const EvaluationTool = ({ scrollPosition }) => {
   const [showMore, setShowMore] = useState(false);
   const [userFlowIFrameLoading, setUserFlowIFrameLoading] = useState(true);
   const [synthesizeIFrameLoading, setSynthesizeIFrameLoading] = useState(true);
+  const [isUserStoriesImageLoading, setIsUserStoriesImageLoading] =
+    useState(true);
 
   const IFrameLoading = () => {
     return (
@@ -196,10 +198,18 @@ const EvaluationTool = ({ scrollPosition }) => {
               sx={{ mb: { xs: 9, md: '148px' } }}
             >
               <Grid item xs={12}>
+                {isUserStoriesImageLoading && (
+                  <div style={{ textAlign: 'center' }}>
+                    <CircularProgress sx={iFrameLoadingStyle} />
+                  </div>
+                )}
                 <ScrollingContainer
                   sx={{
                     maxHeight: { xs: '100%', md: 720 },
                     height: { xs: '100%', md: 720 },
+                    visibility: isUserStoriesImageLoading
+                      ? 'hidden'
+                      : 'visible',
                   }}
                 >
                   <LazyLoadImage
@@ -208,6 +218,7 @@ const EvaluationTool = ({ scrollPosition }) => {
                     effect="blur"
                     alt="user stories scrolling"
                     width="100%"
+                    onLoadCapture={() => setIsUserStoriesImageLoading(false)}
                   />
                 </ScrollingContainer>
               </Grid>

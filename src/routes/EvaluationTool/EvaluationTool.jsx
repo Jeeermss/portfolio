@@ -203,24 +203,43 @@ const EvaluationTool = ({ scrollPosition }) => {
                     <CircularProgress sx={iFrameLoadingStyle} />
                   </div>
                 )}
-                <ScrollingContainer
-                  sx={{
-                    maxHeight: { xs: '100%', md: 720 },
-                    height: { xs: '100%', md: 720 },
+                <div
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'flex-end',
+                    gap: '8px',
                     visibility: isUserStoriesImageLoading
                       ? 'hidden'
                       : 'visible',
                   }}
                 >
-                  <LazyLoadImage
-                    scrollPosition={scrollPosition}
-                    src="images/case_studies/evaluation_tool/user_stories_scrolling.png"
-                    effect="blur"
-                    alt="user stories scrolling"
-                    width="100%"
-                    onLoadCapture={() => setIsUserStoriesImageLoading(false)}
-                  />
-                </ScrollingContainer>
+                  <span
+                    style={{
+                      fontSize: '16px',
+                      color: '#C95D63',
+                      fontWeight: 700,
+                      display: isMobile ? 'none' : 'block',
+                    }}
+                  >
+                    Scroll down to read more user stories!
+                  </span>
+                  <ScrollingContainer
+                    sx={{
+                      maxHeight: { xs: '100%', md: 720 },
+                      height: { xs: '100%', md: 720 },
+                    }}
+                  >
+                    <LazyLoadImage
+                      scrollPosition={scrollPosition}
+                      src="images/case_studies/evaluation_tool/user_stories_scrolling.webp"
+                      effect="blur"
+                      alt="user stories scrolling"
+                      width="100%"
+                      onLoadCapture={() => setIsUserStoriesImageLoading(false)}
+                    />
+                  </ScrollingContainer>
+                </div>
               </Grid>
             </Grid>
           </div>

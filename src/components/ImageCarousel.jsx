@@ -70,7 +70,8 @@ const ImageCarousel = ({
           ) : null}
           <Carousel
             navButtonsAlwaysVisible
-            swipe={false}
+            cycleNavigation={false}
+            swipe={true}
             NextIcon={<ArrowCircleRightOutlined sx={arrowButtonsStyle} />}
             PrevIcon={<ArrowCircleLeftOutlined sx={arrowButtonsStyle} />}
             navButtonsProps={{

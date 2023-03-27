@@ -114,7 +114,7 @@ const ImageCarousel = ({
                   alt="carousel"
                   width="100%"
                   height="auto"
-                  style={{ height: item.height }}
+                  // style={{ height: item.height }}
                 />
               ) : (
                 <ScrollingContainer

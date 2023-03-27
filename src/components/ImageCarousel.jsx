@@ -106,32 +106,32 @@ const ImageCarousel = ({
             animation="slide"
             indicators={noIndicators ? false : true}
           >
-            {imagesList.map((item, i) =>
-              isMobile ? (
-                <img
-                  src={item.url}
-                  key={i}
-                  alt="carousel"
-                  width="100%"
-                  height="auto"
-                  // style={{ height: item.height }}
-                />
-              ) : (
-                <ScrollingContainer
-                  maxHeight={scrollingMaxHeight}
-                  key={i}
-                  sx={{ backgroundColor: '#f9f9f9' }}
-                >
+            {imagesLoaded &&
+              imagesList.map((item, i) =>
+                isMobile ? (
                   <img
                     src={item.url}
                     key={i}
                     alt="carousel"
                     width="100%"
-                    style={{ height: item.height }}
+                    style={{ height: 'auto !important' }}
                   />
-                </ScrollingContainer>
-              )
-            )}
+                ) : (
+                  <ScrollingContainer
+                    maxHeight={scrollingMaxHeight}
+                    key={i}
+                    sx={{ backgroundColor: '#f9f9f9' }}
+                  >
+                    <img
+                      src={item.url}
+                      key={i}
+                      alt="carousel"
+                      width="100%"
+                      style={{ height: item.height }}
+                    />
+                  </ScrollingContainer>
+                )
+              )}
           </Carousel>
         </div>
       ) : (
